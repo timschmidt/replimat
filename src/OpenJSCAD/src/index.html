@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html  xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<!--
+== OpenJSCAD.org, Copyright (c) 2013-2016 by Rene K. Mueller <spiritdude@gmail.com>, Licensed under MIT License ==
+   with some code from OpenJsCad processfile.html by Joost Nieuwenhuijse
+   in conjunction with csg.js, openjscad.js, lightgl.js by various authors (see them listed in the individual files)
+
+Purpose:
+   More modern interface for OpenJsCad as published at http://joostn.github.com/OpenJsCad/
+
+History:
+- 2016/05/01: 0.5.0: added options to Processor and View classes, allow more flexibility in HTML by Z3 Dev
+- 2016/02/02: 0.4.0: refactored, functionality split up into more files, mostly done by Z3 Dev
+- 2015/10/23: 0.3.1: including new parameter options by Z3 Dev
+- 2015/07/02: 0.3.0: format.js (Stefan Baumann), and Blob.js/openjscad improved by Z3 Dev
+- 2015/05/20: 0.2.4: renumbering, latest csg.js from http://joostn.github.com/OpenJsCad/ adapted
+- 2015/04/08: 0.024: dev branch opened
+- 2015/02/14: 0.023: bumping version based on openscad.js
+- 2015/02/04; 0.020: browser window resizing done properly, thanks to Z3 devs via pull request
+- 2015/01/07: 0.019: various pull requests from github merged again
+- 2014/10/05: 0.018: various pull requests from github merged
+- 2013/04/11: 0.017: alpha channel supported in color() and .setColor()
+- 2013/04/07: 0.016: csg.js: solidFromSlices() and .setColor() on polygon level, and examples by Eduard Bespalov
+- 2013/04/05: 0.015: rudimentary AMF export and import, web and cli
+- 2013/04/03: 0.014: multiple files via drag'n'drop, developing locally
+- 2013/04/01: 0.013: include() on web-online & drag'n'drop (but not off-line) and cli (server-side)
+- 2013/03/20: 0.012: improved UI (slider from the left)
+- 2013/03/28: 0.011: rectangular_extrude(), rotate_extrude() added, and torus()
+- 2013/03/22: 0.010: leave .scad file intact, and translate on-the-fly
+- 2013/03/20: 0.009: OpenSCAD .scad (via openscad-openjscad-translator) and .stl experimental import support integrated
+- 2013/03/15: 0.008: minor changes, parameter window smaller, css changes
+- 2013/03/14: 0.007: including jQuery to make UI changes easier, e.g. hint window moveable now
+- 2013/03/11: 0.005: resize of browser fixed by fixing canvas size to full screen, and avoid scrollbars
+- 2013/03/10: 0.001: first version, integrating ACE editor, for now pulled from 3rd party web-site
+
+Todo:
+- saving source code edited in ACE locally, perhaps 'SaveAs' (.JSCAD, .STL, .AMF)
+- DONE: include(); support of multiple files, see http://jsfiddle.net/yybRu/
+
+-->
+    <meta http-equiv=Pragma content=no-cache>
+    <meta http-equiv=Expires content=-1>
+    <meta http-equiv=CACHE-CONTROL content=NO-CACHE>
+
+    <title>OpenJSCAD.org</title>
+    <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-png">
+    <link rel="stylesheet" href="jquery/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="style.css?0.5.0" type="text/css">
+    <link rel="stylesheet" href="openjscad.css?0.5.0" type="text/css">
+  </head>
+  <body>
+    <script src="jquery/jquery-1.9.1.js"></script>
+    <script src="jquery/jquery-ui.js"></script>
+    <script src="jquery/jquery.hammer.js"></script>
+    <script src="lightgl.js"></script>
+    <script src="csg.js?0.5.0"></script>
+    <script src="formats.js?0.5.0"></script>
+    <script src="openjscad.js?0.5.0"></script>
+    <script src="js/jscad-worker.js?0.5.0" charset="utf-8"></script>
+    <script src="js/jscad-function.js?0.5.0" charset="utf-8"></script>
+    <script src="openscad.js?0.5.0"></script>
+    <script src="underscore.js"></script>
+    <script src="openscad-openjscad-translator.js"></script>
+    <script src="ace/ace.js?0.5.0" charset="utf-8"></script>
+    <!-- <script src="js/ui-drag-drop.js?0.5.0" charset="utf-8"></script> -->
+    <script src="js/ui-editor.js?0.5.0" charset="utf-8"></script>
+    <script src="js/ui-cookies.js?0.5.0" charset="utf-8"></script>
+    <script src="js/ui-worker.js?0.5.0" charset="utf-8"></script>
+    <script src="js/index.js?0.5.0" charset="utf-8"></script>
+
+<!-- top left header (logo and error message) -->
+    <div id="header">
+      <img src="imgs/title.png">
+      <div id="errordiv"></div>
+    </div>
+
+<!-- sliding tab (help, links, examples, options, etc)
+    <div id="menu">
+      <img id="menuHandle" src="imgs/menuHandleVL.png">
+      <nav>
+        <div id="menuVersion">Version <script>document.write(OpenJsCad.version);</script></div>
+        <p/>
+        <table class="info">
+          <tr><td align="right" class="infoOperation">Render Code</td><td class="infoKey">SHIFT + RETURN</td></tr>
+          <tr><td align="right" class="infoOperation">Reset View</td><td class="infoKey">CRTL + RETURN</td></tr>
+          <tr><td align="right" class="infoOperation">Rotate XZ</td><td class="infoKey">Left Mouse</td></tr>
+          <tr><td align="right" class="infoOperation">Pan</td><td class="infoKey">Middle Mouse or SHIFT + Left Mouse</td></tr>
+          <tr><td align="right" class="infoOperation">Rotate XY</td><td class="infoKey">Right Mouse or ALT + Left Mouse</td></tr>
+          <tr><td align="right" class="infoOperation">Zoom In/Out</td><td class="infoKey">Wheel Mouse or CTRL + Left Mouse</td></tr>
+        </table>
+        <p>
+          <a class="navlink" href="https://github.com/Spiritdude/OpenJSCAD.org/wiki/User-Guide" target="_blank">User Guide / Documentation <img src="imgs/externalLink.png" style="externalLink"></a>
+          <br/><span class="menuSubInfo">How to program with OpenJSCAD: online, offline & CLI</span>
+        </p>
+        <p>
+          <a class="navlink" href="https://plus.google.com/115007999023701819645" rel="publisher" target="_blank">Recent Updates <img src="imgs/externalLink.png" style="externalLink"></a>
+          <br/><span class="menuSubInfo">Announcements of recent developments</span>
+        </p>
+        <p>
+          <a class="navlink" href="https://plus.google.com/communities/114958480887231067224" target="_blank">Google+ Community <img src="imgs/externalLink.png" style="externalLink"></a>
+          <br/><span class="menuSubInfo">Discuss with other users &amp; developers</span>
+        </p>
+        <div id="examplesTitle" class="navlink"><a href='#' onclick='return false'>Examples</a></div>
+        <div id="examples"></div>
+        <span class="menuSubInfo">Dozens of examples to learn from</span>
+        <p/>
+<!-- 
+        <div id="optionsTitle" class="navlink"><a href='#' onclick='return false'>Options</a></div>
+        <div id="options"></div>
+        <span class="menuSubInfo">Your personal settings</span></p>
+
+        <p/>
+        <b>Supported Formats</b>
+        <table class="info">
+          <tr><td align="right"><b>jscad</b></td><td><a target="_blank" href="https://github.com/Spiritdude/OpenJSCAD.org/wiki/User-Guide">OpenJSCAD</a> (native, import/export)</td></tr>
+          <tr><td align="right"><b>scad</b></td><td><a target="_blank" href="http://openscad.org">OpenSCAD</a> (<a target=_blank href="https://github.com/Spiritdude/OpenJSCAD.org/wiki/User-Guide#direct-openscad-scad-import">experimental</a>, import)</td></tr>
+          <tr><td align="right"><b>stl</b></td><td><a target="_blank" href="http://en.wikipedia.org/wiki/STL_(file_format)">STL format</a> (experimental, import/export)</td></tr>
+          <tr><td align="right"><b>amf</b></td><td><a target="_blank" href="http://en.wikipedia.org/wiki/Additive_Manufacturing_File_Format">AMF format</a> (experimental, import/export)</td></tr>
+          <tr><td align="right"><b>dxf</b></td><td><a target="_blank" href="https://en.wikipedia.org/wiki/AutoCAD_DXF">DXF format</a> (experimental, import/export)</td></tr>
+          <tr><td align="right"><b>svg</b></td><td><a target="_blank" href="https://en.wikipedia.org/wiki/Scalable_Vector_Graphics">SVG format</a> (experimental, import/export)</td></tr>
+        </table>
+        <p><a class="navlink" href="#" onclick="$('#about').show(); return false;">About</a></p>
+      </nav>
+    </div> <!-- /menu -->
+
+<!-- about dialog -->
+    <div id="about">
+      <img src="imgs/title.png">
+      <br/>Open Factory
+      <p>
+Anderson Ta
+Timothy Schmidt
+      </p>
+      <p>
+Based on OpenJSCAD<br>
+License: MIT License<br>
+Get your copy/clone/fork from <a href="https://github.com/Spiritdude/OpenJSCAD.org" target=_blank>GitHub: OpenJSCAD</a>
+      </p>
+      <p>
+        <br/><a class="okButton" href='#' onclick="$('#about').hide(); return false;"> OK </a>
+      </p>
+    </div> <!-- about -->
+
+<!-- editor -->
+    <div id="editFrame" style="visibility: hidden">
+      <div>
+        <img id="editHandle" src="imgs/editHandleIn.png"></img>
+      </div>
+      <div id="editor">
+// -- OpenJSCAD.org logo
+
+// title      : Balloons
+// author     : Z3 Dev
+// license    : MIT License
+// description: multiple balloons, testing new parameters
+// file       : balloons.jscad
+
+function getParameterDefinitions() { 
+  return [ 
+    { name: 'balloon', type: 'group', caption: 'Balloons' }, 
+    { name: 'checkbox', type: 'checkbox', checked: true, initial: '20', caption: 'Big?' }, 
+    { name: 'color', type: 'color', initial: '#00a2ff', caption: 'Color?' }, 
+    { name: 'count', type: 'slider', initial: 3, min: 2, max: 10, step: 1, caption: 'How many?' }, 
+    { name: 'friend', type: 'group', caption: 'Friend' }, 
+    { name: 'name', type: 'text', initial: '', size: 20, maxLength: 20, caption: 'Name?', placeholder: '20 characters' }, 
+    { name: 'date',  type: 'date', initial: '', min: '1915-01-01', max: '2015-12-31', caption: 'Birthday?', placeholder: 'YYYY-MM-DD' }, 
+    { name: 'age', type: 'int', initial: 20, min: 1, max: 100, step: 1, caption: 'Age?' }, 
+    ]; 
+} 
+
+// Example of all interactive parameters
+// By Z3 Development 2015.10.13
+
+function text(m,h,w) {
+// render the text
+    var o = [];  // list of 3D objects
+    var l = vector_text(0,0,m);  // line segments for each character
+    l.forEach(function(s) {                // process the line segments
+            o.push(rectangular_extrude(s,{w: w,h: h}));
+        }
+    );
+// center the message
+    m = union(o);
+    var b = m.getBounds();
+    var x = 0 - b[0].x - ((b[1].x - b[0].x)/2);
+    var y = 0 - b[0].y - ((b[1].y - b[0].y)/2);
+    var z = 0 - b[0].z - ((b[1].z - b[0].z)/2);
+    return m.translate([x,y,z]);
+}
+
+function balloons(p) {
+// balloon, centered, colored, embossed
+    var b = CSG.sphere( {center: [0,0,0], radius: p.b_radius, resolution: p.resolution} );
+    var t = text(p.age.toString(),2,2).rotateX(90);
+    var x = t.getBounds();
+    x = Math.max(Math.abs(x[0].x),Math.abs(x[0].z));
+    var y = p.b_radius;
+    var z = (p.b_radius*0.70)/x;
+    t = t.scale([z,y,z]);
+    b = b.subtract(t);
+    if ('b_color' in p) {
+      b = b.setColor(p.b_color);
+    }
+
+    var i = 0;
+    var o = [];
+    var sa = 360 * Math.random(); // starting angle
+    var a = 360 / p.count;
+    for (i = 0; i < p.count; i++) {
+        var angle = Math.floor(sa + (a*i)) % 360;
+    // balloon
+        var x = Math.cos(angle*Math.PI/180) * p.b_radius;
+        var y = Math.sin(angle*Math.PI/180) * p.b_radius;
+        var z = p.b_radius * 4 + (50 * Math.random());
+        var b1 = b.translate([x,y,z]);
+    // rope
+        z = z - p.b_radius + 2;
+        var r = CSG.cylinder({start: [0,0,0], end: [x,y,z], radius: 0.5, resolution: 12});
+        r = r.setColor([0,0,0]);
+        
+        b1 = b1.union(r);
+        o.push(b1)
+    }
+    return union(o);
+}
+
+function salutation(p) {
+// create a message
+    var m = "Happy Birthday";
+    if(p.name.length > 0) {
+        m = m + ", " + p.name;
+    }
+    m = m + "!";
+    return text(m,2,2).scale(0.5);
+}
+
+function main( p ) {
+    p.resolution = 32;
+// use the checkbox to determine the size of the sphere
+    p.b_radius = 10;
+    if(p.checkbox !== false) {
+        p.b_radius = parseInt(p.checkbox);
+    }
+// use the color chooser to determine the color of the sphere
+    if(p.color.length == 7) {
+      var r = parseInt('0x'+p.color.slice(1,3))/255;
+      var g = parseInt('0x'+p.color.slice(3,5))/255;
+      var b = parseInt('0x'+p.color.slice(5,7))/255;
+      p.b_color = [r,g,b];
+    }
+// create balloons
+    var a = balloons(p);
+// create a message
+    var s = salutation(p).translate([0,-10,0]);
+    if (p.date.length > 0) {
+      var d = text(p.date,2,2).scale(0.5).translate([0,-25,0]);
+      s = s.union(d);
+    }
+
+    return a.union([s]);
+}
+
+
+      </div>
+    </div> <!-- editor -->
+
+<!-- design viewer -->
+    <div oncontextmenu="return false;" id="viewerContext"></div> <!-- avoiding popup when right mouse is clicked -->
+
+<!-- design parameters -->
+    <div id="parametersdiv"></div>
+
+<!-- design information (status message, download buttons, drag and drop area, etc) -->
+    <div id="tail">
+      <div id="statusdiv"></div>
+      <!-- 
+      <div id="filedropzone">
+        <div id="filedropzone_empty">
+<script>document.write("Drop one or more supported files"+
+     (browser=='chrome'&&me=='web-online'?", or folder with jscad files ":"")+
+     " here (see <a style='font-weight: normal' href='https://github.com/Spiritdude/OpenJSCAD.org/wiki/User-Guide#support-of-include' target=_blank>details</a>) "+
+     "<br>or directly edit OpenJSCAD or OpenSCAD code using the editor.");
+</script>
+        </div>
+        <div id="filedropzone_input">
+          <p>
+            <label class="input-control">Add Supported Files: <input type="file" id="files-input" accept="*/*" multiple="1"></input></label>
+          </p>
+        </div>
+        <div id="filedropzone_filled">
+          <span id="currentfile">...</span>
+          <div id="filebuttons">
+            <button id="getstlbutton" style="display:none" onclick="getStl();">Get STL</button>
+            <button onclick="reloadAllFiles();">Reload</button>
+           <!--button onclick="parseFile(gCurrentFile,true,false);">Debug (see below)</button 
+
+            <label for="autoreload">Auto Reload</label><input type="checkbox" name="autoreload" value="" id="autoreload" onclick="toggleAutoReload();">
+          </div>
+        </div>
+      </div> -->
+      
+    </div> <!-- tail -->
+
+<!-- footer (version, copyright) -->
+    <div id="footer">
+      Copyright Open Factory 2016
+    </div>
+  </body>
+</html>

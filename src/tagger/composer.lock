@@ -1,0 +1,167 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "313eb62db00f106f02e9faaace96acab",
+    "content-hash": "9a198116d74de9b9b53741207d6f5931",
+    "packages": [
+        {
+            "name": "flourish/flourish",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flourishlib/flourish-classes.git",
+                "reference": "60f80f1fbf10dea5cb05f98e9af3f0f96d9d9101"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flourishlib/flourish-classes/zipball/60f80f1fbf10dea5cb05f98e9af3f0f96d9d9101",
+                "reference": "60f80f1fbf10dea5cb05f98e9af3f0f96d9d9101",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.9.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "."
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Will Bond",
+                    "email": "will@wbond.net",
+                    "homepage": "http://wbond.net/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A collection of classes for general web development, with a particular focus on compatibility, portability and security",
+            "homepage": "http://flourishlib.com/",
+            "time": "2014-02-26 18:40:29"
+        },
+        {
+            "name": "libre3d/render-3d",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/libre3d/render-3d.git",
+                "reference": "a69732ff5d52206e287b117e62bf569b14ac3cc4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/libre3d/render-3d/zipball/a69732ff5d52206e287b117e62bf569b14ac3cc4",
+                "reference": "a69732ff5d52206e287b117e62bf569b14ac3cc4",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gd": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Libre3d\\Render3d\\": "src",
+                    "Libre3d\\Test\\Render3d\\": "test"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Foote",
+                    "email": "jf@jonathanfoote.com",
+                    "homepage": "http://jonathanfoote.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Wrapper library to help render preview images for common 3D file formats.",
+            "homepage": "http://github.com/libre3d/render-3d",
+            "keywords": [
+                "render",
+                "scad",
+                "stl"
+            ],
+            "time": "2015-01-30 19:57:12"
+        },
+        {
+            "name": "lsolesen/pel",
+            "version": "0.9.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lsolesen/pel.git",
+                "reference": "1ebf799d817a9ca98ae4f3ddf92e7881af65f106"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lsolesen/pel/zipball/1ebf799d817a9ca98ae4f3ddf92e7881af65f106",
+                "reference": "1ebf799d817a9ca98ae4f3ddf92e7881af65f106",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.0.0"
+            },
+            "require-dev": {
+                "lastcraft/simpletest": ">=1.1",
+                "squizlabs/php_codesniffer": "2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "lsolesen\\pel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Lars Olesen",
+                    "email": "lars@intraface.dk",
+                    "homepage": "http://intraface.dk",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Martin Geisler",
+                    "email": "martin@geisler.net",
+                    "homepage": "http://geisler.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP Exif Library. A library for reading and writing Exif headers in JPEG and TIFF images using PHP.",
+            "homepage": "http://lsolesen.github.com/pel/",
+            "keywords": [
+                "exif",
+                "image"
+            ],
+            "time": "2016-03-21 11:23:05"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "flourish/flourish": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

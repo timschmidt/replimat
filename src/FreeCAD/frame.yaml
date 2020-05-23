@@ -1,0 +1,31 @@
+id: frame
+name: Frame
+description: Structural frame library
+category: structural
+materials:
+  - id: wood
+  - id: aluminum-6061
+  - id: aluminum-6063
+  - id: steel
+  - id: steel-stainless
+  - id: bamboo
+  - id: plastic-abs
+  - id: plastic-pla
+source:
+  - manufactured: 
+  - purchased: http://www.8020.net/HT-Series-1.asp
+contains: 
+license: https://www.gnu.org/licenses/agpl-3.0.html
+license: http://www.ohwr.org/projects/cernohl/wiki
+git: http://www.github.com/timschmidt/replimat-cad
+author: timschmidt@gmail.com
+author: Michael Williams
+keyword: frame
+keyword: gridbeam
+keyword: holey tube
+keyword: matrix
+
+    { type: 'choice', name: 'quality', caption: 'Quality', values: [0, 1], captions: ["Draft","High"], default: 0 },
+    { type: 'float', name: 'beam_width', caption: 'Spacing between holes', default: 10 },
+    { type: 'float', name: 'hole_radius', caption: 'Radius of holes', default: 2.4 },
+    { type: 'int', name: 'length', caption: 'Beam length', default: 10 }

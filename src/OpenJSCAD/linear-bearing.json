@@ -1,0 +1,14 @@
+{
+    "parameterSets": {
+        "design default values": {
+            "board": "MKS Base 1.4",
+            "mksmaxmax": "[110, 90]",
+            "mksmaxmin": "[110, 0]",
+            "mksminmax": "[0, 90]",
+            "mksminmin": "[0, 0]",
+            "radius": "13"
+        }
+    },
+    "parameterSets": "",
+    "fileFormatVersion": "1"
+}

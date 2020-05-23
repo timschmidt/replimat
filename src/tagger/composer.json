@@ -1,0 +1,7 @@
+{
+    "require": {
+        "libre3d/render-3d": "~1.2.0",
+	"flourish/flourish": "0.9.x-dev",
+        "lsolesen/pel": "*"
+    }
+}

@@ -1,0 +1,6 @@
+BOARD_SIZE = 0;
+X = 0;
+Y = 1;
+Z = 2;
+HOLE_DIAMETER = 3;
+BOARD_HOLES = 1; 
