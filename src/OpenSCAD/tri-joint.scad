@@ -5,15 +5,15 @@
 * License: GPLv3+ / TAPR OHL         *
 *************************************/
 
-include <../MCAD/gridbeam.scad>
-include <../MCAD/materials.scad>
+include <MCAD/frame.scad>
+include <MCAD/materials.scad>
 
-beam_is_hollow = 0;
+frame_is_hollow = 0;
 
 color(Pine) {
 
-translateBeam([0,1,1]) xBeam(10);
-translateBeam([1,0,0]) yBeam(10);
-zBeam(10);
+translateFrame([0,1,1]) xFrame(10);
+translateFrame([1,0,0]) yFrame(10);
+zFrame(10);
 
 }
