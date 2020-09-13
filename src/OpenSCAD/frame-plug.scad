@@ -236,7 +236,7 @@ if (bad_input || bad_cap || bad_wall || bad_ratio || bad_over) {
   translate([2,2,1.7])
   rotate([0,0,-45])
   //mirror()
-  Recycling_Symbol(Symbol = 1,Numerical_Code = "7", Plastic_Symbol = "PETG", Length = 18, Width = 18, Thickness = 2, Arrow_Width = 2, Arrow_Head_Width = 5, Arrow_Head_Length = 3);
+  Recycling_Symbol(Symbol = 1,Numerical_Code = "7", Plastic_Symbol = "PETG", Length = 18, Width = 18, Thickness = 0.4, Arrow_Width = 2, Arrow_Head_Width = 5, Arrow_Head_Length = 3);
 
   }
 }
