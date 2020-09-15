@@ -15,37 +15,37 @@ frame_is_hollow = 0;
 color(Pine) {
 
 // Vertical 
-zFrame(40);
-translateFrame([31,0,0]) zFrame(40);
-translateFrame([0,6,0]) zFrame(40);
-translateFrame([31,6,0]) zFrame(40);
+translateFrame([0,14,0]) zFrame(40);
+translateFrame([29,5,0]) zFrame(40);
+translateFrame([0,5,0]) zFrame(40);
+translateFrame([29,14,0]) zFrame(40);
 
 // Feet
-translateFrame([1,0,1]) yFrame(14);
-translateFrame([30,0,1]) yFrame(14);
+translateFrame([1,0,0]) yFrame(15);
+translateFrame([28,0,0]) yFrame(15);
 
 // Shelving
-translateFrame([0,1,2]) xFrame(32);
-translateFrame([0,5,2]) xFrame(32);
-translateFrame([0,0,3]) topShelf(32, 7, 1);
+translateFrame([0,13,1]) xFrame(30);
+translateFrame([0,6,1]) xFrame(30);
+translateFrame([0,5,2]) topShelf(30, 10, 1);
 
-translateFrame([0,1,10]) xFrame(32);
-translateFrame([0,5,10]) xFrame(32);
-translateFrame([0,0,11]) topShelf(32, 7, 1);
+translateFrame([0,13,10]) xFrame(30);
+translateFrame([0,6,10]) xFrame(30);
+translateFrame([0,5,11]) topShelf(30, 10, 1);
 
-translateFrame([1,0,19]) yFrame(14);
-translateFrame([30,0,19]) yFrame(14);
-translateFrame([0,13,20]) xFrame(32);
-translateFrame([0,1,20]) xFrame(32);
-translateFrame([0,0,21]) topShelf(32, 14, 0);
+translateFrame([1,0,20]) yFrame(15);
+translateFrame([28,0,20]) yFrame(15);
+translateFrame([0,13,19]) xFrame(30);
+translateFrame([0,6,19]) xFrame(30);
+translateFrame([0,0,21]) topShelf(30, 15, 0);
 
-translateFrame([0,1,35]) xFrame(32);
-translateFrame([0,5,35]) xFrame(32);
-translateFrame([0,0,36]) topShelf(32, 7, 1);
+translateFrame([0,13,38]) xFrame(30);
+translateFrame([0,6,38]) xFrame(30);
+translateFrame([0,5,39]) topShelf(30, 10, 1);
 
-translateFrame([16,1,28]) xFrame(16);
-translateFrame([16,5,28]) xFrame(16);
-translateFrame([16,0,28]) zFrame(8);
-translateFrame([16,6,28]) zFrame(8);
-translateFrame([16,0,29]) topShelf(16,7,1);
+translateFrame([15,13,29]) xFrame(15);
+translateFrame([15,6,29]) xFrame(15);
+translateFrame([15,14,29]) zFrame(10);
+translateFrame([15,5,29]) zFrame(10);
+translateFrame([15,5,30]) topShelf(15,10,1);
 }
