@@ -45,7 +45,7 @@ groove_tabs = 1; // [0:no, 1:yes]
 // Percent cap will be recessed underneath (none to maximum)
 recess_pct = 100; // [0:100]
 
-use <recycling-symbols.scad>
+use <MOST/recycling-symbols.scad>
 
 // user control of viewable build plate in Customizer:
 // Turn on viewable build plate?
