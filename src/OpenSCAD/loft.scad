@@ -2,71 +2,71 @@
  * @name Replimat Loft
  * @author Timothy Schmidt
  * @date 2013
- * @url http://www.github.com/replimat-cad
+ * @url http://www.github.com/timschmidt/replimat
  * @license http://www.gnu.org/licenses/agpl-3.0.en.html
  * @license https://www.tapr.org/TAPR_Open_Hardware_License_v1.0.txt
  */
 
 include <MCAD/units.scad>
 include <MCAD/materials.scad>
-include <MCAD/gridbeam.scad>
+include <MCAD/frame.scad>
 
-beam_is_hollow = 0;
+frame_is_hollow = 0;
 
 color(Pine) {
 
 // bed rails
-translateBeam([0,0,47]) xBeam(48);
-translateBeam([0,33,47]) xBeam(48);
+translateFrame([0,14,44]) xFrame(45);
+translateFrame([0,45,44]) xFrame(45);
 
 // cornerposts
-translateBeam([0,1,0]) zBeam(48);
-translateBeam([2,1,0]) zBeam(40);
-translateBeam([0,3,0]) zBeam(40);
+translateFrame([0,15,0]) zFrame(45);
+translateFrame([2,15,0]) zFrame(40);
+translateFrame([0,17,0]) zFrame(40);
 
-translateBeam([0,32,0]) zBeam(48);
-translateBeam([47,1,0]) zBeam(48);
-translateBeam([47,32,0]) zBeam(48);
+translateFrame([0,44,0]) zFrame(45);
+translateFrame([44,15,0]) zFrame(45);
+translateFrame([44,44,0]) zFrame(45);
 
 // bottom rails
-translateBeam([1,1,0]) yBeam(32);
-translateBeam([0,2,1]) xBeam(3);
+translateFrame([1,15,0]) yFrame(30);
+translateFrame([0,16,1]) xFrame(3);
 
-translateBeam([1,1,10]) yBeam(32);
-translateBeam([0,2,11]) xBeam(3);
+translateFrame([1,15,10]) yFrame(30);
+translateFrame([0,16,11]) xFrame(3);
 
-translateBeam([0,31,1]) xBeam(48);
-translateBeam([0,31,11]) xBeam(48);
+translateFrame([0,43,1]) xFrame(45);
+translateFrame([0,43,9]) xFrame(45);
 
 // ladder support
-translateBeam([0,17,0]) zBeam(40);
-translateBeam([16,32,0]) zBeam(40);
+translateFrame([0,31,0]) zFrame(40);
+translateFrame([15,44,0]) zFrame(40);
 
 // bed slats
-translateBeam([0,31,39]) xBeam(48);
-translateBeam([0,16,39]) xBeam(48);
-translateBeam([0,2,39]) xBeam(48);
-translateBeam([0,2,37]) xBeam(48);
+translateFrame([0,43,39]) xFrame(45);
+translateFrame([0,30,39]) xFrame(45);
+translateFrame([0,16,39]) xFrame(45);
+translateFrame([0,16,37]) xFrame(45);
 
-translateBeam([1,1,38]) yBeam(32);
-translateBeam([16,1,38]) yBeam(32);
-translateBeam([32,1,38]) yBeam(32);
-translateBeam([46,1,38]) yBeam(32);
+translateFrame([1,15,38]) yFrame(30);
+translateFrame([16,15,38]) yFrame(30);
+translateFrame([32,15,38]) yFrame(30);
+translateFrame([44,15,38]) yFrame(30);
 
-translateBeam([15,1,37]) zBeam(3);
-translateBeam([31,1,37]) zBeam(3);
+translateFrame([15,15,37]) zFrame(3);
+translateFrame([31,15,37]) zFrame(3);
 
 // lower bed
-translateBeam([17,-15,10]) yBeam(48);
-translateBeam([46,-15,10]) yBeam(48);
+translateFrame([16,0,8]) yFrame(45);
+translateFrame([43,0,8]) yFrame(45);
 
-translateBeam([16,-14,1]) xBeam(32);
-translateBeam([16,-14,11]) xBeam(32);
-translateBeam([16,2,11]) xBeam(32);
-translateBeam([16,16,11]) xBeam(32);
+translateFrame([15,1,1]) xFrame(30);
+translateFrame([15,1,9]) xFrame(30);
+translateFrame([15,29,9]) xFrame(30);
+translateFrame([15,15,9]) xFrame(30);
 
-translateBeam([16,-15,0]) zBeam(12);
-translateBeam([47,-15,0]) zBeam(12);
-translateBeam([16,1,0]) zBeam(12);
+translateFrame([15,0,0]) zFrame(10);
+translateFrame([44,0,0]) zFrame(10);
+translateFrame([15,16,0]) zFrame(10);
 
 }
