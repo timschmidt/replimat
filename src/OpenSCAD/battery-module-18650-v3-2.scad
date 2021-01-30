@@ -13,7 +13,7 @@ include <MCAD/units.scad>
 include <MCAD/battery-18650.scad>
 
 nozzle_width=0.4;
-walls=3;
+walls=1;
 wall_thickness=nozzle_width*walls*2;
 frame_is_hollow = 1;
 
