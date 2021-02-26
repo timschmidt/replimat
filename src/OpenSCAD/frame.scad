@@ -10,35 +10,11 @@
 include <MCAD/frame.scad>
 include <MCAD/materials.scad>
 
-// Wood frame
-frame_is_hollow = 0;
-color(Pine){
-translateFrame([0,0,0]) yFrame(2);
-translateFrame([2,0,0]) yFrame(3);
-translateFrame([4,0,0]) yFrame(4);
-translateFrame([6,0,0]) yFrame(5);
-translateFrame([8,0,0]) yFrame(10);
-translateFrame([10,0,0]) yFrame(15);
-translateFrame([12,0,0]) yFrame(20);
-translateFrame([14,0,0]) yFrame(25);
-translateFrame([16,0,0]) yFrame(30);
-translateFrame([18,0,0]) yFrame(40);
-translateFrame([20,0,0]) yFrame(50);
-}
+// Customizer values
+holes=2; // [2,3,4,5,10,15,20,25,30,40,50]
+frame_is_hollow=true;
+axis=3; // [1:X, 2:Y, 3:Z]
 
-
-// Aluminum frame
-frame_is_hollow = 1;
-color(Aluminum){
-translateFrame([22,0,0]) yFrame(2);
-translateFrame([24,0,0]) yFrame(3);
-translateFrame([26,0,0]) yFrame(4);
-translateFrame([28,0,0]) yFrame(5);
-translateFrame([30,0,0]) yFrame(10);
-translateFrame([32,0,0]) yFrame(15);
-translateFrame([34,0,0]) yFrame(20);
-translateFrame([36,0,0]) yFrame(25);
-translateFrame([38,0,0]) yFrame(30);
-translateFrame([40,0,0]) yFrame(40);
-translateFrame([42,0,0]) yFrame(50);
-}    
+if (axis == 1) { xFrame(holes); }
+if (axis == 2) { yFrame(holes); }
+if (axis == 3) { zFrame(holes); }

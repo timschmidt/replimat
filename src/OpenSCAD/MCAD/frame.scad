@@ -1,9 +1,9 @@
-/**************************************
-* OpenSCAD Replimat Frame Library     *
-* (c) Timothy Schmidt 2013            *
-* http://www.github.com/replimat-cad  *
-* License: LGPL 2.1 or later          *
-**************************************/
+/***********************************************
+* OpenSCAD Replimat Frame Library              *
+* (c) Timothy Schmidt 2013                     *
+* http://www.github.com/replimat/replimat-cad  *
+* License: LGPL 2.1 or later                   *
+***********************************************/
 
 /* Todo:
  - implement "dxf" mode
@@ -32,7 +32,7 @@ include <units.scad>
 frame_width = inch * 1.5;
 frame_hole_diameter = inch * 21/64;
 frame_hole_radius = frame_hole_diameter / 2;
-frame_is_hollow = 1;
+frame_is_hollow = true;
 frame_wall_thickness = inch * 1/8;
 frame_shelf_thickness = inch * 1/4;
 strip_width = 1 * inch + 3/8 * inch;
@@ -51,7 +51,7 @@ if (mode == "model") {
 			rotate([0,90,0])
 			cylinder(r=frame_hole_radius, h=frame_width + 2);
 		}
-	if (frame_is_hollow == 1) {
+	if (frame_is_hollow == true) {
 		translate([frame_wall_thickness, frame_wall_thickness, -1])
 		cube([frame_width - frame_wall_thickness * 2, frame_width - frame_wall_thickness * 2, frame_width * segments + 2]);
 	}
