@@ -10,7 +10,13 @@
 use <NopSCADlib/lib.scad>
 include <NopSCADlib/vitamins/screw.scad>
 include <NopSCADlib/vitamins/screws.scad>
+include <MCAD/frame.scad>
 
 length = 90; // [50:1, 90:2, 130:3]
+
+module replimat_bolt(length){
+  translateFrame([0.5,0.5,0])
+  screw(M8_hex_screw, length);  
+};
 
 screw(M8_hex_screw, length);
