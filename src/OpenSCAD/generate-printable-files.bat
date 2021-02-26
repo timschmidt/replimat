@@ -38,6 +38,30 @@ REM standard size frames 2, 3, 4, 5, 10, 15, 20, 25, 30, 40, and 50 holes in len
 "C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/stl/38.1mm/frame-50.stl -D holes=50 frame.scad
 "C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/png/38.1mm/frame-50.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 -D holes=50 frame.scad
 
-REM Bookshelf
+REM bolts
+"C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/stl/38.1mm/bolt-1.stl -D length=50 bolts.scad
+"C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/png/38.1mm/bolt-1.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 -D length=50 bolts.scad
+"C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/stl/38.1mm/bolt-2.stl -D length=90 bolts.scad
+"C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/png/38.1mm/bolt-2.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 -D length=90 bolts.scad
+"C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/stl/38.1mm/bolt-3.stl -D length=130 bolts.scad
+"C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/png/38.1mm/bolt-3.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 -D length=130 bolts.scad
+
+REM nuts
+"C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/stl/38.1mm/nut.stl -D length=1 nuts.scad
+"C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/png/38.1mm/nut.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 nuts.scad
+
+REM techniques
+
+REM tri-joint
+"C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/stl/38.1mm/tri-joint.stl tri-joint.scad
+"C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/png/38.1mm/tri-joint.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 tri-joint.scad
+
+REM projects
+
+REM bookshelf
 "C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/stl/38.1mm/bookshelf.stl bookshelf.scad
 "C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/png/38.1mm/bookshelf.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 bookshelf.scad
+
+REM work cube
+"C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/stl/38.1mm/work-cube.stl work-cube.scad
+"C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/png/38.1mm/work-cube.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 work-cube.scad

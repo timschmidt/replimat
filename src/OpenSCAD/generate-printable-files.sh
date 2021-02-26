@@ -14,6 +14,10 @@
 #openjscad objects/hole\ pattern/motors.jscad -o motors.dxf
 #openjscad objects/hole\ pattern/grids.jscad --spacing 25.4 -o grids-1inch.dxf
 
+###########
+## parts ##
+###########
+
 ## standard size frames 2, 3, 4, 5, 10, 15, 20, 25, 30, 40, and 50 holes in length rendered in hollow metal tube.
 openscad -o ../../bin/stl/38.1mm/frame-2.stl -D holes=2 frame.scad
 openscad -o ../../bin/png/38.1mm/frame-2.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 -D holes=2 frame.scad
@@ -38,6 +42,34 @@ openscad -o ../../bin/png/38.1mm/frame-40.png --autocenter --viewall --view=scal
 openscad -o ../../bin/stl/38.1mm/frame-50.stl -D holes=50 frame.scad
 openscad -o ../../bin/png/38.1mm/frame-50.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 -D holes=50 frame.scad
 
-## Bookshelf
+## bolts
+openscad -o ../../bin/stl/38.1mm/bolt-1.stl -D length=50 bolts.scad
+openscad -o ../../bin/png/38.1mm/bolt-1.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 -D length=50 bolts.scad
+openscad -o ../../bin/stlg/38.1mm/bolt-2.stl -D length=90 bolts.scad
+openscad -o ../../bin/png/38.1mm/bolt-2.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 -D length=90 bolts.scad
+openscad -o ../../bin/stl/38.1mm/bolt-3.stl -D length=130 bolts.scad
+openscad -o ../../bin/png/38.1mm/bolt-3.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 -D length=130 bolts.scad
+
+## nuts
+openscad -o ../../bin/stl/38.1mm/nut.stl -D length=1 nuts.scad
+openscad -o ../../bin/png/38.1mm/nut.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 nuts.scad
+
+################
+## techniques ##
+################
+
+## tri-joint
+openscad -o ../../bin/stl/38.1mm/tri-joint.stl tri-joint.scad
+openscad -o ../../bin/png/38.1mm/tri-joint.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 tri-joint.scad
+
+##############
+## projects ##
+##############
+
+## bookshelf
 openscad -o ../../bin/stl/38.1mm/bookshelf.stl bookshelf.scad
 openscad -o ../../bin/png/38.1mm/bookshelf.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 bookshelf.scad
+
+## work cube
+openscad -o ../../bin/stl/38.1mm/work-cube.stl work-cube.scad
+openscad -o ../../bin/png/38.1mm/work-cube.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 work-cube.scad

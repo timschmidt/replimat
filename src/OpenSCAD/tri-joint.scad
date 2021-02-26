@@ -1,19 +1,18 @@
-/*************************************
-* Replimat Tri-joint             *
-* (c) Timothy Schmidt 2020           *
-* http://www.github.com/replimat-cad *
-* License: GPLv3+ / TAPR OHL         *
-*************************************/
+/*
+ * Replimat Tri-joint
+ * @author Timothy Schmidt
+ * @date 2013-2021
+ * @url http://www.github.com/timschmidt/replimat
+ * @license http://www.gnu.org/licenses/agpl-3.0.en.html
+ * @license https://www.tapr.org/TAPR_Open_Hardware_License_v1.0.txt
+ */
 
 include <MCAD/frame.scad>
 include <MCAD/materials.scad>
 
-frame_is_hollow = 0;
+holes = 10; // [2, 3, 4, 5, 10, 15, 20, 25, 30, 40, 50]
+frame_is_hollow = true;
 
-color(Pine) {
-
-translateFrame([0,1,1]) xFrame(10);
-translateFrame([1,0,0]) yFrame(10);
-zFrame(10);
-
-}
+translateFrame([0,9,1]) xFrame(holes);
+translateFrame([0,0,0]) yFrame(holes);
+translateFrame([1,8,0]) zFrame(holes);

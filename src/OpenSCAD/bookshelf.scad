@@ -1,8 +1,8 @@
 /*
  * @name Replimat Bookshelf
  * @author Timothy Schmidt
- * @date 2013
- * @url http://www.github.com/replimat-cad
+ * @date 2013-2021
+ * @url http://www.github.com/timschmidt/replimat
  * @license http://www.gnu.org/licenses/agpl-3.0.en.html
  * @license https://www.tapr.org/TAPR_Open_Hardware_License_v1.0.txt
  */
@@ -10,9 +10,7 @@
 include <MCAD/frame.scad>
 include <MCAD/materials.scad>
 
-frame_is_hollow = 0;
-
-color(Pine){
+frame_is_hollow = true;
 
 // uprights
 zFrame(50);
@@ -54,5 +52,3 @@ translateFrame([0,0,20]) topShelf(30,10,1);
 translateFrame([0,0,30]) topShelf(30,10,1);
 translateFrame([0,0,40]) topShelf(30,10,1);
 translateFrame([0,0,49]) topShelf(30,10,1);
-
-}
