@@ -37,3 +37,7 @@ REM standard size frames 2, 3, 4, 5, 10, 15, 20, 25, 30, 40, and 50 holes in len
 "C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/png/38.1mm/frame-40.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 -D holes=40 frame.scad
 "C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/stl/38.1mm/frame-50.stl -D holes=50 frame.scad
 "C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/png/38.1mm/frame-50.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 -D holes=50 frame.scad
+
+REM Bookshelf
+"C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/stl/38.1mm/bookshelf.stl bookshelf.scad
+"C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/png/38.1mm/bookshelf.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 bookshelf.scad

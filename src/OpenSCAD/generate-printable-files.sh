@@ -37,3 +37,7 @@ openscad -o ../../bin/stl/38.1mm/frame-40.stl -D holes=40 frame.scad
 openscad -o ../../bin/png/38.1mm/frame-40.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 -D holes=40 frame.scad
 openscad -o ../../bin/stl/38.1mm/frame-50.stl -D holes=50 frame.scad
 openscad -o ../../bin/png/38.1mm/frame-50.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 -D holes=50 frame.scad
+
+## Bookshelf
+openscad -o ../../bin/stl/38.1mm/bookshelf.stl bookshelf.scad
+openscad -o ../../bin/png/38.1mm/bookshelf.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 bookshelf.scad
