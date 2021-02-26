@@ -1,7 +1,7 @@
 /***********************************************
 * OpenSCAD Replimat Frame Library              *
 * (c) Timothy Schmidt 2013                     *
-* http://www.github.com/replimat/replimat-cad  *
+* http://www.github.com/timschmidt/replimat    *
 * License: LGPL 2.1 or later                   *
 ***********************************************/
 
