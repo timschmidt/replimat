@@ -1,8 +1,8 @@
 /*
  * @name Replimat - Linear bearing
  * @author Timothy Schmidt
- * @date 2019
- * @url http://www.github.com/replimat-cad
+ * @date 2019-2021
+ * @url http://www.github.com/timschmidt/replimat
  * @license http://www.gnu.org/licenses/agpl-3.0.en.html
  * @license https://www.tapr.org/TAPR_Open_Hardware_License_v1.0.txt
  */
@@ -19,15 +19,15 @@ torus_width = 6 * mm;
 module body(){
 difference(){
 union(){
-zFrame(2,frame_is_hollow=1);
+zFrame(2,frame_is_hollow=true);
 //zFrame(2);
 
 translateFrame([1,0,0])
-zFrame(2,frame_is_hollow=0);
+zFrame(2,frame_is_hollow=false);
 //zFrame(2);
 
 translateFrame([0,1,0])
-zFrame(2,frame_is_hollow=0);
+zFrame(2,frame_is_hollow=false);
 //zFrame(2);
 }
 
@@ -74,6 +74,8 @@ rotate([90,0,r])
 bearing_race();
 }
 
+translateFrame([0,2,0])
+rotate([0,0,-90])
 difference(){
 body();
 
@@ -94,11 +96,11 @@ translate([frame_width*1.5, frame_width-0.5, frame_width/2])
 rotate([90, 90, 0])
 nutHole(8, units=MM, tolerance=0.4);
     
-translate([frame_width-9.7, frame_width*1.5, frame_width/2])
+translate([frame_width-7.4, frame_width*1.5, frame_width/2])
 rotate([0, 90, 0])
 nutHole(8, units=MM, tolerance=0.4);
 
-translate([frame_width-9.7, frame_width*1.5, frame_width*1.5])
+translate([frame_width-7.4, frame_width*1.5, frame_width*1.5])
 rotate([0, 90, 0])
 nutHole(8, units=MM, tolerance=0.4);
 

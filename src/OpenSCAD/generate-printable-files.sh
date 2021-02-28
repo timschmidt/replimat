@@ -54,6 +54,10 @@ openscad -o ../../bin/png/38.1mm/bolt-3.png --autocenter --viewall --view=scales
 openscad -o ../../bin/stl/38.1mm/nut.stl -D length=1 nuts.scad
 openscad -o ../../bin/png/38.1mm/nut.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 nuts.scad
 
+## linear bearing
+openscad -o ../../bin/stl/38.1mm/linear-bearing.stl -D length=1 linear-bearing.scad
+openscad -o ../../bin/png/38.1mm/linear-bearing.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 linear-bearing.scad
+
 ################
 ## techniques ##
 ################
@@ -61,6 +65,14 @@ openscad -o ../../bin/png/38.1mm/nut.png --autocenter --viewall --view=scales --
 ## tri-joint
 openscad -o ../../bin/stl/38.1mm/tri-joint.stl tri-joint.scad
 openscad -o ../../bin/png/38.1mm/tri-joint.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 tri-joint.scad
+
+## shelf joint - ends
+openscad -o ../../bin/stl/38.1mm/shelf-joint-ends.stl shelf-joint.scad
+openscad -o ../../bin/png/38.1mm/shelf-joint-ends.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 shelf-joint.scad
+
+## shelf joint - width
+openscad -o ../../bin/stl/38.1mm/shelf-joint-width.stl shelf-joint-2.scad
+openscad -o ../../bin/png/38.1mm/shelf-joint-width.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 shelf-joint-2.scad
 
 ##############
 ## projects ##

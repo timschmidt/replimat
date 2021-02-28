@@ -50,11 +50,23 @@ REM nuts
 "C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/stl/38.1mm/nut.stl -D length=1 nuts.scad
 "C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/png/38.1mm/nut.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 nuts.scad
 
+REM linear bearing
+"C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/stl/38.1mm/linear-bearing.stl -D length=1 linear-bearing.scad
+"C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/png/38.1mm/linear-bearing.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 linear-bearing.scad
+
 REM techniques
 
-REM tri-joint
+REM tri joint
 "C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/stl/38.1mm/tri-joint.stl tri-joint.scad
 "C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/png/38.1mm/tri-joint.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 tri-joint.scad
+
+REM shelf joint - ends
+"C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/stl/38.1mm/shelf-joint-ends.stl shelf-joint.scad
+"C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/png/38.1mm/shelf-joint-ends.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 shelf-joint.scad
+
+REM shelf joint - width
+"C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/stl/38.1mm/shelf-joint-width.stl shelf-joint-2.scad
+"C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/png/38.1mm/shelf-joint-width.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 shelf-joint-2.scad
 
 REM projects
 

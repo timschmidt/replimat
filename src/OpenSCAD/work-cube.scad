@@ -27,13 +27,13 @@ translateFrame([0,14,0]) zFrame(15);
 translateFrame([14,14,0]) zFrame(15);
 
 // Feet
-translateFrame([1,0,1]) yFrame(15);
-translateFrame([13,0,1]) yFrame(15);
-translateFrame([0,1,0]) xFrame(15);
-translateFrame([0,13,0]) xFrame(15);
+translateFrame([1,0,0]) yFrame(15);
+translateFrame([13,0,0]) yFrame(15);
+translateFrame([0,1,1]) xFrame(15);
+translateFrame([0,13,1]) xFrame(15);
 
 translateFrame([1,0,13]) yFrame(15);
-translateFrame([14,0,13]) yFrame(15);
+translateFrame([13,0,13]) yFrame(15);
 translateFrame([0,13,14]) xFrame(15);
 translateFrame([0,1,14]) xFrame(15);
     

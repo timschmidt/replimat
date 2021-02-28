@@ -7,8 +7,15 @@
  * @license https://www.tapr.org/TAPR_Open_Hardware_License_v1.0.txt
  */
 
-use <NopSCADlib/lib.scad>
+include <NopSCADlib/lib.scad>
 include <NopSCADlib/vitamins/nut.scad>
 include <NopSCADlib/vitamins/nuts.scad>
+include <MCAD/frame.scad>
 
-nut(M8_nut, true);
+module replimat_nut(){
+  translateFrame([0.5,0.5,0])
+  rotate([180,0,0])
+  nut(M8_nut, true);
+}
+
+replimat_nut();
