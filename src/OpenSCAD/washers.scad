@@ -9,8 +9,9 @@
 
 include <MCAD/frame.scad>
 
+translate([0,0,-3])
+translateFrame([0.5,0.5,0])
 linear_extrude(height=3)
-
 difference(){
 
 circle(d=1.5*inch);
