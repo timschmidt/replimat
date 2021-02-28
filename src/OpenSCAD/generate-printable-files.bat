@@ -50,9 +50,13 @@ REM nuts
 "C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/stl/38.1mm/nut.stl -D length=1 nuts.scad
 "C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/png/38.1mm/nut.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 nuts.scad
 
-REM linear bearing
+REM linear bearings
 "C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/stl/38.1mm/linear-bearing.stl -D length=1 linear-bearing.scad
 "C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/png/38.1mm/linear-bearing.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 linear-bearing.scad
+
+REM washers
+"C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/stl/38.1mm/washers.stl -D length=1 washers.scad
+"C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/png/38.1mm/washers.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 washers.scad
 
 REM techniques
 

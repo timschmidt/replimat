@@ -54,9 +54,14 @@ openscad -o ../../bin/png/38.1mm/bolt-3.png --autocenter --viewall --view=scales
 openscad -o ../../bin/stl/38.1mm/nut.stl -D length=1 nuts.scad
 openscad -o ../../bin/png/38.1mm/nut.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 nuts.scad
 
-## linear bearing
+## linear bearings
 openscad -o ../../bin/stl/38.1mm/linear-bearing.stl -D length=1 linear-bearing.scad
 openscad -o ../../bin/png/38.1mm/linear-bearing.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 linear-bearing.scad
+
+## washers
+openscad -o ../../bin/stl/38.1mm/washers.stl -D length=1 washers.scad
+openscad -o ../../bin/png/38.1mm/washers.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 washers.scad
+
 
 ################
 ## techniques ##
