@@ -21,10 +21,10 @@ translateFrame([0,9,0]) zFrame(4);
 translateFrame([4,9,0]) zFrame(4);
 
 // Frame
-translateFrame([1,0,1]) yFrame(10);
-translateFrame([3,0,1]) yFrame(10);
-translateFrame([0,1,0]) xFrame(5);
-translateFrame([0,4,0]) xFrame(5);
+translateFrame([1,0,0]) yFrame(10);
+translateFrame([3,0,0]) yFrame(10);
+translateFrame([0,1,1]) xFrame(5);
+translateFrame([0,4,1]) xFrame(5);
 
 translateFrame([0,6,3]) xFrame(5);
 translateFrame([0,8,3]) xFrame(5);
