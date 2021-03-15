@@ -13,24 +13,22 @@ include <MCAD/materials.scad>
 frame_is_hollow = true;
 
 // Vertical 
-zFrame(5);
-translateFrame([4,0,0]) zFrame(5);
-translateFrame([0,5,0]) zFrame(10);
-translateFrame([4,5,0]) zFrame(10);
-translateFrame([0,9,0]) zFrame(10);
-translateFrame([4,9,0]) zFrame(10);
+zFrame(2);
+translateFrame([4,0,0]) zFrame(2);
+translateFrame([0,5,0]) zFrame(4);
+translateFrame([4,5,0]) zFrame(4);
+translateFrame([0,9,0]) zFrame(4);
+translateFrame([4,9,0]) zFrame(4);
 
 // Frame
-translateFrame([1,0,4]) yFrame(10);
-translateFrame([3,0,4]) yFrame(10);
-translateFrame([0,1,3]) xFrame(5);
-translateFrame([0,4,3]) xFrame(5);
+translateFrame([1,0,1]) yFrame(10);
+translateFrame([3,0,1]) yFrame(10);
+translateFrame([0,1,0]) xFrame(5);
+translateFrame([0,4,0]) xFrame(5);
 
 translateFrame([0,6,3]) xFrame(5);
 translateFrame([0,8,3]) xFrame(5);
-translateFrame([0,6,9]) xFrame(5);
-translateFrame([0,8,9]) xFrame(5);
     
 // Shelving
-translateFrame([0,0,5]) topShelf(5, 5, 0);
-translateFrame([0,5,10]) topShelf(5, 5, 0);
+translateFrame([0,0,2]) topShelf(5, 5, 0);
+translateFrame([0,5,4]) topShelf(5, 5, 0);
