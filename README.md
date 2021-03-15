@@ -8,6 +8,8 @@ Design guidelines:
 - each subcomponent part should be contained in it's own module inside the CAD file
 - modules should render a part at 0+,0+,0+ ready for manufacture
 - assemblies should render at 0,0,0- ready for modeling
+- transitioning to NopSCADLib
+- differentiate between CAD for presentation, and production
 
 Outputs:
 - Consumable CAD files - STL, STEP
