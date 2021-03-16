@@ -136,6 +136,13 @@ if (mode == "model") {
 		translate([(width - 1) * frame_width, (depth - 1) * frame_width, -1])
 		cube([frame_width + 2, frame_width + 2, frame_shelf_thickness + 2]);
 		}
+        
+        for (j = [0 : width - 1]) {
+            for (k = [0 : depth - 1]) {
+                translate([frame_width / 2 + j * frame_width, frame_width / 2 + k * frame_width, -1])
+                cylinder(h=frame_shelf_thickness+2, d=frame_hole_diameter);
+            }
+        }
 	}
 }
 
