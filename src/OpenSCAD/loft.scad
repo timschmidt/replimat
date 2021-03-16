@@ -1,7 +1,7 @@
 /*
  * @name Replimat Loft
  * @author Timothy Schmidt
- * @date 2013
+ * @date 2013-2021
  * @url http://www.github.com/timschmidt/replimat
  * @license http://www.gnu.org/licenses/agpl-3.0.en.html
  * @license https://www.tapr.org/TAPR_Open_Hardware_License_v1.0.txt
@@ -12,8 +12,6 @@ include <MCAD/materials.scad>
 include <MCAD/frame.scad>
 
 frame_is_hollow = 0;
-
-color(Pine) {
 
 // bed rails
 translateFrame([0,14,44]) xFrame(45);
@@ -68,5 +66,3 @@ translateFrame([15,15,9]) xFrame(30);
 translateFrame([15,0,0]) zFrame(10);
 translateFrame([44,0,0]) zFrame(10);
 translateFrame([15,16,0]) zFrame(10);
-
-}

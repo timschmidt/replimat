@@ -7,4 +7,4 @@
  * @license https://www.tapr.org/TAPR_Open_Hardware_License_v1.0.txt
  */
 
-import("../../bin/stl/nasa-wrench.stl");
+translate([115,0,0]) rotate([0,0,90]) import("../../bin/stl/nasa-wrench.stl");
