@@ -13,10 +13,10 @@ include <MCAD/materials.scad>
 frame_is_hollow = true;
 
 // Frame
-translateFrame([1,0,0]) yFrame(10);
-translateFrame([23,0,0]) yFrame(10);
-translateFrame([0,1,1]) xFrame(25);
-translateFrame([0,8,1]) xFrame(25);
+translateFrame([1,0,1]) yFrame(10);
+translateFrame([23,0,1]) yFrame(10);
+translateFrame([0,1,0]) xFrame(25);
+translateFrame([0,8,0]) xFrame(25);
 
 translateFrame([0,0,0]) zFrame(10);
 translateFrame([24,0,0]) zFrame(10);
