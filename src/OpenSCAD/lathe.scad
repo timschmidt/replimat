@@ -1,37 +1,39 @@
-/*********************************
-* Gridbeam Lathe                 *
-* (c) Timothy Schmidt 2013       *
-* http://www.github.com/gridbeam *
-* License: GPLv3+ / TAPR OHL     *
-*********************************/
+/*
+ * @name Replimat Lathe
+ * @author Timothy Schmidt
+ * @date 2013-2021
+ * @url http://www.github.com/timschmidt/replimat
+ * @license http://www.gnu.org/licenses/agpl-3.0.en.html
+ * @license https://www.tapr.org/TAPR_Open_Hardware_License_v1.0.txt
+ */
 
-include <../MCAD/gridbeam.scad>
-include <../MCAD/materials.scad>
+include <MCAD/frame.scad>
+include <MCAD/materials.scad>
 
-beam_width = 3 * inch;
-beam_wall_thickness = 1/4 * inch;
-beam_hole_diameter = 3/4 * inch;
+Frame_width = 3 * inch;
+Frame_wall_thickness = 1/4 * inch;
+Frame_hole_diameter = 3/4 * inch;
 
 color(Steel) {
 
 // ways
-translateBeam([0,0,2]) xBeam(10);
-translateBeam([0,2,2]) xBeam(10);
+translateFrame([0,0,2]) xFrame(10);
+translateFrame([0,2,2]) xFrame(10);
 
 // way supports
-translateBeam([1,0,0]) yBeam(3);
-translateBeam([9,0,0]) yBeam(3);
-translateBeam([1,0,1]) yBeam(3);
-translateBeam([9,0,1]) yBeam(3);
+translateFrame([1,0,0]) yFrame(3);
+translateFrame([9,0,0]) yFrame(3);
+translateFrame([1,0,1]) yFrame(3);
+translateFrame([9,0,1]) yFrame(3);
 
 // tailstock
-translateBeam([6,0,1]) yBeam(3);
-translateBeam([6,0,3]) yBeam(3);
-translateBeam([7,1,1]) zBeam(6);
-translateBeam([6,0,4]) xBeam(2);
-translateBeam([6,2,4]) xBeam(2);
+translateFrame([6,0,1]) yFrame(3);
+translateFrame([6,0,3]) yFrame(3);
+translateFrame([7,1,1]) zFrame(6);
+translateFrame([6,0,4]) xFrame(2);
+translateFrame([6,2,4]) xFrame(2);
 
 // headstock
-translateBeam([0,1,0]) zBeam(7);
+translateFrame([0,1,0]) zFrame(7);
 
 }
