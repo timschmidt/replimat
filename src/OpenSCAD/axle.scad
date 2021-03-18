@@ -9,6 +9,7 @@
 
 include <MCAD/frame.scad>
 include <MCAD/materials.scad>
+include <MCAD/units.scad>
 
 frame_is_hollow = true;
 
@@ -21,10 +22,10 @@ if (axis == 2) { translateFrame([0,0,1]) rotate([-90,0,0]) Axle(); }
 if (axis == 3) { Axle(); }
 
 module Axle(){
-  translate([0.75*25.4,0.75*25.4,0])
+  translate([0.75*inch,0.75*inch,0])
   difference(){
-    cylinder(h=holes * 38.1, d=25.4);
-    translate([-1/8*25.4,-25.4/2,-1]) cube([1/4*25.4, 1/4*25.4, holes * 38.1 + 2]);
+    cylinder(h=holes * 1.5*inch, d=1*inch);
+    translate([-1/8*inch,-1*inch/2,-1]) cube([1/4*inch, 1/4*inch, holes * 1.5*inch + 2]);
   }
 }
 
