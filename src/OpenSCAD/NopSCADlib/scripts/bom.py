@@ -60,6 +60,8 @@ class BOM:
     def __init__(self, name):
         self.name = name
         self.big = None
+        self.ngb = False
+        self.zoomed = 0
         self.count = 1
         self.vitamins = {}
         self.printed = {}
@@ -73,6 +75,8 @@ class BOM:
         return {
              "name"       : self.name,
              "big"        : self.big,
+             "ngb"        : self.ngb,
+             "zoomed"     : self.zoomed,
              "count"      : self.count,
              "assemblies" : assemblies,
              "vitamins"   : {v : self.vitamins[v].data() for v in self.vitamins},
@@ -249,7 +253,7 @@ def boms(target = None, assembly = None):
         #
         # Run openscad
         #
-        openscad.run("-D", "$bom=2", "-D", "$preview=true", "--hardwarnings", "-o", "openscad.echo", "-d", bom_dir + "/bom.deps", bom_maker_name)
+        openscad.run("-D", "$bom=2", "-D", "$preview=true", "-o", "openscad.echo", "-d", bom_dir + "/bom.deps", bom_maker_name)
         os.remove(bom_maker_name)
         print("Generating bom ...", end=" ")
 

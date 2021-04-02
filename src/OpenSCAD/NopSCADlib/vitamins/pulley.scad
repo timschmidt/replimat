@@ -42,7 +42,7 @@ function pulley_screw(type)            = type[13]; //! Grub screw type
 function pulley_screws(type)           = type[14]; //! Number of grub screws
 
 function pulley_ir(type)     = pulley_od(type) / 2 - (pulley_teeth(type) ? belt_tooth_height(pulley_belt(type)) : 0);   //! Inside radius of the teeth
-function pulley_pr(type)     = let(belt = pulley_belt(type))                                                            //! Pitch radius
+function pulley_pr(type, belt = undef) = let(belt = is_undef(belt) ? pulley_belt(type) : belt)      //! Pitch radius, `belt` only needed for non-standard belt over smooth pulleys
                                  pulley_teeth(type) ? pulley_teeth(type) * belt_pitch(belt) / 2 / PI
                                                     : pulley_ir(type) + belt_thickness(belt) - belt_pitch_height(belt);
 
@@ -53,7 +53,7 @@ function pulley_extent(type) = max(pulley_flange_dia(type), pulley_hub_dia(type)
 T_angle = 40;
 GT_r = 0.555;
 
-module pulley(type) { //! Draw a pulley
+module pulley(type, colour = silver) { //! Draw a pulley
     teeth = pulley_teeth(type);
     od = pulley_od(type);
 
@@ -64,6 +64,7 @@ module pulley(type) { //! Draw a pulley
     hl = pulley_hub_length(type);
     w = pulley_width(type);
     r1 = pulley_bore(type) / 2;
+    screw_z = pulley_screw_z(type);
 
     or =  od / 2;
     ir =  pulley_ir(type);
@@ -100,39 +101,48 @@ module pulley(type) { //! Draw a pulley
                 }
     }
 
-    module screw_holes() {
-        if(pulley_screws(type))
-            translate_z(pulley_screw_z(type))
-                for(i = [0 : pulley_screws(type) - 1])
-                    rotate([-90, 0, i * -90])
-                        cylinder(r = screw_radius(pulley_screw(type)), h = 100);
-    }
+    module hub()
+        rotate_extrude() translate([r1, 0]) {
+            if(hl)
+                square([pulley_hub_dia(type) / 2 - r1,  hl]);
 
-    color("silver") {
-        render() difference() {
-            rotate_extrude() translate([r1, 0]) {
-                if(hl)
-                    square([pulley_hub_dia(type) / 2 - r1,  hl]);
-
-                for(z = [pulley_hub_length(type), hl + ft + w])
-                    translate([0, z])
-                        square([pulley_flange_dia(type) / 2 - r1, ft]);
-            }
-            if(pulley_screw_z(type) < hl)
-                screw_holes();
+            for(z = [pulley_hub_length(type), hl + ft + w])
+                translate([0, z])
+                    square([pulley_flange_dia(type) / 2 - r1, ft]);
         }
-        render() difference() { // T5 pulleys have screw through the teeth
+
+    module screw_holes()
+        translate_z(screw_z)
+            for(i = [0 : pulley_screws(type) - 1])
+                rotate([-90, 0, i * -90])
+                    cylinder(r = screw_radius(pulley_screw(type)), h = 100);
+
+    color(colour) {
+        if(screw_z && screw_z < hl)
+            render()
+                difference() {
+                    hub();
+
+                    screw_holes();
+                }
+        else
+            hub();
+
+        if(screw_z && screw_z > hl) // T5 pulleys have screw through the teeth
+            render()
+                difference() {
+                    core();
+
+                    screw_holes();
+                }
+        else
             core();
-
-            if(pulley_screw_z(type) > hl)
-                screw_holes();
-        }
     }
 }
 
-module pulley_assembly(type) { //! Draw a pulley with its grub screws in place
+module pulley_assembly(type, colour = silver) { //! Draw a pulley with its grub screws in place
     translate_z(pulley_offset(type)) {
-        pulley(type);
+        pulley(type, colour);
 
         if(pulley_screws(type))
             translate_z(pulley_screw_z(type))

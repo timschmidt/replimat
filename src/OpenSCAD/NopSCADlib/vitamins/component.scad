@@ -161,13 +161,13 @@ module al_clad_resistor(type, value, leads = true) { //! Draw an aluminium clad 
                 }
         linear_extrude(thickness)
             difference() {
-                for(end = [-1, 1])
-                    translate([end * (length - tab) / 2, end * (width - width / 2) / 2])
-                        square([tab, width / 2], center = true);
+                union()
+                    for(end = [-1, 1])
+                        translate([end * (length - tab) / 2, end * (width - width / 2) / 2])
+                            square([tab, width / 2], center = true);
 
                 al_clad_resistor_hole_positions(type)
                     circle(d = al_clad_hole(type));
-
             }
         if(leads) {
             translate_z(height / 2)
@@ -209,7 +209,7 @@ module al_clad_resistor_assembly(type, value, sleeved = true) { //* Draw alumini
 
 function TO220_thickness() = 1.5; //! Thickness of the tab of a TO220
 
-module  TO220(description, leads = 3, lead_length = 16) { //! Draw a TO220 package, use ```description``` to describe what it is
+module  TO220(description, leads = 3, lead_length = 16) { //! Draw a TO220 package, use `description` to describe what it is
     width = 10.2;
     inset = 1.5;
     hole = 3.3;
@@ -326,7 +326,7 @@ module panel_USBA() { //! Draw a panel mount USBA connector
                 dx = (length2 / 2 - r2);
                 dy = (width / 2 - r1);
                 translate_z(l)
-                    rounded_rectangle([length2, width, 1], r = r1, center = false);
+                    rounded_rectangle([length2, width, 1], r = r1);
 
                 translate([-dx, -dy, height2 - r2])
                     rotate([90, 0, 0])

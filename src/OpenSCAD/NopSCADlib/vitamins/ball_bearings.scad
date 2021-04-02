@@ -22,6 +22,7 @@ BB608   =  ["608",   8,  22, 7,   "OrangeRed", 1.4, 2.0];  // 608 bearings for w
 BB6200   = ["6200",  10, 30, 9,   "black",     2.3, 3.6];  // 6200 bearings for KP pillow blocks
 BB6201   = ["6201",  12, 32, 10,  "black",     2.4, 3.7];  // 6201 bearings for KP pillow blocks
 BB6808   = ["6808",  40, 52, 7,   "black",     1.5, 1.6];
-ball_bearings = [BBSMR95, BB624, BB608, BB6200, BB6201, BB6808];
+UC205_16 = ["UC205_16", 25.4, 52, 34, "black", 4, 4];
+ball_bearings = [BBSMR95, BB624, BB608, BB6200, BB6201, BB6808, UC205_16];
 
 use <ball_bearing.scad>

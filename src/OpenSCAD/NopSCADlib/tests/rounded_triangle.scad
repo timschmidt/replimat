@@ -1,5 +1,5 @@
 //
-// NopSCADlib Copyright Chris Palmer 2020
+// NopSCADlib Copyright Chris Palmer 2018
 // nop.head@gmail.com
 // hydraraptor.blogspot.com
 //
@@ -16,20 +16,16 @@
 // You should have received a copy of the GNU General Public License along with NopSCADlib.
 // If not, see <https://www.gnu.org/licenses/>.
 //
-include <../core.scad>
-include <../vitamins/scs_bearing_blocks.scad>
 
-use <../utils/layout.scad>
+include <../global_defs.scad>
+use <../utils/rounded_triangle.scad>
 
-module scs_bearing_blocks()
-    layout([for(s = scs_bearing_blocks) scs_size(s).x], 10) {
-        part_thickness = 5;
-        scs_bearing_block_assembly(scs_bearing_blocks[$i], part_thickness);
 
-        if($i > 0) // skip $i==0, since no SCS6LUU long variant to match SCS6UU
-            translate([0, 60])
-                scs_bearing_block_assembly(scs_bearing_blocks_long[$i - 1], part_thickness);
-    }
+module rounded_right_triangles() {
+    rounded_right_triangle(10, 20, 5, 0.5);
 
-if($preview)
-    scs_bearing_blocks();
+    translate([20, 0])
+        rounded_right_triangle(10, 20, 5, 0.5, offset = true);
+}
+
+rounded_right_triangles();

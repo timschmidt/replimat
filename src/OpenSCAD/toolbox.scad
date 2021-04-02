@@ -9,6 +9,7 @@
 
 include <MCAD/frame.scad>
 include <MCAD/materials.scad>
+use <bin.scad>
 
 frame_is_hollow = true;
 
@@ -27,3 +28,12 @@ translateFrame([0,4,4]) rotate([90,0,0]) topShelf(10, 1, 0);
 
 //Back
 translateFrame([0,4,7]) rotate([90,0,0]) topShelf(10, 1, 0);
+
+translateFrame([1,0,6]) bin();
+translateFrame([3,0,6]) bin();
+translateFrame([5,0,6]) bin();
+translateFrame([7,0,6]) bin();
+translateFrame([1,0,3]) bin();
+translateFrame([3,0,3]) bin();
+translateFrame([5,0,3]) bin();
+translateFrame([7,0,3]) bin();

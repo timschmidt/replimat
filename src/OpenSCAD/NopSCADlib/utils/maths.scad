@@ -33,7 +33,7 @@ function argcosh(x) = ln(x + sqrt(sqr(x) - 1)); //! inverse hyperbolic cosine
 function argtanh(x) = ln((1 + x) / (1 - x)) / 2;//! inverse hyperbolic tangent
 function argcoth(x) = ln((x + 1) / (x - 1)) / 2;//! inverse hyperbolic cotangent
 
-function translate(v) = let(u = is_list(v) ? len(v) == 2 ? [v.x, v.y, 0] //! Generate a 4x4 translation matrix, ```v``` can be ```[x, y]```, ```[x, y, z]``` or ```z```
+function translate(v) = let(u = is_list(v) ? len(v) == 2 ? [v.x, v.y, 0] //! Generate a 4x4 translation matrix, `v` can be `[x, y]`, `[x, y, z]` or `z`
                                                          : v
                                            : [0, 0, v])
                           [ [1, 0, 0, u.x],
@@ -41,7 +41,7 @@ function translate(v) = let(u = is_list(v) ? len(v) == 2 ? [v.x, v.y, 0] //! Gen
                             [0, 0, 1, u.z],
                             [0, 0, 0,   1] ];
 
-function rotate(a, v) = //! Generate a 4x4 rotation matrix, ```a``` can be a vector of three angles or a single angle around ```z```, or around axis ```v```
+function rotate(a, v) = //! Generate a 4x4 rotation matrix, `a` can be a vector of three angles or a single angle around `z`, or around axis `v`
     is_undef(v) ? let(av = is_list(a) ? a : [0, 0, a],
                       cx = cos(av[0]),
                       cy = cos(av[1]),
@@ -80,7 +80,7 @@ function rot2_z(a) = //! Generate a 2x2 matrix to rotate around z
         [ [ c, -s],
           [ s,  c] ];
 
-function scale(v) = let(s = is_list(v) ? v : [v, v, v]) //!  Generate a 4x4 matrix that scales by ```v```, which can be a vector of xyz factors or a scalar to scale all axes equally
+function scale(v) = let(s = is_list(v) ? v : [v, v, v]) //!  Generate a 4x4 matrix that scales by `v`, which can be a vector of xyz factors or a scalar to scale all axes equally
                         [
                           [s.x, 0,   0,   0],
                           [0,   s.y, 0,   0],
@@ -88,11 +88,12 @@ function scale(v) = let(s = is_list(v) ? v : [v, v, v]) //!  Generate a 4x4 matr
                           [0,   0,   0,   1]
                         ];
 
-function vec3(v) = [v.x, v.y, v.z]; //! Return a 3 vector with the first three elements of ```v```
-function vec4(v) = [v.x, v.y, v.z, 1]; //! Return a 4 vector with the first three elements of ```v```
+function vec2(v) = [v.x, v.y]; //! Return a 2 vector with the first two elements of `v`
+function vec3(v) = [v.x, v.y, v.z]; //! Return a 3 vector with the first three elements of `v`
+function vec4(v) = [v.x, v.y, v.z, 1]; //! Return a 4 vector with the first three elements of `v`
 function transform(v, m) = vec3(m * [v.x, v.y, v.z, 1]); //! Apply 4x4 transform to a 3 vector by extending it and cropping it again
 function transform_points(path, m) = [for(p = path) transform(p, m)]; //! Apply transform to a path
-function unit(v) = let(n = norm(v)) n ? v / n : v; //! Convert ```v``` to a unit vector
+function unit(v) = let(n = norm(v)) n ? v / n : v; //! Convert `v` to a unit vector
 
 function transpose(m) = [ for(j = [0 : len(m[0]) - 1]) [ for(i = [0 : len(m) - 1]) m[i][j] ] ]; //! Transpose an arbitrary size matrix
 
@@ -146,3 +147,17 @@ function invert(m) = let(n =len(m), m = solve(augment(m))) [ //! Invert a matrix
              each m[i][j]
     ]
 ];
+
+function circle_intersect(c1, r1, c2, r2) =     //! Calculate one point where two circles in the X-Z plane intersect, clockwise around c1
+    let(
+        v = c1 - c2,                            // Line between centres
+        d = norm(v),                            // Distance between centres
+        a = atan2(v.z, v.x) - acos((sqr(d) + sqr(r2) - sqr(r1)) / (2 * d * r2)) // Cosine rule to find angle from c2
+     ) c2 + r2 * [cos(a), 0, sin(a)];           // Point on second circle
+
+function map(v, func) = [ for (e = v) func(e) ]; //! make a new vector where the func function argument is applied to each element of the vector v
+function mapi(v, func) = [ for (i = [0:len(v)-1]) func(i,v[i]) ]; //! make a new vector where the func function argument is applied to each element of the vector v. The func will get the index number as first argument, and the element as second argument.
+function reduce(v, func, unity) = let ( r = function(i,val) i == len(v) ? val : r(i + 1, func(val, v[i])) ) r(0, unity); //! reduce a vector v to a single entity by applying the func function recursively to the reduced value so far and the next element, starting with unity as the initial reduced value
+function sumv(v) = reduce(v, function(a, b) a + b, 0); //! sum a vector of values that can be added with "+"
+
+function xor(a,b) = (a && !b) || (!a && b);

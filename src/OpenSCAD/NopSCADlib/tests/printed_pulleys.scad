@@ -1,5 +1,5 @@
 //
-// NopSCADlib Copyright Chris Palmer 2018
+// NopSCADlib Copyright Chris Palmer 2020
 // nop.head@gmail.com
 // hydraraptor.blogspot.com
 //
@@ -16,18 +16,30 @@
 // You should have received a copy of the GNU General Public License along with NopSCADlib.
 // If not, see <https://www.gnu.org/licenses/>.
 //
-include <../core.scad>
-include <../vitamins/kp_pillow_blocks.scad>
 
+include <../core.scad>
+include <../vitamins/pulleys.scad>
+include <../printed/printed_pulleys.scad>
 use <../utils/layout.scad>
 
-module kp_pillow_blocks() {
-    screws = [M4_cap_screw, M4_cap_screw, M5_cap_screw, M5_cap_screw];
-    nuts = [M4_sliding_t_nut, M4_hammer_nut, M5_sliding_t_nut, M5_nut];
-    assert(len(screws) == len(kp_pillow_blocks) && len(nuts) == len(kp_pillow_blocks));
-    layout([for(k = kp_pillow_blocks) 2 * kp_size(k)[1]])
-        kp_pillow_block_assembly(kp_pillow_blocks[$i], screw_type = screws[$i], nut_type = nuts[$i]);
+
+module printed_pulley_test(show_metal = false) {
+    layout([for (p = pulleys) pulley_flange_dia(p)]) let(p = pulleys[$i]) {
+        rotate(-145)
+            if($preview)
+                printed_pulley_assembly(p);
+            else
+                printed_pulley(p);
+
+        if(show_metal)
+            not_on_bom()
+                translate([0, 20])
+                    rotate(-145)
+                        pulley_assembly(p);
+    }
 }
 
 if($preview)
-    kp_pillow_blocks();
+    printed_pulley_test(true);
+else
+    printed_pulley_test();
