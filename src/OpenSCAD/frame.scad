@@ -11,7 +11,7 @@ include <MCAD/frame.scad>
 include <MCAD/materials.scad>
 
 // Customizer values
-holes=2; // [2,3,4,5,10,15,20,25,30,40,50]
+holes=35; // [2,3,4,5,10,15,20,25,30,40,50]
 frame_is_hollow=true;
 axis=3; // [1:X, 2:Y, 3:Z]
 
