@@ -9,7 +9,7 @@
 
 include <MCAD/frame.scad>
 
-translate([0,0,-3])
+module washer(){
 translateFrame([0.5,0.5,0])
 linear_extrude(height=3)
 difference(){
@@ -18,3 +18,6 @@ circle(d=1.5*inch);
 circle(d=21/64*inch);
 
 }
+}
+
+washer();
