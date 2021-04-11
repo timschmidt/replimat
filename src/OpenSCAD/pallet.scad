@@ -22,7 +22,7 @@ translateFrame([0,10,1]) xFrame(30);
 translateFrame([0,19,1]) xFrame(30);
     
 // Deck
-#translateFrame([0,0,2]) topShelf(15, 10, 0);
-#translateFrame([15,0,2]) topShelf(15, 10, 0);
-#translateFrame([0,10,2]) topShelf(15, 10, 0);
-#translateFrame([15,10,2]) topShelf(15, 10, 0);
+#translateFrame([2,0,2]) topShelf(10, 10, 0);
+#translateFrame([13,0,2]) topShelf(15, 10, 0);
+#translateFrame([2,10,2]) topShelf(15, 10, 0);
+#translateFrame([18,10,2]) topShelf(10, 10, 0);
