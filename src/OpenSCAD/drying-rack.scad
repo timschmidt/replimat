@@ -9,35 +9,38 @@
 
 include <MCAD/frame.scad>
 include <MCAD/materials.scad>
+use <bolts.scad>
+use <nuts.scad>
+use <pallet.scad>
 
 frame_is_hollow = true;
 
-// Frame
-translateFrame([0,0,0]) yFrame(20);
-translateFrame([15,0,0]) yFrame(20);
-translateFrame([29,0,0]) yFrame(20);
-translateFrame([0,0,1]) xFrame(30);
-translateFrame([0,9,1]) xFrame(30);
-translateFrame([0,10,1]) xFrame(30);
-translateFrame([0,19,1]) xFrame(30);
+module drying_rack(){
 
-translateFrame([1,1,0]) zFrame(30);
-translateFrame([28,1,0]) zFrame(30);
-translateFrame([1,18,0]) zFrame(30);
-translateFrame([28,18,0]) zFrame(30);
+pallet();
+
+// Frame
+translateFrame([1,0,0]) zFrame(30);
+translateFrame([28,0,0]) zFrame(30);
+translateFrame([1,19,0]) zFrame(30);
+translateFrame([28,19,0]) zFrame(30);
 
 translateFrame([0,0,29]) yFrame(20);
 translateFrame([29,0,29]) yFrame(20);
-translateFrame([0,5,30]) xFrame(30);
-translateFrame([0,14,30]) xFrame(30);
+translateFrame([0,5,28]) xFrame(30);
+translateFrame([0,14,28]) xFrame(30);
 
 translateFrame([0,0,15]) yFrame(20);
 translateFrame([29,0,15]) yFrame(20);
-translateFrame([0,5,16]) xFrame(30);
-translateFrame([0,14,16]) xFrame(30);
+translateFrame([0,5,14]) xFrame(30);
+translateFrame([0,14,14]) xFrame(30);
 
-// Deck
-#translateFrame([2,0,2]) topShelf(10, 10, 0);
-#translateFrame([13,0,2]) topShelf(15, 10, 0);
-#translateFrame([2,10,2]) topShelf(15, 10, 0);
-#translateFrame([18,10,2]) topShelf(10, 10, 0);
+// bolts
+translateFrame([1,9,0]) rotate([0,180,0]) replimat_bolt(90);
+
+//nuts
+translateFrame([0,10,2]) rotate([180,0,0]) replimat_nut();
+
+}
+
+drying_rack();
