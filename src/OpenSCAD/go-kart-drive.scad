@@ -22,7 +22,9 @@ use <shaft-collar.scad>
 
 $fn=100;
 
-shaft(holes=30,axis=2);
+module go_kart_drive(width){
+
+shaft(holes=width,axis=2);
 
 translate([0,0,0])
 shaft_collar();
@@ -39,21 +41,24 @@ translateFrame([0,5,0])
 rotate([0,180,0])
 axial_bearing();
 
-translateFrame([0,29.7,0])
+translateFrame([0,width-0.3,0])
 shaft_collar();
 
-translateFrame([0,30,0])
+translateFrame([0,width,0])
 rotate([180,0,0])
 wheel();
 
-translateFrame([0,29,0])
+translateFrame([0,width-1,0])
 translate([0,26,0])
 rotate([180,0,0])
 wheel_adapter();
 
-translateFrame([0,25,0])
+translateFrame([0,width-5,0])
 rotate([0,180,0])
 axial_bearing();
 
-translateFrame([0,26,0])
+translateFrame([0,width-4,0])
 shaft_collar();
+}
+
+go_kart_drive(30);
