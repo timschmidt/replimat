@@ -137,6 +137,8 @@ module shaft_collar() {
   echo(str("Nut wall: ", nut_wt,"mm each side of nut"));           // material left on sides of nut trap 
   echo(str("Screw length: Use ", screw_len,"mm or longer"));       // screw length recommendation
 
+  rotate([-90,0,0])
+
   // shaft collar is formed by removing various elements from a solid cylinder
   difference() {
     // start with solid cylindrical body
