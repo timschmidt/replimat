@@ -17,15 +17,18 @@ frame_is_hollow = true;
 holes=2; // [2,3,4,5,10,15,20,25,30,40,50]
 axis=3; // [1:X, 2:Y, 3:Z]
 
-if (axis == 1) { translateFrame([0,0,1]) rotate([0,90,0]) Shaft(); }
-if (axis == 2) { translateFrame([0,0,1]) rotate([-90,0,0]) Shaft(); }
-if (axis == 3) { Shaft(); }
+module shaft(holes=5,axis=3){
+if (axis == 1) { translateFrame([0,0,0]) rotate([0,90,0]) zShaft(holes); }
+if (axis == 2) { translateFrame([0,0,0]) rotate([-90,0,0]) zShaft(holes); }
+if (axis == 3) { zShaft(holes); }
+}
 
-module Shaft(){
-  translate([0.75*inch,0.75*inch,0])
+module zShaft(holes){
+  //translate([0.75*inch,0.75*inch,0])
   difference(){
     cylinder(h=holes * 1.5*inch, d=1*inch);
     translate([-1/8*inch,-1*inch/2,-1]) cube([1/4*inch, 1/4*inch, holes * 1.5*inch + 2]);
   }
 }
 
+shaft();

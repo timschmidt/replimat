@@ -13,7 +13,8 @@ include <MCAD/units.scad>
 
 $fn=100;
 
-translateFrame([0.5,0,0.5])
+module wheel(){
+translateFrame([0,-3,0])
 rotate([-90,0,0])
 difference(){
     cylinder(d=20*inch,h=10*inch);
@@ -27,3 +28,6 @@ difference(){
     
     cylinder(d=2*inch,h=10*inch);
 }
+}
+
+wheel();

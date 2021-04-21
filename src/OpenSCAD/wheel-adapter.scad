@@ -13,18 +13,22 @@ include <MCAD/materials.scad>
 
 frame_is_hollow = true;
 
-translateFrame([0.5,0.5,0])
+module wheel_adapter(){
+rotate([-90,0,0])
 difference(){
     union(){
         cylinder(d=125, h=6);
         cylinder(d=44.45,h=48);
     }
     
-    translate([-1/8*25.4,-25.4/2-(1/8*25.4), -1]) cube([1/4*25.4,1/4*25.4,73]);
+    translate([-1/8*25.4, -25.4/2-(1/8*25.4), -1]) cube([1/4*25.4, 1/4*25.4,73]);
     translate([0,0,-1]) cylinder(d=25.4,h=73);
     
-    translate([1.4375*25.4,1.4375*25.4,-1]) cylinder(d=10,h=8);
-    translate([-1.4375*25.4,1.4375*25.4,-1]) cylinder(d=10,h=73);
-    translate([1.4375*25.4,-1.4375*25.4,-1]) cylinder(d=10,h=73);
-    translate([-1.4375*25.4,-1.4375*25.4,-1]) cylinder(d=10,h=73);
+    translate([1.4375*25.4, 1.4375*25.4, -1]) cylinder(d=10,h=8);
+    translate([-1.4375*25.4, 1.4375*25.4, -1]) cylinder(d=10,h=73);
+    translate([1.4375*25.4, -1.4375*25.4, -1]) cylinder(d=10,h=73);
+    translate([-1.4375*25.4, -1.4375*25.4, -1]) cylinder(d=10,h=73);
 }
+}
+
+wheel_adapter();
