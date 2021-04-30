@@ -10,30 +10,39 @@
 
 include <MCAD/frame.scad>
 include <MCAD/materials.scad>
+use <axial-bearing.scad>
 use <go-kart-drive.scad>
 
 frame_is_hollow = true;
 
-module trailer(){
+module cargo_cycle(){
 translateFrame([1,2,7]) xFrame(15);
 translateFrame([1,14,7]) xFrame(15);
 translateFrame([5,1,6]) yFrame(15);
-translateFrame([15,1,6]) yFrame(15);
+translateFrame([15,1,8]) yFrame(15);
+
+translateFrame([17, 8, 8])
+rotate([90,0,90])
+axial_bearing();
 
 // Wheel posts
 //translateFrame([12,1,3]) zFrame(5);
 //translateFrame([12,15,3]) zFrame(5);
 
-translateFrame([17,2,7]) xFrame(15);
-translateFrame([17,14,7]) xFrame(15);
-translateFrame([27,1,6]) yFrame(15);
-translateFrame([17,1,6]) yFrame(15);
-}
+translateFrame([18,2,7]) xFrame(15);
+translateFrame([18,14,7]) xFrame(15);
+translateFrame([28,1,6]) yFrame(15);
+translateFrame([18,1,6]) yFrame(15);
+    
+translateFrame([17, 8, 6])
+rotate([90,0,270])
+axial_bearing();
 
 translateFrame([3,-2.5,6])
 go_kart_drive(22);
-translateFrame([30,-2.5,6])
+translateFrame([31,-2.5,6])
 go_kart_drive(22);
+}
 
 translateFrame([0,0,0])
-trailer();
+cargo_cycle();
