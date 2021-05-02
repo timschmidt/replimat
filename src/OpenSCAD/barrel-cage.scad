@@ -14,6 +14,7 @@ include <MCAD/materials.scad>
 use <bolts.scad>
 use <nuts.scad>
 
+module barrel_cage(){
 //translate([220,420,670]) // without rotate
 translate([100,280,670])
 scale([380,380,420])
@@ -107,3 +108,6 @@ translateFrame([10,14,26]) rotate([0,-270,0]) replimat_nut();
 
 translateFrame([10,10,27]) rotate([0,0,0]) replimat_bolt(90);
 translateFrame([10,10,25]) rotate([0,0,0]) replimat_nut();
+}
+
+barrel_cage();
