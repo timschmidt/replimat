@@ -23,6 +23,6 @@ for %%i in (*) do (
 	if exist ../../bin/png/38.1mm/%%i.png (
         rem exists
     ) else (
-        "C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/png/38.1mm/%%i.png --autocenter --viewall --view=scales --colorscheme=Metallic --imgsize=1024,1024 -D holes=3 %%i
+        "C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/png/38.1mm/%%i.png --autocenter --viewall --view=scales --colorscheme=Tomorrow --imgsize=1024,1024 -D holes=3 %%i
     )
 )
