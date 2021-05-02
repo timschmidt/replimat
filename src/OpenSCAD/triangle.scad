@@ -13,8 +13,6 @@ use <bolts.scad>
 use <nuts.scad>
 
 frame_is_hollow = true;
-bolt_length = 90;
-
 
 // frames
 translateFrame([0,0,0]) xFrame(5);
@@ -25,11 +23,17 @@ translateFrame([4.3,0,1.8]) rotate([0,-26.5,0]) zFrame(10);
 
 
 // bolts
-//translateFrame([1,9,0]) rotate([0,180,0]) replimat_bolt(bolt_length);
-//translateFrame([0,8,0]) rotate([0,-90,0]) replimat_bolt(bolt_length);
-//translateFrame([1,10,2]) rotate([-90,0,0]) replimat_bolt(bolt_length);
+translateFrame([0,0,0]) rotate([90,0,0]) replimat_bolt(90);
+translateFrame([0,0,10]) rotate([90,0,0]) replimat_bolt(90);
+translateFrame([4,0,0]) rotate([90,0,0]) replimat_bolt(90);
+translateFrame([4,0,2]) rotate([90,0,0]) replimat_bolt(90);
+translateFrame([5,1,2]) rotate([0,90,0]) replimat_bolt(90);
+translateFrame([3,1,0]) rotate([180,0,0]) replimat_bolt(90);
 
 //nuts
-//translateFrame([0,10,2]) rotate([180,0,0]) replimat_nut();
-//translateFrame([1,8,2]) rotate([-90,0,0]) replimat_nut();
-//translateFrame([2,9,1]) rotate([180,90,0]) replimat_nut();
+translateFrame([0,2,0]) rotate([90,0,0]) replimat_nut();
+translateFrame([0,2,10]) rotate([90,0,0]) replimat_nut();
+translateFrame([4,2,0]) rotate([90,0,0]) replimat_nut();
+translateFrame([4,2,2]) rotate([90,0,0]) replimat_nut();
+translateFrame([3,1,2]) rotate([0,90,0]) replimat_nut();
+translateFrame([3,1,2]) rotate([180,0,0]) replimat_nut();
