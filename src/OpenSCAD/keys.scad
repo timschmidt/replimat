@@ -11,4 +11,9 @@ include <MCAD/frame.scad>
 include <MCAD/materials.scad>
 include <MCAD/units.scad>
 
+module key(){
+color(Steel)
 cube([1/4*inch, 1/4*inch, 1*inch]);
+}
+
+key();

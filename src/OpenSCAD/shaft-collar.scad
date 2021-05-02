@@ -13,6 +13,8 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+include <MCAD/materials.scad>
+
 // shaft_collar_2
 // http://www.thingiverse.com/thing:624122
 // Printbus October 2016
@@ -138,7 +140,7 @@ module shaft_collar() {
   echo(str("Screw length: Use ", screw_len,"mm or longer"));       // screw length recommendation
 
   rotate([-90,0,0])
-
+  color(Steel)
   // shaft collar is formed by removing various elements from a solid cylinder
   difference() {
     // start with solid cylindrical body

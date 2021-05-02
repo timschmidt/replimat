@@ -25,6 +25,7 @@ if (axis == 3) { zShaft(holes); }
 
 module zShaft(holes){
   //translate([0.75*inch,0.75*inch,0])
+  color(Steel)
   difference(){
     cylinder(h=holes * 1.5*inch, d=1*inch);
     translate([-1/8*inch,-1*inch/2,-1]) cube([1/4*inch, 1/4*inch, holes * 1.5*inch + 2]);

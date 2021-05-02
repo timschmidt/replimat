@@ -14,6 +14,7 @@ include <MCAD/materials.scad>
 frame_is_hollow = true;
 
 translateFrame([0.5,0.5,0])
+//color(Steel)
 difference(){
 
     cylinder(d=44.45,h=100);

@@ -18,4 +18,5 @@ module replimat_nut(){
   nut(M8_nut, true);
 }
 
+rotate([180,0,0])
 replimat_nut();

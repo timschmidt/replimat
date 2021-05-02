@@ -12,6 +12,8 @@ include <MCAD/frame.scad>
 include <MCAD/materials.scad>
 use <axial-bearing.scad>
 use <go-kart-drive.scad>
+use <bolts.scad>
+use <nuts.scad>
 
 frame_is_hollow = true;
 

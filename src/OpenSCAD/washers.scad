@@ -8,8 +8,10 @@
  */
 
 include <MCAD/frame.scad>
+include <MCAD/materials.scad>
 
 module washer(){
+color(Steel){
 translateFrame([0.5,0.5,0])
 linear_extrude(height=3)
 difference(){
@@ -17,6 +19,7 @@ difference(){
 circle(d=1.5*inch);
 circle(d=21/64*inch);
 
+}
 }
 }
 
