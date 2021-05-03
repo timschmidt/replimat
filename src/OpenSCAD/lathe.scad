@@ -9,7 +9,9 @@
 
 include <MCAD/frame.scad>
 include <MCAD/materials.scad>
+use <chuck.scad>
 
+module lathe(){
 Frame_width = 3 * inch;
 Frame_wall_thickness = 1/4 * inch;
 Frame_hole_diameter = 3/4 * inch;
@@ -37,3 +39,10 @@ translateFrame([6,2,4]) xFrame(2);
 translateFrame([0,1,0]) zFrame(7);
 
 }
+
+translateFrame([2.3,1.5,6.5])
+rotate([0,90,0])
+replimat_chuck();
+}
+
+lathe();
