@@ -74,6 +74,7 @@ rotate([90,0,r])
 bearing_race();
 }
 
+module linear_bearing(){
 translateFrame([0,2,0])
 rotate([0,0,-90])
 difference(){
@@ -114,6 +115,9 @@ rotate([90,0,0])
 cylinder(d=2,h=4);
 
 }
+}
+
+linear_bearing();
 
 //translateFrame([1,1,0])
 //#zFrame(2);
