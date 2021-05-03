@@ -10,6 +10,7 @@
 include <MCAD/frame.scad>
 include <MCAD/materials.scad>
 use <bolts.scad>
+use <nuts.scad>
 
 holes = 10; // [2, 3, 4, 5, 10, 15, 20, 25, 30, 40, 50]
 frame_is_hollow = true;
@@ -33,6 +34,14 @@ translateFrame([0,1,1]) rotate([90,0,0]) replimat_bolt(bolt_length);
 translateFrame([9,12,2]) rotate([-90,0,0]) replimat_bolt(bolt_length);
 translateFrame([1,10,2]) rotate([0,0,0]) replimat_bolt(bolt_length);
 translateFrame([0,11,2]) rotate([-90,0,0]) replimat_bolt(bolt_length);
+
+// nuts
+translateFrame([0,3,1]) rotate([90,0,0]) replimat_nut();
+translateFrame([9,2,1]) rotate([90,0,0]) replimat_nut();
+translateFrame([0,9,2]) rotate([270,0,0]) replimat_nut();
+translateFrame([9,10,2]) rotate([270,0,0]) replimat_nut();
+translateFrame([1,1,0]) rotate([0,0,0]) replimat_nut();
+translateFrame([1,10,0]) rotate([0,0,0]) replimat_nut();
 
 // shelf
 #translateFrame([1,1,2]) topShelf(holes,holes,0);
