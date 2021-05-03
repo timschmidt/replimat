@@ -12,7 +12,11 @@
 include <MCAD/frame.scad>
 include <MCAD/materials.scad>
 
+module barrel(){
 translate([100,280,600])
 scale([380,380,420])
 rotate([0,0,90])
 import("../../bin/stl/55gallon_drum.stl");
+}
+
+barrel();
