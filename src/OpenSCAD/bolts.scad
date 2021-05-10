@@ -28,4 +28,18 @@ module replimat_nut_and_bolt(length){
   replimat_nut();
 };
 
+module zNutBolt(length){
+    replimat_nut_and_bolt(length);
+}
+
+module xNutBolt(length){
+    rotate([0,270,0])
+    replimat_nut_and_bolt(length);
+}
+
+module yNutBolt(length){
+    rotate([90,0,0])
+    replimat_nut_and_bolt(length);
+}
+
 replimat_bolt(length);
