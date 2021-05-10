@@ -32,44 +32,24 @@ translateFrame([0,18,1]) xFrame(30);
 #translateFrame([18,10,2]) topShelf(10, 10, 0);
 
 // bolts
-translateFrame([2,1,2]) rotate([0,0,0]) replimat_bolt(50);
-translateFrame([2,9,2]) rotate([0,0,0]) replimat_bolt(50);
-translateFrame([2,10,2]) rotate([0,0,0]) replimat_bolt(50);
-translateFrame([2,18,2]) rotate([0,0,0]) replimat_bolt(50);
-translateFrame([11,1,2]) rotate([0,0,0]) replimat_bolt(50);
-translateFrame([11,9,2]) rotate([0,0,0]) replimat_bolt(50);
+translateFrame([2,1,2]) rotate([0,0,0]) replimat_nut_and_bolt(1);
+translateFrame([2,9,2]) rotate([0,0,0]) replimat_nut_and_bolt(1);
+translateFrame([2,10,2]) rotate([0,0,0]) replimat_nut_and_bolt(1);
+translateFrame([2,18,2]) rotate([0,0,0]) replimat_nut_and_bolt(1);
+translateFrame([11,1,2]) rotate([0,0,0]) replimat_nut_and_bolt(1);
+translateFrame([11,9,2]) rotate([0,0,0]) replimat_nut_and_bolt(1);
 
-translateFrame([15,1,2]) rotate([0,0,0]) replimat_bolt(90);
-translateFrame([15,9,2]) rotate([0,0,0]) replimat_bolt(90);
-translateFrame([15,10,2]) rotate([0,0,0]) replimat_bolt(90);
-translateFrame([15,18,2]) rotate([0,0,0]) replimat_bolt(90);
+translateFrame([15,1,2]) rotate([0,0,0]) replimat_nut_and_bolt(2);
+translateFrame([15,9,2]) rotate([0,0,0]) replimat_nut_and_bolt(2);
+translateFrame([15,10,2]) rotate([0,0,0]) replimat_nut_and_bolt(2);
+translateFrame([15,18,2]) rotate([0,0,0]) replimat_nut_and_bolt(2);
 
-translateFrame([18,10,2]) rotate([0,0,0]) replimat_bolt(50);
-translateFrame([18,18,2]) rotate([0,0,0]) replimat_bolt(50);
-translateFrame([27,1,2]) rotate([0,0,0]) replimat_bolt(50);
-translateFrame([27,9,2]) rotate([0,0,0]) replimat_bolt(50);
-translateFrame([27,10,2]) rotate([0,0,0]) replimat_bolt(50);
-translateFrame([27,18,2]) rotate([0,0,0]) replimat_bolt(50);
-
-//nuts
-translateFrame([2,1,1]) rotate([0,0,0]) replimat_nut();
-translateFrame([2,9,1]) rotate([0,0,0]) replimat_nut();
-translateFrame([2,10,1]) rotate([0,0,0]) replimat_nut();
-translateFrame([2,18,1]) rotate([0,0,0]) replimat_nut();
-translateFrame([11,1,1]) rotate([0,0,0]) replimat_nut();
-translateFrame([11,9,1]) rotate([0,0,0]) replimat_nut();
-
-translateFrame([15,1,0]) rotate([0,0,0]) replimat_nut();
-translateFrame([15,9,0]) rotate([0,0,0]) replimat_nut();
-translateFrame([15,10,0]) rotate([0,0,0]) replimat_nut();
-translateFrame([15,18,0]) rotate([0,0,0]) replimat_nut();
-
-translateFrame([18,10,1]) rotate([0,0,0]) replimat_nut();
-translateFrame([18,18,1]) rotate([0,0,0]) replimat_nut();
-translateFrame([27,1,1]) rotate([0,0,0]) replimat_nut();
-translateFrame([27,9,1]) rotate([0,0,0]) replimat_nut();
-translateFrame([27,10,1]) rotate([0,0,0]) replimat_nut();
-translateFrame([27,19,1]) rotate([0,0,0]) replimat_nut();
+translateFrame([18,10,2]) rotate([0,0,0]) replimat_nut_and_bolt(1);
+translateFrame([18,18,2]) rotate([0,0,0]) replimat_nut_and_bolt(1);
+translateFrame([27,1,2]) rotate([0,0,0]) replimat_nut_and_bolt(1);
+translateFrame([27,9,2]) rotate([0,0,0]) replimat_nut_and_bolt(1);
+translateFrame([27,10,2]) rotate([0,0,0]) replimat_nut_and_bolt(1);
+translateFrame([27,18,2]) rotate([0,0,0]) replimat_nut_and_bolt(1);
 }
 
 pallet();

@@ -14,8 +14,6 @@ use <nuts.scad>
 
 holes = 10; // [2, 3, 4, 5, 10, 15, 20, 25, 30, 40, 50]
 frame_is_hollow = true;
-bolt_length = 90;
-
 
 // frames
 translateFrame([0,9,1]) xFrame(holes);
@@ -23,11 +21,6 @@ translateFrame([0,0,0]) yFrame(holes);
 translateFrame([1,8,0]) zFrame(holes);
 
 // bolts
-translateFrame([1,9,0]) rotate([0,180,0]) replimat_bolt(bolt_length);
-translateFrame([0,8,0]) rotate([0,-90,0]) replimat_bolt(bolt_length);
-translateFrame([1,10,2]) rotate([-90,0,0]) replimat_bolt(bolt_length);
-
-//nuts
-translateFrame([0,10,2]) rotate([180,0,0]) replimat_nut();
-translateFrame([1,8,2]) rotate([-90,0,0]) replimat_nut();
-translateFrame([2,9,1]) rotate([180,90,0]) replimat_nut();
+translateFrame([1,9,0]) rotate([0,180,0]) replimat_nut_and_bolt(2);
+translateFrame([0,8,0]) rotate([0,-90,0]) replimat_nut_and_bolt(2);
+translateFrame([1,10,2]) rotate([-90,0,0]) replimat_nut_and_bolt(2);

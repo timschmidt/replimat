@@ -40,32 +40,13 @@ translateFrame([3,0,3]) bin();
 translateFrame([5,0,3]) bin();
 translateFrame([7,0,3]) bin();
 
-translateFrame([0,3,1]) rotate([90,0,0]) replimat_bolt(90);
-translateFrame([0,5,1]) rotate([90,0,0]) replimat_nut();
-
-translateFrame([9,3,1]) rotate([90,0,0]) replimat_bolt(90);
-translateFrame([9,5,1]) rotate([90,0,0]) replimat_nut();
-
-translateFrame([0,2,9]) rotate([90,0,0]) replimat_bolt(90);
-translateFrame([0,4,9]) rotate([90,0,0]) replimat_nut();
-
-translateFrame([9,2,9]) rotate([90,0,0]) replimat_bolt(90);
-translateFrame([9,4,9]) rotate([90,0,0]) replimat_nut();
-
-translateFrame([1,5,0]) rotate([180,0,0]) replimat_bolt(90);
-translateFrame([1,5,2]) rotate([180,0,0]) replimat_nut();
-
-translateFrame([8,5,0]) rotate([180,0,0]) replimat_bolt(90);
-translateFrame([8,5,2]) rotate([180,0,0]) replimat_nut();
-
-translateFrame([1,1,0]) rotate([180,0,0]) replimat_bolt(50);
-translateFrame([1,1,1]) rotate([180,0,0]) replimat_nut();
-
-translateFrame([8,1,0]) rotate([180,0,0]) replimat_bolt(50);
-translateFrame([8,1,1]) rotate([180,0,0]) replimat_nut();
-
-translateFrame([0,3,0]) rotate([0,270,0]) replimat_bolt(90);
-translateFrame([2,3,0]) rotate([0,270,0]) replimat_nut();
-
-translateFrame([10,3,1]) rotate([0,90,0]) replimat_bolt(90);
-translateFrame([8,3,1]) rotate([0,90,0]) replimat_nut();
+translateFrame([0,3,1]) rotate([90,0,0]) replimat_nut_and_bolt(2);
+translateFrame([9,3,1]) rotate([90,0,0]) replimat_nut_and_bolt(2);
+translateFrame([0,2,9]) rotate([90,0,0]) replimat_nut_and_bolt(2);
+translateFrame([9,2,9]) rotate([90,0,0]) replimat_nut_and_bolt(2);
+translateFrame([1,5,0]) rotate([180,0,0]) replimat_nut_and_bolt(2);
+translateFrame([8,5,0]) rotate([180,0,0]) replimat_nut_and_bolt(2);
+translateFrame([1,1,0]) rotate([180,0,0]) replimat_nut_and_bolt(1);
+translateFrame([8,1,0]) rotate([180,0,0]) replimat_nut_and_bolt(1);
+translateFrame([0,3,0]) rotate([0,270,0]) replimat_nut_and_bolt(2);
+translateFrame([10,3,1]) rotate([0,90,0]) replimat_nut_and_bolt(2);

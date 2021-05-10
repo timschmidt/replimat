@@ -8,15 +8,24 @@
  */
 
 use <NopSCADlib/lib.scad>
+use <nuts.scad>
 include <NopSCADlib/vitamins/screw.scad>
 include <NopSCADlib/vitamins/screws.scad>
 include <MCAD/frame.scad>
 
-length = 90; // [50:1, 90:2, 130:3]
+length = 2; // [50:1, 90:2, 130:3]
 
 module replimat_bolt(length){
   translateFrame([0.5,0.5,0])
-  screw(M8_hex_screw, length);  
+  screw(M8_hex_screw, length*frame_width+M8_nut_depth);
 };
 
-screw(M8_hex_screw, length);
+module replimat_nut_and_bolt(length){
+  translateFrame([0.5,0.5,0])
+  screw(M8_hex_screw, length*frame_width+M8_nut_depth);
+  
+  translate([0,0,-length*frame_width])
+  replimat_nut();
+};
+
+replimat_bolt(length);

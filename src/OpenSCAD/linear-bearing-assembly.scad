@@ -25,16 +25,10 @@ translateFrame([2,2,4]) zFrame(2);
 
 
 // bolts
-translateFrame([0,0,5]) rotate([90,0,0]) replimat_bolt(130);
-translateFrame([2,0,5]) rotate([90,0,0]) replimat_bolt(130);
-translateFrame([0,0,4]) rotate([0,-90,0]) replimat_bolt(130);
-translateFrame([0,2,4]) rotate([0,-90,0]) replimat_bolt(130);
-
-//nuts
-translateFrame([0,3,5]) rotate([90,0,0]) replimat_nut();
-translateFrame([2,3,5]) rotate([90,0,0]) replimat_nut();
-translateFrame([3,1,5]) rotate([180,90,0]) replimat_nut();
-translateFrame([3,3,5]) rotate([180,90,0]) replimat_nut();
+translateFrame([0,0,5]) rotate([90,0,0]) replimat_nut_and_bolt(3);
+translateFrame([2,0,5]) rotate([90,0,0]) replimat_nut_and_bolt(3);
+translateFrame([0,0,4]) rotate([0,-90,0]) replimat_nut_and_bolt(3);
+translateFrame([0,2,4]) rotate([0,-90,0]) replimat_nut_and_bolt(3);
 
 translateFrame([0,1,4])
 linear_bearing();

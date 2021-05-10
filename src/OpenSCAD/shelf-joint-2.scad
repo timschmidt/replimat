@@ -27,24 +27,14 @@ translateFrame([9,11,0]) zFrame(holes);
 
 
 // bolts
-translateFrame([9,0,0]) rotate([90,0,0]) replimat_bolt(90);
-translateFrame([1,1,2]) rotate([0,0,0]) replimat_bolt(90);
-translateFrame([0,1,0]) rotate([90,0,0]) replimat_bolt(90);
-translateFrame([9,12,1]) rotate([-90,0,0]) replimat_bolt(90);
-translateFrame([1,10,2]) rotate([0,0,0]) replimat_bolt(90);
-translateFrame([0,11,1]) rotate([-90,0,0]) replimat_bolt(90);
-translateFrame([8,1,2]) rotate([0,0,0]) replimat_bolt(90);
-translateFrame([8,10,2]) rotate([0,0,0]) replimat_bolt(90);
-
-// nuts
-translateFrame([0,3,0]) rotate([90,0,0]) replimat_nut();
-translateFrame([9,2,0]) rotate([90,0,0]) replimat_nut();
-translateFrame([0,9,1]) rotate([270,0,0]) replimat_nut();
-translateFrame([9,10,1]) rotate([270,0,0]) replimat_nut();
-translateFrame([1,1,0]) rotate([0,0,0]) replimat_nut();
-translateFrame([1,10,0]) rotate([0,0,0]) replimat_nut();
-translateFrame([8,1,0]) rotate([0,0,0]) replimat_nut();
-translateFrame([8,10,0]) rotate([0,0,0]) replimat_nut();
+translateFrame([9,0,0]) rotate([90,0,0]) replimat_nut_and_bolt(2);
+translateFrame([1,1,2]) rotate([0,0,0]) replimat_nut_and_bolt(2);
+translateFrame([0,1,0]) rotate([90,0,0]) replimat_nut_and_bolt(2);
+translateFrame([9,12,1]) rotate([-90,0,0]) replimat_nut_and_bolt(2);
+translateFrame([1,10,2]) rotate([0,0,0]) replimat_nut_and_bolt(2);
+translateFrame([0,11,1]) rotate([-90,0,0]) replimat_nut_and_bolt(2);
+translateFrame([8,1,2]) rotate([0,0,0]) replimat_nut_and_bolt(2);
+translateFrame([8,10,2]) rotate([0,0,0]) replimat_nut_and_bolt(2);
 
 // shelf
 #translateFrame([1,1,2]) topShelf(holes,holes,0);

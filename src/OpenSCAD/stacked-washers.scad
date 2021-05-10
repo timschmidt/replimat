@@ -20,8 +20,8 @@ translateFrame([0,0,1.5]) xFrame(5);
 translateFrame([0,0,0]) xFrame(5);
 
 // bolts
-translateFrame([0,0,2.5]) rotate([0,0,0]) replimat_bolt(130);
-translateFrame([4,0,2.5]) rotate([0,0,0]) replimat_bolt(130);
+translateFrame([0,0,2.5]) rotate([0,0,0]) replimat_bolt(3);
+translateFrame([4,0,2.5]) rotate([0,0,0]) replimat_bolt(3);
 
 //nuts
 translateFrame([0,0,0]) rotate([0,0,0]) replimat_nut();
