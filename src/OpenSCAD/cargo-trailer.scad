@@ -11,6 +11,8 @@
 include <MCAD/frame.scad>
 include <MCAD/materials.scad>
 use <go-kart-drive.scad>
+use <bolts.scad>
+use <nuts.scad>
 
 frame_is_hollow = true;
 
@@ -47,3 +49,35 @@ go_kart_drive(22);
 
 translateFrame([0,0,0])
 trailer();
+
+// bolts
+translateFrame([2,3,6]) rotate([180,0,0]) replimat_bolt(90);
+translateFrame([2,15,6]) rotate([180,0,0]) replimat_bolt(90);
+translateFrame([29,3,6]) rotate([180,0,0]) replimat_bolt(90);
+translateFrame([29,15,6]) rotate([180,0,0]) replimat_bolt(90);
+
+translateFrame([1,1,7]) rotate([90,0,0]) replimat_bolt(90);
+translateFrame([30,1,7]) rotate([90,0,0]) replimat_bolt(90);
+translateFrame([1,16,8]) rotate([270,0,0]) replimat_bolt(90);
+translateFrame([30,16,8]) rotate([270,0,0]) replimat_bolt(90);
+
+translateFrame([1,1,6]) rotate([0,270,0]) replimat_bolt(90);
+translateFrame([1,15,6]) rotate([0,270,0]) replimat_bolt(90);
+translateFrame([31,1,7]) rotate([0,90,0]) replimat_bolt(90);
+translateFrame([31,15,7]) rotate([0,90,0]) replimat_bolt(90);
+
+//nuts
+translateFrame([2,3,8]) rotate([180,0,0]) replimat_nut();
+translateFrame([2,15,8]) rotate([180,0,0]) replimat_nut();
+translateFrame([29,3,8]) rotate([180,0,0]) replimat_nut();
+translateFrame([29,15,8]) rotate([180,0,0]) replimat_nut();
+
+translateFrame([1,3,7]) rotate([90,0,0]) replimat_nut();
+translateFrame([30,3,7]) rotate([90,0,0]) replimat_nut();
+translateFrame([1,14,8]) rotate([270,0,0]) replimat_nut();
+translateFrame([30,14,8]) rotate([270,0,0]) replimat_nut();
+
+translateFrame([3,1,6]) rotate([0,270,0]) replimat_nut();
+translateFrame([3,15,6]) rotate([0,270,0]) replimat_nut();
+translateFrame([29,1,7]) rotate([0,90,0]) replimat_nut();
+translateFrame([29,15,7]) rotate([0,90,0]) replimat_nut();
