@@ -10,23 +10,24 @@
 include <MCAD/units.scad>
 
 // holes
-difference(){
-cube([1524,3048,38.1]);
+//difference(){
+//square([1524,3048]);
 for (y = [1,2,3,4,6,7,8,9,10,11,12,13,14,15,16,17,19]){
     if (y%2) {
         for (x = [0: 9]){
             translate([3*inch+x*6*inch, y*6*inch, 0])
-            cylinder(d=19.05, h=50);
+            circle(d=19.05, h=50);
         }
     }else{
         for (x = [0: 8]){
             translate([6*inch+x*6*inch, y*6*inch, 0])
-            cylinder(d=19.05, h=50);
+            circle(d=19.05, h=50);
         }
     }
 }
-}
+//}
 
+/*
 // router frames
 translate([0, 13*inch, -80])
 cube([60*inch, 40, 80]);
@@ -48,4 +49,4 @@ cube([60*inch, 40, 80]);
 
 translate([0, 107.676*inch, -80])
 cube([60*inch, 40, 80]);
-
+*/
