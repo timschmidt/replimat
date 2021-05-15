@@ -67,3 +67,6 @@ translateFrame([15,15,9]) xFrame(30);
 translateFrame([15,0,0]) zFrame(10);
 translateFrame([44,0,0]) zFrame(10);
 translateFrame([15,16,0]) zFrame(10);
+
+translateFrame([15,0,10]) replimat_plate(30,45);
+translateFrame([0,15,40]) replimat_plate(45,30);
