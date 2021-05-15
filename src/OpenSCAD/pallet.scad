@@ -11,6 +11,7 @@ include <MCAD/frame.scad>
 include <MCAD/materials.scad>
 use <bolts.scad>
 use <nuts.scad>
+use <plate-rectangular.scad>
 
 frame_is_hollow = true;
 
@@ -26,10 +27,10 @@ translateFrame([0,10,1]) xFrame(30);
 translateFrame([0,18,1]) xFrame(30);
     
 // Deck
-#translateFrame([2,0,2]) topShelf(10, 10, 0);
-#translateFrame([13,0,2]) topShelf(15, 10, 0);
-#translateFrame([2,10,2]) topShelf(15, 10, 0);
-#translateFrame([18,10,2]) topShelf(10, 10, 0);
+#translateFrame([2,0,2]) replimat_plate(10, 10);
+#translateFrame([13,0,2]) replimat_plate(15, 10);
+#translateFrame([2,10,2]) replimat_plate(15, 10);
+#translateFrame([18,10,2]) replimat_plate(10, 10);
 
 // bolts
 translateFrame([2,1,2]) rotate([0,0,0]) replimat_nut_and_bolt(1);

@@ -9,23 +9,24 @@
 
 include <MCAD/frame.scad>
 include <MCAD/materials.scad>
+use <plate-rectangular.scad>
 
 frame_is_hollow = true;
 
 // Shelving
-translateFrame([15,0,1]) topShelf(15, 10, 0);
-translateFrame([15,0,8]) topShelf(15, 10, 0);
-translateFrame([15,0,16]) topShelf(15, 10, 0);
-translateFrame([15,0,24]) topShelf(15, 10, 0);
-translateFrame([15,0,32]) topShelf(15, 10, 0);
+translateFrame([15,0,1]) replimat_plate(15, 10);
+translateFrame([15,0,8]) replimat_plate(15, 10);
+translateFrame([15,0,16]) replimat_plate(15, 10);
+translateFrame([15,0,24]) replimat_plate(15, 10);
+translateFrame([15,0,32]) replimat_plate(15, 10);
 
 // Top
-translateFrame([0,0,41]) topShelf(30, 10, 0);
+translateFrame([0,0,41]) replimat_plate(30, 10);
 
 // Sides
-translateFrame([0,0,41]) rotate([0,90,0]) topShelf(40, 10, 0);
-translateFrame([15,0,41]) rotate([0,90,0]) topShelf(40, 10, 0);
-translateFrame([30,0,41]) rotate([0,90,0]) topShelf(40, 10, 0);
+translateFrame([0,0,41]) rotate([0,90,0]) replimat_plate(40, 10);
+translateFrame([15,0,41]) rotate([0,90,0]) replimat_plate(40, 10);
+translateFrame([30,0,41]) rotate([0,90,0]) replimat_plate(40, 10);
 
 // Frames
 translateFrame([0,0,0]) xFrame(30);

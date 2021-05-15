@@ -13,6 +13,7 @@ include <MCAD/materials.scad>
 use <go-kart-drive.scad>
 use <bolts.scad>
 use <nuts.scad>
+use <plate-rectangular.scad>
 
 frame_is_hollow = true;
 
@@ -65,3 +66,7 @@ translateFrame([1,1,6]) rotate([0,270,0]) replimat_nut_and_bolt(2);
 translateFrame([1,15,6]) rotate([0,270,0]) replimat_nut_and_bolt(2);
 translateFrame([31,1,7]) rotate([0,90,0]) replimat_nut_and_bolt(2);
 translateFrame([31,15,7]) rotate([0,90,0]) replimat_nut_and_bolt(2);
+
+translateFrame([2,1,8]) replimat_plate(10,15);
+translateFrame([11,1,8]) replimat_plate(10,15);
+translateFrame([20,1,8]) replimat_plate(10,15);

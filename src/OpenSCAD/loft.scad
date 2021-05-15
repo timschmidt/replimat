@@ -10,6 +10,7 @@
 include <MCAD/units.scad>
 include <MCAD/materials.scad>
 include <MCAD/frame.scad>
+use <plate-rectangular.scad>
 
 frame_is_hollow = 0;
 

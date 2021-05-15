@@ -9,6 +9,7 @@
 
 include <MCAD/frame.scad>
 include <MCAD/materials.scad>
+use <plate-rectangular.scad>
 
 frame_is_hollow = true;
 
@@ -35,10 +36,10 @@ translateFrame([6,1,24]) yFrame(5);
 translateFrame([10,1,24]) yFrame(5);
    
 // Shelving
-translateFrame([6,0,2]) topShelf(5, 5, 0);
-translateFrame([6,0,9]) topShelf(5, 5, 0);
-translateFrame([12,0,9]) topShelf(5, 5, 0);
-translateFrame([6,0,17]) topShelf(5, 5, 0);
-translateFrame([0,0,17]) topShelf(5, 5, 0);
-translateFrame([6,0,25]) topShelf(5, 5, 0);
+translateFrame([6,0,2]) replimat_plate(5, 5);
+translateFrame([6,0,9]) replimat_plate(5, 5);
+translateFrame([12,0,9]) replimat_plate(5, 5);
+translateFrame([6,0,17]) replimat_plate(5, 5);
+translateFrame([0,0,17]) replimat_plate(5, 5);
+translateFrame([6,0,25]) replimat_plate(5, 5);
 

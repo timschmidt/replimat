@@ -13,6 +13,7 @@ include <MCAD/materials.scad>
 use <bolts.scad>
 use <nuts.scad>
 use <barrel-cage.scad>
+use <plate-rectangular.scad>
 
 translateFrame([25,0,0])
 rotate([0,270,0])
@@ -30,18 +31,26 @@ translateFrame([103,0,0])
 rotate([0,270,0])
 barrel_cage();
 
-translateFrame([25,50,0])
+translateFrame([25,45,0])
 rotate([0,270,0])
 barrel_cage();
 
-translateFrame([51,50,0])
+translateFrame([51,45,0])
 rotate([0,270,0])
 barrel_cage();
 
-translateFrame([77,50,0])
+translateFrame([77,45,0])
 rotate([0,270,0])
 barrel_cage();
 
-translateFrame([103,50,0])
+translateFrame([103,45,0])
 rotate([0,270,0])
 barrel_cage();
+
+translateFrame([0,0,14]) replimat_plate(10,60);
+translateFrame([15,0,14]) replimat_plate(10,60);
+translateFrame([30,0,14]) replimat_plate(10,60);
+translateFrame([45,0,14]) replimat_plate(10,60);
+translateFrame([60,0,14]) replimat_plate(10,60);
+translateFrame([75,0,14]) replimat_plate(10,60);
+translateFrame([90,0,14]) replimat_plate(10,60);

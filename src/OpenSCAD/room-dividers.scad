@@ -9,10 +9,11 @@
 
 include <MCAD/frame.scad>
 include <MCAD/materials.scad>
+use <plate-rectangular.scad>
 
 frame_is_hollow = true;
 
 // Panels
-translateFrame([0,0,41]) rotate([45,90,0]) topShelf(40, 10, 0);
-translateFrame([14,0,41]) rotate([-45,90,0]) topShelf(40, 10, 0);
-translateFrame([14,0,41]) rotate([45,90,0]) topShelf(40, 10, 0);
+translateFrame([0,0,41]) rotate([45,90,0]) replimat_plate(40, 10);
+translateFrame([14,0,41]) rotate([-45,90,0]) replimat_plate(40, 10);
+translateFrame([14,0,41]) rotate([45,90,0]) replimat_plate(40, 10);

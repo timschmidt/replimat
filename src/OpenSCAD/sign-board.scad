@@ -9,6 +9,7 @@
 
 include <MCAD/frame.scad>
 include <MCAD/materials.scad>
+use <plate-rectangular.scad>
 
 frame_is_hollow = true;
 
@@ -22,4 +23,4 @@ translateFrame([28,0,0]) yFrame(10);
 translateFrame([0,6,1]) xFrame(30);
 
 // Sign
-translateFrame([0,5,10]) rotate([90,0,0]) topShelf(30, 30, 0);
+translateFrame([0,5,10]) rotate([90,0,0]) replimat_plate(30, 30);
