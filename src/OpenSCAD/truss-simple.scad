@@ -14,11 +14,16 @@ use <nuts.scad>
 
 frame_is_hollow = true;
 
+module replimat_simple_truss(units){
+
 // frames
-translateFrame([0,0,1]) xFrame(15);
-translateFrame([0,0,0]) xFrame(15);
+translateFrame([0,0,1]) xFrame(units);
+translateFrame([0,0,0]) xFrame(units);
 
 // bolts
 translateFrame([0,0,2]) replimat_nut_and_bolt(2);
-translateFrame([7,0,2]) replimat_nut_and_bolt(2);
-translateFrame([14,0,2]) replimat_nut_and_bolt(2);
+translateFrame([abs(units/2),0,2]) replimat_nut_and_bolt(2);
+translateFrame([units-1,0,2]) replimat_nut_and_bolt(2);
+}
+
+replimat_simple_truss(15);

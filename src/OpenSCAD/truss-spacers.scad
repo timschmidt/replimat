@@ -14,21 +14,19 @@ use <nuts.scad>
 
 frame_is_hollow = true;
 
+
+module replimat_truss_spacers(units){
 // frames
-translateFrame([0,0,2]) xFrame(20);
-translateFrame([0,0,0]) xFrame(20);
-translateFrame([0,0,1]) xFrame(2);
-translateFrame([6,0,1]) xFrame(2);
-translateFrame([12,0,1]) xFrame(2);
-translateFrame([18,0,1]) xFrame(2);
+translateFrame([0,0,2]) xFrame(units);
+translateFrame([0,0,0]) xFrame(units);
+for (i=[0:units/6]){
+    // spacers
+    translateFrame([6*i,0,1]) xFrame(2);
+    
+    // nuts and bolts
+    translateFrame([6*i,0,3]) replimat_nut_and_bolt(3);
+    translateFrame([6*i+1,0,3]) replimat_nut_and_bolt(3);
+}
+}
 
-
-// bolts
-translateFrame([0,0,3]) replimat_nut_and_bolt(3);
-translateFrame([1,0,3]) replimat_nut_and_bolt(3);
-translateFrame([6,0,3]) replimat_nut_and_bolt(3);
-translateFrame([7,0,3]) replimat_nut_and_bolt(3);
-translateFrame([12,0,3]) replimat_nut_and_bolt(3);
-translateFrame([13,0,3]) replimat_nut_and_bolt(3);
-translateFrame([18,0,3]) replimat_nut_and_bolt(3);
-translateFrame([19,0,3]) replimat_nut_and_bolt(3);
+replimat_truss_spacers(20);
