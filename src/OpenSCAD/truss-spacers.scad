@@ -19,7 +19,7 @@ module replimat_truss_spacers(units){
 // frames
 translateFrame([0,0,2]) xFrame(units);
 translateFrame([0,0,0]) xFrame(units);
-for (i=[0:units/6]){
+for (i=[0:abs((units-2)/6)]){
     // spacers
     translateFrame([6*i,0,1]) xFrame(2);
     
