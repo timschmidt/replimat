@@ -61,4 +61,35 @@ translateFrame([0,width-4,0])
 shaft_collar();
 }
 
+module half_drive(width){
+
+shaft(holes=width,axis=2);
+
+translate([0,0,0])
+shaft_collar();
+
+wheel();
+
+translate([0,12,0])
+wheel_adapter();
+
+translateFrame([0,4,0])
+shaft_collar();
+
+translateFrame([0,5,0])
+rotate([0,180,0])
+axial_bearing();
+
+translateFrame([0,width-0.3,0])
+shaft_collar();
+
+translateFrame([0,width-1,0])
+rotate([0,180,0])
+axial_bearing();
+
+translateFrame([0,width-4,0])
+shaft_collar();
+}
+
 go_kart_drive(30);
+//half_drive(10);
