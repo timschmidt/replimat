@@ -6,10 +6,12 @@
  * @license http://www.gnu.org/licenses/agpl-3.0.en.html
  * @license https://www.tapr.org/TAPR_Open_Hardware_License_v1.0.txt
  * @comment Typical size for residential is 65 inches by 39 inches, for commercial 77 inches by 39 inches.
+ * @comment type 1 = 60 cells, type 2 = 72 cells, type 3 = Sunpower
  */
 
 include <MCAD/frame.scad>
 include <MCAD/units.scad>
+use <solar-cells.scad>
 
 module replimat_solar_panel(type=1){
     if (type==1) {
@@ -21,8 +23,8 @@ module replimat_solar_panel(type=1){
             }
             for (i = [0:5]){
                 for (j = [0:9]){
-                    translate([20+i*165,20+j*165,2*inch])
-                    cube([125,125,1]);
+                    translate([20+i*165,20+j*165,1.95*inch])
+                    replimat_solar_cell();
                 }
             }
             }
@@ -40,8 +42,8 @@ module replimat_solar_panel(type=1){
             }
             for (i = [0:5]){
                 for (j = [0:11]){
-                    translate([20+i*165,20+j*162.5,2*inch])
-                    cube([125,125,1]);
+                    translate([20+i*165,20+j*162.5,1.95*inch])
+                    replimat_solar_cell();
                 }
             }
             }
