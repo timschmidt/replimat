@@ -17,14 +17,15 @@ use <plate-rectangular.scad>
 // 5/8 inch, 3/4 inch, 7/8 inch
 
 module replimat_three_point_hitch_plate(){
-    difference(){
-    replimat_plate(3,2);
+    linear_extrude(height=14*mm){
+        difference(){
+            replimat_plate(3,2);
     
-    translateFrame([0.5,1.5,0]) circle(d=5/8*inch);
-    translateFrame([2.5,1.5,0])circle(d=3/4*inch);
-    translateFrame([1.5,1.5,0])circle(d=7/8*inch);
+            translateFrame([0.5,1.5,0]) circle(d=5/8*inch);
+            translateFrame([2.5,1.5,0])circle(d=3/4*inch);
+            translateFrame([1.5,1.5,0])circle(d=7/8*inch);
+        }
     }
-
 }
 
 replimat_three_point_hitch_plate();
