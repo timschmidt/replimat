@@ -29,6 +29,7 @@ mode = "model";
 
 include <units.scad>
 
+/* inch and a half 8020 frame
 frame_width = inch * 1.5;
 frame_hole_diameter = inch * 21/64;
 frame_hole_radius = frame_hole_diameter / 2;
@@ -37,6 +38,16 @@ frame_wall_thickness = inch * 1/8;
 frame_shelf_thickness = inch * 1/4;
 strip_width = 1 * inch + 3/8 * inch;
 strip_thickness = 1/16 * inch;
+*/
+
+frame_width = 40;
+frame_hole_diameter = 12;
+frame_hole_radius = frame_hole_diameter / 2;
+frame_is_hollow = true;
+frame_wall_thickness = 3;
+frame_shelf_thickness = 6;
+strip_width = 35;
+strip_thickness = 2;
 
 module zFrame(segments) {
 if (mode == "model") {
