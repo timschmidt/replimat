@@ -27,6 +27,7 @@ M4_nut_trap_depth = 4;
 M5_nut_depth = 4;
 M6_nut_depth = 5;
 M8_nut_depth = 6.5;
+M12_nut_depth = 12;
 
 //                                      s    r    t    n     w              t                  t
 //                                      c    a    h    y     a              r                  h
@@ -47,6 +48,7 @@ M5_nut      =      ["M5_nut",           5,   9.2, 4,   6.25, M5_washer,     M5_n
 M6_nut      =      ["M6_nut",           6,  11.5, 5,   8,    M6_washer,     M6_nut_depth,      0];
 M6_half_nut =      ["M6_half_nut",      6,  11.5, 3,   8,    M6_washer,     3,                 0];
 M8_nut      =      ["M8_nut",           8,  15,   6.5, 8,    M8_washer,     M8_nut_depth,      0];
+M12_nut     =      ["M12_nut",          12,  19,  12, 8,     M12_washer,    M12_nut_depth,     0];
 toggle_nut  =      ["toggle_nut",       6.1, 9.2, 1.5, 1.5,  M6_washer,     1.5,               inch(1/40)];
 
 M4_wingnut  =      ["M4_wingnut",       4,  10,   3.75,8,    M4_washer,     0, 22, 10, 6, 3];
@@ -71,6 +73,6 @@ M5nS_thin_nut    =      ["M5nS_thin_nut",         5,   8, 2.7];
 M6nS_thin_nut    =      ["M6nS_thin_nut",         6,  10, 3.2];
 M8nS_thin_nut    =      ["M8nS_thin_nut",         8,  13,   4];
 
-nuts = [M2_nut, M2p5_nut, M3_nut, M4_nut, M5_nut, M6_nut, M8_nut];
+nuts = [M2_nut, M2p5_nut, M3_nut, M4_nut, M5_nut, M6_nut, M8_nut, M12_nut];
 
 use <nut.scad>

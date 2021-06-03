@@ -53,6 +53,9 @@ M6_clearance_radius = 6.4 / 2;
 M8_tap_radius = 6.75 / 2;
 M8_clearance_radius = 8.4 / 2;
 
+M12_tap_radius = 10.5 / 2;
+M12_clearance_radius = 12.5 / 2;
+
 //                        d                     h       d    h    h       s    s  m
 //                        e                     e       i    e    e       o    o  a
 //                        s                     a       a    a    a       c    c  x
@@ -97,6 +100,7 @@ M4_hex_screw     = ["M4_hex", "M4 hex",         hs_hex,   4, 8.1, 2.925,  0,   0
 M5_hex_screw     = ["M5_hex", "M5 hex",         hs_hex,   5, 9.2, 3.65,   0,   0, 0,   M5_washer, M5_nut,   M5_tap_radius,    M5_clearance_radius];
 M6_hex_screw     = ["M6_hex", "M6 hex",         hs_hex,   6,11.5, 4.15,   0,   0, 0,   M6_washer, M6_nut,   M6_tap_radius,    M6_clearance_radius];
 M8_hex_screw     = ["M8_hex", "M8 hex",         hs_hex,   8, 15,  5.65,   0,   0, 22,  M8_washer, M8_nut,   M8_tap_radius,    M8_clearance_radius];
+M12_hex_screw    = ["M12_hex", "M12 hex",       hs_hex,   12, 20.78, 10.8, 0, 0, 0, M12_washer, M12_nut, M12_tap_radius, M12_clearance_radius];
 
 M3_low_cap_screw = ["M3_low_cap", "M3 low cap", hs_cap,   3, 5.5, 2,    1.5, 2.0, 18,  M3_washer, M3_nut,   M3_tap_radius,    M3_clearance_radius];
 
@@ -113,7 +117,7 @@ screw_lists = [
 [ 0,               0,              M3_low_cap_screw],
 [ M2_cs_cap_screw, 0,              M3_cs_cap_screw, M4_cs_cap_screw, M5_cs_cap_screw],
 [ M2_dome_screw,   0,              M3_dome_screw,   M4_dome_screw,   M5_dome_screw],
-[ 0,               0,              M3_hex_screw,    M4_hex_screw,    M5_hex_screw, M6_hex_screw, M8_hex_screw],
+[ 0,               0,              M3_hex_screw,    M4_hex_screw,    M5_hex_screw, M6_hex_screw, M8_hex_screw, M12_hex_screw],
 [ 0,               M2p5_pan_screw, M3_pan_screw,    M4_pan_screw,    M5_pan_screw, M6_pan_screw, No632_pan_screw],
 [ No2_screw,       0,              No4_screw,       No6_screw,       No6_cs_screw],
 [ 0,               0,              M3_grub_screw,   M4_grub_screw]
