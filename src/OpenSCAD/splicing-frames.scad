@@ -1,5 +1,5 @@
 /*
- * @name Replimat Bolting
+ * @name Replimat Splicing frames
  * @author Timothy Schmidt
  * @date 2021
  * @url http://www.github.com/timschmidt/replimat
@@ -14,7 +14,10 @@ use <nuts.scad>
 
 
 // frames
-translateFrame([0,0,0]) xFrame(3);
+translateFrame([0,0,0]) xFrame(10);
+translateFrame([8,0,1]) xFrame(10);
+
 
 // nuts and bolts
-translateFrame([1,0,1]) rotate([0,0,0]) replimat_nut_and_bolt(1);
+translateFrame([8,0,2]) rotate([0,0,0]) replimat_nut_and_bolt(2);
+translateFrame([9,0,2]) rotate([0,0,0]) replimat_nut_and_bolt(2);
