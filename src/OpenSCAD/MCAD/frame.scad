@@ -27,6 +27,9 @@
 mode = "model";
 //mode = "dxf";
 
+use <../NopSCADlib/lib.scad>
+include <../NopSCADlib/vitamins/extrusions.scad>
+include <../NopSCADlib/vitamins/extrusion.scad>
 include <units.scad>
 
 /* inch and a half 8020 frame
@@ -40,19 +43,34 @@ strip_width = 1 * inch + 3/8 * inch;
 strip_thickness = 1/16 * inch;
 */
 
+/* 40mm square tube
 frame_width = 40;
 frame_hole_diameter = 12;
 frame_hole_radius = frame_hole_diameter / 2;
-frame_is_hollow = true;
+frame_is_hollow = false;
 frame_wall_thickness = 3;
 frame_shelf_thickness = 6;
 strip_width = 35;
 strip_thickness = 2;
+frame_extrusion = 0;
+*/
+
+// 40mm aluminum T slot extrusion
+frame_width = 40;
+frame_hole_diameter = 12;
+frame_hole_radius = frame_hole_diameter / 2;
+frame_is_hollow = false;
+frame_extrusion = 1;
 
 module zFrame(segments) {
 if (mode == "model") {
-	difference() {
+    difference() {
+        if (frame_extrusion == 1) {
+            translate([frame_width/2, frame_width/2, 0])
+            extrusion(E4040, frame_width*segments, cornerHole = true, center=false);
+        } else {
 		cube([frame_width, frame_width, frame_width * segments]);
+        }
 		for(i = [0 : segments - 1]) {
 			translate([frame_width / 2, frame_width + 1, frame_width * i + frame_width / 2])
 			rotate([90,0,0])
@@ -62,11 +80,11 @@ if (mode == "model") {
 			rotate([0,90,0])
 			cylinder(r=frame_hole_radius, h=frame_width + 2);
 		}
-	if (frame_is_hollow == true) {
-		translate([frame_wall_thickness, frame_wall_thickness, -1])
-		cube([frame_width - frame_wall_thickness * 2, frame_width - frame_wall_thickness * 2, frame_width * segments + 2]);
-	}
-}
+        if (frame_is_hollow == true) {
+            translate([frame_wall_thickness, frame_wall_thickness, -1])
+            cube([frame_width - frame_wall_thickness * 2, frame_width - frame_wall_thickness * 2, frame_width * segments + 2]);
+        }
+    }
 }
 
 if (mode == "dxf") {
