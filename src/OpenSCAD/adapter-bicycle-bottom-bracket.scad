@@ -29,7 +29,7 @@ y=2*1.5*inch;
 difference(){
 
 union(){
-linear_extrude(height=19.05)
+linear_extrude(height=19.05, convexity=4)
 difference(){
 translate([0.5*1.5*inch, 1.5*inch, 0])
 hull()
