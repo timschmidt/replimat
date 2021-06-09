@@ -15,7 +15,7 @@ include <MCAD/frame.scad>
 module replimat_nut(){
   translateFrame([0.5,0.5,0])
   rotate([180,0,0])
-  nut(M8_nut, true);
+  nut(M12_nut, true);
 }
 
 rotate([180,0,0])
