@@ -16,23 +16,28 @@ use <go-kart-drive.scad>
 frame_is_hollow = true;
 
 // Vertical 
-translateFrame([1,5,0]) zFrame(15);
-translateFrame([1,53,0]) zFrame(15);
-translateFrame([39,5,0]) zFrame(15);
-translateFrame([39,53,0]) zFrame(15);
+translateFrame([1,5,0]) zFrame(40);
+translateFrame([1,52,0]) zFrame(40);
+translateFrame([39,5,0]) zFrame(40);
+translateFrame([39,52,0]) zFrame(40);
 
 // Feet
 translateFrame([0,5,0]) xFrame(40);
 translateFrame([0,53,0]) xFrame(40);
 
-translateFrame([0,4,14]) yFrame(50);
-translateFrame([51,4,14]) yFrame(50);
-translateFrame([1,53,13]) xFrame(50);
-translateFrame([1,4,13]) xFrame(50);
+translateFrame([0,4,39]) yFrame(50);
+translateFrame([51,4,39]) yFrame(50);
+translateFrame([1,53,38]) xFrame(50);
+translateFrame([1,4,38]) xFrame(50);
     
-// Shelving
-translateFrame([0,4,15]) replimat_solar_panel(2);
-translateFrame([26,4,15]) replimat_solar_panel(2);
+// Cross bracing
+
+
+    
+    
+// Solar panels
+translateFrame([0,4,40]) replimat_solar_panel(2);
+translateFrame([26,4,40]) replimat_solar_panel(2);
 
 translateFrame([0,0,0]) half_drive(8);
 translateFrame([0,60,0]) rotate([0,0,180]) half_drive(8);
