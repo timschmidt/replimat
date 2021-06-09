@@ -11,7 +11,7 @@ include <MCAD/frame.scad>
 include <MCAD/units.scad>
 include <MCAD/nuts_and_bolts.scad>
 
-frame_hole_diameter = 11/32 * inch;
+//frame_hole_diameter = 11/32 * inch;
 
 torus_diameter = 1 * inch;
 torus_width = 6 * mm;
@@ -19,15 +19,15 @@ torus_width = 6 * mm;
 module body(){
 difference(){
 union(){
-zFrame(2,frame_is_hollow=true);
+zFrame(2,frame_is_hollow=true,frame_extrusion=0);
 //zFrame(2);
 
 translateFrame([1,0,0])
-zFrame(2,frame_is_hollow=false);
+zFrame(2,frame_is_hollow=false,frame_extrusion=0);
 //zFrame(2);
 
 translateFrame([0,1,0])
-zFrame(2,frame_is_hollow=false);
+zFrame(2,frame_is_hollow=false,frame_extrusion=0);
 //zFrame(2);
 }
 
