@@ -10,35 +10,9 @@
 include <MCAD/frame.scad>
 include <MCAD/units.scad>
 
-radius = 13;
-x=5*1.5*inch;
-y=10*1.5*inch;
-
-
-difference(){
-
-translate([2.5*1.5*inch, 5*1.5*inch, 0])
-hull()
-{
-    // place 4 circles in the corners, with the given radius
-    translate([(-x/2)+radius, (-y/2)+(radius), 0])
-    circle(r=radius);
-
-    translate([(x/2)-radius, (-y/2)+radius, 0])
-    circle(r=radius);
-
-    translate([(-x/2)+radius, (y/2)-radius, 0])
-    circle(r=radius);
-
-    translate([(x/2)-radius, (y/2)-radius, 0])
-    circle(r=radius);
-}
-    
-    for(y=[0:9])
-    for(x=[0:4])
-        translate([x*1.5*inch + 0.75*inch, y*1.5*inch + 0.75 * inch, 0])
-        circle(r=4.5);
-    
+module brake_rotor(){
     
     
 }
+
+brake_rotor();
