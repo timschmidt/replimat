@@ -6,6 +6,7 @@
  * @license http://www.gnu.org/licenses/agpl-3.0.en.html
  * @license https://www.tapr.org/TAPR_Open_Hardware_License_v1.0.txt
  * @comment 4'' Bolt Circle 2-7/8'' Bolt To Bolt
+ * @todo set screws in the keyway
  */
 
 include <MCAD/frame.scad>
