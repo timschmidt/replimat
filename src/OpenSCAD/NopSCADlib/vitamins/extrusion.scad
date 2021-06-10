@@ -118,11 +118,38 @@ module extrusion_cross_section(type, cornerHole) {
                 extrusion_center_section(type);
 }
 
-module extrusion(type, length, center = true, cornerHole = false) { //! Draw the specified extrusion
+module extrusion(type, length, center = true, cornerHole = false, indexed = false) { //! Draw the specified extrusion
 
     vitamin(str("extrusion(", type[0], ", ", length, arg(cornerHole, false, "cornerHole"), "): Extrusion ", type[0], " x ", length, "mm"));
 
+    if (indexed == true) {
+        
+        // improve speed by extruding and differencing one segment then repeating x segments
+        
+        color(grey(90))
+        difference(){
+        linear_extrude(length, center = center, convexity=4)
+            extrusion_cross_section(type, cornerHole);
+            
+        frame_width = type[1];
+        segments = length / frame_width;
+        frame_hole_radius = 6.05;
+        
+        for(i = [0 : segments - 1]) {
+			//translate([frame_width / 2, frame_width + 1, frame_width * i + frame_width / 2])
+            translate([0, frame_width/2 + 1, frame_width * i + frame_width / 2])
+			rotate([90,0,0])
+			cylinder(r=frame_hole_radius, h=frame_width + 2);
+
+			translate([-frame_width / 2 - 1, 0, frame_width * i + frame_width / 2])
+			//translate([-1, 0, frame_width * i + frame_width / 2])
+			rotate([0,90,0])
+			cylinder(r=frame_hole_radius, h=frame_width + 2);
+		}
+    }
+    } else {
     color(grey(90))
         linear_extrude(length, center = center, convexity=4)
             extrusion_cross_section(type, cornerHole);
+    }
 }

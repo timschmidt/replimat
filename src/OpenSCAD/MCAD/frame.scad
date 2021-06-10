@@ -64,13 +64,12 @@ frame_extrusion = 1;
 
 module zFrame(segments) {
 if (mode == "model") {
-    difference() {
-        if (frame_extrusion == 1) {
+    if (frame_extrusion == 1) {
             translate([frame_width/2, frame_width/2, 0])
-            extrusion(E4040, frame_width*segments, cornerHole = true, center=false);
-        } else {
+            extrusion(E4040, frame_width*segments, cornerHole = true, center=false, indexed=true);
+    } else {
+    difference() {
 		cube([frame_width, frame_width, frame_width * segments]);
-        }
 		for(i = [0 : segments - 1]) {
 			translate([frame_width / 2, frame_width + 1, frame_width * i + frame_width / 2])
 			rotate([90,0,0])
@@ -84,6 +83,7 @@ if (mode == "model") {
             translate([frame_wall_thickness, frame_wall_thickness, -1])
             cube([frame_width - frame_wall_thickness * 2, frame_width - frame_wall_thickness * 2, frame_width * segments + 2]);
         }
+    }
     }
 }
 
