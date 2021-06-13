@@ -15,6 +15,19 @@ REM openjscad objects/hole\ pattern/motors.jscad -o motors.dxf
 REM openjscad objects/hole\ pattern/grids.jscad --spacing 25.4 -o grids-1inch.dxf
 
 for %%i in (*) do (
+    if exist ../../bin/stl/40mmT/%%i.stl (
+        rem exists
+    ) else (
+        "C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/stl/40mmT/%%i.stl -D holes=2 %%i
+    )
+	if exist ../../bin/png/40mmT/%%i.png (
+        rem exists
+    ) else (
+        "C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/png/40mmT/%%i.png --autocenter --viewall --view=scales --colorscheme=Tomorrow --imgsize=3840,2160 -D holes=3 %%i
+    )
+)
+
+for %%i in (*) do (
     if exist ../../bin/stl/40mm/%%i.stl (
         rem exists
     ) else (
@@ -23,6 +36,6 @@ for %%i in (*) do (
 	if exist ../../bin/png/40mm/%%i.png (
         rem exists
     ) else (
-        "C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/png/40mm/%%i.png --autocenter --viewall --view=scales --colorscheme=Tomorrow --imgsize=1024,1024 -D holes=3 %%i
+        "C:\Program Files\OpenSCAD\openscad.com" -o ../../bin/png/40mm/%%i.png --autocenter --viewall --view=scales --colorscheme=Tomorrow --imgsize=3840,2160 -D frame_extrusion=0 %%i
     )
 )
