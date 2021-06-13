@@ -45,7 +45,9 @@ use <tests/ball_bearings.scad>
 use <tests/batteries.scad>
 use <tests/bearing_blocks.scad>
 use <tests/belts.scad>
+use <tests/BLDC_motors.scad>
 use <tests/blowers.scad>
+use <tests/box_sections.scad>
 use <tests/bulldogs.scad>
 use <tests/buttons.scad>
 use <tests/cable_strips.scad>
@@ -368,10 +370,10 @@ extrusions_y = panel_meters_y + 80;
 translate([x3, veroboard_y])
     veroboard_test();
 
-translate([x3 + 70, veroboard_y + 30])
+translate([x3 + 60, veroboard_y + 20])
     geared_steppers();
 
-translate([x3 + 140, veroboard_y + 20])
+translate([x3 + 160, ssrs_y])
     pcb_mounts();
 
 translate([x3 + 170, veroboard_y + 16])
@@ -426,6 +428,9 @@ extrusion_brackets_y = rails_y + 250;
 sk_brackets_y = extrusion_brackets_y + 80;
 kp_pillow_blocks_y = sk_brackets_y + 50;
 scs_bearing_blocks_y = kp_pillow_blocks_y + 60;
+cable_strip_y = fans_y + 50;
+box_sections_y = cable_strip_y;
+BLDC_y = sheets_y;
 
 translate([x4 + 200, belts_y + 58]) {
     belt_test();
@@ -441,7 +446,7 @@ translate([x4 + 175, belts_y, -20])
 translate([x4, rails_y + 130])
     rails();
 
-translate([770, fans_y + 50])
+translate([770, cable_strip_y])
     cable_strips();
 
 translate([x4, kp_pillow_blocks_y])
@@ -459,6 +464,11 @@ translate([x4 + 120, extrusion_brackets_y])
 translate([x4, scs_bearing_blocks_y])
     scs_bearing_blocks();
 
+translate([x4, BLDC_y])
+    bldc_motors();
+
+translate([x6, box_sections_y])
+    box_sections();
 
 translate([x6, 125])
     light_strips();

@@ -1,5 +1,5 @@
 //
-// NopSCADlib Copyright Chris Palmer 2018
+// NopSCADlib Copyright Chris Palmer 2021
 // nop.head@gmail.com
 // hydraraptor.blogspot.com
 //
@@ -16,15 +16,16 @@
 // You should have received a copy of the GNU General Public License along with NopSCADlib.
 // If not, see <https://www.gnu.org/licenses/>.
 //
-include <../core.scad>
-use <../utils/layout.scad>
 
-include <../vitamins/ball_bearings.scad>
+//
+// Box sections
+//
+AL12x8x1 =  ["AL12x8x1",  "Aluminium rectangular box section 12mm x 8mm x 1mm",     [12, 8],  1, 0.5, silver, undef];
+AL20x20x2 = ["AL20x20x2", "Aluminium rectangular box section 20mm x 20mm x 2mm",    [20, 20], 2, 0.5, silver, undef];
+AL40x40x3 = ["AL40x40x3", "Aluminium rectangular box section 40mm x 40mm x 3mm",    [40, 40], 3, 0.5, silver, undef];
+CF10x10x1 = ["CF10x10x1", "Carbon fiber rectangular box section 10mm x 10mm x 1mm", [10, 10], 1, 0.5, grey(35), grey(20)];
 
-module ball_bearings()
-    layout([for(b = ball_bearings) bb_diameter(b)])
-        ball_bearing(ball_bearings[$i])
-            bearing_ball(3);
 
-if($preview)
-    ball_bearings();
+box_sections = [AL12x8x1, AL20x20x2, AL40x40x3, CF10x10x1];
+
+use <box_section.scad>

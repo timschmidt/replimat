@@ -1,5 +1,5 @@
 //
-// NopSCADlib Copyright Chris Palmer 2018
+// NopSCADlib Copyright Chris Palmer 2021
 // nop.head@gmail.com
 // hydraraptor.blogspot.com
 //
@@ -16,15 +16,15 @@
 // You should have received a copy of the GNU General Public License along with NopSCADlib.
 // If not, see <https://www.gnu.org/licenses/>.
 //
-include <../core.scad>
+include <../utils/core/core.scad>
 use <../utils/layout.scad>
 
-include <../vitamins/ball_bearings.scad>
+include <../vitamins/box_sections.scad>
 
-module ball_bearings()
-    layout([for(b = ball_bearings) bb_diameter(b)])
-        ball_bearing(ball_bearings[$i])
-            bearing_ball(3);
+module box_sections() {
+    layout([for(b = box_sections) box_section_size(b).x], 20)
+        box_section(box_sections[$i], 100);
+}
 
 if($preview)
-    ball_bearings();
+    box_sections();

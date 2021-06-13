@@ -21,7 +21,6 @@
 //! KP pillow block bearings
 //
 
-include <../core.scad>
 include <ball_bearings.scad>
 
 

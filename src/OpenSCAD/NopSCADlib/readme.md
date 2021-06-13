@@ -20,32 +20,32 @@ A list of changes classified as breaking, additions or fixes is maintained in [C
 
 ## Table of Contents<a name="top"/>
 <table><tr>
-<th align="left"> Vitamins A-I </th><th align="left"> Vitamins J-Q </th><th align="left"> Vitamins R-Z </th><th align="left"> Printed </th><th align="left"> Utilities </th><th align="left"> Core Utilities </th></tr>
-<tr><td> <a href = "#Axials">Axials</a> </td><td> <a href = "#Jack">Jack</a> </td><td> <a href = "#Rails">Rails</a> </td><td> <a href = "#Box">Box</a> </td><td> <a href = "#Annotation">Annotation</a> </td><td> <a href = "#BOM">BOM</a> </td></tr>
-<tr><td> <a href = "#Ball_bearings">Ball_bearings</a> </td><td> <a href = "#LDRs">LDRs</a> </td><td> <a href = "#Ring_terminals">Ring_terminals</a> </td><td> <a href = "#Butt_box">Butt_box</a> </td><td> <a href = "#Bezier">Bezier</a> </td><td> <a href = "#Clip">Clip</a> </td></tr>
-<tr><td> <a href = "#Batteries">Batteries</a> </td><td> <a href = "#LED_meters">LED_meters</a> </td><td> <a href = "#Rockers">Rockers</a> </td><td> <a href = "#Cable_grommets">Cable_grommets</a> </td><td> <a href = "#Catenary">Catenary</a> </td><td> <a href = "#Global">Global</a> </td></tr>
-<tr><td> <a href = "#Bearing_blocks">Bearing_blocks</a> </td><td> <a href = "#LEDs">LEDs</a> </td><td> <a href = "#Rod">Rod</a> </td><td> <a href = "#Camera_housing">Camera_housing</a> </td><td> <a href = "#Core_xy">Core_xy</a> </td><td> <a href = "#Polyholes">Polyholes</a> </td></tr>
-<tr><td> <a href = "#Belts">Belts</a> </td><td> <a href = "#Leadnuts">Leadnuts</a> </td><td> <a href = "#SK_brackets">SK_brackets</a> </td><td> <a href = "#Carriers">Carriers</a> </td><td> <a href = "#Dogbones">Dogbones</a> </td><td> <a href = "#Rounded_rectangle">Rounded_rectangle</a> </td></tr>
-<tr><td> <a href = "#Blowers">Blowers</a> </td><td> <a href = "#Light_strips">Light_strips</a> </td><td> <a href = "#SMDs">SMDs</a> </td><td> <a href = "#Corner_block">Corner_block</a> </td><td> <a href = "#Fillet">Fillet</a> </td><td> <a href = "#Sphere">Sphere</a> </td></tr>
-<tr><td> <a href = "#Bulldogs">Bulldogs</a> </td><td> <a href = "#Linear_bearings">Linear_bearings</a> </td><td> <a href = "#SSRs">SSRs</a> </td><td> <a href = "#Door_hinge">Door_hinge</a> </td><td> <a href = "#Gears">Gears</a> </td><td> <a href = "#Teardrops">Teardrops</a> </td></tr>
-<tr><td> <a href = "#Buttons">Buttons</a> </td><td> <a href = "#Magnets">Magnets</a> </td><td> <a href = "#Screws">Screws</a> </td><td> <a href = "#Door_latch">Door_latch</a> </td><td> <a href = "#Hanging_hole">Hanging_hole</a> </td><td></td></tr>
-<tr><td> <a href = "#Cable_strips">Cable_strips</a> </td><td> <a href = "#Mains_sockets">Mains_sockets</a> </td><td> <a href = "#Sealing_strip">Sealing_strip</a> </td><td> <a href = "#Drag_chain">Drag_chain</a> </td><td> <a href = "#Horiholes">Horiholes</a> </td><td></td></tr>
-<tr><td> <a href = "#Cameras">Cameras</a> </td><td> <a href = "#Microswitches">Microswitches</a> </td><td> <a href = "#Shaft_couplings">Shaft_couplings</a> </td><td> <a href = "#Fan_guard">Fan_guard</a> </td><td> <a href = "#Layout">Layout</a> </td><td></td></tr>
-<tr><td> <a href = "#Circlips">Circlips</a> </td><td> <a href = "#Microview">Microview</a> </td><td> <a href = "#Sheets">Sheets</a> </td><td> <a href = "#Fixing_block">Fixing_block</a> </td><td> <a href = "#Maths">Maths</a> </td><td></td></tr>
-<tr><td> <a href = "#Components">Components</a> </td><td> <a href = "#Modules">Modules</a> </td><td> <a href = "#Spades">Spades</a> </td><td> <a href = "#Flat_hinge">Flat_hinge</a> </td><td> <a href = "#Offset">Offset</a> </td><td></td></tr>
-<tr><td> <a href = "#DIP">DIP</a> </td><td> <a href = "#Nuts">Nuts</a> </td><td> <a href = "#Spools">Spools</a> </td><td> <a href = "#Foot">Foot</a> </td><td> <a href = "#Quadrant">Quadrant</a> </td><td></td></tr>
-<tr><td> <a href = "#D_connectors">D_connectors</a> </td><td> <a href = "#O_ring">O_ring</a> </td><td> <a href = "#Springs">Springs</a> </td><td> <a href = "#Handle">Handle</a> </td><td> <a href = "#Round">Round</a> </td><td></td></tr>
-<tr><td> <a href = "#Displays">Displays</a> </td><td> <a href = "#Opengrab">Opengrab</a> </td><td> <a href = "#Stepper_motors">Stepper_motors</a> </td><td> <a href = "#PCB_mount">PCB_mount</a> </td><td> <a href = "#Rounded_cylinder">Rounded_cylinder</a> </td><td></td></tr>
-<tr><td> <a href = "#Extrusion_brackets">Extrusion_brackets</a> </td><td> <a href = "#PCB">PCB</a> </td><td> <a href = "#Swiss_clips">Swiss_clips</a> </td><td> <a href = "#PSU_shroud">PSU_shroud</a> </td><td> <a href = "#Rounded_polygon">Rounded_polygon</a> </td><td></td></tr>
-<tr><td> <a href = "#Extrusions">Extrusions</a> </td><td> <a href = "#PCBs">PCBs</a> </td><td> <a href = "#Toggles">Toggles</a> </td><td> <a href = "#Pocket_handle">Pocket_handle</a> </td><td> <a href = "#Rounded_triangle">Rounded_triangle</a> </td><td></td></tr>
-<tr><td> <a href = "#Fans">Fans</a> </td><td> <a href = "#PSUs">PSUs</a> </td><td> <a href = "#Transformers">Transformers</a> </td><td> <a href = "#Press_fit">Press_fit</a> </td><td> <a href = "#Sector">Sector</a> </td><td></td></tr>
-<tr><td> <a href = "#Fuseholder">Fuseholder</a> </td><td> <a href = "#Panel_meters">Panel_meters</a> </td><td> <a href = "#Tubings">Tubings</a> </td><td> <a href = "#Printed_box">Printed_box</a> </td><td> <a href = "#Sweep">Sweep</a> </td><td></td></tr>
-<tr><td> <a href = "#Geared_steppers">Geared_steppers</a> </td><td> <a href = "#Pillars">Pillars</a> </td><td> <a href = "#Variacs">Variacs</a> </td><td> <a href = "#Printed_pulleys">Printed_pulleys</a> </td><td> <a href = "#Thread">Thread</a> </td><td></td></tr>
-<tr><td> <a href = "#Green_terminals">Green_terminals</a> </td><td> <a href = "#Pillow_blocks">Pillow_blocks</a> </td><td> <a href = "#Veroboard">Veroboard</a> </td><td> <a href = "#Ribbon_clamp">Ribbon_clamp</a> </td><td> <a href = "#Tube">Tube</a> </td><td></td></tr>
-<tr><td> <a href = "#Hot_ends">Hot_ends</a> </td><td> <a href = "#Pin_headers">Pin_headers</a> </td><td> <a href = "#Washers">Washers</a> </td><td> <a href = "#SSR_shroud">SSR_shroud</a> </td><td></td><td></td></tr>
-<tr><td> <a href = "#Hygrometer">Hygrometer</a> </td><td> <a href = "#Pulleys">Pulleys</a> </td><td> <a href = "#Wire">Wire</a> </td><td> <a href = "#Screw_knob">Screw_knob</a> </td><td></td><td></td></tr>
-<tr><td> <a href = "#IECs">IECs</a> </td><td></td><td> <a href = "#Zipties">Zipties</a> </td><td> <a href = "#Socket_box">Socket_box</a> </td><td></td><td></td></tr>
-<tr><td> <a href = "#Inserts">Inserts</a> </td><td></td><td></td><td> <a href = "#Strap_handle">Strap_handle</a> </td><td></td><td></td></tr>
+<th align="left"> Vitamins A-H </th><th align="left"> Vitamins I-Q </th><th align="left"> Vitamins R-Z </th><th align="left"> Printed </th><th align="left"> Utilities </th><th align="left"> Core Utilities </th></tr>
+<tr><td> <a href = "#Axials">Axials</a> </td><td> <a href = "#IECs">IECs</a> </td><td> <a href = "#Rails">Rails</a> </td><td> <a href = "#Box">Box</a> </td><td> <a href = "#Annotation">Annotation</a> </td><td> <a href = "#BOM">BOM</a> </td></tr>
+<tr><td> <a href = "#BLDC_motors">BLDC_motors</a> </td><td> <a href = "#Inserts">Inserts</a> </td><td> <a href = "#Ring_terminals">Ring_terminals</a> </td><td> <a href = "#Butt_box">Butt_box</a> </td><td> <a href = "#Bezier">Bezier</a> </td><td> <a href = "#Clip">Clip</a> </td></tr>
+<tr><td> <a href = "#Ball_bearings">Ball_bearings</a> </td><td> <a href = "#Jack">Jack</a> </td><td> <a href = "#Rockers">Rockers</a> </td><td> <a href = "#Cable_grommets">Cable_grommets</a> </td><td> <a href = "#Catenary">Catenary</a> </td><td> <a href = "#Global">Global</a> </td></tr>
+<tr><td> <a href = "#Batteries">Batteries</a> </td><td> <a href = "#LDRs">LDRs</a> </td><td> <a href = "#Rod">Rod</a> </td><td> <a href = "#Camera_housing">Camera_housing</a> </td><td> <a href = "#Core_xy">Core_xy</a> </td><td> <a href = "#Polyholes">Polyholes</a> </td></tr>
+<tr><td> <a href = "#Bearing_blocks">Bearing_blocks</a> </td><td> <a href = "#LED_meters">LED_meters</a> </td><td> <a href = "#SK_brackets">SK_brackets</a> </td><td> <a href = "#Carriers">Carriers</a> </td><td> <a href = "#Dogbones">Dogbones</a> </td><td> <a href = "#Rounded_rectangle">Rounded_rectangle</a> </td></tr>
+<tr><td> <a href = "#Belts">Belts</a> </td><td> <a href = "#LEDs">LEDs</a> </td><td> <a href = "#SMDs">SMDs</a> </td><td> <a href = "#Corner_block">Corner_block</a> </td><td> <a href = "#Fillet">Fillet</a> </td><td> <a href = "#Sphere">Sphere</a> </td></tr>
+<tr><td> <a href = "#Blowers">Blowers</a> </td><td> <a href = "#Leadnuts">Leadnuts</a> </td><td> <a href = "#SSRs">SSRs</a> </td><td> <a href = "#Door_hinge">Door_hinge</a> </td><td> <a href = "#Gears">Gears</a> </td><td> <a href = "#Teardrops">Teardrops</a> </td></tr>
+<tr><td> <a href = "#Box_sections">Box_sections</a> </td><td> <a href = "#Light_strips">Light_strips</a> </td><td> <a href = "#Screws">Screws</a> </td><td> <a href = "#Door_latch">Door_latch</a> </td><td> <a href = "#Hanging_hole">Hanging_hole</a> </td><td></td></tr>
+<tr><td> <a href = "#Bulldogs">Bulldogs</a> </td><td> <a href = "#Linear_bearings">Linear_bearings</a> </td><td> <a href = "#Sealing_strip">Sealing_strip</a> </td><td> <a href = "#Drag_chain">Drag_chain</a> </td><td> <a href = "#Horiholes">Horiholes</a> </td><td></td></tr>
+<tr><td> <a href = "#Buttons">Buttons</a> </td><td> <a href = "#Magnets">Magnets</a> </td><td> <a href = "#Shaft_couplings">Shaft_couplings</a> </td><td> <a href = "#Fan_guard">Fan_guard</a> </td><td> <a href = "#Layout">Layout</a> </td><td></td></tr>
+<tr><td> <a href = "#Cable_strips">Cable_strips</a> </td><td> <a href = "#Mains_sockets">Mains_sockets</a> </td><td> <a href = "#Sheets">Sheets</a> </td><td> <a href = "#Fixing_block">Fixing_block</a> </td><td> <a href = "#Maths">Maths</a> </td><td></td></tr>
+<tr><td> <a href = "#Cameras">Cameras</a> </td><td> <a href = "#Microswitches">Microswitches</a> </td><td> <a href = "#Spades">Spades</a> </td><td> <a href = "#Flat_hinge">Flat_hinge</a> </td><td> <a href = "#Offset">Offset</a> </td><td></td></tr>
+<tr><td> <a href = "#Circlips">Circlips</a> </td><td> <a href = "#Microview">Microview</a> </td><td> <a href = "#Spools">Spools</a> </td><td> <a href = "#Foot">Foot</a> </td><td> <a href = "#Quadrant">Quadrant</a> </td><td></td></tr>
+<tr><td> <a href = "#Components">Components</a> </td><td> <a href = "#Modules">Modules</a> </td><td> <a href = "#Springs">Springs</a> </td><td> <a href = "#Handle">Handle</a> </td><td> <a href = "#Round">Round</a> </td><td></td></tr>
+<tr><td> <a href = "#DIP">DIP</a> </td><td> <a href = "#Nuts">Nuts</a> </td><td> <a href = "#Stepper_motors">Stepper_motors</a> </td><td> <a href = "#PCB_mount">PCB_mount</a> </td><td> <a href = "#Rounded_cylinder">Rounded_cylinder</a> </td><td></td></tr>
+<tr><td> <a href = "#D_connectors">D_connectors</a> </td><td> <a href = "#O_ring">O_ring</a> </td><td> <a href = "#Swiss_clips">Swiss_clips</a> </td><td> <a href = "#PSU_shroud">PSU_shroud</a> </td><td> <a href = "#Rounded_polygon">Rounded_polygon</a> </td><td></td></tr>
+<tr><td> <a href = "#Displays">Displays</a> </td><td> <a href = "#Opengrab">Opengrab</a> </td><td> <a href = "#Toggles">Toggles</a> </td><td> <a href = "#Pocket_handle">Pocket_handle</a> </td><td> <a href = "#Rounded_triangle">Rounded_triangle</a> </td><td></td></tr>
+<tr><td> <a href = "#Extrusion_brackets">Extrusion_brackets</a> </td><td> <a href = "#PCB">PCB</a> </td><td> <a href = "#Transformers">Transformers</a> </td><td> <a href = "#Press_fit">Press_fit</a> </td><td> <a href = "#Sector">Sector</a> </td><td></td></tr>
+<tr><td> <a href = "#Extrusions">Extrusions</a> </td><td> <a href = "#PCBs">PCBs</a> </td><td> <a href = "#Tubings">Tubings</a> </td><td> <a href = "#Printed_box">Printed_box</a> </td><td> <a href = "#Sweep">Sweep</a> </td><td></td></tr>
+<tr><td> <a href = "#Fans">Fans</a> </td><td> <a href = "#PSUs">PSUs</a> </td><td> <a href = "#Variacs">Variacs</a> </td><td> <a href = "#Printed_pulleys">Printed_pulleys</a> </td><td> <a href = "#Thread">Thread</a> </td><td></td></tr>
+<tr><td> <a href = "#Fuseholder">Fuseholder</a> </td><td> <a href = "#Panel_meters">Panel_meters</a> </td><td> <a href = "#Veroboard">Veroboard</a> </td><td> <a href = "#Ribbon_clamp">Ribbon_clamp</a> </td><td> <a href = "#Tube">Tube</a> </td><td></td></tr>
+<tr><td> <a href = "#Geared_steppers">Geared_steppers</a> </td><td> <a href = "#Pillars">Pillars</a> </td><td> <a href = "#Washers">Washers</a> </td><td> <a href = "#SSR_shroud">SSR_shroud</a> </td><td></td><td></td></tr>
+<tr><td> <a href = "#Green_terminals">Green_terminals</a> </td><td> <a href = "#Pillow_blocks">Pillow_blocks</a> </td><td> <a href = "#Wire">Wire</a> </td><td> <a href = "#Screw_knob">Screw_knob</a> </td><td></td><td></td></tr>
+<tr><td> <a href = "#Hot_ends">Hot_ends</a> </td><td> <a href = "#Pin_headers">Pin_headers</a> </td><td> <a href = "#Zipties">Zipties</a> </td><td> <a href = "#Socket_box">Socket_box</a> </td><td></td><td></td></tr>
+<tr><td> <a href = "#Hygrometer">Hygrometer</a> </td><td> <a href = "#Pulleys">Pulleys</a> </td><td></td><td> <a href = "#Strap_handle">Strap_handle</a> </td><td></td><td></td></tr>
 </table>
 
 ---
@@ -337,6 +337,73 @@ Individual teeth are not drawn, instead they are represented by a lighter colour
 <a href="#top">Top</a>
 
 ---
+<a name="BLDC_motors"></a>
+## BLDC_motors
+ Brushless DC electric motor
+
+[vitamins/bldc_motors.scad](vitamins/bldc_motors.scad) Object definitions.
+
+[vitamins/bldc_motor.scad](vitamins/bldc_motor.scad) Implementation.
+
+[tests/BLDC_motors.scad](tests/BLDC_motors.scad) Code for this example.
+
+### Properties
+| Function | Description |
+|:--- |:--- |
+| `BLDC_base_diameter(type)` | Base diameter |
+| `BLDC_base_height_1(type)` | Base height 1 |
+| `BLDC_base_height_2(type)` | Base height 2 |
+| `BLDC_base_hole_diameter(type)` | Base hole diameter |
+| `BLDC_base_holes(type)` | Base holes |
+| `BLDC_base_open(type)` | Base open |
+| `BLDC_bell_diameter(type)` | Bell diameter |
+| `BLDC_bell_height_1(type)` | Bell height 1 |
+| `BLDC_bell_height_2(type)` | Bell height 2 |
+| `BLDC_bell_hole_diameter(type)` | Bell hole diameter |
+| `BLDC_bell_holes(type)` | Bell holes |
+| `BLDC_bell_spokes(type)` | Bell spoke count |
+| `BLDC_body_colour(type)` | Body colour |
+| `BLDC_boss_diameter(type)` | Boss diameter |
+| `BLDC_boss_height(type)` | Boss height |
+| `BLDC_diameter(type)` | Diameter of motor |
+| `BLDC_height(type)` | Height of motor including boss, if any, but excluding prop shaft |
+| `BLDC_prop_shaft_diameter(type)` | Diameter of unthreaded portion of prop shaft |
+| `BLDC_prop_shaft_length(type)` | Prop shaft length, including threaded section |
+| `BLDC_prop_shaft_thread_diameter(type)` | Diameter of threaded section of prop shaft |
+| `BLDC_prop_shaft_thread_length(type)` | Length of threaded section of prop shaft |
+| `BLDC_shaft_diameter(type)` | shaft diameter |
+| `BLDC_shaft_length(type)` | Total shaft length |
+| `BLDC_shaft_offset(type)` | shaft offset from base |
+| `BLDC_side_colour(type)` | Side colour |
+| `BLDC_wire_diameter(type)` | Wire diameter |
+
+### Modules
+| Module | Description |
+|:--- |:--- |
+| `BLDC(type)` | Draw specified BLDC motor |
+| `BLDC_base_screw_positions(type, n = 4)` | Positions children at the base screw holes |
+| `BLDC_bell_screw_positions(type, n = 4)` | Positions children at the bell screw holes |
+| `BLDC_screw_positions(holes, n = 4)` | Screw positions utility function |
+
+![bldc_motors](tests/png/bldc_motors.png)
+
+### Vitamins
+| Qty | Module call | BOM entry |
+| ---:|:--- |:---|
+|   1 | `BLDC(BLDC0603)` |  Brushless DC motor BLDC0603 |
+|   1 | `BLDC(BLDC0802)` |  Brushless DC motor BLDC0802 |
+|   1 | `BLDC(BLDC1105)` |  Brushless DC motor BLDC1105 |
+|   1 | `BLDC(BLDC1306)` |  Brushless DC motor BLDC1306 |
+|   1 | `BLDC(BLDC1804)` |  Brushless DC motor BLDC1804 |
+|   1 | `BLDC(BLDC2205)` |  Brushless DC motor BLDC2205 |
+|   1 | `BLDC(BLDC2212)` |  Brushless DC motor BLDC2212 |
+|   1 | `BLDC(BLDC3548)` |  Brushless DC motor BLDC3548 |
+|   1 | `BLDC(BLDC4250)` |  Brushless DC motor BLDC4250 |
+
+
+<a href="#top">Top</a>
+
+---
 <a name="Blowers"></a>
 ## Blowers
 Models of radial blowers.
@@ -373,6 +440,7 @@ Models of radial blowers.
 |:--- |:--- |
 | `blower_casing_is_square(type)` | True for square radial fans, false for spiral shape radial blowers |
 | `blower_exit_offset(type)` | Offset of exit's centre from the edge |
+| `blower_size(type)` | Size |
 
 ### Modules
 | Module | Description |
@@ -397,6 +465,44 @@ Models of radial blowers.
 |   6 | `washer(M2_washer)` |  Washer  M2 x 5mm x 0.3mm |
 |   3 | `washer(M3_washer)` |  Washer  M3 x 7mm x 0.5mm |
 |   2 | `washer(M4_washer)` |  Washer  M4 x 9mm x 0.8mm |
+
+
+<a href="#top">Top</a>
+
+---
+<a name="Box_sections"></a>
+## Box_sections
+Box sections.
+
+[vitamins/box_sections.scad](vitamins/box_sections.scad) Object definitions.
+
+[vitamins/box_section.scad](vitamins/box_section.scad) Implementation.
+
+[tests/box_sections.scad](tests/box_sections.scad) Code for this example.
+
+### Properties
+| Function | Description |
+|:--- |:--- |
+| `box_section_colour(type)` | Colour |
+| `box_section_colour2(type)` | Colour2, for woven box section |
+| `box_section_fillet(type)` | Fillet |
+| `box_section_material(type)` | Material description |
+| `box_section_size(type)` | Size |
+| `box_section_thickness(type)` | Wall thickness |
+
+### Functions
+| Function | Description |
+|:--- |:--- |
+| `box_section_is_woven(type)` | Box section is woven, eg carbon fiber |
+
+![box_sections](tests/png/box_sections.png)
+
+### Vitamins
+| Qty | Module call | BOM entry |
+| ---:|:--- |:---|
+|   1 | `box_section(AL12x8x1, 100)` |  Aluminium rectangular box section 12mm x 8mm x 1mm, length 100mm |
+|   1 | `box_section(AL20x20x2, 100)` |  Aluminium rectangular box section 20mm x 20mm x 2mm, length 100mm |
+|   1 | `box_section(CF10x10x1, 100)` |  Carbon fiber rectangular box section 10mm x 10mm x 1mm, length 100mm |
 
 
 <a href="#top">Top</a>
@@ -1053,23 +1159,23 @@ Geared tin can steppers
 |:--- |:--- |
 | `gs_boss_d(type)` | Boss around the shaft diameter |
 | `gs_boss_h(type)` | Boss around the shaft height |
-| `gs_bulge2_d(type)` | Plastic rear bulge depth from centre |
-| `gs_bulge2_h(type)` | Plastic rear bulge height |
-| `gs_bulge2_w(type)` | Plastic rear bulge width |
-| `gs_bulge_d(type)` | Plastic bulge depth from centre |
-| `gs_bulge_h(type)` | Plastic bulge height |
-| `gs_bulge_w(type)` | Plastic bulge width |
+| `gs_bulge(type)` | Plastic bulge width, depth, height, z offset |
+| `gs_bulge2(type)` | Plastic rear bulge width, depth, height |
 | `gs_diameter(type)` | Can diameter |
 | `gs_flat_length(type)` | Shaft flat length |
 | `gs_height(type)` | Can height |
 | `gs_hole_d(type)` | Screw hole diameter |
 | `gs_lug_t(type)` | Screw lug thickness |
 | `gs_lug_w(type)` | Screw lug width |
+| `gs_motor(type)` | Motor diameter and height if separate from gearbox |
 | `gs_offset(type)` | Offset of the shaft from the centre of the can |
 | `gs_pitch(type)` | Screw pitch |
+| `gs_radius(type)` | Top - or bottom + corner radius |
 | `gs_shaft_d(type)` | Shaft diameter |
 | `gs_shaft_flat(type)` | Shaft width across the flats |
 | `gs_shaft_length(type)` | Shaft length |
+| `gs_wire_d(type)` | Wire diameter |
+| `gs_wires(type)` | Wire colours and grouping |
 
 ### Modules
 | Module | Description |
@@ -1083,6 +1189,7 @@ Geared tin can steppers
 | Qty | Module call | BOM entry |
 | ---:|:--- |:---|
 |   1 | `geared_stepper(28BYJ_48)` |  Geared stepper - 28BYJ-48 5V |
+|   1 | `geared_stepper(35BYGHJ75)` |  Geared stepper - 35BYGHJ75 0.4A |
 
 
 <a href="#top">Top</a>
@@ -1196,7 +1303,7 @@ Needs updating as mostly obsolete versions.
 |   1 |  |  Tape self amalgamating silicone 110mm x 25mm |
 |   1 | `resistor(Epcos)` |  Thermistor Epcos B57560G104F 100K 1% - not shown |
 |   2 |  |  Wire Red PTFE 16/0.2mm strands, length 170mm |
-|   4 | `ziptie(small_ziptie, 8)` |  Ziptie 2.5mm x 100mm min length |
+|   4 | `ziptie(small_ziptie)` |  Ziptie 2.5mm x 100mm min length |
 
 
 <a href="#top">Top</a>
@@ -1289,7 +1396,7 @@ IEC mains inlets and outlet.
 |   1 | `iec(IEC_inlet)` |  IEC inlet |
 |   1 | `iec(IEC_inlet_atx)` |  IEC inlet for ATX |
 |   1 | `iec(IEC_outlet)` |  IEC outlet RS 811-7193 |
-|   1 | `iec(IEC_switched_fused_inlet)` |  IEC320 C14 switched fused inlet module |
+|   1 | `iec(IEC_320_C14_switched_fused_inlet)` |  IEC320 C14 switched fused inlet module |
 |  12 | `nut(M3_nut, nyloc = true)` |  Nut M3 x 2.4mm nyloc |
 |   4 | `screw(M3_cs_cap_screw, 10)` |  Screw M3 cs cap x 10mm |
 |   8 | `screw(M3_cs_cap_screw, 12)` |  Screw M3 cs cap x 12mm |
@@ -1445,7 +1552,7 @@ Nuts for leadscrews.
 | `leadnut_flange_t(type)` | Flange thickness |
 | `leadnut_height(type)` | Total height |
 | `leadnut_hole_dia(type)` | The diameter of the screw holes |
-| `leadnut_hole_pitch(type)` | The radia pitch of the screw holes |
+| `leadnut_hole_pitch(type)` | The radial pitch of the screw holes |
 | `leadnut_holes(type)` | The number of screw holes |
 | `leadnut_lead(type)` | Screw lead |
 | `leadnut_od(type)` | Outer diameter of the shank |
@@ -2030,6 +2137,7 @@ A permanent magnet that can be magnatized and de-magnatized electronically.
 | `opengrab_depth()` | Module height |
 | `opengrab_pcb()` | The PCB |
 | `opengrab_pcb_z()` | PCB offset from the front |
+| `opengrab_screw_depth()` | Max screw depth in pillars |
 | `opengrab_target_thickness()` | Target sheet thickness |
 | `opengrab_width()` | Module width |
 
@@ -2141,7 +2249,7 @@ PCBs and perfboard with optional components. The shape can be a rectangle with o
 | `pcb_accessories(type)` | List of accessories to go on the BOM, SD cards, USB cables, etc. |
 | `pcb_colour(type)` | Colour of the subtrate |
 | `pcb_components(type)` | List of components |
-| `pcb_grid(type)` | Grid if a perfboard |
+| `pcb_grid(type)` | Grid origin if a perfboard |
 | `pcb_hole_d(type)` | Mounting hole diameter |
 | `pcb_holes(type)` | List of hole positions |
 | `pcb_land_d(type)` | Pad around mounting hole |
@@ -2156,6 +2264,7 @@ PCBs and perfboard with optional components. The shape can be a rectangle with o
 ### Functions
 | Function | Description |
 |:--- |:--- |
+| `pcb_component(type, name, index = 0)` | Return the component specified by name and index |
 | `pcb_component_position(type, name, index = 0)` | Return x y position of specified component |
 | `pcb_coord(type, p)` | Convert offsets from the edge to coordinates relative to the centre |
 | `pcb_grid_pos(type, x, y, z = 0)` | Returns a pcb grid position |
@@ -2277,7 +2386,7 @@ PCBs and perfboard with optional components. The shape can be a rectangle with o
 | `pcb_accessories(type)` | List of accessories to go on the BOM, SD cards, USB cables, etc. |
 | `pcb_colour(type)` | Colour of the subtrate |
 | `pcb_components(type)` | List of components |
-| `pcb_grid(type)` | Grid if a perfboard |
+| `pcb_grid(type)` | Grid origin if a perfboard |
 | `pcb_hole_d(type)` | Mounting hole diameter |
 | `pcb_holes(type)` | List of hole positions |
 | `pcb_land_d(type)` | Pad around mounting hole |
@@ -2292,6 +2401,7 @@ PCBs and perfboard with optional components. The shape can be a rectangle with o
 ### Functions
 | Function | Description |
 |:--- |:--- |
+| `pcb_component(type, name, index = 0)` | Return the component specified by name and index |
 | `pcb_component_position(type, name, index = 0)` | Return x y position of specified component |
 | `pcb_coord(type, p)` | Convert offsets from the edge to coordinates relative to the centre |
 | `pcb_grid_pos(type, x, y, z = 0)` | Returns a pcb grid position |
@@ -2351,6 +2461,7 @@ PCBs and perfboard with optional components. The shape can be a rectangle with o
 |   1 | `pcb(EnviroPlus)` |  Enviro+ |
 |   1 | `pcb(ExtruderPCB)` |  Extruder connection PCB |
 |   1 | `pcb(Keyes5p1)` |  Keyes5.1 Arduino Uno expansion board - not shown |
+|   1 | `pcb(LIPO_fuel_gauge)` |  LIPO fuel gauge |
 |   1 | `pcb(MP1584EN)` |  MP1584EN 3A buck converter |
 |   1 | `pcb(MT3608)` |  MT3608 boost converter module |
 |   1 | `pcb(Melzi)` |  Melzi electronics - not shown |
@@ -2360,13 +2471,14 @@ PCBs and perfboard with optional components. The shape can be a rectangle with o
 |   1 | `molex_254(3)` |  Molex KK header 3 way |
 |  16 | `nut(M2_nut, nyloc = true)` |  Nut M2 x 1.6mm nyloc |
 |  30 | `nut(M2p5_nut, nyloc = true)` |  Nut M2.5 x 2.2mm nyloc |
-|  22 | `nut(M3_nut, nyloc = true)` |  Nut M3 x 2.4mm nyloc |
+|  26 | `nut(M3_nut, nyloc = true)` |  Nut M3 x 2.4mm nyloc |
 |   8 | `nut(M4_nut, nyloc = true)` |  Nut M4 x 3.2mm nyloc |
 |   1 | `pcb(PI_IO)` |  PI_IO V2 |
 |   1 | `pcb(PSU12V1A)` |  PSU 12V 1A - not shown |
 |   1 | `pcb(PERF60x40)` |  Perfboard 60 x 40mm |
 |   1 | `pcb(PERF70x30)` |  Perfboard 70 x 30mm |
 |   1 | `pcb(PERF70x50)` |  Perfboard 70 x 50mm |
+|   1 | `pcb(PERF70x51)` |  Perfboard 70 x 51mm |
 |   1 | `pcb(PERF74x51)` |  Perfboard 74 x 51mm |
 |   1 | `pcb(PERF80x20)` |  Perfboard 80 x 20mm |
 |   1 | `pin_socket(2p54header, 13, 2, right_angle = true)` |  Pin socket 13 x 2 right_angle |
@@ -2374,16 +2486,18 @@ PCBs and perfboard with optional components. The shape can be a rectangle with o
 |   1 | `pcb(RPI3)` |  Raspberry Pi 3 |
 |   1 | `pcb(RPI4)` |  Raspberry Pi 4 |
 |   1 | `pcb(RPI0)` |  Raspberry Pi Zero |
-|  12 | `screw(M2_cap_screw, 16)` |  Screw M2 cap x 16mm |
-|   4 | `screw(M2_cap_screw, 20)` |  Screw M2 cap x 20mm |
-|   2 | `screw(M2p5_cap_screw, 20)` |  Screw M2.5 cap x 20mm |
+|   8 | `screw(M2_cap_screw, 16)` |  Screw M2 cap x 16mm |
+|   8 | `screw(M2_cap_screw, 20)` |  Screw M2 cap x 20mm |
+|   2 | `screw(M2p5_cap_screw, 16)` |  Screw M2.5 cap x 16mm |
+|   8 | `screw(M2p5_cap_screw, 20)` |  Screw M2.5 cap x 20mm |
 |   8 | `screw(M2p5_cap_screw, 25)` |  Screw M2.5 cap x 25mm |
-|   8 | `screw(M2p5_cap_screw, 30)` |  Screw M2.5 cap x 30mm |
-|  12 | `screw(M2p5_pan_screw, 25)` |  Screw M2.5 pan x 25mm |
-|   4 | `screw(M3_cap_screw, 16)` |  Screw M3 cap x 16mm |
-|   9 | `screw(M3_cap_screw, 30)` |  Screw M3 cap x 30mm |
-|   9 | `screw(M3_cap_screw, 35)` |  Screw M3 cap x 35mm |
+|   4 | `screw(M2p5_pan_screw, 20)` |  Screw M2.5 pan x 20mm |
+|   8 | `screw(M2p5_pan_screw, 25)` |  Screw M2.5 pan x 25mm |
+|   8 | `screw(M3_cap_screw, 16)` |  Screw M3 cap x 16mm |
+|   4 | `screw(M3_cap_screw, 25)` |  Screw M3 cap x 25mm |
+|  14 | `screw(M3_cap_screw, 30)` |  Screw M3 cap x 30mm |
 |   8 | `screw(M4_cap_screw, 35)` |  Screw M4 cap x 35mm |
+|   1 | `pcb(XIAO)` |  Seeeduino XIAO |
 |   1 | `pcb(TP4056)` |  TP4056 Li-lon Battery charger module |
 |   3 | `terminal_35(2)` |  Terminal block 2 way 3.5mm |
 |   2 | `green_terminal(gt_2p54, 4)` |  Terminal block 4 way 0.1" |
@@ -2391,32 +2505,33 @@ PCBs and perfboard with optional components. The shape can be a rectangle with o
 |   1 | `pcb(WD2002SJ)` |  WD2002SJ Buck Boost DC-DC converter |
 |  16 | `washer(M2_washer)` |  Washer  M2 x 5mm x 0.3mm |
 |  30 | `washer(M2p5_washer)` |  Washer  M2.5 x 5.9mm x 0.5mm |
-|  22 | `washer(M3_washer)` |  Washer  M3 x 7mm x 0.5mm |
+|  26 | `washer(M3_washer)` |  Washer  M3 x 7mm x 0.5mm |
 |   8 | `washer(M4_washer)` |  Washer  M4 x 9mm x 0.8mm |
 |   1 | `pcb(ZC_A0591)` |  ZC-A0591 ULN2003 driver PCB |
 
 ### Printed
 | Qty | Filename |
 | ---:|:--- |
-|   4 | pcb_spacer2060.stl |
+|   4 | pcb_spacer20100.stl |
 |   4 | pcb_spacer2070.stl |
 |   4 | pcb_spacer2080.stl |
 |   4 | pcb_spacer2090.stl |
-|   4 | pcb_spacer25120.stl |
-|   4 | pcb_spacer25130.stl |
-|   4 | pcb_spacer25140.stl |
-|   4 | pcb_spacer25150_2.stl |
-|   4 | pcb_spacer25160_2.stl |
-|   4 | pcb_spacer25180.stl |
-|   4 | pcb_spacer25190.stl |
-|   2 | pcb_spacer2580.stl |
-|   4 | pcb_spacer30170.stl |
-|   5 | pcb_spacer30200.stl |
-|   5 | pcb_spacer30210.stl |
-|   4 | pcb_spacer30220.stl |
+|   4 | pcb_spacer25100.stl |
+|   4 | pcb_spacer25110.stl |
+|   4 | pcb_spacer25120_2.stl |
+|   4 | pcb_spacer25130_2.stl |
+|   4 | pcb_spacer25150.stl |
+|   4 | pcb_spacer25160.stl |
+|   2 | pcb_spacer2550.stl |
+|   4 | pcb_spacer2590.stl |
+|   4 | pcb_spacer30140.stl |
+|   5 | pcb_spacer30170.stl |
+|   5 | pcb_spacer30180.stl |
+|   4 | pcb_spacer30190.stl |
 |   4 | pcb_spacer3050.stl |
-|   4 | pcb_spacer40230.stl |
-|   4 | pcb_spacer40240.stl |
+|   4 | pcb_spacer3060.stl |
+|   4 | pcb_spacer40200.stl |
+|   4 | pcb_spacer40210.stl |
 
 
 <a href="#top">Top</a>
@@ -2626,6 +2741,7 @@ Face order is bottom, top, left, right, front, back.
 | Function | Description |
 |:--- |:--- |
 | `psu_face_transform(type, face)` | Returns a transformation matrix to get to the specified face |
+| `psu_size(type)` | Size |
 | `terminal_block_length(type, ways)` | Total length of terminal block |
 
 ### Modules
@@ -2698,7 +2814,7 @@ Timing belt pulleys, both toothed and plain with internal bearings for idlers.
 ### Modules
 | Module | Description |
 |:--- |:--- |
-| `pulley(type, colour = silver)` | Draw a pulley |
+| `pulley(type, colour = silver)` | Draw a pulley, any children are placed above. |
 | `pulley_assembly(type, colour = silver)` | Draw a pulley with its grub screws in place |
 
 ![pulleys](tests/png/pulleys.png)
@@ -2785,26 +2901,35 @@ Linear rails with carriages.
 ### Vitamins
 | Qty | Module call | BOM entry |
 | ---:|:--- |:---|
-|   2 | `rail(MGN12, 200)` |  Linear rail MGN12 x 200mm |
+|   1 | `rail(MGN12, 200)` |  Linear rail MGN12 x 200mm |
 |   1 | `rail(MGN15, 200)` |  Linear rail MGN15 x 200mm |
 |   1 | `rail(MGN5, 200)` |  Linear rail MGN5 x 200mm |
 |   1 | `rail(MGN7, 200)` |  Linear rail MGN7 x 200mm |
 |   1 | `rail(MGN9, 200)` |  Linear rail MGN9 x 200mm |
 |   1 | `rail(SSR15, 200)` |  Linear rail SSR15 x 200mm |
+|   1 | `carriage(MGN12C_carriage)` |  Linear rail carriage MGN12C |
+|   1 | `carriage(MGN12H_carriage)` |  Linear rail carriage MGN12H |
+|   1 | `carriage(MGN15C_carriage)` |  Linear rail carriage MGN15C |
+|   1 | `carriage(MGN5C_carriage)` |  Linear rail carriage MGN5C |
+|   1 | `carriage(MGN7C_carriage)` |  Linear rail carriage MGN7C |
+|   1 | `carriage(MGN7H_carriage)` |  Linear rail carriage MGN7H |
+|   1 | `carriage(MGN9C_carriage)` |  Linear rail carriage MGN9C |
+|   1 | `carriage(MGN9H_carriage)` |  Linear rail carriage MGN9H |
+|   1 | `carriage(SSR15_carriage)` |  Linear rail carriage SSR15 |
 |  26 | `nut(M2_nut, nyloc = true)` |  Nut M2 x 1.6mm nyloc |
-|  31 | `nut(M3_nut, nyloc = true)` |  Nut M3 x 2.4mm nyloc |
+|  23 | `nut(M3_nut, nyloc = true)` |  Nut M3 x 2.4mm nyloc |
 |   4 | `nut(M4_nut, nyloc = true)` |  Nut M4 x 3.2mm nyloc |
 |  11 | `screw(M2_cap_screw, 10)` |  Screw M2 cap x 10mm |
 |  15 | `screw(M2_cs_cap_screw, 10)` |  Screw M2 cs cap x 10mm |
 |   8 | `screw(M3_cap_screw, 10)` |  Screw M3 cap x 10mm |
-|  12 | `screw(M3_cap_screw, 12)` |  Screw M3 cap x 12mm |
+|   6 | `screw(M3_cap_screw, 12)` |  Screw M3 cap x 12mm |
 |   3 | `screw(M3_cap_screw, 16)` |  Screw M3 cap x 16mm |
 |   2 | `screw(M3_cs_cap_screw, 12)` |  Screw M3 cs cap x 12mm |
-|   6 | `screw(M3_cs_cap_screw, 16)` |  Screw M3 cs cap x 16mm |
+|   4 | `screw(M3_cs_cap_screw, 16)` |  Screw M3 cs cap x 16mm |
 |   2 | `screw(M4_cap_screw, 16)` |  Screw M4 cap x 16mm |
 |   2 | `screw(M4_cs_cap_screw, 20)` |  Screw M4 cs cap x 20mm |
 |  26 | `washer(M2_washer)` |  Washer  M2 x 5mm x 0.3mm |
-|  31 | `washer(M3_washer)` |  Washer  M3 x 7mm x 0.5mm |
+|  23 | `washer(M3_washer)` |  Washer  M3 x 7mm x 0.5mm |
 |   4 | `washer(M4_washer)` |  Washer  M4 x 9mm x 0.8mm |
 
 
@@ -3005,7 +3130,7 @@ For an explanation of `screw_polysink()` see <https://hydraraptor.blogspot.com/2
 | `screw(type, length, hob_point = 0, nylon = false)` | Draw specified screw, optionally hobbed or nylon |
 | `screw_and_washer(type, length, star = false, penny = false)` | Screw with a washer which can be standard or penny and an optional star washer on top |
 | `screw_countersink(type, drilled = true)` | Countersink shape |
-| `screw_polysink(type, h = 100, alt = false)` | A countersink hole made from stacked polyholes for printed parts |
+| `screw_polysink(type, h = 100, alt = false, sink = 0)` | A countersink hole made from stacked polyholes for printed parts, default is flush, `sink` can be used to recess the head |
 
 ![screws](tests/png/screws.png)
 
@@ -3037,6 +3162,7 @@ For an explanation of `screw_polysink()` see <https://hydraraptor.blogspot.com/2
 |   1 | `screw(M5_hex_screw, 30)` |  Screw M5 hex x 30mm |
 |   1 | `screw(M5_pan_screw, 30)` |  Screw M5 pan x 30mm |
 |   1 | `screw(M6_cap_screw, 30)` |  Screw M6 cap x 30mm |
+|   1 | `screw(M6_cs_cap_screw, 30)` |  Screw M6 cs cap x 30mm |
 |   1 | `screw(M6_hex_screw, 30)` |  Screw M6 hex x 30mm |
 |   1 | `screw(M6_pan_screw, 30)` |  Screw M6 pan x 30mm |
 |   1 | `screw(M8_cap_screw, 35)` |  Screw M8 cap x 35mm |
@@ -3045,6 +3171,7 @@ For an explanation of `screw_polysink()` see <https://hydraraptor.blogspot.com/2
 |   1 | `screw(No4_screw, 10)` |  Screw No4 pan wood x 10mm |
 |   1 | `screw(No6_cs_screw, 30)` |  Screw No6 cs wood x 30mm |
 |   1 | `screw(No6_screw, 30)` |  Screw No6 pan wood x 30mm |
+|   1 | `screw(No8_screw, 30)` |  Screw No8 pan wood x 30mm |
 
 ### Printed
 | Qty | Filename |
@@ -3261,6 +3388,8 @@ Surface mount components for PCBs.
 ### Properties
 | Function | Description |
 |:--- |:--- |
+| `smd_cap_end_cap(type)` | End cap width |
+| `smd_cap_size(type)` | Body length, width |
 | `smd_led_lens(type)` | Lens length width and height |
 | `smd_led_size(type)` | Body length, width and height |
 | `smd_res_end_cap(type)` | End cap width |
@@ -3277,6 +3406,7 @@ Surface mount components for PCBs.
 ### Modules
 | Module | Description |
 |:--- |:--- |
+| `smd_capacitor(type, height)` | Draw an SMD capacitor with specified height |
 | `smd_led(type, colour, cutout)` | Draw an SMD LED with specified `colour` |
 | `smd_resistor(type, value)` | Draw an SMD resistor with specified value |
 
@@ -3287,6 +3417,9 @@ Surface mount components for PCBs.
 | ---:|:--- |:---|
 |   1 | `smd_led(LED0603, green)` |  SMD LED 0603 green |
 |   1 | `smd_led(LED0805, blue)` |  SMD LED 0805 blue |
+|   1 | `smd_capacitor(CAP0603)` |  SMD capacitor 0603 |
+|   1 | `smd_capacitor(CAP0805)` |  SMD capacitor 0805 |
+|   1 | `smd_capacitor(CAP1206)` |  SMD capacitor 1206 |
 |   1 | `smd_resistor(RES0603, 1R0)` |  SMD resistor 0603 1R0 0.1W |
 |   1 | `smd_resistor(RES0805, 10M)` |  SMD resistor 0805 10M 0.125W |
 |   1 | `smd_resistor(RES1206, 100K)` |  SMD resistor 1206 100K 0.25W |
@@ -3989,7 +4122,7 @@ Just a BOM entry at the moment and cable bundle size functions for holes, plus c
 |   1 |  |  Wire orange 7/0.2mm strands, length 90mm |
 |   1 |  |  Wire red 7/0.2mm strands, length 90mm |
 |   1 |  |  Wire yellow 7/0.2mm strands, length 90mm |
-|   1 | `ziptie(small_ziptie, 2.1)` |  Ziptie 2.5mm x 100mm min length |
+|   1 | `ziptie(small_ziptie)` |  Ziptie 2.5mm x 100mm min length |
 
 
 <a href="#top">Top</a>
@@ -4017,16 +4150,16 @@ Cable zipties.
 ### Modules
 | Module | Description |
 |:--- |:--- |
-| `ziptie(type, r, t = 0)` | Draw specified ziptie wrapped around radius `r` and optionally through panel thickness `t` |
+| `ziptie(type, r = 5, t = 0)` | Draw specified ziptie wrapped around radius `r` and optionally through panel thickness `t` |
 
 ![zipties](tests/png/zipties.png)
 
 ### Vitamins
 | Qty | Module call | BOM entry |
 | ---:|:--- |:---|
-|   1 | `ziptie(small_ziptie, 5)` |  Ziptie 2.5mm x 100mm min length |
-|   1 | `ziptie(ziptie_3p6mm, 5)` |  Ziptie 3.6mm x 100mm min length |
-|   1 | `ziptie(ziptie_3mm, 5)` |  Ziptie 3mm x 100mm min length |
+|   1 | `ziptie(small_ziptie)` |  Ziptie 2.5mm x 100mm min length |
+|   1 | `ziptie(ziptie_3p6mm)` |  Ziptie 3.6mm x 100mm min length |
+|   1 | `ziptie(ziptie_3mm)` |  Ziptie 3mm x 100mm min length |
 
 
 <a href="#top">Top</a>
@@ -5236,7 +5369,7 @@ The stl and assembly must be given a name and parameterless wrappers for the stl
 |   6 | `screw(M3_cap_screw, 10)` |  Screw M3 cap x 10mm |
 |   6 | `washer(M3_washer)` |  Washer  M3 x 7mm x 0.5mm |
 |   6 | `star_washer(M3_washer)` |  Washer star M3 x 0.5mm |
-|   3 | `ziptie(small_ziptie, 3)` |  Ziptie 2.5mm x 100mm min length |
+|   3 | `ziptie(small_ziptie)` |  Ziptie 2.5mm x 100mm min length |
 
 ### Printed
 | Qty | Filename |
@@ -5438,7 +5571,7 @@ The STL and assembly must be given a name and parameterless wrappers for the stl
 |   4 | `screw(M3_cap_screw, 10)` |  Screw M3 cap x 10mm |
 |   4 | `washer(M3_washer)` |  Washer  M3 x 7mm x 0.5mm |
 |   4 | `star_washer(M3_washer)` |  Washer star M3 x 0.5mm |
-|   4 | `ziptie(small_ziptie, 3)` |  Ziptie 2.5mm x 100mm min length |
+|   4 | `ziptie(small_ziptie)` |  Ziptie 2.5mm x 100mm min length |
 
 ### Printed
 | Qty | Filename |
@@ -5631,8 +5764,8 @@ allows flexible positioning of the motors.
 ### Modules
 | Module | Description |
 |:--- |:--- |
-| `coreXY(type, size, pos, separation, x_gap, plain_idler_offset = 0, upper_drive_pulley_offset, lower_drive_pulley_offset, show_pulleys = false)` | Wrapper module to draw both belts of a coreXY setup |
-| `coreXY_belts(type, carriagePosition, coreXYPosBL, coreXYPosTR, separation, x_gap = 20, upper_drive_pulley_offset = [0, 0], lower_drive_pulley_offset = [0, 0], show_pulleys = false)` | Draw the coreXY belts |
+| `coreXY(type, size, pos, separation, x_gap, plain_idler_offset = 0, upper_drive_pulley_offset, lower_drive_pulley_offset, show_pulleys = false, left_lower = false)` | Wrapper module to draw both belts of a coreXY setup |
+| `coreXY_belts(type, carriagePosition, coreXYPosBL, coreXYPosTR, separation, x_gap = 20, upper_drive_pulley_offset = [0, 0], lower_drive_pulley_offset = [0, 0], show_pulleys = false, left_lower = false)` | Draw the coreXY belts |
 | `coreXY_half(type, size, pos, separation_y = 0, x_gap = 0, plain_idler_offset = 0, drive_pulley_offset = [0, 0], show_pulleys = false, lower_belt = false, hflip = false)` | Draw one belt of a coreXY setup |
 
 ![core_xy](tests/png/core_xy.png)
@@ -5832,6 +5965,7 @@ Maths utilities for manipulating vectors and matrices.
 | `circle_intersect(c1, r1, c2, r2)` | Calculate one point where two circles in the X-Z plane intersect, clockwise around c1 |
 | `cosh(x)` | hyperbolic cosine |
 | `coth(x)` | hyperbolic cotangent |
+| `cubic_real_roots(a, b, c, d)` | Returns real roots of cubic equation |
 | `degrees(radians)` | Convert degrees to radians |
 | `euler(R)` | Convert a rotation matrix to a Euler rotation vector. |
 | `identity(n, x = 1)` | Construct an arbitrary size identity matrix |
@@ -5839,6 +5973,7 @@ Maths utilities for manipulating vectors and matrices.
 | `map(v, func)` | make a new vector where the func function argument is applied to each element of the vector v |
 | `mapi(v, func)` | make a new vector where the func function argument is applied to each element of the vector v. The func will get the index number as first argument, and the element as second argument. |
 | `nearly_zero(x)` | True if x is close to zero |
+| `quadratic_real_roots(a, b, c)` | Returns real roots of a quadratic equation, biggest first. Returns empty list if no real roots |
 | `radians(degrees)` | Convert radians to degrees |
 | `reduce(v, func, unity)` | reduce a vector v to a single entity by applying the func function recursively to the reduced value so far and the next element, starting with unity as the initial reduced value |
 | `reverse(v)` | Reverse a vector |
@@ -5861,6 +5996,7 @@ Maths utilities for manipulating vectors and matrices.
 | `vec2(v)` | Return a 2 vector with the first two elements of `v` |
 | `vec3(v)` | Return a 3 vector with the first three elements of `v` |
 | `vec4(v)` | Return a 4 vector with the first three elements of `v` |
+| `xor(a,b)` | Logical exclusive OR |
 
 ### Modules
 | Module | Description |

@@ -1,5 +1,5 @@
 //
-// NopSCADlib Copyright Chris Palmer 2018
+// NopSCADlib Copyright Chris Palmer 2021
 // nop.head@gmail.com
 // hydraraptor.blogspot.com
 //
@@ -19,12 +19,13 @@
 include <../core.scad>
 use <../utils/layout.scad>
 
-include <../vitamins/ball_bearings.scad>
+include <../vitamins/bldc_motors.scad>
 
-module ball_bearings()
-    layout([for(b = ball_bearings) bb_diameter(b)])
-        ball_bearing(ball_bearings[$i])
-            bearing_ball(3);
+module bldc_motors()
+    layout([for(b = bldc_motors) BLDC_diameter(b)])
+        rotate(-90)
+            BLDC(bldc_motors[$i]);
 
 if($preview)
-    ball_bearings();
+    let($show_threads = 1)
+        bldc_motors();
