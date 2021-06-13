@@ -76,4 +76,4 @@ module replimat_solar_panel(type=1){
     }
 }
 
-replimat_solar_panel(3);
+replimat_solar_panel(type);
