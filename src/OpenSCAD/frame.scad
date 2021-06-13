@@ -11,10 +11,10 @@ include <MCAD/frame.scad>
 include <MCAD/materials.scad>
 
 // Customizer values
-holes=35; // [2,3,4,5,10,15,20,25,30,40,50]
+segments=35; // [2,3,4,5,10,15,20,25,30,40,50]
 frame_is_hollow=true;
 axis=3; // [1:X, 2:Y, 3:Z]
 
-if (axis == 1) { xFrame(holes); }
-if (axis == 2) { yFrame(holes); }
-if (axis == 3) { zFrame(holes); }
+if (axis == 1) { xFrame(segments); }
+if (axis == 2) { yFrame(segments); }
+if (axis == 3) { zFrame(segments); }
