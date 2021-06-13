@@ -14,6 +14,7 @@ use <nuts.scad>
 use <plate-three-point-hitch.scad>
 
 frame_is_hollow = true;
+category = 1;
 
 module replimat_three_point_hitch(category){
 // frames
@@ -101,4 +102,4 @@ module replimat_three_point_hitch(category){
     }        
 }
 
-replimat_three_point_hitch(1);
+replimat_three_point_hitch(category);
