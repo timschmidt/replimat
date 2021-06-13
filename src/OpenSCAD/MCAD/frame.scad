@@ -30,6 +30,8 @@ mode = "model";
 use <../NopSCADlib/lib.scad>
 include <../NopSCADlib/vitamins/extrusions.scad>
 include <../NopSCADlib/vitamins/extrusion.scad>
+include <../NopSCADlib/vitamins/box_sections.scad>
+include <../NopSCADlib/vitamins/box_section.scad>
 include <units.scad>
 
 /* inch and a half 8020 frame
@@ -65,25 +67,11 @@ frame_extrusion = 1;
 module zFrame(segments) {
 if (mode == "model") {
     if (frame_extrusion == 1) {
-            translate([frame_width/2, frame_width/2, 0])
-            extrusion(E4040, frame_width*segments, cornerHole = true, center=false, indexed=true);
+        translate([frame_width/2, frame_width/2, 0])
+        extrusion(E4040, frame_width*segments, cornerHole = true, center=false, indexed=true);
     } else {
-    difference() {
-		cube([frame_width, frame_width, frame_width * segments]);
-		for(i = [0 : segments - 1]) {
-			translate([frame_width / 2, frame_width + 1, frame_width * i + frame_width / 2])
-			rotate([90,0,0])
-			cylinder(r=frame_hole_radius, h=frame_width + 2);
-
-			translate([-1, frame_width / 2, frame_width * i + frame_width / 2])
-			rotate([0,90,0])
-			cylinder(r=frame_hole_radius, h=frame_width + 2);
-		}
-        if (frame_is_hollow == true) {
-            translate([frame_wall_thickness, frame_wall_thickness, -1])
-            cube([frame_width - frame_wall_thickness * 2, frame_width - frame_wall_thickness * 2, frame_width * segments + 2]);
-        }
-    }
+        translate([frame_width/2, frame_width/2, 0])
+        box_section(AL40x40x3, frame_width*segments, center = false, indexed = true);
     }
 }
 
