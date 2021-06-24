@@ -1,0 +1,7 @@
+main_assembly:
+
+Assemblies:
+  1 back_assembly
+  1 left_assembly
+  1 right_assembly
+  1 seat_assembly

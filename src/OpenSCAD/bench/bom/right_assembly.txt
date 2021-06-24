@@ -1,0 +1,6 @@
+right_assembly:
+Vitamins:
+  2 Extrusion E4040 x 400mm
+  1 Extrusion E4040 x 800mm
+  2 Nut M12 x 12mm nyloc
+  2 Screw M12 hex x 92mm
