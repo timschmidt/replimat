@@ -1,5 +1,7 @@
 <a name="TOP"></a>
 # Bench
+Basic bench built with standardized and fully reusable components.
+
 ![Main Assembly](assemblies/main_assembled.png)
 
 <span></span>
@@ -48,7 +50,7 @@
 ### Assembly instructions
 ![back_assembly](assemblies/back_assembly_tn.png)
 
-Backrests and support rails
+Attach backrests to support rails
 
 ![back_assembled](assemblies/back_assembled_tn.png)
 
@@ -70,7 +72,7 @@ Backrests and support rails
 ### Assembly instructions
 ![seat_assembly](assemblies/seat_assembly_tn.png)
 
-Seats and support rails
+Attach seats to support rails
 
 ![seat_assembled](assemblies/seat_assembled_tn.png)
 
@@ -92,7 +94,7 @@ Seats and support rails
 ### Assembly instructions
 ![left_assembly](assemblies/left_assembly_tn.png)
 
-Left legs and rear upright
+Assemble left legs and rear upright
 
 ![left_assembled](assemblies/left_assembled_tn.png)
 
@@ -114,7 +116,7 @@ Left legs and rear upright
 ### Assembly instructions
 ![right_assembly](assemblies/right_assembly_tn.png)
 
-Right legs and rear upright
+Assemble right legs and rear upright
 
 ![right_assembled](assemblies/right_assembled_tn.png)
 
@@ -140,7 +142,7 @@ Right legs and rear upright
 ### Assembly instructions
 ![main_assembly](assemblies/main_assembly_tn.png)
 
-Basic bench built with standardized and fully reusable components.
+Attach seat and back assemblies to side assembles with bolts
 
 ![main_assembled](assemblies/main_assembled_tn.png)
 

@@ -7,6 +7,10 @@
  * @license https://www.tapr.org/TAPR_Open_Hardware_License_v1.0.txt
  */
 
+//
+//! Basic bench built with standardized and fully reusable components.
+//
+
 include <frame.scad>
 include <materials.scad>
 use <bolts.scad>
@@ -14,7 +18,7 @@ use <plate-rectangular.scad>
 include <NopSCADlib/lib.scad>
 
 //
-//! Right legs and rear upright
+//! Assemble right legs and rear upright
 //
 
 module right_assembly(){
@@ -34,7 +38,7 @@ module right_assembly(){
 }
 
 //
-//! Left legs and rear upright
+//! Assemble left legs and rear upright
 //
 
 module left_assembly(){
@@ -54,7 +58,7 @@ module left_assembly(){
 }
 
 //
-//! Seats and support rails
+//! Attach seats to support rails
 //
 
 module seat_assembly(){
@@ -89,7 +93,7 @@ module seat_assembly(){
 }
 
 //
-//! Backrests and support rails
+//! Attach backrests to support rails
 //
 
 module back_assembly(){
@@ -118,7 +122,7 @@ module back_assembly(){
 }
 
 //
-//! Basic bench built with standardized and fully reusable components.
+//! Attach seat and back assemblies to side assembles with bolts
 //
 
 module main_assembly(){

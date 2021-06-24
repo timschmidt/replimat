@@ -9,5 +9,5 @@
     "assemblies/back_assembly.png": 1.961,
     "assemblies/main_assembled.png": 2.579,
     "assemblies/main_assembly.png": 2.539,
-    "readme.html": 0.13
+    "readme.html": 0.112
 }
