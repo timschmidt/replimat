@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>File:LT master cad.fcstd - Open Source Ecology</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"File","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":6,"wgPageName":"File:LT_master_cad.fcstd","wgTitle":"LT master cad.fcstd","wgCurRevisionId":166503,"wgRevisionId":166503,"wgArticleId":30470,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"File:LT_master_cad.fcstd","wgRelevantArticleId":30470,"wgRequestId":"YN1rEhXnYixhxx@oA1wcyAAAAAE","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRestrictionUpload":[],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}"});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","filepage":"ready","mediawiki.action.view.filepage":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@1tnuuwf",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.action.view.filepage%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.30.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="Open Source Ecology (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.opensourceecology.org/api.php?action=rsd"/>
+<link rel="license" href="/wiki/Copyright"/>
+<link rel="alternate" type="application/atom+xml" title="Open Source Ecology Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js?40bd4"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-6 ns-subject page-File_LT_master_cad_fcstd rootpage-File_LT_master_cad_fcstd skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">File:LT master cad.fcstd</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From Open Source Ecology</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text"><ul id="filetoc"><li><a href="#file">File</a></li>
+<li><a href="#filehistory">File history</a></li>
+<li><a href="#filelinks">File usage</a></li></ul><div class="fullMedia"><span class="dangerousLink"><a href="/images/e/ec/LT_master_cad.fcstd" class="internal" title="LT master cad.fcstd">LT_master_cad.fcstd</a></span> &#8206;<span class="fileInfo">(file size: 6.42 MB, MIME type: <span class="mime-type">application/zip</span>)</span></div>
+<div class="mediaWarning"><strong>Warning:</strong> This file type may contain malicious code.
+By executing it, your system may be compromised.</div>
+<div id="mw-imagepage-content" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>Figuring out geometry.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20210701071322
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.001 seconds
+Real time usage: 0.001 seconds
+Preprocessor visited node count: 1/1000000
+Preprocessor generated node count: 4/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 1/40
+Expensive parser function count: 0/100
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key osewiki_db-wiki_:pcache:idhash:30470-0!canonical and timestamp 20210701071322 and revision id 166503
+ -->
+</div><h2 id="filehistory">File history</h2>
+<div id="mw-imagepage-section-filehistory">
+<p>Click on a date/time to view the file as it appeared at that time.
+</p>(newest | <a href="/index.php?title=File:LT_master_cad.fcstd&amp;dir=prev#filehistory" class="mw-lastlink" title="File:LT master cad.fcstd">oldest</a>) View (newer 10  |  <a href="/index.php?title=File:LT_master_cad.fcstd&amp;offset=20171029213206#filehistory" class="mw-nextlink" title="File:LT master cad.fcstd" rel="next">older 10</a>) (<a href="/index.php?title=File:LT_master_cad.fcstd&amp;offset=&amp;limit=10#filehistory" class="mw-numlink" title="File:LT master cad.fcstd">10</a> | <a href="/index.php?title=File:LT_master_cad.fcstd&amp;offset=&amp;limit=20#filehistory" class="mw-numlink" title="File:LT master cad.fcstd">20</a> | <a href="/index.php?title=File:LT_master_cad.fcstd&amp;offset=&amp;limit=50#filehistory" class="mw-numlink" title="File:LT master cad.fcstd">50</a> | <a href="/index.php?title=File:LT_master_cad.fcstd&amp;offset=&amp;limit=100#filehistory" class="mw-numlink" title="File:LT master cad.fcstd">100</a> | <a href="/index.php?title=File:LT_master_cad.fcstd&amp;offset=&amp;limit=250#filehistory" class="mw-numlink" title="File:LT master cad.fcstd">250</a> | <a href="/index.php?title=File:LT_master_cad.fcstd&amp;offset=&amp;limit=500#filehistory" class="mw-numlink" title="File:LT master cad.fcstd">500</a>)
+<table class="wikitable filehistory">
+<tr><th></th><th>Date/Time</th><th>Dimensions</th><th>User</th><th>Comment</th></tr>
+<tr><td>current</td><td class='filehistory-selected' style='white-space: nowrap;'><a href="/images/e/ec/LT_master_cad.fcstd">23:45, 20 February 2018</a></td><td> <span style="white-space: nowrap;">(6.42 MB)</span></td><td><a href="/wiki/User:AbeAnderson" class="mw-userlink" title="User:AbeAnderson"><bdi>AbeAnderson</bdi></a><span style="white-space: nowrap;"> <span class="mw-usertoollinks">(<a href="/wiki/User_talk:AbeAnderson" class="mw-usertoollinks-talk" title="User talk:AbeAnderson">talk</a> | <a href="/wiki/Special:Contributions/AbeAnderson" class="mw-usertoollinks-contribs" title="Special:Contributions/AbeAnderson">contribs</a>)</span></span></td><td dir="ltr">simplified LT for file size and added power cubes for visualizing stacking configuration and plumbing. constraints editable.</td></tr>
+<tr><td></td><td  style='white-space: nowrap;'><a href="/images/archive/e/ec/20180220234525%21LT_master_cad.fcstd">23:42, 27 November 2017</a></td><td> <span style="white-space: nowrap;">(4.67 MB)</span></td><td><a href="/wiki/User:Robinmaster18" class="mw-userlink" title="User:Robinmaster18"><bdi>Robinmaster18</bdi></a><span style="white-space: nowrap;"> <span class="mw-usertoollinks">(<a href="/wiki/User_talk:Robinmaster18" class="mw-usertoollinks-talk" title="User talk:Robinmaster18">talk</a> | <a href="/wiki/Special:Contributions/Robinmaster18" class="mw-usertoollinks-contribs" title="Special:Contributions/Robinmaster18">contribs</a>)</span></span></td><td dir="ltr">Raised loader arms 4&quot;, adjusted arm-cylinder geometry.</td></tr>
+<tr><td></td><td  style='white-space: nowrap;'><a href="/images/archive/e/ec/20171127234209%21LT_master_cad.fcstd">00:56, 20 November 2017</a></td><td> <span style="white-space: nowrap;">(4.03 MB)</span></td><td><a href="/wiki/User:Robinmaster18" class="mw-userlink" title="User:Robinmaster18"><bdi>Robinmaster18</bdi></a><span style="white-space: nowrap;"> <span class="mw-usertoollinks">(<a href="/wiki/User_talk:Robinmaster18" class="mw-usertoollinks-talk" title="User talk:Robinmaster18">talk</a> | <a href="/wiki/Special:Contributions/Robinmaster18" class="mw-usertoollinks-contribs" title="Special:Contributions/Robinmaster18">contribs</a>)</span></span></td><td dir="ltr">Adjusted tensioner, changed elbow to straight fitting in 45.6 motors, changed Arm-cylinders geometry, used 36&quot; and 14&quot; cylinders, added 4&quot; square tubing and mounting tangs for the arms, reduced distance between MQA mounting holes to 8&quot;.</td></tr>
+<tr><td></td><td  style='white-space: nowrap;'><a href="/images/archive/e/ec/20171120005559%21LT_master_cad.fcstd">23:31, 11 November 2017</a></td><td> <span style="white-space: nowrap;">(3.12 MB)</span></td><td><a href="/wiki/User:Robinmaster18" class="mw-userlink" title="User:Robinmaster18"><bdi>Robinmaster18</bdi></a><span style="white-space: nowrap;"> <span class="mw-usertoollinks">(<a href="/wiki/User_talk:Robinmaster18" class="mw-usertoollinks-talk" title="User talk:Robinmaster18">talk</a> | <a href="/wiki/Special:Contributions/Robinmaster18" class="mw-usertoollinks-contribs" title="Special:Contributions/Robinmaster18">contribs</a>)</span></span></td><td dir="ltr">Updated 45.6 cu in Motors and track tensioner, added raised arms and bucket.</td></tr>
+<tr><td></td><td  style='white-space: nowrap;'><a href="/images/archive/e/ec/20171111233106%21LT_master_cad.fcstd">23:40, 9 November 2017</a></td><td> <span style="white-space: nowrap;">(3.39 MB)</span></td><td><a href="/wiki/User:Robinmaster18" class="mw-userlink" title="User:Robinmaster18"><bdi>Robinmaster18</bdi></a><span style="white-space: nowrap;"> <span class="mw-usertoollinks">(<a href="/wiki/User_talk:Robinmaster18" class="mw-usertoollinks-talk" title="User talk:Robinmaster18">talk</a> | <a href="/wiki/Special:Contributions/Robinmaster18" class="mw-usertoollinks-contribs" title="Special:Contributions/Robinmaster18">contribs</a>)</span></span></td><td dir="ltr">Added 72in bucket with 45in FQA, changed frame configuration and separated arms. No cylinders.</td></tr>
+<tr><td></td><td  style='white-space: nowrap;'><a href="/images/archive/e/ec/20171109234024%21LT_master_cad.fcstd">05:08, 9 November 2017</a></td><td> <span style="white-space: nowrap;">(3.25 MB)</span></td><td><a href="/wiki/User:AbeAnderson" class="mw-userlink" title="User:AbeAnderson"><bdi>AbeAnderson</bdi></a><span style="white-space: nowrap;"> <span class="mw-usertoollinks">(<a href="/wiki/User_talk:AbeAnderson" class="mw-usertoollinks-talk" title="User talk:AbeAnderson">talk</a> | <a href="/wiki/Special:Contributions/AbeAnderson" class="mw-usertoollinks-contribs" title="Special:Contributions/AbeAnderson">contribs</a>)</span></span></td><td dir="ltr">added angle braces to cab sides and moved plates to sides. editable.</td></tr>
+<tr><td></td><td  style='white-space: nowrap;'><a href="/images/archive/e/ec/20171109050812%21LT_master_cad.fcstd">19:43, 7 November 2017</a></td><td> <span style="white-space: nowrap;">(3.24 MB)</span></td><td><a href="/wiki/User:AbeAnderson" class="mw-userlink" title="User:AbeAnderson"><bdi>AbeAnderson</bdi></a><span style="white-space: nowrap;"> <span class="mw-usertoollinks">(<a href="/wiki/User_talk:AbeAnderson" class="mw-usertoollinks-talk" title="User talk:AbeAnderson">talk</a> | <a href="/wiki/Special:Contributions/AbeAnderson" class="mw-usertoollinks-contribs" title="Special:Contributions/AbeAnderson">contribs</a>)</span></span></td><td dir="ltr">added reinforcement plate to cab. editable.</td></tr>
+<tr><td></td><td  style='white-space: nowrap;'><a href="/images/archive/e/ec/20171107194338%21LT_master_cad.fcstd">01:30, 7 November 2017</a></td><td> <span style="white-space: nowrap;">(3.24 MB)</span></td><td><a href="/wiki/User:AbeAnderson" class="mw-userlink" title="User:AbeAnderson"><bdi>AbeAnderson</bdi></a><span style="white-space: nowrap;"> <span class="mw-usertoollinks">(<a href="/wiki/User_talk:AbeAnderson" class="mw-usertoollinks-talk" title="User talk:AbeAnderson">talk</a> | <a href="/wiki/Special:Contributions/AbeAnderson" class="mw-usertoollinks-contribs" title="Special:Contributions/AbeAnderson">contribs</a>)</span></span></td><td dir="ltr">added 2x2 cab frame constrained to locked right rear vertical. editable.</td></tr>
+<tr><td></td><td  style='white-space: nowrap;'><a href="/images/archive/e/ec/20171107013005%21LT_master_cad.fcstd">04:22, 30 October 2017</a></td><td> <span style="white-space: nowrap;">(3.23 MB)</span></td><td><a href="/wiki/User:Robinmaster18" class="mw-userlink" title="User:Robinmaster18"><bdi>Robinmaster18</bdi></a><span style="white-space: nowrap;"> <span class="mw-usertoollinks">(<a href="/wiki/User_talk:Robinmaster18" class="mw-usertoollinks-talk" title="User talk:Robinmaster18">talk</a> | <a href="/wiki/Special:Contributions/Robinmaster18" class="mw-usertoollinks-contribs" title="Special:Contributions/Robinmaster18">contribs</a>)</span></span></td><td dir="ltr">Adjusted to 36&quot; and 16&quot; cylinders.</td></tr>
+<tr><td></td><td  style='white-space: nowrap;'><a href="/images/archive/e/ec/20171030042224%21LT_master_cad.fcstd">21:32, 29 October 2017</a></td><td> <span style="white-space: nowrap;">(3.29 MB)</span></td><td><a href="/wiki/User:Robinmaster18" class="mw-userlink" title="User:Robinmaster18"><bdi>Robinmaster18</bdi></a><span style="white-space: nowrap;"> <span class="mw-usertoollinks">(<a href="/wiki/User_talk:Robinmaster18" class="mw-usertoollinks-talk" title="User talk:Robinmaster18">talk</a> | <a href="/wiki/Special:Contributions/Robinmaster18" class="mw-usertoollinks-contribs" title="Special:Contributions/Robinmaster18">contribs</a>)</span></span></td><td dir="ltr">Adjusted frame, refined arm and cylinder geometry using 30&quot; and 14&quot; cylinders. Added modified male QA plates.</td></tr>
+</table>
+(newest | <a href="/index.php?title=File:LT_master_cad.fcstd&amp;dir=prev#filehistory" class="mw-lastlink" title="File:LT master cad.fcstd">oldest</a>) View (newer 10  |  <a href="/index.php?title=File:LT_master_cad.fcstd&amp;offset=20171029213206#filehistory" class="mw-nextlink" title="File:LT master cad.fcstd" rel="next">older 10</a>) (<a href="/index.php?title=File:LT_master_cad.fcstd&amp;offset=&amp;limit=10#filehistory" class="mw-numlink" title="File:LT master cad.fcstd">10</a> | <a href="/index.php?title=File:LT_master_cad.fcstd&amp;offset=&amp;limit=20#filehistory" class="mw-numlink" title="File:LT master cad.fcstd">20</a> | <a href="/index.php?title=File:LT_master_cad.fcstd&amp;offset=&amp;limit=50#filehistory" class="mw-numlink" title="File:LT master cad.fcstd">50</a> | <a href="/index.php?title=File:LT_master_cad.fcstd&amp;offset=&amp;limit=100#filehistory" class="mw-numlink" title="File:LT master cad.fcstd">100</a> | <a href="/index.php?title=File:LT_master_cad.fcstd&amp;offset=&amp;limit=250#filehistory" class="mw-numlink" title="File:LT master cad.fcstd">250</a> | <a href="/index.php?title=File:LT_master_cad.fcstd&amp;offset=&amp;limit=500#filehistory" class="mw-numlink" title="File:LT master cad.fcstd">500</a>)
+</div>
+<ul>
+<li id="mw-imagepage-upload-disallowed">You cannot overwrite this file.</li>
+</ul>
+<h2 id="filelinks">File usage</h2>
+<div id='mw-imagepage-section-linkstoimage'>
+<p>The following 5 pages link to this file:
+</p><ul class="mw-imagepage-linkstoimage">
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/AbeAnd_Logs_2018" title="AbeAnd Logs 2018">AbeAnd Logs 2018</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/AbeAnd_Logs_November" title="AbeAnd Logs November">AbeAnd Logs November</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/AbeAnd_Logs_October" title="AbeAnd Logs October">AbeAnd Logs October</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/LifeTrac_v17.10" title="LifeTrac v17.10">LifeTrac v17.10</a></li>
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Roberto_Log" title="Roberto Log">Roberto Log</a></li>
+</ul>
+</div>
+</div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://wiki.opensourceecology.org/index.php?title=File:LT_master_cad.fcstd&amp;oldid=166503">https://wiki.opensourceecology.org/index.php?title=File:LT_master_cad.fcstd&amp;oldid=166503</a>"					</div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-login"><a href="https://wiki.opensourceecology.org/index.php?title=Special:UserLogin&amp;returnto=File%3ALT+master+cad.fcstd" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li><li id="pt-createaccount"><a href="/wiki/Special:RequestAccount" title="You are encouraged to create an account and log in; however, it is not mandatory">Request account</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-image" class="selected"><span><a href="/wiki/File:LT_master_cad.fcstd" title="View the file page [c]" accesskey="c">File</a></span></li>
+							<li id="ca-talk" class="new"><span><a href="/index.php?title=File_talk:LT_master_cad.fcstd&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="selected"><span><a href="/wiki/File:LT_master_cad.fcstd">Read</a></span></li>
+							<li id="ca-viewsource"><span><a href="/index.php?title=File:LT_master_cad.fcstd&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="/index.php?title=File:LT_master_cad.fcstd&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Open Source Ecology" title="Search Open Source Ecology [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-Website"><a href="http://Opensourceecology.org/">Website</a></li><li id="n-Site-Map"><a href="/wiki/Wiki_map">Site Map</a></li><li id="n-Wiki-Instructions"><a href="/wiki/Wiki_instructions#Wiki_User_Account">Wiki Instructions</a></li><li id="n-Recent-Wiki-Changes"><a href="/wiki/Special:RecentChanges">Recent Wiki Changes</a></li><li id="n-Blog"><a href="http://opensourceecology.org/blog-2/">Blog</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Open_Source_Ecology' aria-labelledby='p-Open_Source_Ecology-label'>
+			<h3 id='p-Open_Source_Ecology-label'>Open Source Ecology</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-About-OSE"><a href="/wiki/Open_Source_Ecology">About OSE</a></li><li id="n-Support-OSE"><a href="/wiki/Support_Open_Source_Ecology">Support OSE</a></li><li id="n-Contact-Us"><a href="/wiki/Contact_us">Contact Us</a></li><li id="n-Mailing-List"><a href="/wiki/Ose-announce">Mailing List</a></li><li id="n-In-The-News"><a href="/wiki/Open_Source_Ecology_News_Center">In The News</a></li><li id="n-Events"><a href="/wiki/Open_Source_Ecology:Current_events">Events</a></li><li id="n-Discussion-Forums"><a href="http://forum.opensourceecology.org/">Discussion Forums</a></li><li id="n-FAQ"><a href="/wiki/FAQ">FAQ</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/File:LT_master_cad.fcstd" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/File:LT_master_cad.fcstd" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/index.php?title=File:LT_master_cad.fcstd&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/index.php?title=File:LT_master_cad.fcstd&amp;oldid=166503" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/index.php?title=File:LT_master_cad.fcstd&amp;action=info" title="More information about this page">Page information</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 20 February 2018, at 23:45.</li>
+											<li id="footer-info-copyright">Content is available under <a href="/wiki/Copyright" class="mw-redirect" title="Copyright">CreativeCommons by-sa4.0</a> unless otherwise noted.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="/wiki/Open_Source_Ecology:Privacy_policy" title="Open Source Ecology:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Open_Source_Ecology:About" class="mw-redirect" title="Open Source Ecology:About">About Open Source Ecology</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Open_Source_Ecology:General_disclaimer" title="Open Source Ecology:General disclaimer">Disclaimers</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png" alt="CreativeCommons by-sa4.0" width="88" height="31"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.001","walltime":"0.001","ppvisitednodes":{"value":1,"limit":1000000},"ppgeneratednodes":{"value":4,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":1,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20210701071322","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":333});});</script>
+	</body>
+</html>
