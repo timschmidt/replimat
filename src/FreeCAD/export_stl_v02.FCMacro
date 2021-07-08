@@ -1,0 +1,432 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+# ====================================================================================
+# ====================================================================================
+# ==                                                                                ==
+# ==                               Export to STL                                    ==
+# ==                                                                                ==
+# ====================================================================================
+# ====================================================================================
+# ABOUT
+# ====================================================================================
+# version v1.2
+# Macro developed for FreeCAD (http://www.freecadweb.org/).
+# This macro helps exporting STL files. It adds a GUI for speeding up the conversion
+# and file saving of the selected objects.
+#
+# LICENSE
+# ====================================================================================
+# Copyright (c) 2019 Pablo Gil Fernandez
+#
+# This work is licensed under GNU Lesser General Public License (LGPL).
+# To view a copy of this license, visit https://www.gnu.org/licenses/lgpl-3.0.html
+#
+# ====================================================================================
+__title__   = "Export to STL"
+__author__  = "Pablo Gil Fernández"
+__version__ = "1.20"
+__date__    = "25/11/2019"
+
+__Comment__ = "TODO"
+
+__Wiki__ = "TODO"
+__Help__ = ""
+__Status__ = "stable"
+__Requires__ = "freecad 0.17"
+
+import FreeCAD, FreeCADGui, Draft, Part, PartGui, math, PartDesignGui, Mesh, MeshPart, Import, os
+from FreeCAD import Base
+from PySide import QtGui, QtCore
+from math import cos, radians
+from pivy import coin
+import sys
+App = FreeCAD
+Gui = FreeCADGui
+
+# ====================================================================================
+def a_clear_console():
+    #clearing previous messages
+    mw=FreeCADGui.getMainWindow()
+    r=mw.findChild(QtGui.QTextEdit, "Report view")
+    r.clear()
+#if not Mod_ENABLED:
+a_clear_console()
+
+sizeX = 400
+sizeY = 180
+
+def close_dock():
+    ALGDockWidget.close()
+    doc=FreeCAD.ActiveDocument
+    if doc is not None:
+        FreeCAD.setActiveDocument(doc.Name)
+
+def Alg_undock():
+    ALGDockWidget.setFloating(True)  #undock
+    ALGDockWidget.resize(sizeX,sizeY)
+    ALGDockWidget.activateWindow()
+    ALGDockWidget.raise_()
+
+def Alg_minimz():
+    ALGDockWidget.setFloating(True)  #undock
+    ALGDockWidget.resize(sizeX,sizeY)
+    ALGDockWidget.activateWindow()
+    ALGDockWidget.raise_()
+
+# ====================================================================================
+def say(msg):
+    FreeCAD.Console.PrintMessage(msg)
+    FreeCAD.Console.PrintMessage('\n')
+
+def sayw(msg):
+    FreeCAD.Console.PrintWarning(msg)
+    FreeCAD.Console.PrintWarning('\n')
+
+def sayerr(msg):
+    FreeCAD.Console.PrintError(msg)
+    FreeCAD.Console.PrintWarning('\n')
+
+def make_string(input):
+    if (sys.version_info > (3, 0)):  #py3
+        if isinstance(input, str):
+            return input
+        else:
+            input =  input.encode('utf-8')
+            return input
+    else:  #py2
+        if type(input) == unicode:
+            input =  input.encode('utf-8')
+            return input
+        else:
+            return input
+
+# ====================================================================================
+class Ui_DockWidget(object):
+    def setupUi(self, DockWidget):
+        infoIcon = ['16 16 3 1',
+                '   c None',
+                '+  c #444444',
+                '.  c #e6e6e6',
+                '     ......    ',
+                '   ..........  ',
+                '  ......++.... ',
+                ' .......++.....',
+                ' ..............',
+                '.....+++++......',
+                '....+++++.......',
+                '.......++.......',
+                '.......++.......',
+                '.......+........',
+                '......++........',
+                ' .....++.+.....',
+                ' .....++++.....',
+                '  .....++..... ',
+                '   ..........  ',
+                '     ......    ']
+
+        DockWidget.setObjectName("DockWidget")
+        DockWidget.resize(sizeX, sizeY)
+        DockWidget.setLayoutDirection(QtCore.Qt.LeftToRight)
+        # DockWidget.setToolTip("")
+        DockWidget.setFloating(True)
+        DockWidget.setFeatures(QtGui.QDockWidget.DockWidgetFloatable|QtGui.QDockWidget.DockWidgetMovable|QtGui.QDockWidget.DockWidgetClosable)
+        DockWidget.setAllowedAreas(QtCore.Qt.LeftDockWidgetArea|QtCore.Qt.RightDockWidgetArea)
+        self.dockWidgetContents = QtGui.QWidget()
+        self.dockWidgetContents.setMaximumWidth(sizeX)
+        self.dockWidgetContents.setMaximumHeight(sizeY)
+        self.dockWidgetContents.setObjectName("dockWidgetContents")
+
+        self.grid = QtGui.QGridLayout(DockWidget)
+        self.grid.setSpacing(10)
+
+        iN1 = QtGui.QLabel("Surface deviation")
+        iN1.setAlignment(QtCore.Qt.AlignRight | QtCore.Qt.AlignVCenter)
+        self.d1 = QtGui.QDoubleSpinBox()
+        self.d1.setValue(0.01)
+        self.d1.setSingleStep(0.01)
+        self.d1.setToolTip("Maximal linear deflection of a mesh section from the surface of the object")
+        self.d1.setSuffix(" mm")
+
+        iN2 = QtGui.QLabel("Angular deviation")
+        iN2.setAlignment(QtCore.Qt.AlignRight | QtCore.Qt.AlignVCenter)
+        self.d2 = QtGui.QDoubleSpinBox()
+        self.d2.setValue(5.0)
+        self.d2.setSingleStep(1.0)
+        self.d2.setToolTip("Maximal angular deflection of a mesh section to the next section")
+        self.d2.setSuffix(" º")
+
+        iN3 = QtGui.QLabel("Relative")
+        iN3.setAlignment(QtCore.Qt.AlignRight | QtCore.Qt.AlignVCenter)
+        self.d3 = QtGui.QCheckBox()
+        self.d3.setToolTip("The maximal linear deviation of a mesh segment will be specified\nSurface deviation multiplied by the length of the current mesh segment (edge)")
+
+        iN4 = QtGui.QLabel("Mesh name")
+        iN4.setAlignment(QtCore.Qt.AlignRight | QtCore.Qt.AlignVCenter)
+        self.d4 = QtGui.QLineEdit()
+        self.d4.setText("mesh") #Default value
+        self.d4.setToolTip("Name without extension. Name numbering will be automatically added if needed.")
+
+        iN6 = QtGui.QLabel("File Saving Directory")
+        iN6.setAlignment(QtCore.Qt.AlignRight | QtCore.Qt.AlignVCenter)
+        self.d6 = QtGui.QLineEdit()
+        self.d6.setText("./") #Default value
+        self.d6.setToolTip("Use absolute path or start with '.' for relative paths from your project directory")
+
+        self.exportStl = QtGui.QPushButton()
+        self.exportStl.setText("Convert")
+        self.exportStl.setObjectName("create")
+
+        self.saveStl = QtGui.QPushButton()
+        self.saveStl.setText("Save")
+        self.saveStl.setObjectName("save")
+
+        self.help = QtGui.QPushButton()
+        self.help.setIcon(QtGui.QIcon(QtGui.QPixmap(infoIcon)))
+        self.help.setFixedWidth(40)
+        self.help.setObjectName("help")
+
+        self.grid.addWidget(iN1, 1, 0, 1, 1)
+        self.grid.addWidget(self.d1, 1, 1, 1, 1)
+        self.grid.addWidget(iN2, 2, 0, 1, 1)
+        self.grid.addWidget(self.d2, 2, 1, 1, 3)
+        self.grid.addWidget(iN3, 1, 2, 1, 1)
+        self.grid.addWidget(self.d3, 1, 3, 1, 1)
+        self.grid.addWidget(iN4, 4, 0, 1, 1)
+        self.grid.addWidget(self.d4, 4, 1, 1, 3)
+        self.grid.addWidget(iN6, 6, 0, 1, 1)
+        self.grid.addWidget(self.d6, 6, 1, 1, 3)
+        self.grid.addWidget(self.help, 10, 0)
+        self.grid.addWidget(self.exportStl, 10, 1)
+        self.grid.addWidget(self.saveStl, 10, 2, 1, 2)
+
+        # Fixed label widths
+        iN1.setFixedWidth(140)
+
+        self.dockWidgetContents.setLayout(self.grid)
+
+        DockWidget.setWidget(self.dockWidgetContents)
+
+        self.exportStl.clicked.connect(self.onExportStl)
+        self.saveStl.clicked.connect(self.onSaveStl)
+        self.help.clicked.connect(self.onHelp)
+
+        self.retranslateUi(DockWidget)
+        QtCore.QMetaObject.connectSlotsByName(DockWidget)
+
+# retraslateUi Qt5 compatibility
+# ====================================================================================
+    def retranslateUi(self, DockWidget):
+        DockWidget.setWindowTitle("Export to STL")
+        # self.close.setToolTip("Close window")
+        self.help.setToolTip("More information")
+
+# ====================================================================================
+    def onHelp(self):
+        msg="""<h1>Export to STL</h1><p style='font-weight:normal;font-style:italic;'>version """ + __version__ + """</p><p style='font-weight:normal;'>This macro helps exporting STL files. It adds a GUI for speeding up the conversion and file saving of the selected objects</p><p>Features</p><ul><li style='font-weight:normal;'>FreeCAD "standard" meshing option</li><li style='font-weight:normal;'>custom names</li><li style='font-weight:normal;'>Converts/exports one or several objects at once</li><li style='font-weight:normal;'>Convert objects into the active FreeCAD project or</li><li style='font-weight:normal;'>Export objects to .STL files (absolute or relative paths allowed)</li></ul><hr><h2>Licence</h2><p style='font-weight:normal;'>Copyright 2019 Pablo Gil Fernández</p><p style='font-weight:normal;'>This work is licensed under GNU Lesser General Public License (LGPL). To view a copy of this license, visit <a href='https://www.gnu.org/licenses/lgpl-3.0.html'>https://www.gnu.org/licenses/lgpl-3.0.html</a></p>"""
+        res = QtGui.QMessageBox.question(None,"Help",msg,QtGui.QMessageBox.Ok)
+
+# CONVERT STL INTO ACTIVE FREECAD PROJECT
+# ====================================================================================
+    def onExportStl(self):
+        a_clear_console()
+        print ("\n****** START (convert) ********")
+
+        # Variables
+        selection = Gui.Selection.getSelection()
+        surface = self.d1.value()
+        angular = self.d2.value() * math.pi / 180
+        if self.d3.isChecked():
+            relative = True
+        else:
+            relative = False
+        name = self.d4.text()
+
+        if len(selection) == 0:
+            print ("\n-- No selection --")
+            FreeCAD.Console.PrintError("Export STL error: nothing selected, please, select one or several objects")
+
+        elif len(selection) == 1:
+            print ("\n-- 1 object selected --")
+            # Generate Mesh
+            mesh = App.ActiveDocument.addObject("Mesh::Feature","Mesh")
+            part = Gui.Selection.getSelection()[0]
+            shape = part.Shape.copy(False)
+            shape.Placement = part.getGlobalPlacement()
+            mesh.Mesh = MeshPart.meshFromShape(Shape=shape, LinearDeflection=surface, AngularDeflection=angular, Relative=relative)
+            mesh.Label = name
+            part.Visibility = False
+            Gui.activeDocument().activeObject().DisplayMode=u"Flat Lines"
+            print ("\n-- 1 object converted to mesh --")
+            del mesh, part, shape
+
+        else:
+            quantity = len(selection)
+            print ("\n-- " + str(quantity) + " objects selected --")
+            i = 0
+            while i < quantity:
+                mesh = App.ActiveDocument.addObject("Mesh::Feature","Mesh")
+                part = Gui.Selection.getSelection()[i]
+                shape = part.Shape.copy(False)
+                shape.Placement = part.getGlobalPlacement()
+                mesh.Mesh = MeshPart.meshFromShape(Shape=shape, LinearDeflection=surface, AngularDeflection=angular, Relative=relative)
+                mesh.Label = name
+                part.Visibility = False
+                Gui.activeDocument().activeObject().DisplayMode=u"Flat Lines"
+                del mesh, part, shape
+                i += 1
+            print ("\n-- " + str(quantity) + " objects converted to mesh --")
+
+        # Gui.Selection.clearSelection()
+        App.ActiveDocument.recompute()
+        print ("\n********* END *********")
+
+# SAVE TO .STL FILE
+# ====================================================================================
+    def onSaveStl(self):
+        a_clear_console()
+
+        print ("\n****** START (save) ********")
+
+        # Variables
+        selection = Gui.Selection.getSelection()
+        surface = self.d1.value()
+        angular = self.d2.value() * math.pi / 180
+        if self.d3.isChecked():
+            relative = True
+        else:
+            relative = False
+        name = self.d4.text()
+        savePath = self.d6.text()
+        docPath = FreeCAD.ActiveDocument.FileName
+
+        if savePath[0] == ".":
+            print ("\n-- Relative mode: --")
+            absolutePath = os.path.dirname(docPath)
+            relativePath = savePath.replace(".","",1)
+            relativePath = relativePath.replace("\\","",1)
+            relativePath = relativePath.replace("/","",1)
+            savePath = os.path.join(absolutePath, relativePath)
+
+        if len(selection) == 0:
+            print ("\n-- No selection --")
+            FreeCAD.Console.PrintError("Export STL error: nothing selected, please, select one or several objects")
+
+        elif len(selection) == 1:
+            print ("\n-- 1 object selected --")
+            # Generate Mesh
+            mesh = App.ActiveDocument.addObject("Mesh::Feature","Mesh")
+            part = Gui.Selection.getSelection()[0]
+            shape = part.Shape.copy(False)
+            shape.Placement = part.getGlobalPlacement()
+            mesh.Mesh = MeshPart.meshFromShape(Shape=shape, LinearDeflection=surface, AngularDeflection=angular, Relative=relative)
+            mesh.Label = name
+            Gui.activeDocument().activeObject().DisplayMode=u"Flat Lines"
+            print ("\n-- 1 object converted to mesh --")
+            # export mesh to STL
+            filename = os.path.join(savePath, name + ".stl")
+            mesh.Mesh.write(filename)
+            print ("\n-- 1 mesh exported to file at: " + filename + " --")
+            App.ActiveDocument.removeObject(mesh.Name)
+            print ("\n-- 1 mesh removed from project --")
+            del mesh, part, shape
+
+        else:
+            quantity = len(selection)
+            print ("\n-- " + str(quantity) + " objects selected --")
+            i = 0
+            namesArray = []
+            labelsArray = []
+            while i < quantity:
+                # Generate Mesh
+                mesh = App.ActiveDocument.addObject("Mesh::Feature","Mesh")
+                part = Gui.Selection.getSelection()[i]
+                shape = part.Shape.copy(False)
+                shape.Placement = part.getGlobalPlacement()
+                mesh.Mesh = MeshPart.meshFromShape(Shape=shape, LinearDeflection=surface, AngularDeflection=angular, Relative=relative)
+                mesh.Label = name
+                Gui.activeDocument().activeObject().DisplayMode=u"Flat Lines"
+                print ("\n-- 1 object converted to mesh --")
+                # export mesh to STL
+                labelsArray.append(mesh.Label)
+                namesArray.append(mesh.Name)
+                print("len: " + str(len(namesArray)))
+                print("name: " + str(namesArray[i]))
+                filename = os.path.join(savePath, labelsArray[i] + ".stl")
+                mesh.Mesh.write(filename)
+                print ("\n-- 1 mesh exported to file at: " + filename + " --")
+                del mesh, part, shape
+                i += 1
+
+            i = 0
+            while i < quantity:
+                App.ActiveDocument.removeObject(namesArray[i])
+                print ("\n-- " + str(namesArray[i]) + " removed from project --")
+                i += 1
+
+        App.ActiveDocument.recompute()
+        print ("\n********* END *********")
+
+# ====================================================================================
+def Alg_singleInstance():
+    app = QtGui.QApplication
+
+    for i in app.topLevelWidgets():
+        if i.objectName() == "exportSTL":
+            i.deleteLater()
+        else:
+            pass
+    t=FreeCADGui.getMainWindow()
+    dw=t.findChildren(QtGui.QDockWidget)
+    #print str(dw)
+    for i in dw:
+        #say str(i.objectName())
+        if str(i.objectName()) == "exportSTL":
+            i.deleteLater()
+        else:
+            pass
+
+def Alg_checkInstance():
+    app = QtGui.QApplication
+
+    foundAlg=False
+    for i in app.topLevelWidgets():
+        if i.objectName() == "exportSTL":
+            foundAlg=True
+        else:
+            pass
+    t=FreeCADGui.getMainWindow()
+    dw=t.findChildren(QtGui.QDockWidget)
+    #print str(dw)
+    for i in dw:
+        #say str(i.objectName())
+        if str(i.objectName()) == "exportSTL":
+            foundAlg=True
+        else:
+            pass
+    return foundAlg
+
+# ====================================================================================
+doc=FreeCAD.ActiveDocument
+
+Alg_singleInstance()
+
+ALGDockWidget = QtGui.QDockWidget()          # create a new dckwidget
+ALGDockWidget.ui = Ui_DockWidget()   #Ui_AlignDockWidget()           # myWidget_Ui()             # load the Ui script
+ALGDockWidget.ui.setupUi(ALGDockWidget) # setup the ui
+
+ALGDockWidget.setObjectName("exportSTL")
+
+ALGDockWidget.setFloating(True)  #undock
+ALGDockWidget.resize(sizeX,sizeY)
+ALGDockWidget.activateWindow()
+ALGDockWidget.raise_()
+
+ALGDockWidget.setFeatures( QtGui.QDockWidget.DockWidgetMovable | QtGui.QDockWidget.DockWidgetFloatable|QtGui.QDockWidget.DockWidgetClosable )
+
+ALGmw = FreeCADGui.getMainWindow()                 # PySide # the active qt window, = the freecad window since we are inside it
+ALGmw.addDockWidget(QtCore.Qt.RightDockWidgetArea,ALGDockWidget)
+Alg_undock()
+
+# END
+# ====================================================================================
