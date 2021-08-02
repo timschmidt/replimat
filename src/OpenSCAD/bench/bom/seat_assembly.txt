@@ -1,6 +1,0 @@
-seat_assembly:
-Vitamins:
-  2 Extrusion E4040 x 1200mm
- 16 Nut M12 x 12mm nyloc
-  8 Screw M12 hex x 52mm
-  8 Screw M12 hex x 92mm

@@ -1,0 +1,6 @@
+back_assembly:
+Vitamins:
+  2 Aluminium rectangular box section 40mm x 40mm x 3mm, length 1200mm
+ 12 Nut M12 x 12mm nyloc
+  8 Screw M12 hex x 52mm
+  4 Screw M12 hex x 92mm

@@ -1,0 +1,19 @@
+Vitamins:
+          R   
+ B  L  M  i  S
+ a  e  a  g  e
+ c  f  i  h  a
+ k  t  n  t  t
+ 2|  |  |  | 2|  4 Aluminium rectangular box section 40mm x 40mm x 3mm, length 1200mm
+  | 2|  | 2|  |  4 Aluminium rectangular box section 40mm x 40mm x 3mm, length 400mm
+  | 1|  | 1|  |  2 Aluminium rectangular box section 40mm x 40mm x 3mm, length 800mm
+12| 2|  | 2|16| 32 Nut M12 x 12mm nyloc
+ 8|  |  |  | 8| 16 Screw M12 hex x 52mm
+ 4| 2|  | 2| 8| 16 Screw M12 hex x 92mm
+
+Assemblies:
+  1 back_assembly
+  1 left_assembly
+  1 main_assembly
+  1 right_assembly
+  1 seat_assembly

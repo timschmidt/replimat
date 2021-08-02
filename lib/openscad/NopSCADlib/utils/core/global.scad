@@ -91,3 +91,4 @@ include <polyholes.scad>
 include <teardrops.scad>
 include <rounded_rectangle.scad>
 include <clip.scad>
+include <colors.scad>

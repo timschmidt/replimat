@@ -1,0 +1,13 @@
+{
+    "assemblies/right_assembled.png": 1.748,
+    "assemblies/right_assembly.png": 1.758,
+    "assemblies/left_assembled.png": 1.771,
+    "assemblies/left_assembly.png": 1.857,
+    "assemblies/seat_assembled.png": 1.908,
+    "assemblies/seat_assembly.png": 1.938,
+    "assemblies/back_assembled.png": 1.875,
+    "assemblies/back_assembly.png": 1.996,
+    "assemblies/main_assembled.png": 2.323,
+    "assemblies/main_assembly.png": 2.312,
+    "readme.html": 0.131
+}

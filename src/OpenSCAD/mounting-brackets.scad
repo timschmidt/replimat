@@ -7,7 +7,7 @@
  * @license https://www.tapr.org/TAPR_Open_Hardware_License_v1.0.txt
  */
 
-include <MCAD/frame.scad>
+include <MCAD/grid.scad>
 include <MCAD/materials.scad>
 use <bolts.scad>
 use <nuts.scad>
@@ -16,10 +16,10 @@ use <washers.scad>
 frame_is_hollow = true;
 
 // frames
-translateFrame([0,0,2]) xFrame(3);
-translateFrame([0,0,0]) xFrame(3);
-translateFrame([1,-2,1]) yFrame(5);
+grid_translate([0,0,2]) grid_frame_x(3);
+grid_translate([0,0,0]) grid_frame_x(3);
+grid_translate([1,-2,1]) grid_frame_y(5);
 
 // bolts
-translateFrame([0,0,3]) rotate([0,0,0]) replimat_nut_and_bolt(3);
-translateFrame([2,0,3]) rotate([0,0,0]) replimat_nut_and_bolt(3);
+grid_translate([0,0,3]) rotate([0,0,0]) grid_bolt_nut_z(3);
+grid_translate([2,0,3]) rotate([0,0,0]) grid_bolt_nut_z(3);

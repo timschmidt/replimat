@@ -1,0 +1,6 @@
+right_assembly:
+Vitamins:
+  2 Aluminium rectangular box section 40mm x 40mm x 3mm, length 400mm
+  1 Aluminium rectangular box section 40mm x 40mm x 3mm, length 800mm
+  2 Nut M12 x 12mm nyloc
+  2 Screw M12 hex x 92mm

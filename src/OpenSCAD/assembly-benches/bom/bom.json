@@ -1,0 +1,114 @@
+[
+    {
+        "name": "back_assembly",
+        "big": null,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 1,
+        "assemblies": {},
+        "vitamins": {
+            "box_section(AL40x40x3, 1200): Aluminium rectangular box section 40mm x 40mm x 3mm, length 1200mm": {
+                "count": 2
+            },
+            "screw(M12_hex_screw, 92): Screw M12 hex x 92mm": {
+                "count": 4
+            },
+            "nut(M12_nut, nyloc = true): Nut M12 x 12mm nyloc": {
+                "count": 12
+            },
+            "screw(M12_hex_screw, 52): Screw M12 hex x 52mm": {
+                "count": 8
+            }
+        },
+        "printed": {},
+        "routed": {}
+    },
+    {
+        "name": "seat_assembly",
+        "big": null,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 1,
+        "assemblies": {},
+        "vitamins": {
+            "box_section(AL40x40x3, 1200): Aluminium rectangular box section 40mm x 40mm x 3mm, length 1200mm": {
+                "count": 2
+            },
+            "screw(M12_hex_screw, 92): Screw M12 hex x 92mm": {
+                "count": 8
+            },
+            "nut(M12_nut, nyloc = true): Nut M12 x 12mm nyloc": {
+                "count": 16
+            },
+            "screw(M12_hex_screw, 52): Screw M12 hex x 52mm": {
+                "count": 8
+            }
+        },
+        "printed": {},
+        "routed": {}
+    },
+    {
+        "name": "left_assembly",
+        "big": null,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 1,
+        "assemblies": {},
+        "vitamins": {
+            "box_section(AL40x40x3, 400): Aluminium rectangular box section 40mm x 40mm x 3mm, length 400mm": {
+                "count": 2
+            },
+            "box_section(AL40x40x3, 800): Aluminium rectangular box section 40mm x 40mm x 3mm, length 800mm": {
+                "count": 1
+            },
+            "screw(M12_hex_screw, 92): Screw M12 hex x 92mm": {
+                "count": 2
+            },
+            "nut(M12_nut, nyloc = true): Nut M12 x 12mm nyloc": {
+                "count": 2
+            }
+        },
+        "printed": {},
+        "routed": {}
+    },
+    {
+        "name": "right_assembly",
+        "big": null,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 1,
+        "assemblies": {},
+        "vitamins": {
+            "box_section(AL40x40x3, 400): Aluminium rectangular box section 40mm x 40mm x 3mm, length 400mm": {
+                "count": 2
+            },
+            "box_section(AL40x40x3, 800): Aluminium rectangular box section 40mm x 40mm x 3mm, length 800mm": {
+                "count": 1
+            },
+            "screw(M12_hex_screw, 92): Screw M12 hex x 92mm": {
+                "count": 2
+            },
+            "nut(M12_nut, nyloc = true): Nut M12 x 12mm nyloc": {
+                "count": 2
+            }
+        },
+        "printed": {},
+        "routed": {}
+    },
+    {
+        "name": "main_assembly",
+        "big": null,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 1,
+        "assemblies": {
+            "right_assembly": 1,
+            "left_assembly": 1,
+            "seat_assembly": 1,
+            "back_assembly": 1
+        },
+        "vitamins": {},
+        "printed": {},
+        "routed": {}
+    }
+]
