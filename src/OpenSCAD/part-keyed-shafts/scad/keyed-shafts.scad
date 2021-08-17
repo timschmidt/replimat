@@ -7,11 +7,8 @@
  * @license https://www.tapr.org/TAPR_Open_Hardware_License_v1.0.txt
  */
 
-include <MCAD/grid.scad>
-include <MCAD/materials.scad>
-include <MCAD/units.scad>
-
-frame_is_hollow = true;
+include <NopSCADlib/lib.scad>
+include <NopSCADlib/vitamins/grid.scad>
 
 // Customizer values
 holes=2; // [2,3,4,5,10,15,20,25,30,40,50]
@@ -24,11 +21,11 @@ if (axis == 3) { zShaft(holes); }
 }
 
 module zShaft(holes){
-  //translate([0.75*inch,0.75*inch,0])
-  color(Steel)
+  //translate([inch(0.75),inch(0.75),0])
+  color("grey")
   difference(){
-    cylinder(h=holes * 1.5*inch, d=1*inch);
-    translate([-1/8*inch,-1*inch/2,-1]) cube([1/4*inch, 1/4*inch, holes * 1.5*inch + 2]);
+    cylinder(h=holes * grid_frame_width, d=inch(1));
+    translate([inch(-1/8),inch(-1/2),-1]) cube([inch(1/4), inch(1/4), holes * grid_frame_width + 2]);
   }
 }
 

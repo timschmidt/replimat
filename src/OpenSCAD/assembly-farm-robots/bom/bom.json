@@ -1,0 +1,32 @@
+[
+    {
+        "name": "main_assembly",
+        "big": null,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 1,
+        "assemblies": {},
+        "vitamins": {
+            "box_section(AL40x40x3, 1600): Aluminium rectangular box section 40mm x 40mm x 3mm, length 1600mm": {
+                "count": 6
+            },
+            "box_section(AL40x40x3, 2000): Aluminium rectangular box section 40mm x 40mm x 3mm, length 2000mm": {
+                "count": 6
+            },
+            "kp_pillow_block(UCP205_16): UCP205_16 pillow block": {
+                "count": 8
+            },
+            "washer(M12_washer): Washer  M12 x 22mm x 2mm": {
+                "count": 32
+            },
+            "screw(M12_hex_screw, 30): Screw M12 hex x 30mm": {
+                "count": 16
+            },
+            "nut(M12_nut, nyloc = undef): Nut M12 x 12mm ": {
+                "count": 16
+            }
+        },
+        "printed": {},
+        "routed": {}
+    }
+]

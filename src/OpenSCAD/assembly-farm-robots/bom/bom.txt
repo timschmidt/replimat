@@ -1,0 +1,14 @@
+Vitamins:
+ M
+ a
+ i
+ n
+ 6|  6 Aluminium rectangular box section 40mm x 40mm x 3mm, length 1600mm
+ 6|  6 Aluminium rectangular box section 40mm x 40mm x 3mm, length 2000mm
+ 8|  8 UCP205_16 pillow block
+16| 16 Nut M12 x 12mm 
+16| 16 Screw M12 hex x 30mm
+32| 32 Washer  M12 x 22mm x 2mm
+
+Assemblies:
+  1 main_assembly

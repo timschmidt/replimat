@@ -7,8 +7,8 @@
  * @license https://www.tapr.org/TAPR_Open_Hardware_License_v1.0.txt
  */
 
-include <MCAD/grid.scad>
-include <MCAD/units.scad>
+include <NopSCADlib/lib.scad>
+include <NopSCADlib/vitamins/grid.scad>
 
 module replimat_solar_cell(){
     difference(){

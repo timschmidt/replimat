@@ -1,0 +1,9 @@
+Vitamins:
+ M
+ a
+ i
+ n
+ 1|  1 Aluminium rectangular box section 40mm x 40mm x 3mm, length 200mm
+
+Assemblies:
+  1 main_assembly

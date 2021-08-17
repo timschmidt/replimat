@@ -32,26 +32,36 @@ include <NopSCADlib/vitamins/pillow_blocks.scad>
 wood=1;
 tube=2;
 extrusion=3;
+materials = ["wood", "tube", "extrusion"];
+grid_frame_width = mm(40);
 
-module grid_frame_z(segments=5, material=tube, width=mm(40)){
-    stl(str("frame", width, "x", segments)){
-        if (width == mm(40) && material == wood){}
-        if (width == mm(40) && material == tube)
-            translate([width/2, width/2, 0])
-            box_section(AL40x40x3, mm(width*segments), center=false, indexed=true);
-        if (width == mm(40) && material == extrusion)
-            translate([width/2, width/2, 0])
-            extrusion(E4040, mm(width*segments), cornerHole=true, center=false, indexed=true);
-    }
+module grid_frame_z(segments=5, material=tube, width=grid_frame_width){
+  if (width == 40 && material == wood){}
+  if (width == 40 && material == tube)
+    translate([width/2, width/2, 0])
+    box_section(AL40x40x3, mm(width*segments), center=false, indexed=true);
+  if (width == 40 && material == extrusion)
+    translate([width/2, width/2, 0])
+    extrusion(E4040, mm(width*segments), cornerHole=true, center=false, indexed=true);
+ }
+
+/*
+module grid_frame(segments=5, material=tube, width=grid_frame_width){
+  stl(str("frame_", materials[material], "_", width, "x", segments, "_z")){
+    translate([0,0,width])
+    rotate([0,90,0])
+    grid_frame(segments, material, width);
+  }
 }
+ */
 
-module grid_frame_x(segments=5, material=tube, width=mm(40)){
+module grid_frame_x(segments=5, material=tube, width=grid_frame_width){
     translate([0,0,width])
     rotate([0,90,0])
     grid_frame_z(segments, material, width);
 }
 
-module grid_frame_y(segments=5, material=tube, width=mm(40)){
+module grid_frame_y(segments=5, material=tube, width=grid_frame_width){
     translate([0,0,width])
     rotate([-90,0,0])
     grid_frame_z(segments, material, width);
@@ -63,22 +73,22 @@ module grid_nut(){
   nut(M12_nut, true);
 }
 
-module grid_bolt_z(length, width=mm(40)){
+module grid_bolt_z(length, width=grid_frame_width){
   grid_translate([0.5,0.5,0])
   screw(M12_hex_screw, length*width+M12_nut_depth);
 };
 
-module grid_bolt_x(length, width=mm(40)){
+module grid_bolt_x(length, width=grid_frame_width){
     rotate([0,270,0])
     grid_bolt_z(length, width);
 }
 
-module grid_bolt_y(length, width=mm(40)){
+module grid_bolt_y(length, width=grid_frame_width){
     rotate([90,0,0])
     grid_bolt_z(length, width);
 }
 
-module grid_bolt_nut_z(length, width=mm(40)){
+module grid_bolt_nut_z(length, width=grid_frame_width){
   grid_translate([0.5,0.5,0])
   screw(M12_hex_screw, length*width+M12_nut_depth);
   
@@ -86,17 +96,17 @@ module grid_bolt_nut_z(length, width=mm(40)){
   grid_nut();
 };
 
-module grid_bolt_nut_x(length, width=mm(40)){
+module grid_bolt_nut_x(length, width=grid_frame_width){
     rotate([0,270,0])
     grid_bolt_nut_z(length, width);
 }
 
-module grid_bolt_nut_y(length, width=mm(40)){
+module grid_bolt_nut_y(length, width=grid_frame_width){
     rotate([90,0,0])
     grid_bolt_nut_z(length, width);
 }
 
-module grid_plate_dxf(wide, deep, hole_radius=4.5, corner_radius=13, width=mm(40)){
+module grid_plate_dxf(wide, deep, hole_radius=4.5, corner_radius=13, width=grid_frame_width){
     dxf(str("grid_plate",wide,"x",deep)){
         difference(){
             translate([1/2*wide*width, 1/2*deep*width, 0])
@@ -125,10 +135,10 @@ module grid_plate_dxf(wide, deep, hole_radius=4.5, corner_radius=13, width=mm(40
     }
 }
 
-module grid_plate_stl(wide, deep, hole_radius=4.5, corner_radius=13, width=mm(40)){
+module grid_plate_stl(wide, deep, hole_radius=4.5, corner_radius=13, width=grid_frame_width){
     stl(str("grid_plate",wide,"x",deep)){
         linear_extrude(mm(19))
-        grid_plate_dxf(wide, deep, hole_radius=4.5, corner_radius=13, width=mm(40));
+        grid_plate_dxf(wide, deep, hole_radius=4.5, corner_radius=13, width=grid_frame_width);
     }
 }
 
@@ -139,7 +149,7 @@ module grid_pillow_block(){
     kp_pillow_block_assembly(UCP205_16, screw_type = M12_hex_screw, nut_type = M12_nut);
 }
 
-module grid_translate(v, width=mm(40)) {
+module grid_translate(v, width=grid_frame_width) {
 	for (i = [0 : $children - 1]) {
 		translate(v * width) children(i);
 	}

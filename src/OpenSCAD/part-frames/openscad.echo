@@ -1,0 +1,3 @@
+ECHO: "~main_assembly{"
+ECHO: "~box_section(AL40x40x3, 200): Aluminium rectangular box section 40mm x 40mm x 3mm, length 200mm"
+ECHO: "~}main_assembly"

@@ -1,0 +1,17 @@
+[
+    {
+        "name": "main_assembly",
+        "big": null,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 1,
+        "assemblies": {},
+        "vitamins": {
+            "box_section(AL40x40x3, 200): Aluminium rectangular box section 40mm x 40mm x 3mm, length 200mm": {
+                "count": 1
+            }
+        },
+        "printed": {},
+        "routed": {}
+    }
+]
