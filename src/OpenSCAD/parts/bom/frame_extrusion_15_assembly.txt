@@ -1,0 +1,3 @@
+frame_extrusion_15_assembly:
+Vitamins:
+  1 Extrusion E4040 x 600mm

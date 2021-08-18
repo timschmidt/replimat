@@ -1,0 +1,3 @@
+frame_tube_2_assembly:
+Vitamins:
+  1 Aluminium rectangular box section 40mm x 40mm x 3mm, length 80mm

@@ -1,0 +1,30 @@
+main_assembly:
+Vitamins:
+  1 Nut M12 x 12mm nyloc
+  1 Screw M12 hex x 132mm
+  1 Screw M12 hex x 52mm
+  1 Screw M12 hex x 92mm
+
+Assemblies:
+  1 frame_extrusion_10_assembly
+  1 frame_extrusion_15_assembly
+  1 frame_extrusion_20_assembly
+  1 frame_extrusion_25_assembly
+  1 frame_extrusion_2_assembly
+  1 frame_extrusion_30_assembly
+  1 frame_extrusion_3_assembly
+  1 frame_extrusion_40_assembly
+  1 frame_extrusion_4_assembly
+  1 frame_extrusion_50_assembly
+  1 frame_extrusion_5_assembly
+  1 frame_tube_10_assembly
+  1 frame_tube_15_assembly
+  1 frame_tube_20_assembly
+  1 frame_tube_25_assembly
+  1 frame_tube_2_assembly
+  1 frame_tube_30_assembly
+  1 frame_tube_3_assembly
+  1 frame_tube_40_assembly
+  1 frame_tube_4_assembly
+  1 frame_tube_50_assembly
+  1 frame_tube_5_assembly

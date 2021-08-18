@@ -1,0 +1,3 @@
+frame_extrusion_50_assembly:
+Vitamins:
+  1 Extrusion E4040 x 2000mm
