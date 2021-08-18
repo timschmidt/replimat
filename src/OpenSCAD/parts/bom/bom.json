@@ -1,6 +1,6 @@
 [
     {
-        "name": "frame_tube_50_assembly",
+        "name": "frame_tube_40x50_assembly",
         "big": null,
         "ngb": false,
         "zoomed": 0,
@@ -15,7 +15,7 @@
         "routed": {}
     },
     {
-        "name": "frame_tube_40_assembly",
+        "name": "frame_tube_40x40_assembly",
         "big": null,
         "ngb": false,
         "zoomed": 0,
@@ -30,7 +30,7 @@
         "routed": {}
     },
     {
-        "name": "frame_tube_30_assembly",
+        "name": "frame_tube_40x30_assembly",
         "big": null,
         "ngb": false,
         "zoomed": 0,
@@ -45,7 +45,7 @@
         "routed": {}
     },
     {
-        "name": "frame_tube_25_assembly",
+        "name": "frame_tube_40x25_assembly",
         "big": null,
         "ngb": false,
         "zoomed": 0,
@@ -60,7 +60,7 @@
         "routed": {}
     },
     {
-        "name": "frame_tube_20_assembly",
+        "name": "frame_tube_40x20_assembly",
         "big": null,
         "ngb": false,
         "zoomed": 0,
@@ -75,7 +75,7 @@
         "routed": {}
     },
     {
-        "name": "frame_tube_15_assembly",
+        "name": "frame_tube_40x15_assembly",
         "big": null,
         "ngb": false,
         "zoomed": 0,
@@ -90,7 +90,7 @@
         "routed": {}
     },
     {
-        "name": "frame_tube_10_assembly",
+        "name": "frame_tube_40x10_assembly",
         "big": null,
         "ngb": false,
         "zoomed": 0,
@@ -105,7 +105,7 @@
         "routed": {}
     },
     {
-        "name": "frame_tube_5_assembly",
+        "name": "frame_tube_40x5_assembly",
         "big": null,
         "ngb": false,
         "zoomed": 0,
@@ -120,7 +120,7 @@
         "routed": {}
     },
     {
-        "name": "frame_tube_4_assembly",
+        "name": "frame_tube_40x4_assembly",
         "big": null,
         "ngb": false,
         "zoomed": 0,
@@ -135,7 +135,7 @@
         "routed": {}
     },
     {
-        "name": "frame_tube_3_assembly",
+        "name": "frame_tube_40x3_assembly",
         "big": null,
         "ngb": false,
         "zoomed": 0,
@@ -150,7 +150,7 @@
         "routed": {}
     },
     {
-        "name": "frame_tube_2_assembly",
+        "name": "frame_tube_40x2_assembly",
         "big": null,
         "ngb": false,
         "zoomed": 0,
@@ -165,7 +165,7 @@
         "routed": {}
     },
     {
-        "name": "frame_extrusion_50_assembly",
+        "name": "frame_extrusion_40x50_assembly",
         "big": null,
         "ngb": false,
         "zoomed": 0,
@@ -180,7 +180,7 @@
         "routed": {}
     },
     {
-        "name": "frame_extrusion_40_assembly",
+        "name": "frame_extrusion_40x40_assembly",
         "big": null,
         "ngb": false,
         "zoomed": 0,
@@ -195,7 +195,7 @@
         "routed": {}
     },
     {
-        "name": "frame_extrusion_30_assembly",
+        "name": "frame_extrusion_40x30_assembly",
         "big": null,
         "ngb": false,
         "zoomed": 0,
@@ -210,7 +210,7 @@
         "routed": {}
     },
     {
-        "name": "frame_extrusion_25_assembly",
+        "name": "frame_extrusion_40x25_assembly",
         "big": null,
         "ngb": false,
         "zoomed": 0,
@@ -225,7 +225,7 @@
         "routed": {}
     },
     {
-        "name": "frame_extrusion_20_assembly",
+        "name": "frame_extrusion_40x20_assembly",
         "big": null,
         "ngb": false,
         "zoomed": 0,
@@ -240,7 +240,7 @@
         "routed": {}
     },
     {
-        "name": "frame_extrusion_15_assembly",
+        "name": "frame_extrusion_40x15_assembly",
         "big": null,
         "ngb": false,
         "zoomed": 0,
@@ -255,7 +255,7 @@
         "routed": {}
     },
     {
-        "name": "frame_extrusion_10_assembly",
+        "name": "frame_extrusion_40x10_assembly",
         "big": null,
         "ngb": false,
         "zoomed": 0,
@@ -270,7 +270,7 @@
         "routed": {}
     },
     {
-        "name": "frame_extrusion_5_assembly",
+        "name": "frame_extrusion_40x5_assembly",
         "big": null,
         "ngb": false,
         "zoomed": 0,
@@ -285,7 +285,7 @@
         "routed": {}
     },
     {
-        "name": "frame_extrusion_4_assembly",
+        "name": "frame_extrusion_40x4_assembly",
         "big": null,
         "ngb": false,
         "zoomed": 0,
@@ -300,7 +300,7 @@
         "routed": {}
     },
     {
-        "name": "frame_extrusion_3_assembly",
+        "name": "frame_extrusion_40x3_assembly",
         "big": null,
         "ngb": false,
         "zoomed": 0,
@@ -315,7 +315,7 @@
         "routed": {}
     },
     {
-        "name": "frame_extrusion_2_assembly",
+        "name": "frame_extrusion_40x2_assembly",
         "big": null,
         "ngb": false,
         "zoomed": 0,
@@ -336,28 +336,28 @@
         "zoomed": 0,
         "count": 1,
         "assemblies": {
-            "frame_extrusion_2_assembly": 1,
-            "frame_extrusion_3_assembly": 1,
-            "frame_extrusion_4_assembly": 1,
-            "frame_extrusion_5_assembly": 1,
-            "frame_extrusion_10_assembly": 1,
-            "frame_extrusion_15_assembly": 1,
-            "frame_extrusion_20_assembly": 1,
-            "frame_extrusion_25_assembly": 1,
-            "frame_extrusion_30_assembly": 1,
-            "frame_extrusion_40_assembly": 1,
-            "frame_extrusion_50_assembly": 1,
-            "frame_tube_2_assembly": 1,
-            "frame_tube_3_assembly": 1,
-            "frame_tube_4_assembly": 1,
-            "frame_tube_5_assembly": 1,
-            "frame_tube_10_assembly": 1,
-            "frame_tube_15_assembly": 1,
-            "frame_tube_20_assembly": 1,
-            "frame_tube_25_assembly": 1,
-            "frame_tube_30_assembly": 1,
-            "frame_tube_40_assembly": 1,
-            "frame_tube_50_assembly": 1
+            "frame_extrusion_40x2_assembly": 1,
+            "frame_extrusion_40x3_assembly": 1,
+            "frame_extrusion_40x4_assembly": 1,
+            "frame_extrusion_40x5_assembly": 1,
+            "frame_extrusion_40x10_assembly": 1,
+            "frame_extrusion_40x15_assembly": 1,
+            "frame_extrusion_40x20_assembly": 1,
+            "frame_extrusion_40x25_assembly": 1,
+            "frame_extrusion_40x30_assembly": 1,
+            "frame_extrusion_40x40_assembly": 1,
+            "frame_extrusion_40x50_assembly": 1,
+            "frame_tube_40x2_assembly": 1,
+            "frame_tube_40x3_assembly": 1,
+            "frame_tube_40x4_assembly": 1,
+            "frame_tube_40x5_assembly": 1,
+            "frame_tube_40x10_assembly": 1,
+            "frame_tube_40x15_assembly": 1,
+            "frame_tube_40x20_assembly": 1,
+            "frame_tube_40x25_assembly": 1,
+            "frame_tube_40x30_assembly": 1,
+            "frame_tube_40x40_assembly": 1,
+            "frame_tube_40x50_assembly": 1
         },
         "vitamins": {
             "nut(M12_nut, nyloc = true): Nut M12 x 12mm nyloc": {
@@ -371,9 +371,194 @@
             },
             "screw(M12_hex_screw, 132): Screw M12 hex x 132mm": {
                 "count": 1
+            },
+            "extrusion(E4040, 40, cornerHole = true): Extrusion E4040 x 40mm": {
+                "count": 3
+            },
+            "extrusion(E4040, 80, cornerHole = true): Extrusion E4040 x 80mm": {
+                "count": 1
+            },
+            "extrusion(E4040, 120, cornerHole = true): Extrusion E4040 x 120mm": {
+                "count": 1
+            },
+            "extrusion(E4040, 160, cornerHole = true): Extrusion E4040 x 160mm": {
+                "count": 1
+            },
+            "extrusion(E4040, 200, cornerHole = true): Extrusion E4040 x 200mm": {
+                "count": 1
+            },
+            "extrusion(E4040, 400, cornerHole = true): Extrusion E4040 x 400mm": {
+                "count": 1
+            },
+            "extrusion(E4040, 600, cornerHole = true): Extrusion E4040 x 600mm": {
+                "count": 1
+            },
+            "extrusion(E4040, 800, cornerHole = true): Extrusion E4040 x 800mm": {
+                "count": 1
+            },
+            "extrusion(E4040, 1000, cornerHole = true): Extrusion E4040 x 1000mm": {
+                "count": 1
+            },
+            "extrusion(E4040, 1200, cornerHole = true): Extrusion E4040 x 1200mm": {
+                "count": 1
+            },
+            "extrusion(E4040, 1600, cornerHole = true): Extrusion E4040 x 1600mm": {
+                "count": 1
+            },
+            "extrusion(E4040, 2000, cornerHole = true): Extrusion E4040 x 2000mm": {
+                "count": 1
+            },
+            "box_section(AL40x40x3, 40): Aluminium rectangular box section 40mm x 40mm x 3mm, length 40mm": {
+                "count": 3
+            },
+            "box_section(AL40x40x3, 80): Aluminium rectangular box section 40mm x 40mm x 3mm, length 80mm": {
+                "count": 1
+            },
+            "box_section(AL40x40x3, 120): Aluminium rectangular box section 40mm x 40mm x 3mm, length 120mm": {
+                "count": 1
+            },
+            "box_section(AL40x40x3, 160): Aluminium rectangular box section 40mm x 40mm x 3mm, length 160mm": {
+                "count": 1
+            },
+            "box_section(AL40x40x3, 200): Aluminium rectangular box section 40mm x 40mm x 3mm, length 200mm": {
+                "count": 1
+            },
+            "box_section(AL40x40x3, 400): Aluminium rectangular box section 40mm x 40mm x 3mm, length 400mm": {
+                "count": 1
+            },
+            "box_section(AL40x40x3, 600): Aluminium rectangular box section 40mm x 40mm x 3mm, length 600mm": {
+                "count": 1
+            },
+            "box_section(AL40x40x3, 800): Aluminium rectangular box section 40mm x 40mm x 3mm, length 800mm": {
+                "count": 1
+            },
+            "box_section(AL40x40x3, 1000): Aluminium rectangular box section 40mm x 40mm x 3mm, length 1000mm": {
+                "count": 1
+            },
+            "box_section(AL40x40x3, 1200): Aluminium rectangular box section 40mm x 40mm x 3mm, length 1200mm": {
+                "count": 1
+            },
+            "box_section(AL40x40x3, 1600): Aluminium rectangular box section 40mm x 40mm x 3mm, length 1600mm": {
+                "count": 1
+            },
+            "box_section(AL40x40x3, 2000): Aluminium rectangular box section 40mm x 40mm x 3mm, length 2000mm": {
+                "count": 1
             }
         },
-        "printed": {},
+        "printed": {
+            "frame_extrusion_40x1_z.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "frame_extrusion_40x1_x.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "frame_extrusion_40x1_y.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "frame_extrusion_40x2.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "frame_extrusion_40x3.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "frame_extrusion_40x4.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "frame_extrusion_40x5.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "frame_extrusion_40x10.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "frame_extrusion_40x15.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "frame_extrusion_40x20.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "frame_extrusion_40x25.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "frame_extrusion_40x30.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "frame_extrusion_40x40.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "frame_extrusion_40x50.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "frame_tube_40x1_z.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "frame_tube_40x1_x.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "frame_tube_40x1_y.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "frame_tube_40x2.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "frame_tube_40x3.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "frame_tube_40x4.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "frame_tube_40x5.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "frame_tube_40x10.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "frame_tube_40x15.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "frame_tube_40x20.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "frame_tube_40x25.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "frame_tube_40x30.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "frame_tube_40x40.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            },
+            "frame_tube_40x50.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            }
+        },
         "routed": {}
     }
 ]

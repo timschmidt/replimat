@@ -1,25 +1,27 @@
-'Aluminium rectangular box section 40mm x 40mm x 3mm, length 1000mm',  1
-'Aluminium rectangular box section 40mm x 40mm x 3mm, length 120mm',  1
-'Aluminium rectangular box section 40mm x 40mm x 3mm, length 1200mm',  1
-'Aluminium rectangular box section 40mm x 40mm x 3mm, length 160mm',  1
-'Aluminium rectangular box section 40mm x 40mm x 3mm, length 1600mm',  1
-'Aluminium rectangular box section 40mm x 40mm x 3mm, length 200mm',  1
-'Aluminium rectangular box section 40mm x 40mm x 3mm, length 2000mm',  1
-'Aluminium rectangular box section 40mm x 40mm x 3mm, length 400mm',  1
-'Aluminium rectangular box section 40mm x 40mm x 3mm, length 600mm',  1
-'Aluminium rectangular box section 40mm x 40mm x 3mm, length 80mm',  1
-'Aluminium rectangular box section 40mm x 40mm x 3mm, length 800mm',  1
-'Extrusion E4040 x 1000mm',  1
-'Extrusion E4040 x 120mm',  1
-'Extrusion E4040 x 1200mm',  1
-'Extrusion E4040 x 160mm',  1
-'Extrusion E4040 x 1600mm',  1
-'Extrusion E4040 x 200mm',  1
-'Extrusion E4040 x 2000mm',  1
-'Extrusion E4040 x 400mm',  1
-'Extrusion E4040 x 600mm',  1
-'Extrusion E4040 x 80mm',  1
-'Extrusion E4040 x 800mm',  1
+'Aluminium rectangular box section 40mm x 40mm x 3mm, length 1000mm',  2
+'Aluminium rectangular box section 40mm x 40mm x 3mm, length 120mm',  2
+'Aluminium rectangular box section 40mm x 40mm x 3mm, length 1200mm',  2
+'Aluminium rectangular box section 40mm x 40mm x 3mm, length 160mm',  2
+'Aluminium rectangular box section 40mm x 40mm x 3mm, length 1600mm',  2
+'Aluminium rectangular box section 40mm x 40mm x 3mm, length 200mm',  2
+'Aluminium rectangular box section 40mm x 40mm x 3mm, length 2000mm',  2
+'Aluminium rectangular box section 40mm x 40mm x 3mm, length 40mm',  3
+'Aluminium rectangular box section 40mm x 40mm x 3mm, length 400mm',  2
+'Aluminium rectangular box section 40mm x 40mm x 3mm, length 600mm',  2
+'Aluminium rectangular box section 40mm x 40mm x 3mm, length 80mm',  2
+'Aluminium rectangular box section 40mm x 40mm x 3mm, length 800mm',  2
+'Extrusion E4040 x 1000mm',  2
+'Extrusion E4040 x 120mm',  2
+'Extrusion E4040 x 1200mm',  2
+'Extrusion E4040 x 160mm',  2
+'Extrusion E4040 x 1600mm',  2
+'Extrusion E4040 x 200mm',  2
+'Extrusion E4040 x 2000mm',  2
+'Extrusion E4040 x 40mm',  3
+'Extrusion E4040 x 400mm',  2
+'Extrusion E4040 x 600mm',  2
+'Extrusion E4040 x 80mm',  2
+'Extrusion E4040 x 800mm',  2
 'Nut M12 x 12mm nyloc',  1
 'Screw M12 hex x 132mm',  1
 'Screw M12 hex x 52mm',  1

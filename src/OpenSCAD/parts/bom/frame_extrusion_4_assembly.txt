@@ -1,3 +1,0 @@
-frame_extrusion_4_assembly:
-Vitamins:
-  1 Extrusion E4040 x 160mm

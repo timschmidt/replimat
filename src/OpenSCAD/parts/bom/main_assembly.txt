@@ -1,30 +1,84 @@
 main_assembly:
 Vitamins:
+  1 Aluminium rectangular box section 40mm x 40mm x 3mm, length 1000mm
+  1 Aluminium rectangular box section 40mm x 40mm x 3mm, length 120mm
+  1 Aluminium rectangular box section 40mm x 40mm x 3mm, length 1200mm
+  1 Aluminium rectangular box section 40mm x 40mm x 3mm, length 160mm
+  1 Aluminium rectangular box section 40mm x 40mm x 3mm, length 1600mm
+  1 Aluminium rectangular box section 40mm x 40mm x 3mm, length 200mm
+  1 Aluminium rectangular box section 40mm x 40mm x 3mm, length 2000mm
+  3 Aluminium rectangular box section 40mm x 40mm x 3mm, length 40mm
+  1 Aluminium rectangular box section 40mm x 40mm x 3mm, length 400mm
+  1 Aluminium rectangular box section 40mm x 40mm x 3mm, length 600mm
+  1 Aluminium rectangular box section 40mm x 40mm x 3mm, length 80mm
+  1 Aluminium rectangular box section 40mm x 40mm x 3mm, length 800mm
+  1 Extrusion E4040 x 1000mm
+  1 Extrusion E4040 x 120mm
+  1 Extrusion E4040 x 1200mm
+  1 Extrusion E4040 x 160mm
+  1 Extrusion E4040 x 1600mm
+  1 Extrusion E4040 x 200mm
+  1 Extrusion E4040 x 2000mm
+  3 Extrusion E4040 x 40mm
+  1 Extrusion E4040 x 400mm
+  1 Extrusion E4040 x 600mm
+  1 Extrusion E4040 x 80mm
+  1 Extrusion E4040 x 800mm
   1 Nut M12 x 12mm nyloc
   1 Screw M12 hex x 132mm
   1 Screw M12 hex x 52mm
   1 Screw M12 hex x 92mm
 
+Printed:
+  1 frame_extrusion_40x10.stl
+  1 frame_extrusion_40x15.stl
+  1 frame_extrusion_40x1_x.stl
+  1 frame_extrusion_40x1_y.stl
+  1 frame_extrusion_40x1_z.stl
+  1 frame_extrusion_40x2.stl
+  1 frame_extrusion_40x20.stl
+  1 frame_extrusion_40x25.stl
+  1 frame_extrusion_40x3.stl
+  1 frame_extrusion_40x30.stl
+  1 frame_extrusion_40x4.stl
+  1 frame_extrusion_40x40.stl
+  1 frame_extrusion_40x5.stl
+  1 frame_extrusion_40x50.stl
+  1 frame_tube_40x10.stl
+  1 frame_tube_40x15.stl
+  1 frame_tube_40x1_x.stl
+  1 frame_tube_40x1_y.stl
+  1 frame_tube_40x1_z.stl
+  1 frame_tube_40x2.stl
+  1 frame_tube_40x20.stl
+  1 frame_tube_40x25.stl
+  1 frame_tube_40x3.stl
+  1 frame_tube_40x30.stl
+  1 frame_tube_40x4.stl
+  1 frame_tube_40x40.stl
+  1 frame_tube_40x5.stl
+  1 frame_tube_40x50.stl
+
 Assemblies:
-  1 frame_extrusion_10_assembly
-  1 frame_extrusion_15_assembly
-  1 frame_extrusion_20_assembly
-  1 frame_extrusion_25_assembly
-  1 frame_extrusion_2_assembly
-  1 frame_extrusion_30_assembly
-  1 frame_extrusion_3_assembly
-  1 frame_extrusion_40_assembly
-  1 frame_extrusion_4_assembly
-  1 frame_extrusion_50_assembly
-  1 frame_extrusion_5_assembly
-  1 frame_tube_10_assembly
-  1 frame_tube_15_assembly
-  1 frame_tube_20_assembly
-  1 frame_tube_25_assembly
-  1 frame_tube_2_assembly
-  1 frame_tube_30_assembly
-  1 frame_tube_3_assembly
-  1 frame_tube_40_assembly
-  1 frame_tube_4_assembly
-  1 frame_tube_50_assembly
-  1 frame_tube_5_assembly
+  1 frame_extrusion_40x10_assembly
+  1 frame_extrusion_40x15_assembly
+  1 frame_extrusion_40x20_assembly
+  1 frame_extrusion_40x25_assembly
+  1 frame_extrusion_40x2_assembly
+  1 frame_extrusion_40x30_assembly
+  1 frame_extrusion_40x3_assembly
+  1 frame_extrusion_40x40_assembly
+  1 frame_extrusion_40x4_assembly
+  1 frame_extrusion_40x50_assembly
+  1 frame_extrusion_40x5_assembly
+  1 frame_tube_40x10_assembly
+  1 frame_tube_40x15_assembly
+  1 frame_tube_40x20_assembly
+  1 frame_tube_40x25_assembly
+  1 frame_tube_40x2_assembly
+  1 frame_tube_40x30_assembly
+  1 frame_tube_40x3_assembly
+  1 frame_tube_40x40_assembly
+  1 frame_tube_40x4_assembly
+  1 frame_tube_40x50_assembly
+  1 frame_tube_40x5_assembly

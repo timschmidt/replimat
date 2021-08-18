@@ -1,0 +1,3 @@
+frame_extrusion_40x20_assembly:
+Vitamins:
+  1 Extrusion E4040 x 800mm

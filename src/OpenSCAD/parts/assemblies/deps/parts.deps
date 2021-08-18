@@ -1,4 +1,19 @@
 tmp/main_assembly.png: \
+	/home/tim/Documents/GitHub/replimat/src/OpenSCAD/parts/stls/frame_tube_40x50.stl \
+	/home/tim/Documents/GitHub/replimat/src/OpenSCAD/parts/stls/frame_tube_40x30.stl \
+	/home/tim/Documents/GitHub/replimat/src/OpenSCAD/parts/stls/frame_tube_40x25.stl \
+	/home/tim/Documents/GitHub/replimat/src/OpenSCAD/parts/stls/frame_tube_40x15.stl \
+	/home/tim/Documents/GitHub/replimat/src/OpenSCAD/parts/stls/frame_tube_40x2.stl \
+	/home/tim/Documents/GitHub/replimat/src/OpenSCAD/parts/stls/frame_tube_40x1_x.stl \
+	/home/tim/Documents/GitHub/replimat/src/OpenSCAD/parts/stls/frame_tube_40x1_z.stl \
+	/home/tim/Documents/GitHub/replimat/src/OpenSCAD/parts/stls/frame_extrusion_40x40.stl \
+	/home/tim/Documents/GitHub/replimat/src/OpenSCAD/parts/stls/frame_extrusion_40x25.stl \
+	/home/tim/Documents/GitHub/replimat/src/OpenSCAD/parts/stls/frame_extrusion_40x20.stl \
+	/home/tim/Documents/GitHub/replimat/src/OpenSCAD/parts/stls/frame_extrusion_40x15.stl \
+	/home/tim/Documents/GitHub/replimat/src/OpenSCAD/parts/stls/frame_extrusion_40x5.stl \
+	/home/tim/Documents/GitHub/replimat/src/OpenSCAD/parts/stls/frame_extrusion_40x4.stl \
+	/home/tim/Documents/GitHub/replimat/src/OpenSCAD/parts/stls/frame_extrusion_40x1_x.stl \
+	/home/tim/Documents/GitHub/replimat/src/OpenSCAD/parts/stls/frame_extrusion_40x1_z.stl \
 	/home/tim/openscad/libraries/NopSCADlib/printed/fan_guard.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/e3d.scad \
 	/home/tim/openscad/libraries/NopSCADlib/utils/core/polyholes.scad \
@@ -44,9 +59,11 @@ tmp/main_assembly.png: \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/axial.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/button.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/rocker.scad \
+	/home/tim/Documents/GitHub/replimat/src/OpenSCAD/parts/stls/frame_tube_40x3.stl \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/led.scad \
 	/home/tim/openscad/libraries/NopSCADlib/core.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/ldr.scad \
+	/home/tim/Documents/GitHub/replimat/src/OpenSCAD/parts/stls/frame_tube_40x20.stl \
 	tmp/png.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/toggles.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/springs.scad \
@@ -61,6 +78,7 @@ tmp/main_assembly.png: \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/washer.scad \
 	/home/tim/openscad/libraries/NopSCADlib/utils/sweep.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/d_connectors.scad \
+	/home/tim/Documents/GitHub/replimat/src/OpenSCAD/parts/stls/frame_extrusion_40x1_y.stl \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/blowers.scad \
 	/home/tim/openscad/libraries/NopSCADlib/utils/core/global.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/magnets.scad \
@@ -72,10 +90,13 @@ tmp/main_assembly.png: \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/pcbs.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/pillars.scad \
 	/home/tim/openscad/libraries/NopSCADlib/lib.scad \
+	/home/tim/Documents/GitHub/replimat/src/OpenSCAD/parts/stls/frame_tube_40x5.stl \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/ssrs.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/spade.scad \
+	/home/tim/Documents/GitHub/replimat/src/OpenSCAD/parts/stls/frame_tube_40x10.stl \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/screw.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/fans.scad \
+	/home/tim/Documents/GitHub/replimat/src/OpenSCAD/parts/stls/frame_extrusion_40x50.stl \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/green_terminal.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/fan.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/rockers.scad \
@@ -95,25 +116,30 @@ tmp/main_assembly.png: \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/swiss_clips.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/fuseholder.scad \
 	/home/tim/Documents/GitHub/replimat/src/OpenSCAD/parts/scad/parts.scad \
+	/home/tim/Documents/GitHub/replimat/src/OpenSCAD/parts/stls/frame_tube_40x4.stl \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/microswitch.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/ldrs.scad \
+	/home/tim/Documents/GitHub/replimat/src/OpenSCAD/parts/stls/frame_extrusion_40x2.stl \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/green_terminals.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/bulldog.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/panel_meter.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/circlips.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/linear_bearings.scad \
+	/home/tim/Documents/GitHub/replimat/src/OpenSCAD/parts/stls/frame_tube_40x40.stl \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/components.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/extrusion_brackets.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/wire.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/component.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/box_section.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/inserts.scad \
+	/home/tim/Documents/GitHub/replimat/src/OpenSCAD/parts/stls/frame_extrusion_40x30.stl \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/display.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/buttons.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/rod.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/extrusions.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/displays.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/ring_terminals.scad \
+	/home/tim/Documents/GitHub/replimat/src/OpenSCAD/parts/stls/frame_tube_40x1_y.stl \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/spring.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/rail.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/hot_end.scad \
@@ -152,6 +178,7 @@ tmp/main_assembly.png: \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/shaft_couplings.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/magnet.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/sk_brackets.scad \
+	/home/tim/Documents/GitHub/replimat/src/OpenSCAD/parts/stls/frame_extrusion_40x10.stl \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/insert.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/sk_bracket.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/spool.scad \
@@ -163,5 +190,6 @@ tmp/main_assembly.png: \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/stepper_motor.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/swiss_clip.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/tubing.scad \
+	/home/tim/Documents/GitHub/replimat/src/OpenSCAD/parts/stls/frame_extrusion_40x3.stl \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/smd.scad \
 	/home/tim/openscad/libraries/NopSCADlib/vitamins/variacs.scad
