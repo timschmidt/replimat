@@ -22,8 +22,8 @@ include <../vitamins/pillow_blocks.scad>
 use <../utils/layout.scad>
 
 module kp_pillow_blocks() {
-    screws = [M4_cap_screw, M4_cap_screw, M5_cap_screw, M5_cap_screw];
-    nuts = [M4_sliding_t_nut, M4_hammer_nut, M5_sliding_t_nut, M5_nut];
+    screws = [M4_cap_screw, M4_cap_screw, M5_cap_screw, M5_cap_screw, M5_cap_screw];
+    nuts = [M4_sliding_t_nut, M4_hammer_nut, M5_sliding_t_nut, M5_nut, M5_sliding_t_nut];
     assert(len(screws) == len(kp_pillow_blocks) && len(nuts) == len(kp_pillow_blocks));
     layout([for(k = kp_pillow_blocks) 2 * kp_size(k)[1]])
         kp_pillow_block_assembly(kp_pillow_blocks[$i], screw_type = screws[$i], nut_type = nuts[$i]);
