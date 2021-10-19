@@ -13,6 +13,8 @@
 
 include <NopSCADlib/lib.scad>
 include <NopSCADlib/vitamins/grid.scad>
+include <printed/foot.scad>
+include <vitamins/screw.scad>
 
 //
 //! Assemble right legs and rear upright
@@ -36,11 +38,91 @@ module clamp_assembly(){
     
 }
 
+module c_beam(length){
+    
+      grid_translate([0,0,0]) extrusion(E2080, length);
+      grid_translate([.5,-.75,0]) extrusion(E2020, length);
+      grid_translate([.5,.75,0]) extrusion(E2020, length);  
+   
+}
 //
 //! Assemble left legs and rear upright
 //
 
 module  linear_rail_assembly(){
+    assembly(linear_rail){
+        
+        grid_translate([0,0,1.5]) rotate([90,90,0]) c_beam(1500);
+        
+        grid_translate([1,0,0]) extrusion(E2020,300);
+        grid_translate([2,0,0]) extrusion(E2020,300);
+        grid_translate([3,0,0]) extrusion(E2020,300);
+        grid_translate([4,0,0]) extrusion(E2020,300);
+        
+        grid_translate([-1,0,0]) insert(F1BM3);
+        grid_translate([-2,0,0]) insert(F1BM3);
+        grid_translate([-3,0,0]) insert(F1BM3);
+        grid_translate([-4,0,0]) insert(F1BM3);
+        grid_translate([-5,0,0]) insert(F1BM3);
+        grid_translate([-6,0,0]) insert(F1BM3);
+        grid_translate([-7,0,0]) insert(F1BM3);
+        grid_translate([-8,0,0]) insert(F1BM3);
+        
+        grid_translate([0,2,0]) 
+    extrusion_corner_bracket(E20_corner_bracket);
+        grid_translate([0,3,0])   extrusion_corner_bracket(E20_corner_bracket);
+        grid_translate([0,4,0])   extrusion_corner_bracket(E20_corner_bracket);
+        grid_translate([0,5,0])   extrusion_corner_bracket(E20_corner_bracket);
+        grid_translate([0,6,0])   extrusion_corner_bracket(E20_corner_bracket);
+        grid_translate([0,7,0])   extrusion_corner_bracket(E20_corner_bracket);
+        grid_translate([0,8,0])   extrusion_corner_bracket(E20_corner_bracket);
+        grid_translate([0,9,0])   extrusion_corner_bracket(E20_corner_bracket);
+        grid_translate([0,10,0])   extrusion_corner_bracket(E20_corner_bracket);
+        grid_translate([0,11,0])   extrusion_corner_bracket(E20_corner_bracket);
+        
+        grid_translate([0,-2,0]) extrusion(E2020,200);
+        grid_translate([0,-3,0]) extrusion(E2020,200);
+        
+        grid_translate([1,1,0]) sliding_t_nut(M5_sliding_t_nut);
+        grid_translate([1,2,0]) sliding_t_nut(M5_sliding_t_nut);
+        grid_translate([1,3,0]) sliding_t_nut(M5_sliding_t_nut);
+        grid_translate([1,4,0]) sliding_t_nut(M5_sliding_t_nut);
+        grid_translate([1,5,0]) sliding_t_nut(M5_sliding_t_nut);
+        grid_translate([1,6,0]) sliding_t_nut(M5_sliding_t_nut);
+        grid_translate([1,7,0]) sliding_t_nut(M5_sliding_t_nut);
+        grid_translate([1,8,0]) sliding_t_nut(M5_sliding_t_nut);
+        grid_translate([1,9,0]) sliding_t_nut(M5_sliding_t_nut);
+        grid_translate([1,10,0]) sliding_t_nut(M5_sliding_t_nut);
+        grid_translate([1,11,0]) sliding_t_nut(M5_sliding_t_nut);
+        grid_translate([1,12,0]) sliding_t_nut(M5_sliding_t_nut);
+        grid_translate([1,13,0]) sliding_t_nut(M5_sliding_t_nut);
+        grid_translate([1,14,0]) sliding_t_nut(M5_sliding_t_nut);
+        grid_translate([1,15,0]) sliding_t_nut(M5_sliding_t_nut);
+        grid_translate([1,16,0]) sliding_t_nut(M5_sliding_t_nut);
+        grid_translate([1,17,0]) sliding_t_nut(M5_sliding_t_nut);
+        grid_translate([1,18,0]) sliding_t_nut(M5_sliding_t_nut);
+        
+        grid_translate([-1,1,0]) screw(M5_grub_screw, 10);
+        grid_translate([-1,1,0]) screw(M5_grub_screw, 10);
+        grid_translate([-1,1,0]) screw(M5_grub_screw, 10);
+        grid_translate([-1,1,0]) screw(M5_grub_screw, 10);
+        grid_translate([-1,1,0]) screw(M5_grub_screw, 10);
+        grid_translate([-1,1,0]) screw(M5_grub_screw, 10);
+        grid_translate([-1,1,0]) screw(M5_grub_screw, 10);
+        grid_translate([-1,1,0]) screw(M5_grub_screw, 10);
+        grid_translate([-1,1,0]) screw(M5_grub_screw, 10);
+        grid_translate([-1,1,0]) screw(M5_grub_screw, 10);
+        grid_translate([-1,1,0]) screw(M5_grub_screw, 10);
+        grid_translate([-1,1,0]) screw(M5_grub_screw, 10);
+        grid_translate([-1,1,0]) screw(M5_grub_screw, 10);
+        grid_translate([-1,1,0]) screw(M5_grub_screw, 10);
+        grid_translate([-1,1,0]) screw(M5_grub_screw, 10);
+        grid_translate([-1,1,0]) screw(M5_grub_screw, 10);
+        grid_translate([-1,1,0]) screw(M5_grub_screw, 10);
+        grid_translate([-1,1,0]) screw(M5_grub_screw, 10);
+        
+         
+    }
     /*assembly("left"){
     
     //Vertical
@@ -58,11 +140,17 @@ module  linear_rail_assembly(){
     
 }
 
+module extension_kit_assembly(){
+    
+}
+
+
 //
 //! Attach seats to support rails
 //
 
 module drill_assembly(){
+    
     /*assembly("seat"){
     
     grid_translate([0,2,9]) grid_frame_x(30);
@@ -92,10 +180,6 @@ module drill_assembly(){
     grid_translate([28,9,10]) grid_bolt_nut_z(2);
     }
     */
-    
-}
-
-module extension_kit_assembly(){
     
 }
 
