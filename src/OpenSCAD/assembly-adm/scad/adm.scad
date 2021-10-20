@@ -135,76 +135,19 @@ module extension_kit_assembly(){
 
 
 //
-//! Attach seats to support rails
+//! Assemble the work cell
 //
 
-module drill_assembly(){
+module work_cell_assembly()
+   assembly("work_cell"){
     
-    /*assembly("seat"){
-    
-    grid_translate([0,2,9]) grid_frame_x(30);
-    grid_translate([0,9,9]) grid_frame_x(30);
-    
-    grid_translate([0,0,10]) grid_plate_stl(10, 10);
-    grid_translate([10,0,10]) grid_plate_stl(10, 10);
-    grid_translate([20,0,10]) grid_plate_stl(10, 10);
-    
-    grid_translate([0,1,9]) grid_bolt_nut_y(2);
-    grid_translate([1,11,9]) rotate([0,0,180]) grid_bolt_nut_y(2);
-    grid_translate([29,1,9]) grid_bolt_nut_y(2);
-    grid_translate([30,11,9]) rotate([0,0,180]) grid_bolt_nut_y(2);
-    
-    grid_translate([1,2,10]) grid_bolt_nut_z(2);
-    grid_translate([1,9,10]) grid_bolt_nut_z(2);
-    grid_translate([9,2,10]) grid_bolt_nut_z(1);
-    grid_translate([9,9,10]) grid_bolt_nut_z(1);
-    grid_translate([10,2,10]) grid_bolt_nut_z(1);
-    grid_translate([10,9,10]) grid_bolt_nut_z(1);
-    grid_translate([19,2,10]) grid_bolt_nut_z(1);
-    grid_translate([19,9,10]) grid_bolt_nut_z(1);
-    grid_translate([20,2,10]) grid_bolt_nut_z(1);
-    grid_translate([20,9,10]) grid_bolt_nut_z(1);
-    
-    grid_translate([28,2,10]) grid_bolt_nut_z(2);
-    grid_translate([28,9,10]) grid_bolt_nut_z(2);
-    }
-    */
-    
+   grid_translate([0,3.75,8.75]) rotate([0,0,270]) c_beam(400);
+   grid_translate([0,-1,3]) rotate([90,270,0]) c_beam(400);
+
 }
 
 //
 //! Attach backrests to support rails
-//
-
-module work_cell_assembly(){
-    /*assembly("back"){
-    
-    grid_translate([0,9,11]) grid_frame_x(30);
-    grid_translate([0,9,19]) grid_frame_x(30);
-    grid_translate([0,9,11]) rotate([90,0,0]) grid_plate_stl(10, 10);
-    grid_translate([10,9,11]) rotate([90,0,0]) grid_plate_stl(10, 10);
-    grid_translate([20,9,11]) rotate([90,0,0]) grid_plate_stl(10, 10);
-    
-    grid_translate([0,9,11]) grid_bolt_nut_y(2);
-    grid_translate([0,9,19]) grid_bolt_nut_y(2);
-    grid_translate([9,9,11]) grid_bolt_nut_y(1);
-    grid_translate([9,9,19]) grid_bolt_nut_y(1);
-    grid_translate([10,9,11]) grid_bolt_nut_y(1);
-    grid_translate([10,9,19]) grid_bolt_nut_y(1);
-    grid_translate([19,9,11]) grid_bolt_nut_y(1);
-    grid_translate([19,9,19]) grid_bolt_nut_y(1);
-    grid_translate([20,9,11]) grid_bolt_nut_y(1);
-    grid_translate([20,9,19]) grid_bolt_nut_y(1);
-    
-    grid_translate([29,9,11]) grid_bolt_nut_y(2);
-    grid_translate([29,9,19]) grid_bolt_nut_y(2);
-    }
-    */
-    
-}
-
-//
-//! Attach seat and back assemblies to side assembles with bolts
 //
 
 module main_assembly(){
@@ -213,7 +156,6 @@ module main_assembly(){
     clamp_assembly();
     linear_rail_assembly();
     extension_kit_assembly();
-    drill_assembly();
     work_cell_assembly();    
     }
 }
