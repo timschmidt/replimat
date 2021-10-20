@@ -52,12 +52,12 @@ module c_beam(length){
 module  linear_rail_assembly(){
     assembly(linear_rail){
         
-        grid_translate([0,0,1.5]) rotate([90,90,0]) c_beam(1500);
+        grid_translate([0,0,1]) rotate([90,90,90]) c_beam(1500);
         
-        grid_translate([1,0,0]) extrusion(E2020,300);
-        grid_translate([2,0,0]) extrusion(E2020,300);
-        grid_translate([3,0,0]) extrusion(E2020,300);
-        grid_translate([4,0,0]) extrusion(E2020,300);
+        translate([250,0,0]) rotate([90,0,0]) extrusion(E2020,300);
+        translate([-250,0,0]) rotate([90,0,0]) extrusion(E2020,300);
+        translate([740,0,0]) rotate([90,0,0]) extrusion(E2020,300);
+        translate([-740,0,0]) rotate([90,0,0]) extrusion(E2020,300);
         
         grid_translate([-1,0,0]) insert(F1BM3);
         grid_translate([-2,0,0]) insert(F1BM3);
@@ -80,8 +80,8 @@ module  linear_rail_assembly(){
         grid_translate([0,10,0])   extrusion_corner_bracket(E20_corner_bracket);
         grid_translate([0,11,0])   extrusion_corner_bracket(E20_corner_bracket);
         
-        grid_translate([0,-2,0]) extrusion(E2020,200);
-        grid_translate([0,-3,0]) extrusion(E2020,200);
+        translate([720,10,150]) extrusion(E2020,200);
+        translate([-720,10,150]) extrusion(E2020,200);
         
         grid_translate([1,1,0]) sliding_t_nut(M5_sliding_t_nut);
         grid_translate([1,2,0]) sliding_t_nut(M5_sliding_t_nut);
