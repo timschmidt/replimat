@@ -59,7 +59,6 @@ module  linear_rail_assembly(){
         translate([740,0,20]) rotate([90,0,0]) extrusion(E2020,300);
         translate([-740,0,20]) rotate([90,0,0]) extrusion(E2020,300);
         
-        // these are press-fit inserts - should be feet?
         translate([-250,-140,10]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
         translate([-250,140,10]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
         translate([250,-140,10]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
