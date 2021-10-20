@@ -70,14 +70,14 @@ module  linear_rail_assembly(){
         
         grid_translate([-18.25,0.25,1.75]) rotate([90,0,180]) extrusion_corner_bracket(E20_corner_bracket);
         grid_translate([18.25,0.25,1.75]) rotate([90,0,0]) extrusion_corner_bracket(E20_corner_bracket);
-        grid_translate([0,4,0]) extrusion_corner_bracket(E20_corner_bracket);
-        grid_translate([0,5,0]) extrusion_corner_bracket(E20_corner_bracket);
-        grid_translate([0,6,0]) extrusion_corner_bracket(E20_corner_bracket);
-        grid_translate([0,7,0]) extrusion_corner_bracket(E20_corner_bracket);
-        grid_translate([0,8,0]) extrusion_corner_bracket(E20_corner_bracket);
-        grid_translate([0,9,0]) extrusion_corner_bracket(E20_corner_bracket);
-        grid_translate([0,10,0]) extrusion_corner_bracket(E20_corner_bracket);
-        grid_translate([0,11,0]) extrusion_corner_bracket(E20_corner_bracket);
+        grid_translate([18,-0.75,0.75]) rotate([0,90,90]) extrusion_corner_bracket(E20_corner_bracket);
+        grid_translate([18,0.75,0.75]) rotate([0,90,90]) extrusion_corner_bracket(E20_corner_bracket);
+        grid_translate([6,-0.75,0.75]) rotate([0,90,90]) extrusion_corner_bracket(E20_corner_bracket);
+        grid_translate([6,0.75,0.75]) rotate([0,90,90]) extrusion_corner_bracket(E20_corner_bracket);
+        grid_translate([-18.25,-0.75,0.75]) rotate([0,90,270]) extrusion_corner_bracket(E20_corner_bracket);
+        grid_translate([-18,0.75,0.75]) rotate([0,90,270]) extrusion_corner_bracket(E20_corner_bracket);
+        grid_translate([-6,-0.75,0.75]) rotate([0,90,270]) extrusion_corner_bracket(E20_corner_bracket);
+        grid_translate([-6,0.75,0.75]) rotate([0,90,270]) extrusion_corner_bracket(E20_corner_bracket);
         
         translate([720,10,170]) extrusion(E2020,200);
         translate([-720,10,170]) extrusion(E2020,200);
