@@ -62,18 +62,18 @@ module  linear_rail_assembly(){
         // Endstops and brackets
         translate([720,10,170]) extrusion(E2020,200);
         translate([-720,10,170]) extrusion(E2020,200);
-        grid_translate([-18.25,0.25,1.75]) rotate([90,0,180]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 6, E2020t);
-        grid_translate([18.25,0.25,1.75]) rotate([90,0,0]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 6, E2020t);
+        grid_translate([-18.25,0.25,1.75]) rotate([90,0,180]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 8, E2020t);
+        grid_translate([18.25,0.25,1.75]) rotate([90,0,0]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 8, E2020t);
         
         // Leg brackets
-        grid_translate([18.25,-0.75,0.75]) rotate([0,90,90]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 6, E2020t);
-        grid_translate([18.25,0.75,0.75]) rotate([0,90,90]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 6, E2020t);
-        grid_translate([6,-0.75,0.75]) rotate([0,90,90]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 6, E2020t);
-        grid_translate([6,0.75,0.75]) rotate([0,90,90]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 6, E2020t);
-        grid_translate([-18.25,-0.75,0.75]) rotate([0,90,270]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 6, E2020t);
-        grid_translate([-18.25,0.75,0.75]) rotate([0,90,270]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 6, E2020t);
-        grid_translate([-6,-0.75,0.75]) rotate([0,90,270]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 6, E2020t);
-        grid_translate([-6,0.75,0.75]) rotate([0,90,270]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 6, E2020t);
+        grid_translate([18.25,-0.75,0.75]) rotate([0,90,90]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 8, E2020t);
+        grid_translate([18.25,0.75,0.75]) rotate([0,90,90]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 8, E2020t);
+        grid_translate([6,-0.75,0.75]) rotate([0,90,90]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 8, E2020t);
+        grid_translate([6,0.75,0.75]) rotate([0,90,90]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 8, E2020t);
+        grid_translate([-18.25,-0.75,0.75]) rotate([0,90,270]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 8, E2020t);
+        grid_translate([-18.25,0.75,0.75]) rotate([0,90,270]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 8, E2020t);
+        grid_translate([-6,-0.75,0.75]) rotate([0,90,270]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 8, E2020t);
+        grid_translate([-6,0.75,0.75]) rotate([0,90,270]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 8, E2020t);
         
         // Feet
         translate([-250,-200,10]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
