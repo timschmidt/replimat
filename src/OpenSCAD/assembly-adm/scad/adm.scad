@@ -13,8 +13,8 @@
 
 include <NopSCADlib/lib.scad>
 include <NopSCADlib/vitamins/grid.scad>
-include <printed/foot.scad>
-include <vitamins/screw.scad>
+include <NopSCADlib/printed/foot.scad>
+include <NopSCADlib/vitamins/screw.scad>
 
 //
 //! Assemble right legs and rear upright
@@ -46,11 +46,11 @@ module c_beam(length){
    
 }
 //
-//! Assemble left legs and rear upright
+//! Assemble linear rail
 //
 
 module  linear_rail_assembly(){
-    assembly(linear_rail){
+    assembly("linear_rail"){
         
         grid_translate([0,0,1]) rotate([90,90,90]) c_beam(1500);
         
@@ -59,26 +59,26 @@ module  linear_rail_assembly(){
         translate([740,0,0]) rotate([90,0,0]) extrusion(E2020,300);
         translate([-740,0,0]) rotate([90,0,0]) extrusion(E2020,300);
         
-        grid_translate([-1,0,0]) insert(F1BM3);
-        grid_translate([-2,0,0]) insert(F1BM3);
-        grid_translate([-3,0,0]) insert(F1BM3);
-        grid_translate([-4,0,0]) insert(F1BM3);
-        grid_translate([-5,0,0]) insert(F1BM3);
-        grid_translate([-6,0,0]) insert(F1BM3);
-        grid_translate([-7,0,0]) insert(F1BM3);
-        grid_translate([-8,0,0]) insert(F1BM3);
+        // these are press-fit inserts - should be feet?
+        grid_translate([-1,0,0]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
+        grid_translate([-2,0,0]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
+        grid_translate([-3,0,0]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
+        grid_translate([-4,0,0]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
+        grid_translate([-5,0,0]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
+        grid_translate([-6,0,0]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
+        grid_translate([-7,0,0]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
+        grid_translate([-8,0,0]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
         
-        grid_translate([0,2,0]) 
-    extrusion_corner_bracket(E20_corner_bracket);
-        grid_translate([0,3,0])   extrusion_corner_bracket(E20_corner_bracket);
-        grid_translate([0,4,0])   extrusion_corner_bracket(E20_corner_bracket);
-        grid_translate([0,5,0])   extrusion_corner_bracket(E20_corner_bracket);
-        grid_translate([0,6,0])   extrusion_corner_bracket(E20_corner_bracket);
-        grid_translate([0,7,0])   extrusion_corner_bracket(E20_corner_bracket);
-        grid_translate([0,8,0])   extrusion_corner_bracket(E20_corner_bracket);
-        grid_translate([0,9,0])   extrusion_corner_bracket(E20_corner_bracket);
-        grid_translate([0,10,0])   extrusion_corner_bracket(E20_corner_bracket);
-        grid_translate([0,11,0])   extrusion_corner_bracket(E20_corner_bracket);
+        grid_translate([0,2,0]) extrusion_corner_bracket(E20_corner_bracket);
+        grid_translate([0,3,0]) extrusion_corner_bracket(E20_corner_bracket);
+        grid_translate([0,4,0]) extrusion_corner_bracket(E20_corner_bracket);
+        grid_translate([0,5,0]) extrusion_corner_bracket(E20_corner_bracket);
+        grid_translate([0,6,0]) extrusion_corner_bracket(E20_corner_bracket);
+        grid_translate([0,7,0]) extrusion_corner_bracket(E20_corner_bracket);
+        grid_translate([0,8,0]) extrusion_corner_bracket(E20_corner_bracket);
+        grid_translate([0,9,0]) extrusion_corner_bracket(E20_corner_bracket);
+        grid_translate([0,10,0]) extrusion_corner_bracket(E20_corner_bracket);
+        grid_translate([0,11,0]) extrusion_corner_bracket(E20_corner_bracket);
         
         translate([720,10,150]) extrusion(E2020,200);
         translate([-720,10,150]) extrusion(E2020,200);
@@ -123,20 +123,7 @@ module  linear_rail_assembly(){
         
          
     }
-    /*assembly("left"){
     
-    //Vertical
-    grid_translate([29,1,0]) grid_frame_z(10);
-    grid_translate([29,10,0]) grid_frame_z(20);
-    
-    //Depth
-    grid_translate([28,1,8]) grid_frame_y(10);
-
-    //Nuts and bolts
-    grid_translate([30,2,8]) rotate([0,0,180]) grid_bolt_nut_x(2);
-    grid_translate([30,11,8]) rotate([0,0,180]) grid_bolt_nut_x(2);
-    }
-    */
     
 }
 
