@@ -52,22 +52,22 @@ module c_beam(length){
 module  linear_rail_assembly(){
     assembly("linear_rail"){
         
-        grid_translate([0,0,1]) rotate([90,90,90]) c_beam(1500);
+        grid_translate([0,0,1.5]) rotate([90,90,90]) c_beam(1500);
         
-        translate([250,0,0]) rotate([90,0,0]) extrusion(E2020,300);
-        translate([-250,0,0]) rotate([90,0,0]) extrusion(E2020,300);
-        translate([740,0,0]) rotate([90,0,0]) extrusion(E2020,300);
-        translate([-740,0,0]) rotate([90,0,0]) extrusion(E2020,300);
+        translate([250,0,20]) rotate([90,0,0]) extrusion(E2020,300);
+        translate([-250,0,20]) rotate([90,0,0]) extrusion(E2020,300);
+        translate([740,0,20]) rotate([90,0,0]) extrusion(E2020,300);
+        translate([-740,0,20]) rotate([90,0,0]) extrusion(E2020,300);
         
         // these are press-fit inserts - should be feet?
-        grid_translate([-1,0,0]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
-        grid_translate([-2,0,0]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
-        grid_translate([-3,0,0]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
-        grid_translate([-4,0,0]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
-        grid_translate([-5,0,0]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
-        grid_translate([-6,0,0]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
-        grid_translate([-7,0,0]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
-        grid_translate([-8,0,0]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
+        translate([-250,-140,10]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
+        translate([-250,140,10]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
+        translate([250,-140,10]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
+        translate([250,140,10]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
+        translate([740,-140,10]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
+        translate([740,140,10]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
+        translate([-740,140,10]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
+        translate([-740,-140,10]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
         
         grid_translate([0,2,0]) extrusion_corner_bracket(E20_corner_bracket);
         grid_translate([0,3,0]) extrusion_corner_bracket(E20_corner_bracket);
