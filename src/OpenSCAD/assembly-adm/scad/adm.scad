@@ -79,8 +79,8 @@ module  linear_rail_assembly(){
         grid_translate([0,10,0]) extrusion_corner_bracket(E20_corner_bracket);
         grid_translate([0,11,0]) extrusion_corner_bracket(E20_corner_bracket);
         
-        translate([720,10,150]) extrusion(E2020,200);
-        translate([-720,10,150]) extrusion(E2020,200);
+        translate([720,10,170]) extrusion(E2020,200);
+        translate([-720,10,170]) extrusion(E2020,200);
         
         grid_translate([1,1,0]) sliding_t_nut(M5_sliding_t_nut);
         grid_translate([1,2,0]) sliding_t_nut(M5_sliding_t_nut);
