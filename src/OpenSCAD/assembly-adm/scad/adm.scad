@@ -75,7 +75,7 @@ module  linear_rail_assembly(){
         grid_translate([6,-0.75,0.75]) rotate([0,90,90]) extrusion_corner_bracket(E20_corner_bracket);
         grid_translate([6,0.75,0.75]) rotate([0,90,90]) extrusion_corner_bracket(E20_corner_bracket);
         grid_translate([-18.25,-0.75,0.75]) rotate([0,90,270]) extrusion_corner_bracket(E20_corner_bracket);
-        grid_translate([-18,0.75,0.75]) rotate([0,90,270]) extrusion_corner_bracket(E20_corner_bracket);
+        grid_translate([-18.25,0.75,0.75]) rotate([0,90,270]) extrusion_corner_bracket(E20_corner_bracket);
         grid_translate([-6,-0.75,0.75]) rotate([0,90,270]) extrusion_corner_bracket(E20_corner_bracket);
         grid_translate([-6,0.75,0.75]) rotate([0,90,270]) extrusion_corner_bracket(E20_corner_bracket);
         
