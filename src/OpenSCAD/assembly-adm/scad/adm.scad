@@ -76,14 +76,14 @@ module  linear_rail_assembly(){
         grid_translate([-6,0.75,0.75]) rotate([0,90,270]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 8, E2020t);
         
         // Feet
-        translate([-250,-200,10]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
-        translate([-250,80,10]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
-        translate([250,-200,10]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
-        translate([250,80,10]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
-        translate([740,-200,10]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
-        translate([740,80,10]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
-        translate([-740,80,10]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
-        translate([-740,-200,10]) foot_assembly(t = 0, type = foot, flip = false, no_washer = false);
+        translate([-250,-200,10]) foot_assembly(t = 8, type = foot, flip = false, no_washer = false);
+        translate([-250,80,10]) foot_assembly(t = 8, type = foot, flip = false, no_washer = false);
+        translate([250,-200,10]) foot_assembly(t = 8, type = foot, flip = false, no_washer = false);
+        translate([250,80,10]) foot_assembly(t = 8, type = foot, flip = false, no_washer = false);
+        translate([740,-200,10]) foot_assembly(t = 8, type = foot, flip = false, no_washer = false);
+        translate([740,80,10]) foot_assembly(t = 8, type = foot, flip = false, no_washer = false);
+        translate([-740,80,10]) foot_assembly(t = 8, type = foot, flip = false, no_washer = false);
+        translate([-740,-200,10]) foot_assembly(t = 8, type = foot, flip = false, no_washer = false);
         
         grid_translate([1,1,0]) sliding_t_nut(M5_sliding_t_nut);
         grid_translate([1,2,0]) sliding_t_nut(M5_sliding_t_nut);
@@ -143,6 +143,11 @@ module work_cell_assembly()
     
    grid_translate([0,3.75,8.75]) rotate([0,0,270]) c_beam(400);
    grid_translate([0,-1,3]) rotate([90,270,0]) c_beam(400);
+
+   grid_translate([0.75,3.75,3.75]) rotate([90,0,270]) extrusion_inner_corner_bracket(E20_inner_corner_bracket);
+   grid_translate([0.75,3,3.75]) rotate([90,0,270]) extrusion_inner_corner_bracket(E20_inner_corner_bracket);
+   grid_translate([-0.75,3.75,3.75]) rotate([90,0,270]) extrusion_inner_corner_bracket(E20_inner_corner_bracket);
+   grid_translate([-0.75,3,3.75]) rotate([90,0,270]) extrusion_inner_corner_bracket(E20_inner_corner_bracket);
 
 }
 
