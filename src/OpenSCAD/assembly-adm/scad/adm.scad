@@ -142,16 +142,25 @@ module extension_kit_assembly(){
 module work_cell_assembly()
    assembly("work_cell"){
     
-        grid_translate([0,3.75,8.75]) rotate([0,0,270]) c_beam(400);
-        grid_translate([0,-1,3]) rotate([90,270,0]) c_beam(400);
-      
-        translate([0,0,0]) extrusion(E2020,100);
-        translate([0,0,0]) extrusion(E2020,100);
+   //frame
+   grid_translate([0,3.75,8.75]) rotate([0,0,270]) c_beam(400);
+   grid_translate([0,-1,3]) rotate([90,270,0]) c_beam(400);
        
    grid_translate([0.75,3.75,3.75]) rotate([90,0,270]) extrusion_inner_corner_bracket(E20_inner_corner_bracket);
    grid_translate([0.75,3,3.75]) rotate([90,0,270]) extrusion_inner_corner_bracket(E20_inner_corner_bracket);
    grid_translate([-0.75,3.75,3.75]) rotate([90,0,270]) extrusion_inner_corner_bracket(E20_inner_corner_bracket);
    grid_translate([-0.75,3,3.75]) rotate([90,0,270]) extrusion_inner_corner_bracket(E20_inner_corner_bracket);
+       
+   //backstop
+   translate([0,0,0]) extrusion(E2020,100);
+   translate([0,0,0]) extrusion(E2020,100);
+   translate([0,0,0]) extrusion(E2020,100);
+       
+   // clamp arms
+   translate([0,0,0]) extrusion(E2020,100);
+   translate([0,0,0]) extrusion(E2020,100);
+   translate([0,0,0]) extrusion(E2020,100);
+   translate([0,0,0]) extrusion(E2020,100);
 
         grid_translate([0,0,0]) rotate([0,90,90]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 8, E2020t);
        grid_translate([0,0,0]) rotate([0,90,90]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 8, E2020t);
