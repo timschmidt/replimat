@@ -147,6 +147,11 @@ module work_cell_assembly()
       
         translate([0,0,0]) extrusion(E2020,100);
         translate([0,0,0]) extrusion(E2020,100);
+       
+   grid_translate([0.75,3.75,3.75]) rotate([90,0,270]) extrusion_inner_corner_bracket(E20_inner_corner_bracket);
+   grid_translate([0.75,3,3.75]) rotate([90,0,270]) extrusion_inner_corner_bracket(E20_inner_corner_bracket);
+   grid_translate([-0.75,3.75,3.75]) rotate([90,0,270]) extrusion_inner_corner_bracket(E20_inner_corner_bracket);
+   grid_translate([-0.75,3,3.75]) rotate([90,0,270]) extrusion_inner_corner_bracket(E20_inner_corner_bracket);
 
         grid_translate([0,0,0]) rotate([0,90,90]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 8, E2020t);
        grid_translate([0,0,0]) rotate([0,90,90]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 8, E2020t);
