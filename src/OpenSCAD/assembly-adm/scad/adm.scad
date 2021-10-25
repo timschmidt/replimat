@@ -152,10 +152,10 @@ module work_cell_assembly()
    grid_translate([-0.75,3,3.75]) rotate([90,0,270]) extrusion_inner_corner_bracket(E20_inner_corner_bracket);
    
    // clamp arms
-   translate([0,0,0]) extrusion(E2020,100);
-   translate([0,0,0]) extrusion(E2020,100);
-   translate([0,0,0]) extrusion(E2020,100);
-   translate([0,0,0]) extrusion(E2020,100);
+   translate([-30,-20,205]) extrusion(E2020,100);
+   translate([30,-20,205]) extrusion(E2020,100);
+   translate([-30,65,280]) rotate([90,0,0]) extrusion(E2020,100);
+   translate([30,65,280]) rotate([90,0,0]) extrusion(E2020,100);
    
    //backstop
    translate([-30,60,200]) extrusion(E2020,100);
@@ -167,46 +167,44 @@ module work_cell_assembly()
    grid_translate([-0.75,1.25,4.75]) rotate([0,90,180]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 8, E2020t);
    grid_translate([0.75,1.25,4.75]) rotate([0,90,180]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 8, E2020t);
        
-       grid_translate([18.25,-0.75,0.75]) rotate([0,90,90]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 8, E2020t);
-       grid_translate([18.25,-0.75,0.75]) rotate([0,90,90]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 8, E2020t);
-       grid_translate([18.25,-0.75,0.75]) rotate([0,90,90]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 8, E2020t);
-       grid_translate([18.25,-0.75,0.75]) rotate([0,90,90]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 8, E2020t);
+   grid_translate([18.25,-0.75,0.75]) rotate([0,90,90]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 8, E2020t);
+   grid_translate([18.25,-0.75,0.75]) rotate([0,90,90]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 8, E2020t);
+   grid_translate([18.25,-0.75,0.75]) rotate([0,90,90]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 8, E2020t);
+   grid_translate([18.25,-0.75,0.75]) rotate([0,90,90]) extrusion_corner_bracket_assembly(E20_corner_bracket, 2, M5_cap_screw, M5_sliding_t_nut, 8, E2020t);
+              
+   grid_translate([0,0,0]) screw(M5_grub_screw, 10);
+   grid_translate([0,0,0]) screw(M5_grub_screw, 10);
+   grid_translate([0,0,0]) screw(M5_grub_screw, 10);
+   grid_translate([0,0,0]) screw(M5_grub_screw, 10);
+   grid_translate([0,0,0]) screw(M5_grub_screw, 10);
+   grid_translate([0,0,0]) screw(M5_grub_screw, 10);
+   grid_translate([0,0,0]) screw(M5_grub_screw, 10);
+   grid_translate([0,0,0]) screw(M5_grub_screw, 10);
+   grid_translate([0,0,0]) screw(M5_grub_screw, 10);
+   grid_translate([0,0,0]) screw(M5_grub_screw, 10);
+   grid_translate([0,0,0]) screw(M5_grub_screw, 10);
+   grid_translate([0,0,0]) screw(M5_grub_screw, 10);
+   grid_translate([0,0,0]) screw(M5_grub_screw, 10);
+   grid_translate([0,0,0]) screw(M5_grub_screw, 10);
+   grid_translate([0,0,0]) screw(M5_grub_screw, 10);
+   grid_translate([0,0,0]) screw(M5_grub_screw, 10);
        
-        translate([0,0,0]) extrusion(E2020,80);
-       
-        grid_translate([0,0,0]) screw(M5_grub_screw, 10);
-        grid_translate([0,0,0]) screw(M5_grub_screw, 10);
-        grid_translate([0,0,0]) screw(M5_grub_screw, 10);
-        grid_translate([0,0,0]) screw(M5_grub_screw, 10);
-        grid_translate([0,0,0]) screw(M5_grub_screw, 10);
-        grid_translate([0,0,0]) screw(M5_grub_screw, 10);
-        grid_translate([0,0,0]) screw(M5_grub_screw, 10);
-        grid_translate([0,0,0]) screw(M5_grub_screw, 10);
-        grid_translate([0,0,0]) screw(M5_grub_screw, 10);
-        grid_translate([0,0,0]) screw(M5_grub_screw, 10);
-        grid_translate([0,0,0]) screw(M5_grub_screw, 10);
-        grid_translate([0,0,0]) screw(M5_grub_screw, 10);
-        grid_translate([0,0,0]) screw(M5_grub_screw, 10);
-        grid_translate([0,0,0]) screw(M5_grub_screw, 10);
-        grid_translate([0,0,0]) screw(M5_grub_screw, 10);
-        grid_translate([0,0,0]) screw(M5_grub_screw, 10);
-       
-        grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
-        grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
-        grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
-        grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
-        grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
-        grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
-        grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
-        grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
-        grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
-        grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
-        grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
-        grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
-        grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
-        grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
-        grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
-        grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
+   grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
+   grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
+   grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
+   grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
+   grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
+   grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
+   grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
+   grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
+   grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
+   grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
+   grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
+   grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
+   grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
+   grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
+   grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
+   grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
         
     
 }
