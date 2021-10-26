@@ -19,6 +19,7 @@
  * @todo nopscadlib pressure regulator
  * @todo nopscadlib solenoid valve
  * @todo NEMA 17 motor bracket
+ * @todo draw TN10x50 air cylinders
  */
 
 //
@@ -146,6 +147,8 @@ module  linear_rail_assembly()
    carriage(HGH15CA_carriage);
    carriage(HGH15CA_carriage);
    carriage(HGH15CA_carriage);
+   
+   //rail_assembly(HGH15CA_carriage, 80, 10, carriage_end_colour = grey(20), carriage_wiper_colour = grey(20));
 }
 
 module extension_kit_assembly(){
