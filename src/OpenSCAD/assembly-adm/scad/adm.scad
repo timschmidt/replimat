@@ -15,6 +15,7 @@ include <NopSCADlib/lib.scad>
 include <NopSCADlib/vitamins/grid.scad>
 include <NopSCADlib/printed/foot.scad>
 include <NopSCADlib/vitamins/screw.scad>
+include <NopSCADlib/vitamins/rail.scad>
 
 //
 //! Assemble right legs and rear upright
@@ -49,7 +50,7 @@ module c_beam(length){
 //! Assemble linear rail
 //
 
-module  linear_rail_assembly(){
+module  linear_rail_assembly()
     assembly("linear_rail"){
         
         grid_translate([0,0,1.5]) rotate([90,90,90]) c_beam(1500);
@@ -124,10 +125,12 @@ module  linear_rail_assembly(){
         grid_translate([-1,1,0]) screw(M5_grub_screw, 10);
         grid_translate([-1,1,0]) screw(M5_grub_screw, 10);
         
-         
-    }
-    
-    
+   //rail(HGH15CA, 200);
+   //rail(HGH15CA, 200);
+   carriage(HGH15CA_carriage);
+   carriage(HGH15CA_carriage);
+   carriage(HGH15CA_carriage);
+   carriage(HGH15CA_carriage);
 }
 
 module extension_kit_assembly(){
@@ -205,8 +208,15 @@ module work_cell_assembly()
    grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
    grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
    grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
-        
-    
+   
+   
+   NEMA(NEMA17, 0, true);
+   NEMA(NEMA17, 0, true);
+   NEMA(NEMA17, 0, true);
+   shaft_coupling(SC_5x8_rigid);
+   shaft_coupling(SC_5x8_rigid);
+   leadnut(SFU1610);
+   leadnut(SFU1610);
 }
 
 //
