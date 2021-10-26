@@ -210,11 +210,11 @@ module work_cell_assembly()
    grid_translate([0,0,0]) sliding_t_nut(M5_sliding_t_nut);
    
    
-   NEMA(NEMA17, 0, true);
-   NEMA(NEMA17, 0, true);
-   NEMA(NEMA17, 0, true);
-   shaft_coupling(SC_5x8_rigid);
-   shaft_coupling(SC_5x8_rigid);
+   translate([62,80,120]) rotate([180,0,180]) NEMA(NEMA17, 0, true);
+   translate([0,-240,170]) rotate([-90, 180, 0]) NEMA(NEMA17, 0, true);
+   translate([0,-216,170]) rotate([-90, 180, 0]) shaft_coupling(SC_5x8_rigid);
+   translate([0,100,550]) rotate([180, 0, 0]) NEMA(NEMA17, 0, true);
+   translate([0,100,526]) rotate([180, 0, 0]) shaft_coupling(SC_5x8_rigid);
    leadnut(SFU1610);
    leadnut(SFU1610);
 }
