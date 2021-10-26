@@ -5,6 +5,20 @@
  * @url http://www.github.com/timschmidt/replimat
  * @license http://www.gnu.org/licenses/agpl-3.0.en.html
  * @license https://www.tapr.org/TAPR_Open_Hardware_License_v1.0.txt
+ * @todo fix nuts in feet
+ * @todo correct angle brackets
+ * @todo draw triangle plate
+ * @todo draw two hole plate
+ * @todo draw C-beam profile and add to extrusions nopscadlib 
+ * @todo draw linear axis profile and add to extrusions
+ * @todo draw 3 custom plates for linear axis
+ * @todo draw linear axis nut block
+ * @todo draw 775 series motors
+ * @todo draw 775 motor bracket
+ * @todo add WAGO connectors to nopscadlib wire lib
+ * @todo nopscadlib pressure regulator
+ * @todo nopscadlib solenoid valve
+ * @todo NEMA 17 motor bracket
  */
 
 //
