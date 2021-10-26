@@ -17,6 +17,7 @@ include <NopSCADlib/printed/foot.scad>
 include <NopSCADlib/vitamins/screw.scad>
 include <NopSCADlib/vitamins/rail.scad>
 
+
 //
 //! Assemble right legs and rear upright
 //
@@ -53,7 +54,7 @@ module c_beam(length){
 module  linear_rail_assembly()
     assembly("linear_rail"){
         
-        grid_translate([0,0,1.5]) rotate([90,90,90]) c_beam(1500);
+        translate([0,0,60]) rotate([90,90,90]) c_beam(1500);
         
         translate([250,-60,20]) rotate([90,0,0]) extrusion(E2020,300);
         translate([-250,-60,20]) rotate([90,0,0]) extrusion(E2020,300);
@@ -217,6 +218,8 @@ module work_cell_assembly()
    translate([0,100,526]) rotate([180, 0, 0]) shaft_coupling(SC_5x8_rigid);
    leadnut(SFU1610);
    leadnut(SFU1610);
+   translate([0,-154,170]) rotate([-90, 180, 0]) leadscrew(16, 100, 16, 4);
+   translate([0,100,464]) rotate([180, 0, 0]) leadscrew(16, 100, 16, 4);
 }
 
 //
