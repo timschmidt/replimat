@@ -171,9 +171,13 @@ module work_cell_assembly()
    
    // clamp arms
    translate([-30,-20,205]) extrusion(E2020,100);
+   translate([-30,-10,240]) rotate([90,0,0]) foot_assembly(t = 8, type = foot, flip = false, no_washer = false);
    translate([30,-20,205]) extrusion(E2020,100);
+   translate([30,-10,240]) rotate([90,0,0]) foot_assembly(t = 8, type = foot, flip = false, no_washer = false);
    translate([-30,65,280]) rotate([90,0,0]) extrusion(E2020,100);
+   translate([-30,30,270]) rotate([0,0,0]) foot_assembly(t = 8, type = foot, flip = false, no_washer = false);
    translate([30,65,280]) rotate([90,0,0]) extrusion(E2020,100);
+   translate([30,30,270]) rotate([0,0,0]) foot_assembly(t = 8, type = foot, flip = false, no_washer = false);
    
    //backstop
    translate([-30,60,200]) extrusion(E2020,100);
