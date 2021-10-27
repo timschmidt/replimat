@@ -1,7 +1,7 @@
 /*
- * @name Replimat Bench
- * @author Timothy Schmidt
- * @date 2021
+ * @name Replimat Automated Drilling Machine
+ * @authors Timothy Schmidt, Michael Spreng
+ * @dates 2021
  * @url http://www.github.com/timschmidt/replimat
  * @license http://www.gnu.org/licenses/agpl-3.0.en.html
  * @license https://www.tapr.org/TAPR_Open_Hardware_License_v1.0.txt
@@ -21,6 +21,7 @@
  * @todo NEMA 17 motor bracket
  * @todo draw TN10x50 air cylinders
  * @todo import OpenBuilds plates
+ * @todo draw rack and pinion(s) for nopscadlib
  */
 
 //
@@ -147,7 +148,7 @@ module  linear_rail_assembly()
    carriage(HGH15CA_carriage);
    carriage(HGH15CA_carriage);
    
-   //rail_assembly(HGH15CA_carriage, 80, 10, carriage_end_colour = grey(20), carriage_wiper_colour = grey(20));
+   //rail_assembly(HGH15CA_carriage, 1500, 1, carriage_end_colour = grey(20), carriage_wiper_colour = grey(20));
 }
 
 module extension_kit_assembly(){
