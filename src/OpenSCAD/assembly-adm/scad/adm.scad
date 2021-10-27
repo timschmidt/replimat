@@ -20,6 +20,7 @@
  * @todo nopscadlib solenoid valve
  * @todo NEMA 17 motor bracket
  * @todo draw TN10x50 air cylinders
+ * @todo import OpenBuilds plates
  */
 
 //
@@ -30,8 +31,6 @@ include <NopSCADlib/lib.scad>
 include <NopSCADlib/vitamins/grid.scad>
 include <NopSCADlib/printed/foot.scad>
 include <NopSCADlib/vitamins/screw.scad>
-include <NopSCADlib/vitamins/rail.scad>
-
 
 //
 //! Assemble right legs and rear upright
@@ -233,9 +232,9 @@ module work_cell_assembly()
    
    
    translate([62,80,120]) rotate([180,0,180]) NEMA(NEMA17, 0, true);
-   translate([0,-240,170]) rotate([-90, 180, 0]) NEMA(NEMA17, 0, true);
-   translate([0,-216,170]) rotate([-90, 180, 0]) shaft_coupling(SC_5x8_rigid);
-   translate([0,100,550]) rotate([180, 0, 0]) NEMA(NEMA17, 0, true);
+   translate([0,-240,170]) rotate([-90, 0, 0]) NEMA(NEMA17, 0, true);
+   translate([0,-216,170]) rotate([-90, 0, 0]) shaft_coupling(SC_5x8_rigid);
+   translate([0,100,550]) rotate([180, 0, 180]) NEMA(NEMA17, 0, true);
    translate([0,100,526]) rotate([180, 0, 0]) shaft_coupling(SC_5x8_rigid);
    leadnut(SFU1610);
    leadnut(SFU1610);
