@@ -64,7 +64,7 @@ module c_beam(length){
 }
 
 //
-//! Mod 1 gear rack
+//! Mod 1 gear rack compatible with http://makerstore.cc/product/us-gear-m1-int-500-d/
 //! * 20 degree pressure angle, 2.25mm height
 //! * teeth are 6.1mm wide, 5mm height
 //! * ridge is 10.5mm wide, 2mm height
@@ -78,6 +78,16 @@ module rack_stl(length)
     
         
 }
+
+//
+//! Linear actuator extrusion
+//
+module linear_actuator_extrusion(length){
+    
+    
+    
+}
+
 
 //
 //! Assemble linear rail
