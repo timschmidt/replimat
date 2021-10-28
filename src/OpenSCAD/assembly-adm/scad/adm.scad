@@ -21,11 +21,11 @@
  * @todo NEMA 17 motor bracket
  * @todo draw TN10x50 air cylinders
  * @todo import OpenBuilds plates
- * @todo draw rack and pinion(s) for nopscadlib
+ * @todo draw http://makerstore.cc/product/us-gear-m1-int-500-d/ using https://github.com/nophead/NopSCADlib#Gears
  */
 
 //
-//! Basic bench built with standardized and fully reusable components.
+//! Automated drilling machine for producing frames with a repeating hole pattern
 //
 
 include <NopSCADlib/lib.scad>
