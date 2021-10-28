@@ -62,6 +62,23 @@ module c_beam(length){
       grid_translate([.5,.75,0]) extrusion(E2020, length);  
    
 }
+
+//
+//! Mod 1 gear rack
+//! * 20 degree pressure angle, 2.25mm height
+//! * teeth are 6.1mm wide, 5mm height
+//! * ridge is 10.5mm wide, 2mm height
+//! * feet are 1.5mm wide, 2.2mm height, 2.6mm space between
+//
+module rack_stl(length)
+    stl("rack"){
+    
+    involute_rack_tooth_profile(m, pa = 20, clearance = undef);
+    
+    
+        
+}
+
 //
 //! Assemble linear rail
 //
