@@ -73,7 +73,7 @@ module c_beam(length){
 module rack_stl(length)
     stl("rack"){
     
-    involute_rack_tooth_profile(m, pa = 20, clearance = undef);
+    involute_rack_tooth_profile(m = 1, pa = 20, clearance = undef);
     
     
         
