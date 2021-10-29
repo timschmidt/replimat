@@ -38,19 +38,36 @@ include <NopSCADlib/vitamins/screw.scad>
 //
 
 module clamp_assembly(){
-    /*assembly("right"){
+    assembly("clamp"){
+    
 
-    // Vertical
-    grid_translate([0,1,0]) grid_frame_z(10);
-    grid_translate([0,10,0]) grid_frame_z(20);
-    
-    // Depth
-    grid_translate([1,1,8]) grid_frame_y(10);
-    
-    //Nuts and bolts
-    grid_translate([0,1,8]) grid_bolt_nut_x(2);
-    grid_translate([0,10,8]) grid_bolt_nut_x(2);
-    }
+    /*
+        PARTS 
+        2x M4 insert nuts
+        4x TN10x50
+        8x PC4-M% fitings
+        4x 5 tap operations
+        8x M3x20 bolts 
+        4x 5-unit 20mm frame
+        4x 2040 brackets
+        10x M5x10 bolts
+        6x M5 insert T-nuts
+        8x 500mm x 4mm OD air hose
+        3x Y-coupling 4mm OD
+        4x 600mm x 4mm OD air hose
+        8x remove protective cap operations
+        8x screw in fitting operations
+        8x teflon tape fitting operations
+        8x drill frame operations 
+        12x tube cutting op
+        12x meaasuring op
+        8x T-couplings
+        2x 1/4 NPT -> 4mm push fit cap
+        1x 4v210-08 pneumatic valve
+        1x pressure regulator + bracket
+        1x pressure gage
+        2x M4 x 25 bolt
+        2x 4mm OD x 100mm hose  
     */
     
 }
@@ -202,6 +219,7 @@ module work_cell_assembly()
    // clamp arms
    translate([-30,-20,205]) extrusion(E2020,100);
    translate([-30,-10,240]) rotate([90,0,0]) foot_assembly(t = 8, type = foot, flip = false, no_washer = false);
+       
    translate([30,-20,205]) extrusion(E2020,100);
    translate([30,-10,240]) rotate([90,0,0]) foot_assembly(t = 8, type = foot, flip = false, no_washer = false);
    translate([-30,65,280]) rotate([90,0,0]) extrusion(E2020,100);
