@@ -71,7 +71,6 @@ module clamp_assembly(){
     */
     
 }
-}
 
 module c_beam(length){
     
@@ -302,3 +301,6 @@ module main_assembly(){
     work_cell_assembly();    
     }
 }
+
+if($preview)
+    main_assembly();
