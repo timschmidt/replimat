@@ -69,7 +69,7 @@ module clamp_assembly(){
         2x M4 x 25 bolt
         2x 4mm OD x 100mm hose  
     */
-    
+    }
 }
 
 module c_beam(length){
