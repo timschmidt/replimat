@@ -23,9 +23,10 @@
 AL12x8x1 =  ["AL12x8x1",  "Aluminium rectangular box section 12mm x 8mm x 1mm",     [12, 8],  1, 0.5, silver, undef];
 AL20x20x2 = ["AL20x20x2", "Aluminium rectangular box section 20mm x 20mm x 2mm",    [20, 20], 2, 0.5, silver, undef];
 AL40x40x3 = ["AL40x40x3", "Aluminium rectangular box section 40mm x 40mm x 3mm",    [40, 40], 3, 0.5, silver, undef];
+WO40x40x20 = ["WO40x40x20", "Wood rectangular box section 40mm x 40mm x 40mm",    [40, 40], 20, 0.5, oak, undef];
 CF10x10x1 = ["CF10x10x1", "Carbon fiber rectangular box section 10mm x 10mm x 1mm", [10, 10], 1, 0.5, grey(35), grey(20)];
 
 
-box_sections = [AL12x8x1, AL20x20x2, AL40x40x3, CF10x10x1];
+box_sections = [AL12x8x1, AL20x20x2, AL40x40x3, WO40x40x20, CF10x10x1];
 
 use <box_section.scad>

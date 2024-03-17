@@ -29,18 +29,16 @@ include <NopSCADlib/vitamins/pillow_blocks.scad>
 //
 //! Define some constants
 //
-wood=1;
-tube=2;
-extrusion=3;
 materials = ["wood", "tube", "extrusion"];
 grid_frame_width = mm(40);
 
-module grid_frame_z(segments=5, material=tube, width=grid_frame_width){
-  if (width == 40 && material == wood){}
-  if (width == 40 && material == tube)
+module grid_frame_z(segments=5, material="tube", width=grid_frame_width){
+  if (width == 40 && material == "wood")translate([width/2, width/2, 0])
+    box_section(WO40x40x20, mm(width*segments), center=false, indexed=true);
+  if (width == 40 && material == "tube")
     translate([width/2, width/2, 0])
     box_section(AL40x40x3, mm(width*segments), center=false, indexed=true);
-  if (width == 40 && material == extrusion)
+  if (width == 40 && material == "extrusion")
     translate([width/2, width/2, 0])
     extrusion(E4040, mm(width*segments), cornerHole=true, center=false, indexed=true);
  }
@@ -55,13 +53,13 @@ module grid_frame(segments=5, material=tube, width=grid_frame_width){
 }
  */
 
-module grid_frame_x(segments=5, material=tube, width=grid_frame_width){
+module grid_frame_x(segments=5, material="tube", width=grid_frame_width){
     translate([0,0,width])
     rotate([0,90,0])
     grid_frame_z(segments, material, width);
 }
 
-module grid_frame_y(segments=5, material=tube, width=grid_frame_width){
+module grid_frame_y(segments=5, material="tube", width=grid_frame_width){
     translate([0,0,width])
     rotate([-90,0,0])
     grid_frame_z(segments, material, width);

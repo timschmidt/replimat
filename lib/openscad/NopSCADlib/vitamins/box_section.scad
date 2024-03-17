@@ -58,7 +58,8 @@ module box_section(type, length, center = true, indexed = false) {
     
         color(box_section_colour(type))
         difference(){
-            rectangular_tube([size.x, size.y, length], center, thickness, box_section_fillet(type));
+            if (box_section_thickness(type)*2 == size.x) rectangular_solid([size.x, size.y, length], center, thickness, box_section_fillet(type));
+            else rectangular_tube([size.x, size.y, length], center, thickness, box_section_fillet(type));
         
             for(i = [0 : segments - 1]) {
                 translate([0, min(size.x, size.y)/2 + 1, min(size.x, size.y) * i + min(size.x, size.y) / 2])

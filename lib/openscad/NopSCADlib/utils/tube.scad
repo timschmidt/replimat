@@ -76,3 +76,8 @@ module rectangular_tube(size, center = true, thickness = 1, fillet = 0.5) { //! 
             rounded_square([size.x - 2 * thickness, size.y - 2 * thickness], fillet);
         }
 }
+
+module rectangular_solid(size, center = true, thickness = 1, fillet = 0.5) { //! Create a retangular solid with filleted corners
+    extrude_if(size.z, center = center)
+        rounded_square([size.x, size.y], fillet);
+}
