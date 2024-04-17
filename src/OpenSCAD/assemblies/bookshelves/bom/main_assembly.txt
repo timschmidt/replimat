@@ -1,0 +1,6 @@
+main_assembly:
+
+Assemblies:
+  1 left_side_assembly
+  1 right_side_assembly
+  6 shelf_assemblies

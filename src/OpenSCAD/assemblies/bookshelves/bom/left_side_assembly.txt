@@ -1,0 +1,4 @@
+left_side_assembly:
+Vitamins:
+  2 Aluminium rectangular box section 40mm x 40mm x 3mm, length 2000mm
+  6 Aluminium rectangular box section 40mm x 40mm x 3mm, length 400mm

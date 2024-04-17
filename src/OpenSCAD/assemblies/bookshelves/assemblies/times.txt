@@ -1,0 +1,11 @@
+{
+    "assemblies/left_side_assembled.png": 2.688,
+    "assemblies/left_side_assembly.png": 2.796,
+    "assemblies/right_side_assembled.png": 2.587,
+    "assemblies/right_side_assembly.png": 2.662,
+    "assemblies/shelf_assembled.png": 2.354,
+    "assemblies/shelf_assembly.png": 2.386,
+    "assemblies/main_assembled.png": 6.387,
+    "assemblies/main_assembly.png": 5.855,
+    "readme.html": 0.214
+}

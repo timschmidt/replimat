@@ -1,0 +1,74 @@
+[
+    {
+        "name": "shelf_assembly",
+        "big": null,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 6,
+        "assemblies": {},
+        "vitamins": {
+            "box_section(AL40x40x3, 1200): Aluminium rectangular box section 40mm x 40mm x 3mm, length 1200mm": {
+                "count": 12
+            },
+            "screw(M12_hex_screw, 52): Screw M12 hex x 52mm": {
+                "count": 72
+            },
+            "nut(M12_nut, nyloc = true): Nut M12 x 12mm nyloc": {
+                "count": 72
+            }
+        },
+        "printed": {},
+        "routed": {}
+    },
+    {
+        "name": "right_side_assembly",
+        "big": null,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 1,
+        "assemblies": {},
+        "vitamins": {
+            "box_section(AL40x40x3, 2000): Aluminium rectangular box section 40mm x 40mm x 3mm, length 2000mm": {
+                "count": 2
+            },
+            "box_section(AL40x40x3, 400): Aluminium rectangular box section 40mm x 40mm x 3mm, length 400mm": {
+                "count": 6
+            }
+        },
+        "printed": {},
+        "routed": {}
+    },
+    {
+        "name": "left_side_assembly",
+        "big": null,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 1,
+        "assemblies": {},
+        "vitamins": {
+            "box_section(AL40x40x3, 2000): Aluminium rectangular box section 40mm x 40mm x 3mm, length 2000mm": {
+                "count": 2
+            },
+            "box_section(AL40x40x3, 400): Aluminium rectangular box section 40mm x 40mm x 3mm, length 400mm": {
+                "count": 6
+            }
+        },
+        "printed": {},
+        "routed": {}
+    },
+    {
+        "name": "main_assembly",
+        "big": null,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 1,
+        "assemblies": {
+            "left_side_assembly": 1,
+            "right_side_assembly": 1,
+            "shelf_assembly": 6
+        },
+        "vitamins": {},
+        "printed": {},
+        "routed": {}
+    }
+]

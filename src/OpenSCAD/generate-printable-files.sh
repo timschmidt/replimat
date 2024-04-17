@@ -6,6 +6,10 @@
 # requires a recent installation of OpenSCAD in the default location
 # @todo produce multi-layered colored SVG from these dxfs
 
+export PATH="~/.local/share/OpenSCAD/libraries/NopSCADlib/scripts/:$PATH"
+# cp -r ../../lib/OpenSCAD/* ~/.local/share/OpenSCAD/libraries/
+# sudo dnf install xorg-x11-server-Xvfb codespell colorama markdown
+
 ## experimental intersection of common hole patterns projects onto two dimensions for universal bracketry
 #openjscad objects/hole\ pattern/intersection-radial.jscad -o radial-intersection.dxf
 #openjscad "objects/hole pattern/intersection-grid.jscad" --threshold 7 --hole_size 8 --period 90 --rotation 360 -o intersection-grid.dxf
@@ -166,6 +170,9 @@ openscad -o ../../bin/png/38.1mm/barrel-cage.png --autocenter --viewall --view=s
 ## bookshelf
 openscad -o ../../bin/stl/38.1mm/bookshelf.stl assemblies/bookshelves/scad/bookshelf.scad
 openscad -o ../../bin/png/38.1mm/bookshelf.png --autocenter --viewall --view=scales --colorscheme=Tomorrow --imgsize=1024,1024 assemblies/bookshelves/scad/bookshelf.scad
+cd assemblies/bookshelves/
+make_all.py
+cd ../..
 
 ## work cube
 openscad -o ../../bin/stl/38.1mm/work-cube.stl assemblies/work-cubes/scad/work-cube.scad
