@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>automated drilling machines revision 2937 - Replimat Wiki Archive</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="../../index.html">Replimat Wiki Archive</a>
+  </header>
+  <main>
+<h1>automated drilling machines revision 2937</h1>
+<p class="meta">20210216103934 by Tim. /* Parts */</p>
+<nav class="page-actions"><a href="../../automated_drilling_machines.html">Current page</a> <a href="../../history/automated_drilling_machines.html">History</a></nav>
+<p><a href="image/beamcnc.jpg.html">thumb|right|[[https://www.indiegogo.com/projects/beamcnc-construction-system-cnc-mill#/|BeamCNC</a> crowdfunding campaign demonstration device]]</p>
+<p><a href="image/eiffel_concept.jpg.html">thumb|right|[[https://wiki.replimat.org/wiki/Eiffel|RepRap Eiffel</a>, showcasing the characteristic <a href="../../frames.html">frames</a> ]]</p>
+
+<p>&lt;youtube&gt;_xFwjtFClZg&lt;/youtube&gt;</p>
+
+<h3>Challenges</h3>
+<p><a href="../../frames.html">Frames</a> can be manufactured by hand, with careful measurement and drilling.  While meditative, this work is repetitive and laborious.  Time studies of the hand production process using a drill press reveal that positioning the undrilled frame stock for precise drilling consumes the majority of effort.  Automating the process in an affordable manner will reduce cost, increase availability, and free time for creative effort.</p>
+
+<h3>Approaches</h3>
+<h3>Drill guide</h3>
+<p><img src="../../media/drill_guide_5.jpg" alt="" loading="lazy"></p>
+<p><img src="../../media/drill_guide_4.jpg" alt="" loading="lazy"></p>
+<p><img src="../../media/drill_guide_3.jpg" alt="" loading="lazy"></p>
+<p><img src="../../media/drill_guide_1.jpg" alt="" loading="lazy"></p>
+<p><img src="../../media/drill_guide_2.jpg" alt="" loading="lazy"></p>
+<p><img src="../../media/drill_guide_7.jpg" alt="" loading="lazy"></p>
+<p><img src="../../media/drill_guide_8.jpg" alt="" loading="lazy"></p>
+<p><img src="../../media/drill_guide_9.jpg" alt="" loading="lazy"></p>
+<p><img src="../../media/drill_guide_10.jpg" alt="" loading="lazy"></p>
+<p><img src="../../media/drill_guide_11.jpg" alt="" loading="lazy"></p>
+
+<h3>Gang drill</h3>
+<p><img src="../../media/gang_drill_1.jpg" alt="" loading="lazy"></p>
+
+<h3>Dual gripper frame drill</h3>
+<h4>Challenges</h4>
+<p>Reducing cost and improving availability of replimat <a href="../../frames.html">frames</a> requires decentralized manufacturing.</p>
+<h4>Approaches</h4>
+<p>A frame drill built from standardized and widely available industrial automation components allows anyone to source the parts they need anywhere to build more frame drills.</p>
+
+<p>This frame drill design makes use of two independently controlled and actuated industrial grippers to move and hold square stock for drilling on all four sides by independently actuated high speed spindles.</p>
+<h4>Parts</h4>
+<ul>
+<li>2x MHZ2-40D grippers</li>
+<li>6x <a href="https://www.aliexpress.com/item/32908794883.html">HPV6 Linear module ballscrew SFU1204 with Linear Guides HGH15 HIWIN 100% same size with NEMA23 2.8A 56mm stepper motor</a> alt: <a href="https://www.amazon.com/Befenybay-Actuator-Ballscrew-SFU1605-Stepper/dp/B085SXDS2B">Befenybay 100mm linear axes</a></li>
+<li>4x <a href="https://www.amazon.com/Genmitsu-GS-775M-20000RPM-Suppression-Electrical/dp/B08DTHDSMV/">Genmitsu GS-775M Spindle motor</a></li>
+<li>2x or 4x <a href="https://www.amazon.com/Special%E3%80%91TN10-Cylinder-Strength-Aluminum-Industrial/dp/B08GLV9VKM/">TN10X50 Industrial air cylinders</a></li>
+<li><a href="https://www.amazon.com/Solenoid-Pneumatic-Positions-Electric-Operated/dp/B07SL6B4YW/">5 Way, 2 Position pneumatic solenoid valve</a></li>
+<li>4x <a href="https://www.amazon.com/CNBTR-Spindle-Extension-Collect-Workholding/dp/B077PVBCDT/">5mm CNC Spindle Motor ER16 Type A Extension Rod Collect Chuck</a></li>
+<li>12x 6mm push fit pneumatic fittings</li>
+</ul>
+
+<h3>Flat pack frame drill</h3>
+<p>The frame drill automatically drills regularly spaced holes in <a href="square_raw_material.html">square raw material</a> to produce reusable Replimat <a href="../../frames.html">frames</a>.  It is constructed of a number of custom <a href="../../plates.html">plates</a>, <a href="../../motors.html">motors</a>, a <a href="controller.html">controller</a>, and several 3D printed parts.</p>
+
+<h4>Tools</h4>
+<h4>Parts</h4>
+<p>{| class=&quot;wikitable&quot;</p>
+<p>|-</p>
+<p>! Part !! Quantity !! Supplier</p>
+<p>|-</p>
+<pre>| plate-drill-machine || 2 || [[https://github.com/timschmidt/replimat/blob/master/src/OpenSCAD/plate-drill-robot.scad|OpenSCAD File]]</pre>
+<p>|-</p>
+<pre>| plate-drill-machine-spindle || 1 || [[https://github.com/timschmidt/replimat/blob/master/src/OpenSCAD/plate-drill-robot-spindle.scad|OpenSCAD File]]</pre>
+<p>|-</p>
+<pre>| NEMA-17 stepper motor || 3 || Link</pre>
+<p>|-</p>
+<pre>| roller-raw-material || 12 || CAD File</pre>
+<p>|-</p>
+<pre>| Spindle || 1 || [[https://www.ebay.com/itm/ER16-500W-High-Speed-DC-48V-Air-Cooling-Brushless-Spindle-Motor-Driver-Clamp/312656264518?hash=item48cbc3fd46:g:YDkAAOSwQjxdCuK~|ER16 500W High Speed DC 48V Air Cooling Brushless Spindle Motor + Driver]]</pre>
+<p>|-</p>
+<pre>| LM8UU Bearing || 1 - pack of 2 || [[https://www.amazon.com/gp/product/B07RL72L65/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&amp;psc=1&amp;tag=replimat-20|Amazon]]</pre>
+<p>|-</p>
+<pre>| Drive belt || ||</pre>
+<p>|-</p>
+<pre>| Drive pulley || ||</pre>
+<p>|-</p>
+<pre>| Controller || ||</pre>
+<p>|-</p>
+<pre>| Neoprene foam w/ adhesive backing || || [[https://www.amazon.com/gp/product/B06ZZDJ19L/ref=ppx_yo_dt_b_asin_title_o02_s01?ie=UTF8&amp;psc=1&amp;tag=replimat-20|Amazon]]</pre>
+<p>|-</p>
+<pre>| Drill bit || ||</pre>
+<p>|-</p>
+<pre>| Rail Guide Support for 16mm Diameter Shaft  || 1 - pack of 4 || [[https://www.amazon.com/gp/product/B07QNY3831/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&amp;psc=1&amp;tag=replimat-20|Amazon]]</pre>
+<p>|-</p>
+<pre>| Rail Guide Support for 8mm Diameter Shaft  || 1 - pack of 4 || [[https://www.amazon.com/gp/product/B07QS7LLF6/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&amp;psc=1&amp;tag=replimat-20|Amazon]]</pre>
+<p>|-</p>
+<pre>| 350mm 8mm T8 Lead Screw Set Lead Screw+ Copper Nut + Coupler + Pillow Bearing Block || 2 || [[https://www.amazon.com/gp/product/B01H1S13SQ/ref=ppx_yo_dt_b_asin_title_o02_s01?ie=UTF8&amp;psc=1&amp;tag=replimat-20|Amazon]]</pre>
+<p>|-</p>
+<pre>| Oilite drill bushing || 2 || [[https://www.mcmaster.com/6338K463|Mcmaster]]</pre>
+<p>|}</p>
+
+<h3>Fully automated production</h3>
+<h4>20mm Parts</h4>
+<p>{| class=&quot;wikitable&quot;</p>
+<p>|-</p>
+<p>! Quantity !! Part !! Rationale !! Unit cost !! Total cost</p>
+<p>|-</p>
+<pre>| 60 || [[https://www.mcmaster.com/96977A213/|Press-Fit Drill Bushing with Head]] 5.1 mm ID 10 mm OD 7 mm Long || being considered for drill press jig for bootstrapping ||  || $444</pre>
+<p>|-</p>
+<pre>| 60 || [[https://www.mcmaster.com/96977A303/|Press-Fit Drill Bushing with Head]] 8.1 mm ID 15 mm OD 9 mm Long || being considered for drill press jig for bootstrapping ||  || $540</pre>
+<p>|-</p>
+<pre>| 50 || [[https://bulkman3d.com/product/vc2020-1000/|20x20x40mm]] (2 hole) [[frames|frames]] || standard length frame || 250 total meters of 2020, covering the full quantity needed for all lengths || $697</pre>
+<p>|-</p>
+<pre>| 50 || [[https://bulkman3d.com/product/vc2020-1000/|20x20x60mm]] (3 hole) [[frames|frames]] || standard length frame ||  ||&quot;</pre>
+<p>|-</p>
+<pre>| 50 || [[https://bulkman3d.com/product/vc2020-1000/|20x20x80mm]] (4 hole) [[frames|frames]] || standard length frame ||  ||&quot;</pre>
+<p>|-</p>
+<pre>| 50 || [[https://bulkman3d.com/product/vc2020-1000/|20x20x100mm]] (5 hole) [[frames|frames]] || standard length frame ||  ||&quot;</pre>
+<p>|-</p>
+<pre>| 50 || [[https://bulkman3d.com/product/vc2020-1000/|20x20x200mm]] (10 hole) [[frames|frames]] || standard length frame ||  ||&quot;</pre>
+<p>|-</p>
+<pre>| 50 || [[https://bulkman3d.com/product/vc2020-1000/|20x20x300mm]] (15 hole) [[frames|frames]] || standard length frame ||  ||&quot;</pre>
+<p>|-</p>
+<pre>| 50 || [[https://bulkman3d.com/product/vc2020-1000/|20x20x400mm]] (20 hole) [[frames|frames]] || standard length frame ||  ||&quot;</pre>
+<p>|-</p>
+<pre>| 50 || [[https://bulkman3d.com/product/vc2020-1000/|20x20x500mm]] (25 hole) [[frames|frames]] || standard length frame ||  ||&quot;</pre>
+<p>|-</p>
+<pre>| 50 || [[https://bulkman3d.com/product/vc2020-1000/|20x20x600mm]] (30 hole) [[frames|frames]] || standard length frame ||  ||&quot;</pre>
+<p>|-</p>
+<pre>| 50 || [[https://bulkman3d.com/product/vc2020-1000/|20x20x800mm]] (40 hole) [[frames|frames]] || standard length frame ||  ||&quot;</pre>
+<p>|-</p>
+<pre>| 50 || [[https://bulkman3d.com/product/vc2020-1000/|20x20x1000mm]] (50 hole) [[frames|frames]] ||  standard length frame ||  ||&quot;</pre>
+<p>|-</p>
+<pre>| 50 || [[https://bulkman3d.com/product/vc2080-1000/|20x80x1000mm]] (4x50 hole) [[frames|frames]] ||  standard length, 4x width frame ||  || $452.18</pre>
+<p>|-</p>
+<pre>| 500 || [[https://bulkman3d.com/product/br0004-1/|90 Degree Corner Connector]] || For strengthening corners, attaching linear axes, shimmed mounts ||  || $400</pre>
+<p>|-</p>
+<pre>| 200 || [[https://bulkman3d.com/product/br0003/|V-slot Three Way Cube Corner Connector]] || Same as above, possibly redundant ||  || $150</pre>
+<p>|-</p>
+<pre>| 20 || [[https://bulkman3d.com/product/hd0038/|Cable Drag Chain 15x20mm]] || keeping wires tidy - quantity provisioned for two 4 axis machines plus maintenance and experimentation ||  || $69.80</pre>
+<p>|-</p>
+<pre>| 2000 || [[https://bulkman3d.com/product/hd0010/|Spring Loaded M5 T-Nuts for 2020 V-Slot]] || The only T nuts worth using ||  || $160</pre>
+<p>|-</p>
+<pre>| 1000 || [[https://bulkman3d.com/product/hd0010/|Spring Loaded M4 T-Nuts for 2020 V-Slot]] || The only T nuts worth using ||  || $80</pre>
+<p>|-</p>
+<pre>| 1000 || [[https://bulkman3d.com/product/hd0010/|Spring Loaded M3 T-Nuts for 2020 V-Slot]] || The only T nuts worth using ||  ||  $80</pre>
+<p>|-</p>
+<pre>| 4 || [[https://www.aliexpress.com/item/32908794883.html?spm=2114.12057483.0.0.3b412d730IfTby|HPV6 Linear module ballscrew SFU1204 with Linear Guides HGH15 HIWIN 100% same size with NEMA23 2.8A 56mm stepper motor]] 200mm || Linear motion system for spindle || $79 || $316</pre>
+<p>|-</p>
+<pre>| 4 || [[https://www.aliexpress.com/item/32908794883.html?spm=2114.12057483.0.0.3b412d730IfTby|HPV6 Linear module ballscrew SFU1204 with Linear Guides HGH15 HIWIN 100% same size with NEMA23 2.8A 56mm stepper motor]] 400mm || Linear motion system for spindle || $109 || $436</pre>
+<p>|-</p>
+<pre>| 4 || [[https://www.aliexpress.com/item/32908794883.html?spm=2114.12057483.0.0.3b412d730IfTby|HPV6 Linear module ballscrew SFU1204 with Linear Guides HGH15 HIWIN 100% same size with NEMA23 2.8A 56mm stepper motor]] 600mm || Linear motion system for spindle || $126 || $504</pre>
+<p>|-</p>
+<pre>| 4 || [[https://www.aliexpress.com/item/32908794883.html?spm=2114.12057483.0.0.3b412d730IfTby|HPV6 Linear module ballscrew SFU1204 with Linear Guides HGH15 HIWIN 100% same size with NEMA23 2.8A 56mm stepper motor]] 800mm || Linear motion system for spindle || $142 || $568</pre>
+<p>|-</p>
+<pre>| 4 || [[https://www.aliexpress.com/item/32908794883.html?spm=2114.12057483.0.0.3b412d730IfTby|HPV6 Linear module ballscrew SFU1204 with Linear Guides HGH15 HIWIN 100% same size with NEMA23 2.8A 56mm stepper motor]] 1000mm || Linear motion system for spindle || $169 || $676</pre>
+<p>|-</p>
+<pre>| 4 || [[https://www.aliexpress.com/item/1005002072665397.html?spm=2114.12010612.8148356.39.2a6719f78WKTEm|HPV11 Linear module ballscrew SFU1204 SFU1210 with Linear Guides MGN12 NEMA23 2.8A 76mm stepper motor for CNC milling machine]] 200mm || Linear motion system for carriage || $157.60 || $630.4</pre>
+<p>|-</p>
+<pre>| 4 || [[https://www.aliexpress.com/item/1005002072665397.html?spm=2114.12010612.8148356.39.2a6719f78WKTEm|HPV11 Linear module ballscrew SFU1204 SFU1210 with Linear Guides MGN12 NEMA23 2.8A 76mm stepper motor for CNC milling machine]] 400mm || Linear motion system for carriage || $189.50 || $758</pre>
+<p>|-</p>
+<pre>| 4 || [[https://www.aliexpress.com/item/1005002072665397.html?spm=2114.12010612.8148356.39.2a6719f78WKTEm|HPV11 Linear module ballscrew SFU1204 SFU1210 with Linear Guides MGN12 NEMA23 2.8A 76mm stepper motor for CNC milling machine]] 600mm || Linear motion system for carriage|| $211.99 || $847.96</pre>
+<p>|-</p>
+<pre>| 4 || [[https://www.aliexpress.com/item/1005002072665397.html?spm=2114.12010612.8148356.39.2a6719f78WKTEm|HPV11 Linear module ballscrew SFU1204 SFU1210 with Linear Guides MGN12 NEMA23 2.8A 76mm stepper motor for CNC milling machine]] 800mm || Linear motion system for carriage|| $230.99 || $923.96</pre>
+<p>|-</p>
+<pre>| 4 || [[https://www.aliexpress.com/item/1005002072665397.html?spm=2114.12010612.8148356.39.2a6719f78WKTEm|HPV11 Linear module ballscrew SFU1204 SFU1210 with Linear Guides MGN12 NEMA23 2.8A 76mm stepper motor for CNC milling machine]] 1000mm || Linear motion system for carriage|| $255.99 || $1023.96</pre>
+<p>|-</p>
+<pre>| 10 || [[https://www.aliexpress.com/item/1005001906974822.html|1.5kw air cooled aquare spindle motor 24000rpm HQD factory]] ||  ||  || $1860</pre>
+<p>|-</p>
+<pre>| 10 || VFD for spindle || || ||</pre>
+<p>|-</p>
+<pre>| 6 || [[pumps|Pumps]] ||  ||  ||</pre>
+<p>|-</p>
+<pre>| 4 || [[barrels|Barrels]] ||  ||  ||</pre>
+<p>|-</p>
+<pre>| 4000 || M5 nylock nuts ||  ||  ||</pre>
+<p>|-</p>
+<pre>| 1000 || M5 1 hole bolts ||  ||  ||</pre>
+<p>|-</p>
+<pre>| 2000 || M5 2 hole bolts ||  ||  ||</pre>
+<p>|-</p>
+<pre>| 1000 || M5 3 hole bolts ||  ||  ||</pre>
+<p>|-</p>
+<pre>| Total ||  ||  || || $11,324.18</pre>
+<p>|}</p>
+
+<h4>40mm Parts</h4>
+<h4>Parts</h4>
+<p>{| class=&quot;wikitable&quot;</p>
+<p>|-</p>
+<p>! Quantity !! Part !! Rationale !! Unit cost !! Total cost</p>
+<p>|-</p>
+<pre>| 50 || [[https://bulkman3d.com/product/vc4040-1000/|40x40x80mm]] (2 hole) [[frames|frames]] || standard length frame, quad 2020 || 200 meters from our least costly supplier, available in sizes up to 1m long, satisfies the need for this material at || $2,018</pre>
+<p>|-</p>
+<pre>| 50 || [[https://bulkman3d.com/product/vc4040-1000/|40x40x120mm]] (3 hole) [[frames|frames]] || standard length frame, quad 2020 ||  || &quot;</pre>
+<p>|-</p>
+<pre>| 50 || [[https://bulkman3d.com/product/vc4040-1000/|40x40x160mm]] (4 hole) [[frames|frames]] || standard length frame, quad 2020 ||  || &quot;</pre>
+<p>|-</p>
+<pre>| 50 || [[https://bulkman3d.com/product/vc4040-1000/|40x40x200mm]] (5 hole) [[frames|frames]] || standard length frame, quad 2020 ||  || &quot;</pre>
+<p>|-</p>
+<pre>| 50 || [[https://bulkman3d.com/product/vc4040-1000/|40x40x400mm]] (10 hole) [[frames|frames]] || standard length frame, quad 2020 ||  || &quot;</pre>
+<p>|-</p>
+<pre>| 50 || [[https://bulkman3d.com/product/vc4040-1000/|40x40x600mm]] (15 hole) [[frames|frames]] || standard length frame, quad 2020 ||  || &quot;</pre>
+<p>|-</p>
+<pre>| 50 || [[https://bulkman3d.com/product/vc4040-1000/|40x40x800mm]] (20 hole) [[frames|frames]] || standard length frame, quad 2020 ||  || &quot;</pre>
+<p>|-</p>
+<pre>| 50 || [[https://bulkman3d.com/product/vc4040-1000/|40x40x1000mm]] (25 hole) [[frames|frames]] ||  standard length frame, quad 2020 ||  || &quot;</pre>
+<p>|-</p>
+<pre>| 50 || [[https://us.misumi-ec.com/vona2/detail/110302689860/|40x40x80mm]] (2 hole) [[frames|frames]], [[https://8020.net/40-4040.html|second source]] || standard length frame, single channel || 170x 2400mm sections from 8020 inc would satisfiy all required lengths of frame for $10,193 from 8020 inc.  102x 4000mm sections from Mitsumi arrive at ||  $7,752.</pre>
+<p>|-</p>
+<pre>| 50 || [[https://us.misumi-ec.com/vona2/detail/110302689860/|40x40x120mm]] (3 hole) [[frames|frames]] || standard length frame, single channel ||  || &quot;</pre>
+<p>|-</p>
+<pre>| 50 || [[https://us.misumi-ec.com/vona2/detail/110302689860/|40x40x160mm]] (4 hole) [[frames|frames]] || standard length frame, single channel ||  || &quot;</pre>
+<p>|-</p>
+<pre>| 50 || [[https://us.misumi-ec.com/vona2/detail/110302689860/|40x40x200mm]] (5 hole) [[frames|frames]] || standard length frame, single channel ||  || &quot;</pre>
+<p>|-</p>
+<pre>| 50 || [[https://us.misumi-ec.com/vona2/detail/110302689860/|40x40x400mm]] (10 hole) [[frames|frames]] || standard length frame, single channel ||  || &quot;</pre>
+<p>|-</p>
+<pre>| 50 || [[https://us.misumi-ec.com/vona2/detail/110302689860/|40x40x600mm]] (15 hole) [[frames|frames]] || standard length frame, single channel ||  || &quot;</pre>
+<p>|-</p>
+<pre>| 50 || [[https://us.misumi-ec.com/vona2/detail/110302689860/|40x40x800mm]] (20 hole) [[frames|frames]] || standard length frame, single channel ||  || &quot;</pre>
+<p>|-</p>
+<pre>| 50 || [[https://us.misumi-ec.com/vona2/detail/110302689860/|40x40x1000mm]] (25 hole) [[frames|frames]] ||  standard length frame, single channel ||  || &quot;</pre>
+<p>|-</p>
+<pre>| 50 || [[https://us.misumi-ec.com/vona2/detail/110302689860/|40x40x1200mm]] (30 hole) [[frames|frames]] || standard length frame, single channel ||  || &quot;</pre>
+<p>|-</p>
+<pre>| 50 || [[https://us.misumi-ec.com/vona2/detail/110302689860/|40x40x1600mm]] (40 hole) [[frames|frames]] || standard length frame, single channel ||  || &quot;</pre>
+<p>|-</p>
+<pre>| 50 || [[https://us.misumi-ec.com/vona2/detail/110302689860/|40x40x2000mm]] (50 hole) [[frames|frames]] || standard length frame, single channel ||  || &quot;</pre>
+<p>|-</p>
+<pre>| 8 || SDA40 40mm double acting air cylinder || [[https://www.stcvalve.com/I-CylindersSDA.htm|SDA40 brackets, adapters, and accessories]] ||  ||</pre>
+<p>|-</p>
+<pre>| 16 || SDA40 plasma cut adapter plates ||  ||  ||</pre>
+<p>|-</p>
+<pre>| 8 || MHZ240D [[pneumatic_grippers|Pneumatic grippers]] - current issue is that gripper size is limited to 60mm max ||  ||  ||</pre>
+<p>|-</p>
+<pre>| 6 || [[https://www.avidcnc.com/pro-rack-and-pinion-drive-nema-34-p-226.html|PRO Rack and Pinion Drive, NEMA 34]] || Linear motion system for 40mm ||  || $1,018.5</pre>
+<p>|-</p>
+<pre>| 30 || [[https://www.avidcnc.com/pro-gear-rack-39-1-meter-p-263.html|PRO Gear Rack, 39&quot; (1 meter)]] || Linear motion system for 40mm ||  || $1950</pre>
+<p>|-</p>
+<pre>| 15 || [[https://www.aliexpress.com/item/1005001264680460.html|HGR20 HGR15 HGR25 Square Linear Guide Rail 2pc+4pcs HGH20CA/HGW20CC HGH15CA Flang Slide Block Carriages For CNC Router Engraving]] || Linear motion system for 4040 - HGH20CA || $136.62 || $2049.34</pre>
+<p>|-</p>
+<pre>| 4 || Avid CNC X/Y axis adapter plates ||  ||  ||</pre>
+<p>|-</p>
+<pre>| 80 || [[https://www.surpluscenter.com/Wheels/Casters/Plate-Casters/2-Dual-Wheel-Swivel-Plate-Caster-w-Brake-1-4928.axd|2&quot; Dual Wheel Swivel Plate Caster w/Brake]] [[casters|Casters]] || 20x shop floor items on wheels || $1.39 || $111.20</pre>
+<p>|-</p>
+<pre>| 40 || [[https://www.aliexpress.com/item/32592297902.html|50pcs Thread M8 T Slot nuts 40-M8 Half Round Elasticity Spring Nut 4040 Series Groove 8 Aluminum Profile Connectors]] || The only T nuts worth using ||  || $150</pre>
+<p>|-</p>
+<pre>| 2 || [[https://www.aliexpress.com/item/1005002132679856.html|4.5KW ATC Air Cooled Spindle Motor Automatic Tool Changer 220V+BT30-ER25 Tool Holder+Pull Stud for CNC Router Milling]] || For complex machining operations || $1,546.09 ea || $3092.18</pre>
+<p>|-</p>
+<pre>| 20 || [[https://www.aliexpress.com/item/33015811767.html|High-Quality Automatic Tool Changer HSK63 ISO30 ISO25 ISO20 BT30 BT40 Spindle Tool Magazine Hardening]] || Tool holders for ATC || $5 ea || $100</pre>
+<p>|-</p>
+<pre>| 4000 || M8 nylock nuts ||  ||  ||</pre>
+<p>|-</p>
+<pre>| 1000 || M8 1 hole bolts ||  ||  ||</pre>
+<p>|-</p>
+<pre>| 2000 || M8 2 hole bolts ||  ||  ||</pre>
+<p>|-</p>
+<pre>| 1000 || M8 3 hole bolts ||  ||  ||</pre>
+<p>|-</p>
+<pre>| 6 || [[https://www.polycase.com/sb-37|SB-37 NEMA Steel Enclosure]] || house and protect electronics || $97.91ea || $587.46</pre>
+<p>|-</p>
+<pre>| 8 || [[https://www.surpluscenter.com/Power-Transmission/Shafting/Keyed-Shafting/1-x-36-Keyed-Shafting-1-2982-100-3.axd|1&quot; x 36&quot; Keyed Shafting]] || Power transmission, idle rollers, jack shafts || $30.85 ea || $246.80</pre>
+<p>|-</p>
+<pre>| 2 || [[https://www.surpluscenter.com/Power-Transmission/Shafting/Keyed-Shafting/1-x-72-Keyed-Shafting-1-2982-100-6.axd|1&quot; x 72&quot; Keyed Shafting]] || Power transmission, idle rollers, jack shafts || $46.25 ea || $92.50</pre>
+<p>|-</p>
+<pre>| 20 || [[https://www.surpluscenter.com/Brands/Concentric-International/1-Single-Split-Shaft-Collar-1-2767-100.axd|1 Single Split Shaft Collar]] || constrain shafts || $5.20 ea || $104</pre>
+<p>|-</p>
+<pre>| 20 || [[https://www.surpluscenter.com/Brands/Dura-Roll/1-Pillow-Block-Bearing-UCP205-16-1-205-16-P.axd|1&quot; Pillow Block Bearing]] || Power transmission, idle rollers, jack shafts || $11.55 ea || $231</pre>
+<p>|-</p>
+<pre>| 40 || [[https://www.surpluscenter.com/Power-Transmission/Shafting/Key-Stock/1-4-Square-Key-1-5-Long-G-G-Mfg-411-0424-1-5030-25-A.axd|1/4 Square Key 1.5 Long]] || Secure power transmission components || $1 ea || $40</pre>
+<p>|-</p>
+<pre>| Total ||  ||  ||  || $19,558</pre>
+<p>|}</p>
+
+<h4>Pneumatic parts</h4>
+<ul>
+<li>8x <a href="https://www.amazon.com/gp/product/B07BW21Z5M/ref=ox_sc_act_title_1?smid=A13TRKTV701HHM&amp;psc=1">AOMAG 1/4&quot; DC 24V 2 Way Normally Closed Pneumatic Aluminum Electric Solenoid Air Valve</a></li>
+<li>8x <a href="https://www.amazon.com/gp/product/B084YTNG2P/ref=ox_sc_act_title_2?smid=A13TRKTV701HHM&amp;psc=1">https://www.amazon.com/gp/product/B084YTNG2P/ref=ox_sc_act_title_2?smid=A13TRKTV701HHM&amp;psc=1</a></li>
+</ul>
+
+<h4>Tools</h4>
+<ul>
+<li><a href="https://store.evolutionpowertools.com/products/r355cps?variant=32877747568733">Evolution R355CPS multimaterial cuttoff saw</a></li>
+<li><a href="https://www.aliexpress.com/item/4000033488889.html">2.2 KW Woodworking Dust Collector Cyclone Dust Collector Impulse Industrial Dust Collector Filter Core Dust Collector</a> $1,858.00</li>
+<li><a href="https://www.sears.com/craftsman-c3-max-axess-auto-ratchet-kit/">Craftsman 19.2 Volt C3 Max Axess Power Ratchet</a></li>
+</ul>
+
+<h4>Electrical</h4>
+<ul>
+<li>extension cords for each tool center</li>
+<li>10x <a href="https://www.aliexpress.com/item/1005001808805516.html">Heat Shrink Connect Terminals Waterproof solder ring tube terminal insulated bushing wire Butt Connectors protection sleeve</a> $127.70</li>
+<li>6x <a href="https://www.matterhackers.com/store/l/duet3d-duet-3-6hc-3d-printer-controller-board/sk/M1X8786S">Duet3D Duet 3 6HC 3D Printer Controller Board</a> $235ea</li>
+<li>10x <a href="https://deltaacdrives.com/delta-vfd015el23a/">Delta VFD015EL23A VFD-EL Series Drive</a> $260.66</li>
+<li>4x <a href="https://www.aliexpress.com/item/1005001694806261.html">GRBL Nano High Current Controller Bundle for QueenBee / WorkBee CNC Engraving Milling Machine Desktop DIY Lead CNC Mill</a> $148 $592</li>
+<li>12x <a href="https://www.aliexpress.com/item/33062727775.html">Ender-3S original Meanwell LRS-350-24 power supply for Creality Ender 3 3D printer</a> $37.89  $454.68</li>
+<li>1x <a href="https://www.aliexpress.com/item/33059275128.html">450nm Professional Continuous 20W/7W/3500mw Laser Cutting / Engraving Module Blue Light With TTL / PWM Modulation for CNC</a>   $109ea</li>
+</ul>
+
+<h3>Notes</h3>
+<ul>
+<li>double check vfd model</li>
+<li>contract CAD production w/ OpenSCAD / NopSCADLib</li>
+</ul>
+
+<h3>References</h3>
+<h3>References</h3>
+<ul>
+<li><a href="https://wiki.replimat.org/wiki/Eiffel">RepRap Eiffel</a></li>
+<li><a href="https://www.indiegogo.com/projects/beamcnc-construction-system-cnc-mill#/">BeamCNC</a></li>
+<li><a href="http://keysert.com/champ/Drill_Point_Geometry_nt.pdf">Drill Point Geometry</a></li>
+<li><img src="../../media/tool_drillpress.pdf" alt="" loading="lazy"></li>
+<li><a href="https://www.amanatool.com/products/planer-jointer-knives-hand-tools.html">Planer / Jointer knives and cutters</a></li>
+<li><a href="https://www.avidcnc.com/pro-rack-and-pinion-parts-c-47_49.html">AvidCNC Pro rack and pinion parts</a></li>
+<li>2x <a href="https://www.kurtworkholding.com/product/kurt-air-versatilelock-reverse-vise-6/">Kurt versatilelock air vise</a></li>
+<li><a href="http://www.repairable.be/160/">timelab furniture: design</a></li>
+<li><a href="https://www.mcmaster.com/drill-guides/clamp-on-drill-guides/">Clamp on drill guide</a></li>
+</ul>
+
+<p><a href="../../category/projects.html">Category: Projects</a></p>
+<p><a href="../../category/manufacturing.html">Category: Manufacturing</a></p>
+  </main>
+</body>
+</html>

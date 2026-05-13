@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>batteries - Replimat Wiki Archive</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="../index.html">Replimat Wiki Archive</a>
+  </header>
+  <main>
+<h1>batteries</h1>
+<p class="meta">Exported revision 7855, 20210923055715, by Tim</p>
+<nav class="page-actions"><a href="../history/talk/batteries.html">Revision history</a></nav>
+<p>{{OpenJSCAD|title=Battery v3 CAD|code=</p>
+<p>// Here we define the user editable parameters:</p>
+<p>function getParameterDefinitions() {</p>
+<p>  return [</p>
+<p>    { type: &#x27;float&#x27;, name: &#x27;nozzle_width&#x27;, caption: &#x27;Nozzle width&#x27;, default: 0.4 },</p>
+<p>    { type: &#x27;float&#x27;, name: &#x27;walls&#x27;, caption: &#x27;Walls&#x27;, default: 2 },</p>
+<p>  ];</p>
+<p>}</p>
+
+<p>function shell(params){</p>
+<p>  return CSG.cylinder({</p>
+<p>    start: [0, 0, 0],</p>
+<p>    end: [0, 0, 65],</p>
+<p>    radius: (19+wall_thickness*2)/2,</p>
+<p>    resolution: params.cylresolution</p>
+<p>  });</p>
+<p>}</p>
+
+<p>function batteryyyyyyy(params){</p>
+<p>  return CSG.cylinder({</p>
+<p>    start: [0, 0, -1],</p>
+<p>    end: [0, 0, 66],</p>
+<p>    radius: 19/2,</p>
+<p>    resolution: params.cylresolution</p>
+<p>  });</p>
+<p>}</p>
+
+<p>function battery() {</p>
+<p>    var cube = CSG.cube({</p>
+<p>        center: [beam_width/2, beam_width/2, (length*beam_width)/2],</p>
+<p>        radius: [beam_width/2, beam_width/2, (length*beam_width)/2]</p>
+<p>        });</p>
+<p>    var holes = [];</p>
+<p>    for (var i = 0; i &lt; length; i++)</p>
+<p>    {</p>
+<p>        holes.push(xHole(i));</p>
+<p>        holes.push(yHole(i));</p>
+<p>    }</p>
+<p>    var beam = cube.subtract(holes);</p>
+<p>    beam.properties.myConnector = new CSG.Connector([10, 0, 0], [1, 0, 0], [0, 0, 1]);</p>
+<p>    return beam;</p>
+<p>}</p>
+
+<p>function zBeam(length) {</p>
+<p>    var cube = CSG.cube({</p>
+<p>        center: [beam_width/2, beam_width/2, (length*beam_width)/2],</p>
+<p>        radius: [beam_width/2, beam_width/2, (length*beam_width)/2]</p>
+<p>        });</p>
+<p>    var holes = [];</p>
+<p>    for (var i = 0; i &lt; length; i++)</p>
+<p>    {</p>
+<p>        holes.push(xHole(i));</p>
+<p>        holes.push(yHole(i));</p>
+<p>    }</p>
+<p>    var beam = cube.subtract(holes);</p>
+<p>    beam.properties.myConnector = new CSG.Connector([10, 0, 0], [1, 0, 0], [0, 0, 1]);</p>
+<p>    return beam;</p>
+<p>}</p>
+
+<p>function main(params) {</p>
+<p>  params.cylresolution=(params.quality == &quot;1&quot;)? 64:16;</p>
+<p>  var nozzle_width=params.nozzle_width;</p>
+<p>  var walls=params.walls;</p>
+<p>  var wall_thickness=nozzle_width*walls*2;</p>
+
+<p>  //for (var j = 0; j &lt; 4; j++){</p>
+<p>  //return CSG.cylinder({r: 19/2, h: 69}).rotateX(90);</p>
+<p>    return CSG.cylinder({r: 9.5, h: 65}).rotateX(90);</p>
+<p>}</p>
+<p>}}</p>
+  </main>
+</body>
+</html>

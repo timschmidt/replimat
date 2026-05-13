@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>automated drilling machines revision 2578 - Replimat Wiki Archive</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="../../index.html">Replimat Wiki Archive</a>
+  </header>
+  <main>
+<h1>automated drilling machines revision 2578</h1>
+<p class="meta">20210114113917 by Tim. </p>
+<nav class="page-actions"><a href="../../automated_drilling_machines.html">Current page</a> <a href="../../history/automated_drilling_machines.html">History</a></nav>
+<p><a href="image/beamcnc.jpg.html">thumb|right|[[https://www.indiegogo.com/projects/beamcnc-construction-system-cnc-mill#/|BeamCNC</a> crowdfunding campaign demonstration device]]</p>
+<p><a href="image/eiffel_concept.jpg.html">thumb|right|[[https://wiki.replimat.org/wiki/Eiffel|RepRap Eiffel</a>, showcasing the characteristic <a href="../../frames.html">frames</a> ]]</p>
+
+<h3>Challenges</h3>
+<p><a href="../../frames.html">Frames</a> can be manufactured by hand, with careful measurement and drilling.  While meditative, this work is repetitive and laborious.  Time studies of the hand production process using a drill press reveal that positioning the undrilled frame stock for precise drilling consumes the majority of effort.  Automating the process in an affordable manner will reduce cost, increase availability, and free time for creative effort.</p>
+
+<h3>Approaches</h3>
+<h3>Flat pack frame drill</h3>
+<p>The frame drill automatically drills regularly spaced holes in <a href="square_raw_material.html">square raw material</a> to produce reusable Replimat <a href="../../frames.html">frames</a>.  It is constructed of a number of custom <a href="../../plates.html">plates</a>, <a href="../../motors.html">motors</a>, a <a href="controller.html">controller</a>, and several 3D printed parts.</p>
+
+<h4>Tools</h4>
+<h4>Parts</h4>
+<p>{| class=&quot;wikitable&quot;</p>
+<p>|-</p>
+<p>! Part !! Quantity !! Supplier</p>
+<p>|-</p>
+<pre>| plate-drill-machine || 2 || [[https://github.com/timschmidt/replimat/blob/master/src/OpenSCAD/plate-drill-robot.scad|OpenSCAD File]]</pre>
+<p>|-</p>
+<pre>| plate-drill-machine-spindle || 1 || [[https://github.com/timschmidt/replimat/blob/master/src/OpenSCAD/plate-drill-robot-spindle.scad|OpenSCAD File]]</pre>
+<p>|-</p>
+<pre>| NEMA-17 stepper motor || 3 || Link</pre>
+<p>|-</p>
+<pre>| roller-raw-material || 12 || CAD File</pre>
+<p>|-</p>
+<pre>| Spindle || 1 || [[https://www.ebay.com/itm/ER16-500W-High-Speed-DC-48V-Air-Cooling-Brushless-Spindle-Motor-Driver-Clamp/312656264518?hash=item48cbc3fd46:g:YDkAAOSwQjxdCuK~|ER16 500W High Speed DC 48V Air Cooling Brushless Spindle Motor + Driver]]</pre>
+<p>|-</p>
+<pre>| LM8UU Bearing || 1 - pack of 2 || [[https://www.amazon.com/gp/product/B07RL72L65/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&amp;psc=1&amp;tag=replimat-20|Amazon]]</pre>
+<p>|-</p>
+<pre>| Drive belt || ||</pre>
+<p>|-</p>
+<pre>| Drive pulley || ||</pre>
+<p>|-</p>
+<pre>| Controller || ||</pre>
+<p>|-</p>
+<pre>| Neoprene foam w/ adhesive backing || || [[https://www.amazon.com/gp/product/B06ZZDJ19L/ref=ppx_yo_dt_b_asin_title_o02_s01?ie=UTF8&amp;psc=1&amp;tag=replimat-20|Amazon]]</pre>
+<p>|-</p>
+<pre>| Drill bit || ||</pre>
+<p>|-</p>
+<pre>| Rail Guide Support for 16mm Diameter Shaft  || 1 - pack of 4 || [[https://www.amazon.com/gp/product/B07QNY3831/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&amp;psc=1&amp;tag=replimat-20|Amazon]]</pre>
+<p>|-</p>
+<pre>| Rail Guide Support for 8mm Diameter Shaft  || 1 - pack of 4 || [[https://www.amazon.com/gp/product/B07QS7LLF6/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&amp;psc=1&amp;tag=replimat-20|Amazon]]</pre>
+<p>|-</p>
+<pre>| 350mm 8mm T8 Lead Screw Set Lead Screw+ Copper Nut + Coupler + Pillow Bearing Block || 2 || [[https://www.amazon.com/gp/product/B01H1S13SQ/ref=ppx_yo_dt_b_asin_title_o02_s01?ie=UTF8&amp;psc=1&amp;tag=replimat-20|Amazon]]</pre>
+<p>|-</p>
+<pre>| Oilite drill bushing || 2 || [[https://www.mcmaster.com/6338K463|Mcmaster]]</pre>
+<p>|}</p>
+
+<h3>Drill guide</h3>
+<h3>Dual gripper frame drill</h3>
+<h4>Parts</h4>
+<ul>
+<li>2x MHZ2-40D grippers</li>
+</ul>
+
+<h3>References</h3>
+<ul>
+<li><a href="https://wiki.replimat.org/wiki/Eiffel">RepRap Eiffel</a></li>
+<li><a href="https://www.indiegogo.com/projects/beamcnc-construction-system-cnc-mill#/">BeamCNC</a></li>
+<li><a href="http://keysert.com/champ/Drill_Point_Geometry_nt.pdf">Drill Point Geometry</a></li>
+<li><img src="../../media/tool_drillpress.pdf" alt="" loading="lazy"></li>
+</ul>
+
+<p><a href="../../category/projects.html">Category: Projects</a></p>
+<p><a href="../../category/manufacturing.html">Category: Manufacturing</a></p>
+  </main>
+</body>
+</html>

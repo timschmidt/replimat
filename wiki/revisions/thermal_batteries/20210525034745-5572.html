@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>thermal batteries revision 5572 - Replimat Wiki Archive</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="../../index.html">Replimat Wiki Archive</a>
+  </header>
+  <main>
+<h1>thermal batteries revision 5572</h1>
+<p class="meta">20210525034745 by Tim. </p>
+<nav class="page-actions"><a href="../../thermal_batteries.html">Current page</a> <a href="../../history/thermal_batteries.html">History</a></nav>
+<pre>^ Projects infobox ^^</pre>
+<pre>| image | Thermal battery.jpg |</pre>
+<pre>| designer | [[user:tim|Timothy Schmidt]] |</pre>
+<pre>| date | 2013 |</pre>
+<pre>| vitamins |  |</pre>
+<pre>| materials |  |</pre>
+<pre>| transformations |  |</pre>
+<pre>| lifecycles |  |</pre>
+<pre>| tools | [[wrenches|Wrenches]] |</pre>
+<pre>| parts | [[frames|Frames]], [[nuts|Nuts]], [[bolts|Bolts]], [[plates|Plates]], [[end_caps|End caps]], [[barrels|Barrels]], [[exchangers|Exchangers]] |</pre>
+<pre>| techniques | [[shelf_joints|Shelf joints]], [[tri_joints|Tri joints]] |</pre>
+<pre>| stl |  |</pre>
+<pre>| git |  |</pre>
+
+<p><a href="../../category/projects.html">Category:Projects</a></p>
+<p><a href="../../category/energy.html">Category:Energy</a></p>
+
+<h3>Introduction</h3>
+<h3>Challenges</h3>
+<p>Off-grid solar power is available during the day, but must be stored for use at night.  Chemical batteries, while always improving, are expensive and wear out over time.  Because of these two factors, chemical batteries often make up the bulk of off-grid solar energy production costs.  Worst offender among off-grid power users is the humble refrigerator.  The fridge is an absolutely vital appliance, and it&#x27;s compressor pump is an inductive load, requiring power electronics to be built heavier duty and more expensive to withstand the transient currents and voltages of startup as opposed to steady usage.  Worse, the compressor is often AC, necessitating an inverter, resulting in another ~20% power loss.  Worse, the refrigerator often needs to start up and run the compressor at night.  All of these factors multiply to cause refrigerators to eat chemical batteries and cost off-grid solar installations a ton of money, efficiency, and wear.</p>
+
+<h3>Approaches</h3>
+<p>The thermal battery harvests necessarily overprovisioned solar PV electricity to warm and cool insulated water reservoirs.  This heat and cold is then used directly, via coolant exchange, to operate refrigerators, freezers, and air conditioning units as well as to pre-heat water entering the residential water heater.  Making use of excess solar PV allows us to be less concerned with total efficiency than we might otherwise be, and to focus instead on long term durability and cost - the features chemical batteries lack.</p>
+
+<h3>rev1</h3>
+<p>Running on 4x100W 12v panels wired direct, no charge controller.  Motors aren&#x27;t yet wired to a temperature switch to optimize their power draw (consequently they consume 2x72W continuous) but the IR thermometer still measured a three degree differential between the tanks today at 2:00pm. ~ 0.37 Kwh (1320477J / 314399cal / 367Wh / 1252 btu) stored after a few hours of running. Cool.  On to rev2.</p>
+
+<h3>Tools</h3>
+<h3>Parts</h3>
+<p>{| class=&quot;wikitable&quot;</p>
+<p>|-</p>
+<p>! Quantity !! Part !! Link</p>
+<p>|-</p>
+<pre>| 1 || Thermal [[exchangers|exchangers]] ||</pre>
+<p>|-</p>
+<pre>| 2 || [[barrels|Barrels]] ||</pre>
+<p>|-</p>
+<pre>| 4 || Quick disconnect pins ||</pre>
+<p>|}</p>
+
+<h3>Development targets</h3>
+<h3>References</h3>
+<ul>
+<li><a href="https://www.notechmagazine.com/2019/09/off-grid-solar-powered-zero-battery-refrigerator.html">Off grid solar powered zero battery</a></li>
+</ul>
+<p>&lt;youtube&gt;q1egMMtpDVI&lt;/youtube&gt;</p>
+  </main>
+</body>
+</html>

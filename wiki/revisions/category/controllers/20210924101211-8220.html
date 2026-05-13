@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>controllers revision 8220 - Replimat Wiki Archive</title>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="../../../index.html">Replimat Wiki Archive</a>
+  </header>
+  <main>
+<h1>controllers revision 8220</h1>
+<p class="meta">20210924101211 by Tim. </p>
+<nav class="page-actions"><a href="../../../category/controllers.html">Current page</a> <a href="../../../history/category/controllers.html">History</a></nav>
+<pre>^ Parts infobox ^^</pre>
+<pre>| image | Controllerrev1.jpg |</pre>
+<pre>| designers | [[user:tim|Timothy Schmidt]] |</pre>
+<pre>| date | 2013 |</pre>
+<pre>| vitamins |  |</pre>
+<pre>| materials |  |</pre>
+<pre>| transformations |  |</pre>
+<pre>| lifecycles |  |</pre>
+<pre>| parts |  |</pre>
+<pre>| techniques | [[voltage_dividers|Voltage dividers]], [[buck-boost_converters|Buck-boost converters]], [[active_rectification|Active rectification]], [[gate_drivers|Gate drivers]], [[current_sensors|Current sensors]], [[digital_to_analog_conversion|Digital to analog conversion]], [[analog_to_digital_conversion|Analog to digital conversion]], [[pulse_width_modulation|Pulse width modulation]], [[pid|PID]], [[bang_bang|Bang bang]], [[mppt|MPPT]] |</pre>
+<pre>| tools | [[3d_printers|3D printers]], [[soldering_irons|Soldering irons]], [[drill_presses|Drill presses]] |</pre>
+<pre>| files |  |</pre>
+<pre>| suppliers |  |</pre>
+<pre>| git |  |</pre>
+
+<p><a href="../../../category/parts.html">Category:Parts</a></p>
+<p><a href="../../../category/electric_parts.html">Category:Electric parts</a></p>
+<p><a href="../../../category/projects.html">Category:Projects</a></p>
+
+<h3>Introduction</h3>
+<p>Industrial control system (ICS) is a general term that encompasses several types of control systems and associated instrumentation used for industrial process control.</p>
+
+<p>Such systems can range in size from a few modular panel-mounted controllers to large interconnected and interactive distributed control systems with many thousands of field connections. Systems receive data from remote sensors measuring process variables (PVs), compare the collected data with desired setpoints (SPs), and derive command functions which are used to control a process through the final control elements (FCEs), such as control valves.</p>
+
+<p>Larger systems are usually implemented by supervisory control and data acquisition (SCADA) systems, or distributed control systems (DCS), and programmable logic controllers (PLCs), though SCADA and PLC systems are scalable down to small systems with few control loops. Such systems are extensively used in industries such as chemical processing, pulp and paper manufacture, power generation, oil and gas processing, and telecommunications.</p>
+
+<h3>Challenges</h3>
+<p>Most devices require some internal logic or digital control.  Most devices go about that in entirely incompatible ways.  Can a single open inexpensive multipurpose controller replace most single-purpose machine control electronics?</p>
+
+<h3>Approaches</h3>
+<p>We work hard to avoid depending on computers as much as possible - for example: Replimat projects can be drawn with pen and paper and the <a href="../../../grids.html">grids</a>. Where we do depend on computers, we work hard to make sure they&#x27;re as simple as possible, the same computer everywhere possible, that they run the same software everywhere possible.</p>
+
+<p>&lt;youtube&gt;X-DY6iL6NcI&lt;/youtube&gt;\\</p>
+<p>Laser additions to open source Marlin 3D printer firmware for Buildlog.net, OpenSLS, and mUVe3D demonstrate adaptability of existing ultra-low-cost 3D printing control solutions to a wider range of problems.</p>
+
+<p>A collection of power, control, cooling, and container components are suggested, which connect the elements common to a variety of machine control problems, as well as additions to increase the range of acceptable input and output voltages. This allows the</p>
+<p>controller to consume power from a variety of solar panel and battery configurations, and to control peripherals originally designed for other applications (i.e. found, salvaged, or otherwise repurposed equipment).</p>
+
+<h3>Parts</h3>
+<ul>
+<li>Highly compliant input power/voltage (20 - 72v input into 180W buck converter, suitable to be run directly from solar, salvaged batteries, spotty grid power, buckwired into optional LiPo charger circuit, then to MKS 1.4 power-in):</li>
+<li>https://www.amazon.com/gp/product/B018X03GYA/?tag=replimat-20</li>
+<li>High-current adjustable voltage output (High-power heated bed FET of MKS 1.4 wired to high-amp adjustable buck-boost before the connector)</li>
+<li>https://www.amazon.com/gp/product/B00N8EVQ30/?tag=replimat-20</li>
+<li>https://www.amazon.com/KOOKYE-printer-RepRap-Driver-Graphic/dp/B01HAU7T6K/?tag=replimat-20</li>
+<li>https://github.com/MarlinFirmware/Marlin</li>
+<li>Laser cut coroplast box</li>
+<li>Copper acetate solution - vinegar (white) + hydrogen peroxide + copper</li>
+</ul>
+<p>*0.6mm solder</p>
+
+<h3>Interoperability:</h3>
+<h3>Development targets:</h3>
+<p>Soldering iron attachment</p>
+<p>Share inductors across HV, buck-boost, etc.</p>
+<p>Printed power connector (PETG printed sprung m3 bolt (printed-in-place spring</p>
+<p>mechanism) and buna-n or ninjaflex O ring panel mount waterproof connector,</p>
+<p>crimp-on terminal connector for m3 bolt)</p>
+<h4>Battery charger</h4>
+<ul>
+<li>Inductive load driver - ZVS driver (IRFP260N mosfets - 50A 200V - $3 ea Ebay:</li>
+<li>http://www.infineon.com/dgdl/irfp260n.pdf?fileId=5546d462533600a4015356289dcf1fe2 ​ , inductors, capacitors) - inductive cooking, inductive forge, inductive plastic injection nozzle, inductive laser power supply driver - lux wire from TV CRT yokes, Electrical Discharge Machining, ​ http://www.ebay.com/itm/281814315969 ​ )</li>
+<li>H bridge driver ICs - adjust gate voltage relative to source voltage on the mosfets where source is tied to motor input</li>
+<li>https://www.digikey.com/product-detail/en/NCP5104DR2G/NCP5104DR2GOSCT-ND/1802370</li>
+<li><a href="https://www.instructables.com/DIY-1kW-MPPT-Solar-Charge-Controller/">Instructables: DIY 1kW MPPT Solar Charge Controller</a></li>
+<li><a href="https://github.com/opensolarproject/OSPController/wiki">Github: Open Solar Project Controller</a></li>
+</ul>
+
+<h4>Multimeter</h4>
+<ul>
+<li>Hardening - IRFP260N mosfets - 50A 200V mosfets, Higher wattage supplies, smaller board, silicone potted</li>
+</ul>
+
+<h4>Inverter</h4>
+<ul>
+<li><a href="https://www.egr.msu.edu/classes/ece480/capstone/fall14/group07/">MSU ECE Team 7</a> <a href="https://www.egr.msu.edu/classes/ece480/capstone/fall14/group07/PDFs/ECE480_Team7%20Final_Report.pdf">final report</a></li>
+</ul>
+<p>&lt;youtube&gt;Dn2PFebi2ww&lt;/youtube&gt;</p>
+<p>&lt;youtube&gt;yEPe7RDtkgo&lt;/youtube&gt;</p>
+
+<p>The replimat controller provides digital electronic control for all replimat projects.  The controller works in conjunction with <a href="../../../software.html">software</a> and builds upon 3D printing and desktop fabrication to provide a generalized solution for machine control problems.  The controller bolts to any Replimat <a href="frame.html">frame</a> and provides defacto standard connections for motors, switches and sensors, pumps, lights, and other equipment.</p>
+
+<p>Replimat is intended to work with as wide a variety of hardware as possible.  The Replimat <a href="../../../software.html">software</a> assumes the presence of a microcontroller and an application processor capable of running Linux or another full OS.  Hardware documented here is chosen for <a href="https://en.wikipedia.org/wiki/The_Free_Software_Definition">Freedom</a> as well as cost, availability, and ease of project development.  Documentation for other hardware is welcome!</p>
+
+<h3>Uses</h3>
+<h4>CNC</h4>
+<p><img src="../../../media/neuronliteschematicnew.png" alt="Plasma cutter schematic" loading="lazy"></p>
+<p><img src="../../../media/plasma_cutter_cutting_sequence.png" alt="Plasma cutting sequence" loading="lazy"></p>
+
+<p>This use of the controller includes 3D printing, plasma, waterjet, and laser cutting, milling and lathing as well as many other tasks automated with machine tools.</p>
+
+<ul>
+<li>Firmware support for Emco CNC lathe w/ 6 axis tool changer and spindle speed control</li>
+<li>Firmware support for Emco F1 CNC mill with quick-change tool post and 90 degree tiltable spindle for side-milling.</li>
+<li>Firmware support for frame auto-drilling machine</li>
+</ul>
+
+<h4>Battery management</h4>
+<p>Current and voltage sense circuits, voltage and current control, as well as a calibrated load enable the controller to manage a wide variety of battery chemistries.</p>
+
+<h4>Home automation</h4>
+<p><a href="https://en.wikipedia.org/wiki/ESP8266">ESP8266</a> integration allows for interaction with IoT devices.</p>
+
+<h3>Development</h3>
+<h3>rev1.2</h3>
+<h4>Parts</h4>
+<p>{| class=&quot;wikitable&quot;</p>
+<p>|-</p>
+<p>! Part !! Quantity !! Link</p>
+<p>|-</p>
+<pre>| ECP5 FPGA|| 1 ||</pre>
+<p>|-</p>
+<pre>| LCD || 1 || [[https://www.amazon.com/BIQU-Version-Graphic-Display-Controller/dp/B01FH8KTZU/ref=sr_1_5?keywords=reprap+lcd&amp;qid=1583520512&amp;sr=8-5?tag=replimat-20|Amazon]]</pre>
+<p>|-</p>
+<pre>| 2 wire extension cable || 4 || [[https://www.ebay.com/itm/JST-XH-2P-1S-3-7V-Li-Po-Battery-Balance-Extension-charging-22AWG-20CM-wire-x-10/253117336436?ssPageName=STRK%3AMEBIDX%3AIT&amp;_trksid=p2057872.m2749.l2649|ebay]]</pre>
+<p>|-</p>
+<pre>| 3 wire extention cable || 6 || [[https://www.ebay.com/itm/10-PCS-JST-XH-2S-Battery-Wire-Balance-Extension-20CM-for-Li-Po-Batteries-/303098141350?hash=item46920e9aa6|ebay]]</pre>
+<p>|-</p>
+<pre>| 4 wire extension cable || 5 || [[https://www.ebay.com/itm/10Pcs-Silicone-Wire-3S-JST-XH-Balance-Extension-22CM-Adapter-Model-Cable-RC-Lipo/312810643868?hash=item48d4f7a19c:g:3DMAAOSw-~tdq2t-|ebay]]</pre>
+<p>|-</p>
+<pre>| 2 wire bare extension || 2 || [[https://www.amazon.com/XLX-25Pair-Connection-Terminal-Connector/dp/B076JFFDWN/?tag=replimat-20|Amazon]]</pre>
+<p>|-</p>
+<pre>| 3 wire bare extension || 2 || [[https://www.amazon.com/gp/product/B01CZU9PLW/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&amp;psc=1?tag=replimat-20|Amazon]]</pre>
+<p>|-</p>
+<pre>| 4 wire bare extension || 2 || [[https://www.amazon.com/gp/product/B01EFIX0OU/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&amp;psc=1?tag=replimat-20|Amazon]]</pre>
+<p>|-</p>
+<pre>| Pre-terminated cables w/ JST-XH lugs || 1 || [[https://www.amazon.com/XLX-Connection-Terminal-Connector-Compatible/dp/B0825TKV7W/?tag=replimat-20|Amazon]]</pre>
+<p>|-</p>
+<pre>| Controller case || 1 || CAD</pre>
+<p>|-</p>
+<pre>| LCD case || 1 || CAD</pre>
+<p>|}</p>
+
+<h4>Software</h4>
+<p><a href="https://github.com/esden/summon-fpga-tools">Summon FPGA tools</a>\\</p>
+<p><a href="https://reprap.org/wiki/RepRap_Firmware">RepRapFirmware Wiki page</a>\\</p>
+<p>&lt;youtube&gt;HxEk7-6RriQ&lt;/youtube&gt;</p>
+<p><a href="https://configtool.reprapfirmware.org/Start">RepRapFirmware online configuration tool</a>\\</p>
+<p><a href="https://github.com/sdavi/RepRapFirmware">LPC1768 port</a>\\</p>
+<p><a href="https://forum.duet3d.com/topic/11703/building-reprap-firmware-on-debian-buster">building on Debian</a>\\</p>
+
+<h3>rev1.1</h3>
+<p><img src="../../../media/controller1.jpg" alt="Controller" loading="lazy"></p>
+<p><img src="../../../media/controller_printing.jpg" alt="Printing" loading="lazy"></p>
+
+<h4>Parts</h4>
+<p>{| class=&quot;wikitable&quot;</p>
+<p>|-</p>
+<p>! Part !! Quantity !! Link</p>
+<p>|-</p>
+<pre>| MKS Base || 1 || [[https://www.amazon.com/BIQU-MKS-Base-Plate-Controller-Printer/dp/B076S2SDQ9/ref=sr_1_2?keywords=mks+base&amp;qid=1583520407&amp;sr=8-2?tag=replimat-20|Amazon]]</pre>
+<p>|-</p>
+<pre>| LCD || 1 || [[https://www.amazon.com/BIQU-Version-Graphic-Display-Controller/dp/B01FH8KTZU/ref=sr_1_5?keywords=reprap+lcd&amp;qid=1583520512&amp;sr=8-5?tag=replimat-20|Amazon]]</pre>
+<p>|-</p>
+<pre>| 2 wire extension cable || 4 || [[https://www.ebay.com/itm/JST-XH-2P-1S-3-7V-Li-Po-Battery-Balance-Extension-charging-22AWG-20CM-wire-x-10/253117336436?ssPageName=STRK%3AMEBIDX%3AIT&amp;_trksid=p2057872.m2749.l2649|ebay]]</pre>
+<p>|-</p>
+<pre>| 3 wire extention cable || 6 || [[https://www.ebay.com/itm/10-PCS-JST-XH-2S-Battery-Wire-Balance-Extension-20CM-for-Li-Po-Batteries-/303098141350?hash=item46920e9aa6|ebay]]</pre>
+<p>|-</p>
+<pre>| 4 wire extension cable || 5 || [[https://www.ebay.com/itm/10Pcs-Silicone-Wire-3S-JST-XH-Balance-Extension-22CM-Adapter-Model-Cable-RC-Lipo/312810643868?hash=item48d4f7a19c:g:3DMAAOSw-~tdq2t-|ebay]]</pre>
+<p>|-</p>
+<pre>| 2 wire bare extension || 2 || [[https://www.amazon.com/gp/product/B01CZUKAX4/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&amp;psc=1?tag=replimat-20|ebay]]</pre>
+<p>|-</p>
+<pre>| 3 wire bare extension || 2 || [[https://www.amazon.com/gp/product/B01CZU9PLW/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&amp;psc=1?tag=replimat-20|ebay]]</pre>
+<p>|-</p>
+<pre>| 4 wire bare extension || 2 || [[https://www.amazon.com/gp/product/B01EFIX0OU/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&amp;psc=1?tag=replimat-20|Amazon]]</pre>
+<p>|-</p>
+<pre>| Controller case || 1 || CAD</pre>
+<p>|-</p>
+<pre>| LCD case || 1 || CAD</pre>
+<p>|}</p>
+
+<h4>Software</h4>
+<h5>Klipper</h5>
+<p>Full installation instructions <a href="https://github.com/KevinOConnor/klipper/blob/master/docs/Installation.md">here</a>.</p>
+
+<p># Download Octoprint from <a href="https://octoprint.org/download/">here</a>\\</p>
+<p># Extract .img file</p>
+<p># Transfer .img file to SD card using <a href="https://www.balena.io/etcher/">etcher</a> or &quot;dd if=/path/to/file.img of=/path/to/sdcard/device bs=1M&quot;</p>
+<p># edit wpa_supplicant.txt on SD card boot partition</p>
+<p># insert card into Raspberry Pi</p>
+<p># connect power source</p>
+<p># open web browser and connect to octopi.lan</p>
+
+<ul>
+<li>https://github.com/timschmidt/buildlog-lasercutter-marlin</li>
+<li><a href="https://github.com/nerdralph/ArduinoShrink">Arduino Shrink</a></li>
+</ul>
+
+<h4>References</h4>
+<ul>
+<li><a href="https://www.thingiverse.com/thing:4536657">Modular cases</a></li>
+</ul>
+
+<h3>rev1</h3>
+<p><img src="../../../media/controllerrev1.jpg" alt="Controller rev1 front" loading="lazy"></p>
+<p><img src="../../../media/controllerrev1-2.jpg" alt="Controller rev1 rear" loading="lazy"></p>
+<p><img src="../../../media/wiring_diagram.jpg" alt="Laser wiring" loading="lazy"></p>
+
+<h4>Parts</h4>
+<p>{| class=&quot;wikitable&quot;</p>
+<p>|-</p>
+<p>! Part !! Quantity !! Link</p>
+<p>|-</p>
+<pre>| MKS Base || 1 || [[https://www.amazon.com/BIQU-MKS-Base-Plate-Controller-Printer/dp/B076S2SDQ9/ref=sr_1_2?keywords=mks+base&amp;qid=1583520407&amp;sr=8-2?tag=replimat-20|Amazon]]</pre>
+<p>|-</p>
+<pre>| LCD || 1 || [[https://www.amazon.com/BIQU-Version-Graphic-Display-Controller/dp/B01FH8KTZU/ref=sr_1_5?keywords=reprap+lcd&amp;qid=1583520512&amp;sr=8-5?tag=replimat-20|Amazon]]</pre>
+<p>|-</p>
+<pre>| Controller plate || 1 || CAD</pre>
+<p>|-</p>
+<pre>| Extension cables || 2 ||</pre>
+<p>|}</p>
+
+<h4>Software</h4>
+<p><a href="https://github.com/timschmidt/buildlog-lasercutter-marlin">Laser Marlin</a></p>
+
+<h3>Hardware Comparison</h3>
+<h3>Application Processor (full OS)</h3>
+<p>{| class=&quot;wikitable&quot;</p>
+<p>|-</p>
+<p>! SBC !! description | Hardware</p>
+<p>|-</p>
+<p>|<a href="https://www.raspberrypi.org/products/raspberry-pi-4-model-b/">Raspberry Pi 4</a> || Super inexpensive, ubiquitous, widely supported.</p>
+<p>|-</p>
+<p>|<a href="https://www.cnx-software.com/2017/03/13/turtle-board-is-a-raspberry-pi-2-like-fpga-board-for-j-core-j2-open-source-superh-sh2-soc/">Turtle board</a> || Fully open <a href="https://j-core.org/index.html">j-core</a> SH2 compatible SoC in Raspberry Pi compatible form factor. || https://www.crowdsupply.com/radiona/ulx3s</p>
+<p>|-</p>
+<p>|<a href="https://github.com/SpinalHDL/SaxonSoc">SaxonSoC</a> || <a href="https://twitter.com/lawriegriffiths/status/1238030666719207425">Fully open RISC-V compatible SoC</a> in microcontroller or application processor configurations || https://www.crowdsupply.com/radiona/ulx3s</p>
+<p>|-</p>
+<p>|<a href="https://www.contrib.andrew.cmu.edu/~somlo/BTCP/">A Trustworthy, Free (Libre), Linux Capable, Self-Hosting 64bit RISC-V Computer</a> || ECP5 FPGA based FOSS computer <a href="https://arxiv.org/pdf/1903.10407.pdf">FPGA toolchain</a></p>
+<p>|}</p>
+
+<h3>Microcontroller (realtime)</h3>
+<p>{| class=&quot;wikitable&quot;</p>
+<p>|-</p>
+<p>! rtos !! microcontroller !! board !! cost</p>
+<p>|-</p>
+<p>|<a href="https://www.tockos.org/hardware/">Tock OS</a> || <a href="http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42023-ARM-Microcontroller-ATSAM4L-Low-Power-LCD_Datasheet.pdf">SAM4 series</a> || DuetWifi+ and clones || $80 - $200</p>
+<p>|-</p>
+<p>|<a href="https://zinc.rs/">Zinc embedded OS</a>, <a href="https://reprap.org/wiki/RepRap_Firmware">RepRap Firmware</a>|| <a href="https://www.st.com/resource/en/datasheet/dm00037051.pdf">STM32F407</a>, <a href="https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/general-purpose-mcus/lpc1700-cortex-m3/512kb-flash-64kb-sram-ethernet-usb-lqfp100-package:LPC1768FBD100">LPC1768</a> || <a href="https://reprap.org/wiki/Smoothieboard">Smoothieboard</a>, <a href="https://reprap.org/wiki/SKR">SKR</a> 1.3, 1.4 <a href="https://www.ebay.com/itm/Bundle-SKR-PRO-V1-1-ARM-32bit-3D-Printer-Controller-W-5pcs-TMC2130-V3-0/392423369802?hash=item5b5e416c4a:g:zHkAAOSwN9NdQHFc">SKR Pro</a>||</p>
+<p>|-</p>
+<pre>|  || [[https://www.nxp.com/docs/en/data-sheet/LPC1759_58_56_54_52_51.pdf|LPC1758FBD80]] || [[https://reprap.org/wiki/R2C2_RepRap_Electronics|R2C2]]</pre>
+<p>|-</p>
+<p>|<a href="https://reprap.org/wiki/RepRap_Firmware">RepRap Firmware</a>   || <a href="http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-11057-32-bit-Cortex-M3-Microcontroller-SAM3X-SAM3A_Datasheet.pdf">SAM3</a> || <a href="https://reprap.org/wiki/Duet">Duet</a> ||</p>
+<p>|-</p>
+<pre>| [[https://marlinfw.org/|Marlin]], [[https://github.com/timschmidt/buildlog-lasercutter-marlin|Laser Marlin]] || [[http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-2549-8-bit-AVR-Microcontroller-ATmega640-1280-1281-2560-2561_datasheet.pdf|Atmega 2560]] || Rambo, MKS Base ||</pre>
+<p>|-</p>
+<pre>|  || [[https://en.wikipedia.org/wiki/Parallax_Propeller|Parallax Propeller]] ||  ||</pre>
+<p>|-</p>
+<pre>| [[https://github.com/MarlinFirmware/Marlin/issues/14345|Marlin 2.0]] || [[https://en.wikipedia.org/wiki/ESP32|ESP32]] || [[https://github.com/simon-jouet/ESP32Controller/tree/r2|R2]]</pre>
+<p>|}</p>
+
+<h3>Resources</h3>
+<p>&lt;youtube&gt;oJ3itF3ZJ18&lt;/youtube&gt;\\</p>
+<ul>
+<li><a href="https://wiki.opensourceecology.org/wiki/Universal_Controller">OpenSourceEcology: Universal Controller</a></li>
+<li><a href="http://www.pygestalt.org/">PyGestalt - a framework for building controllers for automated tools. It enables you to import your machines as Python modules, and makes it easy to connect machines to browser-based user interfaces</a></li>
+<li><a href="https://books.google.com/books/about/Electrical_Motor_Controls_for_Integrated.html?id=mDHQygAACAAJ&amp;source=kp_book_description">Electrical Motor Controls for Integrated Systems Applications Manual</a></li>
+<li><a href="https://rapcores.github.io/rapcores/">Rapcores</a></li>
+<li><a href="https://www.youtube.com/channel/UCeF7JKNXOy0jpMOxpgbZcpg">OpenTechLab</a> FOSS logic analyzer videos</li>
+<li><a href="battroller.html">Battroller</a></li>
+<li><a href="https://github.com/Hoektronics/BotQueue">BotQueue</a></li>
+<li><a href="http://www.clifford.at/icestorm/">ICEStorm FPGA tools project</a></li>
+<li><a href="https://www.egr.msu.edu/classes/ece480/capstone/fall14/group07/">MSU ECE Team 7</a> <a href="https://www.egr.msu.edu/classes/ece480/capstone/fall14/group07/PDFs/ECE480_Team7%20Final_Report.pdf">final report</a></li>
+<li>http://www.akamaiuniversity.us/PJST8_1_4.pdf</li>
+<li>https://github.com/timschmidt/bailingwire</li>
+<li><a href="https://dspace.mit.edu/handle/1721.1/29225">Automatic 5-axis NC toolpath generation</a></li>
+<li><a href="https://neuroncnc.com/assets/components/docs/NeuronLiteUserManual.pdf">Neuron Lite Plasma Cutter User Manual</a></li>
+<li><a href="https://neuroncnc.com/assets/components/docs/NeuronSimplicityUserManual.pdf">Neuron Simplicity Plasma Cutter User Manual</a></li>
+<li><a href="https://cnc.js.org/">cnc.js</a></li>
+<li><a href="https://chiprag.com/archives/">Chiprag CNC News</a></li>
+<li><a href="https://github.com/pikvm/pikvm">Pi KVM</a></li>
+<li><a href="https://www.thingiverse.com/thing:3934">Parametric Computer Case Script v0.1</a></li>
+<li><a href="https://core.ac.uk/reader/161119546">Asynchrobatic logic for low-power VLSI design</a></li>
+<li><a href="http://viznut.fi/texts-en/permacomputing.html">Permacomputing</a></li>
+<li><a href="https://cdn.shopify.com/s/files/1/0038/9582/files/RBBB_Instructions_06.pdf">RBBB Instructions</a></li>
+<li><a href="https://libre.solar/">Libre solar - building blocks for DC energy systems</a></li>
+<li><a href="https://www.egr.msu.edu/classes/ece480/capstone/fall14/group07/">ECE 480 Team 7 Compact DC/AC Power Inverter</a></li>
+<li><a href="https://www.modularcircuits.com/blog/articles/h-bridge-secrets/">H-bridge secrets</a></li>
+<li><a href="https://sourceforge.net/projects/liquidpcb/">Liquid PCB</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Precision_Time_Protocol">Wikipedia: Precision time protocol</a></li>
+<li><a href="https://github.com/TUDSSL/BFree">Github: BFree battery-free prototping platform</a></li>
+</ul>
+  </main>
+</body>
+</html>

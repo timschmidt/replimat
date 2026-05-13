@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>development roadmap revision 1368 - Replimat Wiki Archive</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="../../index.html">Replimat Wiki Archive</a>
+  </header>
+  <main>
+<h1>development roadmap revision 1368</h1>
+<p class="meta">20200527184401 by Tim. /* Sheet (coroplast) */</p>
+<nav class="page-actions"><a href="../../development_roadmap.html">Current page</a> <a href="../../history/development_roadmap.html">History</a></nav>
+<p>__NOTOC__</p>
+<p><img src="../../media/replimatopenconstructionsystem.pdf" alt="" loading="lazy"></p>
+<p>12.14.2016</p>
+<p>Timothy Schmidt</p>
+
+<h4>Overview</h4>
+<p>The Replimat Open Construction System is a practical self-replicating construction system. ROCS encompases a small number of component parts reused in many different ways to construct &gt;60 everyday tools - including several of the tools necessary to fabricate more ROCS components from raw materials.</p>
+
+<p>A high degree of self-replication is achieved by carefully choosing a small number of very versatile components, and reusing those components throughout the system. Many replimat components can simply be cut to form two smaller components without</p>
+<p>creating waste. And all Replimat components are designed for disassembly, and cradle-to-cradle reusability.</p>
+<p>All component parts can not yet be replicated, though this document details a development plan to increase the number which can be. Replimat components are constructed, wherever possible, from waste plastic, unprocessed trees or reclaimed lumber, stainless steel, aluminum, or other durable, reusable, renewable, recycled and recyclable materials.</p>
+
+<p>Replimat components form a durable, repurposable, mult-use carbon sink for the waste streams of other processes.</p>
+
+<h4>Licensing</h4>
+<p>All replimat components and documentation are available under the AGPLv3+ (https://www.gnu.org/licenses/agpl-3.0.en.html ​ ) or TAPR OHL v1.0 (https://www.tapr.org/TAPR_Open_Hardware_License_v1.0.txt) licenses. These licenses require derivative works to be released to all parties under identical terms.</p>
+
+<h4>Milestones</h4>
+<ul>
+<li>First full physical implementation</li>
+<li>Automated frame factory development ongoing</li>
+<li>First full CAD implementation</li>
+<li>Incremental reduction of <a href="../../vitamins.html">vitamins</a> components</li>
+</ul>
+
+<h3>Components</h3>
+<h3>Hardware (ferromagnetic stainless steel)</h3>
+<h5>Rationale</h5>
+<p>(Now favoring 316 surgical steel... more research happening)</p>
+<p>Stainless steel is a temperamental alloy. Difficult to work and produce, components made from this material can cost three times as much as a similar component in hardened steel. I believe the cost to be justified, due to the critical nature of the nuts and</p>
+<p>bolts in so many other parts of the system, and stainless steel’s extreme durability under virtually all conditions.</p>
+
+<p>Offsetting the increased cost of stainless steel, the standardization on 12 total nut and bolt components across the entire system enables bulk purchasing, reduces storage and shipping requirements, simplifies inventory management, billing, and reclamation and</p>
+<p>reuse.</p>
+
+<p>Stainless steels are available in magnetic, and non-magnetic varieties. The magnetic varieties tend to be less expensive, and the magnetic properties of the nut and bolt hardware are required for the operation of several components in the system - notably the solenoid pump / motor.</p>
+
+<h5>Current components</h5>
+<p>M3xXX, M3xYY, M3xZZ bolts, M3 lock nut, M3 washer\\</p>
+<p>M8x50, M8x90, M8x130 bolts, M8 lock nut, M8 washer\\</p>
+<p>M25xXX, M25xYY, M25xZZ bolts, M25 lock nut, M25 washer\\</p>
+<p>1000mmx40mmx40mmx3mm bar stock - coroplast might be good enough\\</p>
+<p>6mm stainless steel BBs\\</p>
+<h5>Interoperability</h5>
+<h5>Development targets</h5>
+<h5>Life cycle</h5>
+<p>Long bolts can be cut to form shorter bolts and abrasive pellets for the ball mill.</p>
+<p>Stripped, bent, or abraded nuts or bolts degrade to abrasive pellets for the ball mill.</p>
+
+<h3>Frame</h3>
+<h5>Rationale</h5>
+<p>The modular frames in this system are constructed using only one component, repeated</p>
+<p>and assembled in a variety of configurations, with the stainless steel hardware.</p>
+<p>These frames assemble quickly, intuitively, and squarely in all dimensions and on uneven</p>
+<p>surfaces, under water, or in zero gravity.</p>
+<p>Frame members are easily manufactured from renewable and widely available raw</p>
+<p>materials such as trees, square steel, aluminum, and other metal tube, even bamboo and</p>
+<p>recycled thermoplastics.</p>
+<p>Aluminum frame members retain perfect interchangeability and reusability after years of</p>
+<p>intense sun exposure, submersion in water, etc.</p>
+<p>Wood frame members retain near-perfect interchangeability and reusability across</p>
+<p>lifetimes when stored in a home, or other controlled environment.</p>
+<p>Unlike Isaacs or Jergensen frames, Replimat uses only lengths that are multiples of</p>
+<p>200mm, equivalent to approximately 8 inches or 5 holes. Plus two and three-hole</p>
+<p>members. This allows Replimat frames to be measured easily by sight in millimeters,</p>
+<p>inches, and holes simultaneously.</p>
+<h5>Current components</h5>
+<p>1000mmx40mmx40mm (39.37inx1.57inx1.57in) 25 hole frame</p>
+<p>Stainless steel hardware</p>
+<h5>Interoperability:</h5>
+<p>1000mm frame lengths can be cut to 200mm, 400mm, 600mm, and 800mm lengths without waste.</p>
+
+<h5>Development targets:</h5>
+<p>Self-reproducing frame drilling machine</p>
+
+<h3>Cord (550lb test nylon paracord, stainless steel cable?)</h3>
+<h5>Rationale:</h5>
+<p>Simplified selection of knots - holding, sliding,</p>
+<h5>Current components:</h5>
+<p>Commercially available 550 paracord (https://www.amazon.com/SurvivorCord-SAFETY-ORANGE-Paracord-Conductive-Patent-Pending/dp/B01DAPFYMA​ )</p>
+
+<h5>Interoperability:</h5>
+<h5>Development targets:</h5>
+<p>Printable automatic cord braiding machine</p>
+<p>https://www.youtube.com/watch?v=z9tgjUBpmLA</p>
+<h3>Electric fan</h3>
+<h5>Rationale:</h5>
+<p>Electric fans are incredibly prolific devices. Used to cool electronics, motors, and</p>
+<p>evaporators, as well as people, livestock, greenhouses, and more. ROCS’ fundamental</p>
+<p>component for moving air.</p>
+<h5>Current components:</h5>
+<h5>Interoperability:</h5>
+<h5>Development targets:</h5>
+<h3>Toilet</h3>
+<h5>Rationale:</h5>
+<p>Everybody poops.</p>
+<h5>Current components:</h5>
+<h5>Interoperability:</h5>
+<h5>Development targets:</h5>
+<p>Research regulation on portable toilets, composting toilets</p>
+<p>Modular composting toilet</p>
+<h3>Hose clamp (printable), hose barb, and 25mm tube</h3>
+<h5>Rationale</h5>
+<h5>Current components</h5>
+<h5>Interoperability</h5>
+<h5>Development targets</h5>
+<ul>
+<li>nut/bolt tightened version</li>
+</ul>
+<h3>V-wheels</h3>
+<h5>Interoperability:</h5>
+<h5>Development targets:</h5>
+<ul>
+<li>Develop gridbeamish three-bearing blade guide</li>
+<li>Light (LED with spectrum suitable for vision + plant growth)</li>
+</ul>
+
+<h5>Rationale:</h5>
+<h5>Current components:</h5>
+<h5>Interoperability:</h5>
+<h5>Development targets:</h5>
+<h3>Bench grinder</h3>
+<h5>Rationale</h5>
+<h5>Current components</h5>
+<h5>Development targets</h5>
+<ul>
+<li>Printable grinder form for casting</li>
+</ul>
+<h3>Shingles</h3>
+<h5>Rationale</h5>
+<h5>Current components</h5>
+<h5>Development targets</h5>
+<h3>Sink</h3>
+<h5>Rationale</h5>
+<h5>Current components</h5>
+<h5>Development targets</h5>
+<h3>Portable Power</h3>
+<h5>Rationale:</h5>
+<h5>Current components:</h5>
+<ul>
+<li>Coroplast box</li>
+<li>Solar panels</li>
+<li>Recycled LiPo batteries</li>
+<li>Charge controller</li>
+<li>Bicycle tires</li>
+</ul>
+<h5>Development targets</h5>
+<p>Coroplast solar panel (transparent or translucent coroplast, solar cells, salvaged wire, solder, silicone epoxy)</p>
+<p>Universal Controller battery charger</p>
+
+<h3>Clothes washer / dryer</h3>
+<h5>Rationale:</h5>
+<h5>Current components</h5>
+<h5>Development targets</h5>
+<h3>Refrigerator</h3>
+<h5>Rationale:</h5>
+<h5>Current components:</h5>
+<h5>Development targets:</h5>
+<h3>Heater / air conditioner</h3>
+<h5>Rationale:</h5>
+<h5>Current compoponents</h5>
+<h5>Development targets:</h5>
+<h3>Hot and cold shower</h3>
+<h5>Rationale:</h5>
+<h5>Current components:</h5>
+<h5>Development targets:</h5>
+<h3>Tractor (lifetrak lite: fork pallet loader, farm tractor)</h3>
+<h5>References:</h5>
+<ul>
+<li>http://opensourceecology.org/wiki/LifeTrac</li>
+</ul>
+
+<h3>Printable valves</h3>
+<h5>Rationale:</h5>
+<h5>Current components:</h5>
+<ul>
+<li>6mm stainless steel ball (BB)</li>
+<li>Printed spring?</li>
+</ul>
+
+<h5>Development targets:</h5>
+<h3>Saw stand</h3>
+<h5>Rationale:</h5>
+<p>This tool is a necessary aid to anyone planing, ripping, or otherwise processing long</p>
+<p>wood, metal, or plastic raw materials.</p>
+<h5>Current components:</h5>
+<ul>
+<li>https://www.amazon.com/gp/product/B000VEOPEC/ref=oh_aui_detailpage_o01_s00?ie=UTF8&amp;psc=1</li>
+</ul>
+<h5>Development targets</h5>
+<h3>Modular Cookware</h3>
+<h5>Rationale:</h5>
+<h5>Current components:</h5>
+<ul>
+<li>https://www.amazon.com/gp/product/B01AX3FI4G/ref=oh_aui_detailpage_o00_s01?ie=UTF8&amp;psc=1</li>
+<li>https://www.amazon.com/Ball-Jar-Wide-Mouth-Bands/dp/B00B80TJLW/ref=pd_sim_79_3?_encoding=UTF8&amp;pd_rd_i=B00B80TJLW&amp;pd_rd_r=3AMCN85SQHPCZ32M2EBF&amp;pd_rd_w=c2M0T&amp;pd_rd_wg=k8FKF&amp;refRID=3AMCN85SQHPCZ32M2EBF&amp;th=1</li>
+<li>https://www.amazon.com/gp/product/B0190ZUNEI/ref=oh_aui_detailpage_o00_s00?ie=UTF8&amp;psc=1</li>
+</ul>
+
+<h5>Development targets</h5>
+<h3>Plastics Recycling Center</h3>
+<h5>Rationale:</h5>
+<p>https://www.qualitylogoproducts.com/lib/different-types-of-plastic.htm</p>
+<h5>Current components:</h5>
+<ul>
+<li>plastic shredder v0.1</li>
+<li>filament extruder v0.1</li>
+<li>injection molder v0.1</li>
+</ul>
+
+<ul>
+<li>Press v0.1</li>
+<li>https://www.thingiverse.com/thing:1468596</li>
+<li>https://www.thingiverse.com/thing:677144</li>
+</ul>
+<h5>Development targets:</h5>
+<ul>
+<li>Re-frame in gridbeam</li>
+<li>Ensure that each machine is supported by the Universal Controller</li>
+<li>Large-format coro, fresnel lens, multifocal concentrating solar fresnel, etc press</li>
+</ul>
+<h5>References</h5>
+<ul>
+<li>https://preciousplastic.com/en/</li>
+</ul>
+
+<h3>Robot arm</h3>
+<h5>Rationale:</h5>
+<h5>Current components:</h5>
+<ul>
+<li>https://www.thingiverse.com/thing:1652309</li>
+<li>https://www.thingiverse.com/thing:280263</li>
+</ul>
+
+<h4>References</h4>
+<p>4. Popular Mechanics Sept 1923</p>
+<p>6. Elkinsdiy.com</p>
+
+<p><a href="marketing.html">Marketing</a></p>
+  </main>
+</body>
+</html>

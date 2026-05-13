@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>avid cnc 60120 pro revision 900 - Replimat Wiki Archive</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="../../index.html">Replimat Wiki Archive</a>
+  </header>
+  <main>
+<h1>avid cnc 60120 pro revision 900</h1>
+<p class="meta">20200415084400 by Tim. </p>
+<nav class="page-actions"><a href="../../avid_cnc_60120_pro.html">Current page</a> <a href="../../history/avid_cnc_60120_pro.html">History</a></nav>
+<p>On Tue Apr 14, we purchased a <a href="https://www.cncrouterparts.com/">chcrouterparts.com</a> 5x10 Pro CNC router kit.  This page documents the changes I&#x27;ve made to that machine, and the processes used to work with it.</p>
+
+<h4>Dust Collection</h4>
+<p>{| class=&quot;wikitable&quot;</p>
+<p>|-</p>
+<p>! Quantity !! Part !! Link</p>
+<p>|-</p>
+<pre>| 1 || Spindle Dust Shoe Cover || [[https://www.amazon.com/gp/product/B07XFNMLLD/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&amp;psc=1|Amazon]]</pre>
+<p>|-</p>
+<pre>| 1 || Duct reducer || [[https://www.amazon.com/gp/product/B0822PMH4R/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&amp;psc=1|Amazon]]</pre>
+<p>|-</p>
+<pre>| 1 || Three machine dust collection kit || [[https://www.amazon.com/gp/product/B01N21P1WE/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&amp;psc=1|Amazon]]</pre>
+<p>|-</p>
+<pre>| 1 || 20 feet of 4&quot; diameter PVC hose || [[https://www.amazon.com/gp/product/B01MDUGEXE/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&amp;psc=1|Amazon]]</pre>
+<p>|-</p>
+<pre>| 1 || 4 Inch Dust Collection Cyclone Separator Kit for Trash Cans, Barrels or Custom Built Containers || [[https://www.amazon.com/gp/product/B074Y7F5QH/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&amp;psc=1|Amazon]]</pre>
+<p>|-</p>
+<pre>| 1 || 6 inch duct fan || [[https://www.amazon.com/VIVOSUN-Inline-Ventilation-Variable-Controller/dp/B01CTM0JF2|Amazon]]</pre>
+<p>|}</p>
+
+<h4>Electronics</h4>
+<h5>Replacement of Ethernet Smoothstepper</h5>
+<p>The ethernet smoothstepper, while an impressive device, does not appear to be well documented or supported by Free Software.  I&#x27;ve decided to replace it with a raspberry pi 3b+ running cnc.js and arduino mega 2560 running grbl.  I&#x27;ve created a protoboard PCB to house the pi and arduino and to provide mounting points within the electronics cabinet.  Polarized 26 pin headers have been used to interface with the existing smoothstepper compatible connectors.  In this way, the electronics cabinet can be restored to original configuration with minimal effort.</p>
+
+<p>{| class=&quot;wikitable&quot;</p>
+<p>|-</p>
+<p>! Quantity !! Part !! Link</p>
+<p>|-</p>
+<pre>| 1 || Arduino MEGA 2560 PRO || [[https://www.amazon.com/gp/product/B07Y9P4JL2/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&amp;psc=1|Amazon]]</pre>
+<p>|-</p>
+<pre>| 1 || LPC1768 mbed development board || [[https://www.ebay.com/itm/mbed-NXP-LPC-1768-ARM-Cortex-M3-Microcontroller/254530741476?ssPageName=STRK%3AMEBIDX%3AIT&amp;_trksid=p2057872.m2749.l2649|ebay]]</pre>
+<p>|-</p>
+<pre>| 1 || 15Pcs 2x13 Pins 2.54mm Pitch Straight Connector Pin IDC Box Headers  || [[https://www.amazon.com/gp/product/B00OK3T60I/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&amp;psc=1|Amazon]]</pre>
+<p>|}</p>
+
+<p>Initial firmware will focus on <a href="https://cnc.js.org/">cnc.js</a> and the <a href="https://www.nxp.com/docs/en/data-sheet/LPC1769_68_67_66_65_64_63.pdf">LPC1768</a> port of grbl: <a href="https://github.com/cprezzi/grbl-LPC">LPC1768 grbl-LPC</a> and with stock <a href="https://github.com/grbl/grbl">grbl</a> on the ATMega as a fallback.</p>
+
+<h4>Laser</h4>
+<p>{| class=&quot;wikitable&quot;</p>
+<p>|-</p>
+<p>! Quantity !! Part !! Link</p>
+<p>|-</p>
+<pre>| 1 || 20W focusable 450nm laser module || [[https://www.ebay.com/itm/20W-3500-6000mW-Laser-Head-Engraving-Module-450nm-Blue-Light-f-Carving-Engraving/352829946371?ssPageName=STRK%3AMEBIDX%3AIT&amp;var=622107941978&amp;_trksid=p2057872.m2749.l2649|ebay]]</pre>
+<p>|}</p>
+  </main>
+</body>
+</html>

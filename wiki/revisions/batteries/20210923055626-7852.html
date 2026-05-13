@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>batteries revision 7852 - Replimat Wiki Archive</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="../../index.html">Replimat Wiki Archive</a>
+  </header>
+  <main>
+<h1>batteries revision 7852</h1>
+<p class="meta">20210923055626 by Tim. </p>
+<nav class="page-actions"><a href="../../batteries.html">Current page</a> <a href="../../history/batteries.html">History</a></nav>
+<pre>^ Parts infobox ^^</pre>
+<pre>| image | Battery-module-18650-v3-2.scad.png |</pre>
+<pre>| designers | [[user:tim|Timothy Schmidt]] |</pre>
+<pre>| date | 2018 |</pre>
+<pre>| vitamins |  |</pre>
+<pre>| materials |  |</pre>
+<pre>| transformations |  |</pre>
+<pre>| lifecycles |  |</pre>
+<pre>| parts | [[frames|Frames]], [[nuts|Nuts]], [[bolts|Bolts]], [[end_caps|End caps]], [[category:controllers|Controllers]], [[wires|Wires]], [[ferrules|Ferrules]], [[electrical_connectors|Electrical connectors]] |</pre>
+<pre>| techniques |  |</pre>
+<pre>| tools | [[wrenches|Wrenches]], [[soldering_irons|Soldering irons]], [[crimpers|Crimpers]] |</pre>
+<pre>| files |  |</pre>
+<pre>| git |  |</pre>
+
+<p><a href="../../category/parts.html">Category:Parts</a></p>
+<p><a href="../../category/electric_parts.html">Category:Electric parts</a></p>
+
+<h3>Introduction</h3>
+<h3>Challenges</h3>
+<p>Solar PV panels are inexpensive and durable.  As are the power conditioning electronics.  Batteries, however, are expensive, prone to failure, and often discarded as trash.  Can we reduce trash output while solving our expensive battery problem?</p>
+
+<h3>Approaches</h3>
+<p>Recycle batteries from the trash stream to build new, high capacity, long lasting battery packs.</p>
+<p><img src="../../media/batteryv2-1.jpg" alt="" loading="lazy"></p>
+<p><img src="../../media/battery-module-18650-v3-2.scad.png" alt="" loading="lazy"></p>
+
+<h3>Battery (Recycled 18650 lipo cells)</h3>
+<h4>Rationale:</h4>
+<p>Single battery system from tools -&gt; teslas.  I&#x27;ll be bringing these tools in with me, to work with:</p>
+<ul>
+<li>https://www.amazon.com/Weller-WES51-Analog-Soldering-Station/dp/B000BRC2XU/?tag=replimat-20</li>
+<li>https://www.amazon.com/CHEERSON-Original-Version-Discharger-Temperature/dp/B00ZGZZ40K/?tag=replimat-20</li>
+<li>https://www.amazon.com/uxcell-Black-Pointed-Batteries-Holder/dp/B00FGX8NVO/?tag=replimat-20</li>
+<li>https://www.amazon.com/Tzou-Charger-18650-Rechargeable-Battery/dp/B005DCOQ8W/?tag=replimat-20</li>
+</ul>
+<p>And here&#x27;s what I&#x27;ve purchased to build my battery - note they&#x27;re all available with prime shipping, except for the BMS, which probably won&#x27;t arrive in time for the first build day. The battery I&#x27;m building is 48v, or 13S (13 cells in Series). For other voltages, you might find a BMS available with faster shipping.</p>
+<ul>
+<li>https://www.amazon.com/Farmunion-Battery-Radiating-Plastic-Bracket/dp/B01HQB085C/?tag=replimat-20</li>
+<li>https://www.amazon.com/orlov-Solder-14500-Rechargeable-Battery/dp/B01L89QEIS/?tag=replimat-20</li>
+<li>https://www.amazon.com/LHI-Female-Bullet-Connectors-Battery/dp/B00XBLLG5S/?tag=replimat-20</li>
+<li>https://www.amazon.com/Li-ion-Lithium-Battery-Protection-Balance/dp/B01M1M984L/?tag=replimat-20</li>
+</ul>
+
+<h3>Tools</h3>
+<h3>Parts</h3>
+<ul>
+<li>https://www.amazon.com/gp/product/B00ND7J38C/ref=oh_aui_detailpage_o09_s00?ie=UTF8&amp;psc=1?tag=replimat-20</li>
+<li>https://www.amazon.com/gp/product/B00FGX8NVO/ref=oh_aui_detailpage_o00_s00?ie=UTF8&amp;psc=1?tag=replimat-20</li>
+<li>https://www.amazon.com/gp/product/B00S7G4A14/ref=oh_aui_detailpage_o00_s01?ie=UTF8&amp;psc=1?tag=replimat-20</li>
+<li><a href="https://daly.aliexpress.ru/store/4165007">Daly BMS</a></li>
+</ul>
+
+<h3>Development targets</h3>
+<p>Battery charging for the universal controller</p>
+<p>Brass / Steel Battery - ​ http://pubs.acs.org/doi/ipdf/10.1021/acsenergylett.6b00295</p>
+<ul>
+<li>Coroplast box cell container</li>
+<li>Frame / caster racking system</li>
+<li>Charge controller?</li>
+</ul>
+<p>Printed 18650 battery container block - spring-loaded (printed springs?) contacts +</p>
+<p>locking door. Serviceable fuses and diodes</p>
+
+<h3>Development History</h3>
+<h3>v0</h3>
+<p><img src="../../media/batteryv0-1.jpg" alt="Battery v0" loading="lazy"></p>
+<p><img src="../../media/batteryv0-2.jpg" alt="Battery v0" loading="lazy"></p>
+<p>Soldered 18650s, 1s120p configuration @ <a href="the_fledge.html">The Fledge</a></p>
+<h3>v1</h3>
+<p><img src="../../media/bmsv2.jpg" alt="Battery management system" loading="lazy"></p>
+<p><img src="../../media/batteryv1-2.jpg" alt="Battery assembly" loading="lazy"></p>
+<p><img src="../../media/batteryv1-1.jpg" alt="Battery v1" loading="lazy"></p>
+<p><img src="../../media/battery1-3.jpg" alt="Battery v1" loading="lazy"></p>
+<p>Soldered 18650s, 7s20p configuration w/ 20A BMS.</p>
+
+<h3>v2</h3>
+<p><img src="../../media/batteryv2assembly.jpg" alt="Battery v2 Assembly" loading="lazy"></p>
+<p><img src="../../media/batteryv2-2.jpg" alt="Battery v2" loading="lazy"></p>
+<p><img src="../../media/batteryv2-1.jpg" alt="Battery v2" loading="lazy"></p>
+<p>Based on 18650 <a href="https://18650.lt/">NESE Modules</a>.  7s7p configuration w/ 20A BMS x2, MPPT-7201A solar charge controller and DC-DC buck-boost converter, 500W motor controller, modular frame + quick disconnect pins.</p>
+
+<h3>v3</h3>
+<p>Purpose modeled replimat printed part w/ printed springs, zinc plated steel 5x1 <a href="../../plates.html">plates</a> as electrodes, lock-nutted electrode studs, USB power, 20p5s.</p>
+
+<ul>
+<li><a href="https://www.amazon.com/daier-Balance-Lithium-Battery-Protection/dp/B07RHZMXPD?tag=replimat-20">925W BMS</a></li>
+<li><a href="https://www.amazon.com/Converter-DROK-Charging-Regulator-Transformer/dp/B087RHWTJW/?tag=replimat-20">6-32v USB QC3 converter</a></li>
+<li><a href="https://www.amazon.com/gp/product/B077ZQQQFC/?tag=replimat-20">MakerFocus 5pcs Mini Digital Voltmeter DC 0.28 Inch Three-Line DC 0-100V Mini Digital Voltmeter Gauge Tester LED Display Reverse Polarity Protection and Accurate Pressure Measurement 5 Colours</a></li>
+</ul>
+
+<p>{{OpenJSCAD|title=Battery v3 CAD|code=</p>
+<p>// Here we define the user editable parameters:</p>
+<p>function getParameterDefinitions() {</p>
+<p>  return [</p>
+<p>    { type: &#x27;float&#x27;, name: &#x27;nozzle_width&#x27;, caption: &#x27;Nozzle width&#x27;, default: 0.4 },</p>
+<p>    { type: &#x27;float&#x27;, name: &#x27;walls&#x27;, caption: &#x27;Walls&#x27;, default: 2 },</p>
+<p>  ];</p>
+<p>}</p>
+
+<p>function shell(params){</p>
+<p>  return CSG.cylinder({</p>
+<p>    start: [0, 0, 0],</p>
+<p>    end: [0, 0, 65],</p>
+<p>    radius: (19+wall_thickness*2)/2,</p>
+<p>    resolution: params.cylresolution</p>
+<p>  });</p>
+<p>}</p>
+
+<p>function batteryyyyyyy(params){</p>
+<p>  return CSG.cylinder({</p>
+<p>    start: [0, 0, -1],</p>
+<p>    end: [0, 0, 66],</p>
+<p>    radius: 19/2,</p>
+<p>    resolution: params.cylresolution</p>
+<p>  });</p>
+<p>}</p>
+
+<p>function battery() {</p>
+<p>    var cube = CSG.cube({</p>
+<p>        center: [beam_width/2, beam_width/2, (length*beam_width)/2],</p>
+<p>        radius: [beam_width/2, beam_width/2, (length*beam_width)/2]</p>
+<p>        });</p>
+<p>    var holes = [];</p>
+<p>    for (var i = 0; i &lt; length; i++)</p>
+<p>    {</p>
+<p>        holes.push(xHole(i));</p>
+<p>        holes.push(yHole(i));</p>
+<p>    }</p>
+<p>    var beam = cube.subtract(holes);</p>
+<p>    beam.properties.myConnector = new CSG.Connector([10, 0, 0], [1, 0, 0], [0, 0, 1]);</p>
+<p>    return beam;</p>
+<p>}</p>
+
+<p>function zBeam(length) {</p>
+<p>    var cube = CSG.cube({</p>
+<p>        center: [beam_width/2, beam_width/2, (length*beam_width)/2],</p>
+<p>        radius: [beam_width/2, beam_width/2, (length*beam_width)/2]</p>
+<p>        });</p>
+<p>    var holes = [];</p>
+<p>    for (var i = 0; i &lt; length; i++)</p>
+<p>    {</p>
+<p>        holes.push(xHole(i));</p>
+<p>        holes.push(yHole(i));</p>
+<p>    }</p>
+<p>    var beam = cube.subtract(holes);</p>
+<p>    beam.properties.myConnector = new CSG.Connector([10, 0, 0], [1, 0, 0], [0, 0, 1]);</p>
+<p>    return beam;</p>
+<p>}</p>
+
+<p>function main(params) {</p>
+<p>  params.cylresolution=(params.quality == &quot;1&quot;)? 64:16;</p>
+<p>  var nozzle_width=params.nozzle_width;</p>
+<p>  var walls=params.walls;</p>
+<p>  var wall_thickness=nozzle_width*walls*2;</p>
+
+<p>  //for (var j = 0; j &lt; 4; j++){</p>
+<p>  //return CSG.cylinder({r: 19/2, h: 69}).rotateX(90);</p>
+<p>    return CSG.cylinder({r: 9.5, h: 65}).rotateX(90);</p>
+<p>}</p>
+<p>}}</p>
+
+<h3>Off the shelf</h3>
+<ul>
+<li><a href="https://www.mobile-solarpower.com/raw-lifepo4-deals-page.html">LiFePo4 battery deals</a></li>
+<li><a href="https://www.bigbattery.com/">BigBattery.com</a></li>
+<li><a href="https://batteryhookup.com/">BatteryHookup.com</a></li>
+</ul>
+
+<h3>Cell testing</h3>
+<ul>
+<li><a href="https://www.candlepowerforums.com/vb/showthread.php?389732-Test-Review-of-Charger-Opus-BT-C3100-V2-1">Opus BT-C3100</a></li>
+<li><a href="https://www.sparkfun.com/products/15348">Tenergy 5-in-1 Intelligent Battery Cell Meter</a></li>
+<li>https://megacellcharger.com/</li>
+<li><a href="https://www.analog.com/media/en/technical-documentation/data-sheets/680412fc.pdf">LTC®6804 3rd generation multicell battery stack monitor</a></li>
+<li>Attiny84 has 8x 10bit ADC, 640, 1280, 2560 have 16x 10bit ADC</li>
+</ul>
+
+<h3>References</h3>
+<ul>
+<li>https://www.electricbike.com/diy-battery-pack-kits-four-options-2017/</li>
+<li>http://rc-monster.com/forum/showthread.php?t=28834</li>
+<li><a href="https://wiki.opensourceecology.org/wiki/Open_Source_Battery_Pack">OSE Open Source Battery Pack</a></li>
+<li><a href="https://www.pcbway.com/project/shareproject/Arduino_BMS_Shield___12_Cell.html">Arduino BMS Shield</a>, <a href="http://caditz.us/PowerElectronics/BMS_LTC6804">more detail</a></li>
+<li>JLCPCB</li>
+<li>https://github.com/stuartpittaway/diyBMS</li>
+<li>https://github.com/chickey/diyBMS</li>
+<li>http://hmsemi.com/downfile/DW01A.PDF</li>
+<li>https://datasheet.lcsc.com/szlcsc/HYCON-Tech-HY2213-BB3A_C113632.pdf</li>
+<li><a href="https://www.amazon.com/gp/product/B07WNLMSD4/?tag=replimat-20">Power tool battery adapter</a></li>
+<li><a href="https://www.usbr.gov/power/data/fist/fist3_6/3-6.PDF">Storage Battery Maintenance and Principles</a></li>
+<li><a href="https://docplayer.net/22085856-High-voltage-dc-dc-converter-project-sjb-2a06.html">High voltage DC converter</a></li>
+<li><a href="https://books.google.com/books?id=RDBPAAAAMAAJ&amp;printsec=frontcover#v=onepage&amp;q&amp;f=false">The Storage Battery</a></li>
+<li><a href="https://www.instructables.com/id/DIY-Arduino-Battery-Capacity-Tester-V10-/">DIY Arduino Battery Capacity Tester</a></li>
+<li><a href="https://www.thingiverse.com/thing:941081">Flexing battery holders with 2- and 3-cell compartments</a></li>
+<li><a href="https://libre.solar/">Libre Solar</a></li>
+</ul>
+<p>&lt;youtube&gt;rT-1gvkFj60&lt;/youtube&gt;</p>
+  </main>
+</body>
+</html>

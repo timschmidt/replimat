@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>software revision 6961 - Replimat Wiki Archive</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="../../index.html">Replimat Wiki Archive</a>
+  </header>
+  <main>
+<h1>software revision 6961</h1>
+<p class="meta">20210807173207 by Tim. /* Windows */</p>
+<nav class="page-actions"><a href="../../software.html">Current page</a> <a href="../../history/software.html">History</a></nav>
+<p>Replimat is developed using the <a href="https://git-scm.com/">git</a> version control system, on the <a href="https://www.github.com/">github</a> hosting service, in the <a href="https://github.com/timschmidt/replimat">replimat git repository</a> as well as in the repositories of the upstream software projects themselves.</p>
+
+<p>Follow these instructions to install and use the software portions of the Replimat project and the tools to modify them.  Much of this software is intended to work with the replimat <a href="../../controllers.html">controller</a>.</p>
+
+<h3>Setting up prerequisites</h3>
+<h3>Linux</h3>
+<h4>Fedora</h4>
+<p>Open a terminal and type the following:</p>
+<p> sudo dnf install git openscad rust cargo rabbitvcs-nautilus rabbitvcs-gedit rabbitvcs-cli kicad arduino keepassxc yosys gimp inkscape vim</p>
+
+<p>Some distributions, such as 64 bit Fedora, put 64 bit libraries in the /usr/lib64 directory, whereas nautilus-python (the program that lets us extend nautilus) assumes all libraries are in the /usr/lib directory. This is a nautilus-python bug. The current workaround is to create a symlink:</p>
+<p> ln -s /usr/lib64/libpython2.6.so /usr/lib/libpython2.6.so</p>
+
+<p>NopSCADlib requires some setup:</p>
+<p> sudo sh -c &#x27;echo &quot;export OPENSCADPATH=$HOME/Documents/GitHub/replimat/lib/openscad&quot; &gt;&gt;/etc/profile&#x27;</p>
+
+<h4>Meikian Live</h4>
+<ul>
+<li><a href="https://reprap.org/wiki/Meikian_Live">Meikian Live</a></li>
+</ul>
+<p>Meikian Live (formely named CWLive) is a GNU/Linux live distribution initially focused on Clone Wars community, but intended to all the RepRap users and developers. Based on Debian GNU/Linux, it includes most of the Software, Firmware, useful links and other related stuff you can use on a day to day as a reprapper.</p>
+
+<h4>Pop! OS</h4>
+<p> sudo apt install meld git openscad rustc cargo rabbitvcs-nautilus rabbitvcs-gedit rabbitvcs-cli kicad arduino gnome-tweak-tool obs-studio obs-plugins fritzing subversion keepassxc yosys openscad freecad gimp inkscape cura exfat-fuse python3-markdown codespell peek autokey filelight yagv vim vokoscreen-ng</p>
+
+<p>To get the latest IceStudio, download the appimage from <a href="https://icestudio.io/">icestudio.io</a></p>
+
+<p>NopSCADlib requires some setup:</p>
+<p> sudo sh -c &#x27;echo &quot;export OPENSCADPATH=$HOME/Documents/GitHub/replimat/lib/openscad&quot; &gt;&gt;/etc/profile&#x27;</p>
+
+<p>Add the following to /etc/profile as well</p>
+<p> if [ -d &quot;$HOME/Documents/GitHub/replimat/lib/openscad/NopSCADlib/scripts/&quot; ] ; then</p>
+<p>   PATH=&quot;$PATH:$HOME/Documents/GitHub/replimat/lib/openscad/NopSCADlib/scripts/&quot;</p>
+<p> fi</p>
+
+<p><a href="https://bugs.launchpad.net/ubuntu/+source/arduino/+bug/1916278">Arduino doesn&#x27;t run</a> out of the box on recent Ubuntu releases.  We need to patch a library to allow it to work:</p>
+
+<p> sudo patchelf --add-needed /usr/lib/x86_64-linux-gnu/libserialport.so.0 /usr/lib/x86_64-linux-gnu/liblistSerialsj.so.1.4.0</p>
+
+<p>Download and unpack <a href="https://github.com/MarlinFirmware/U8glib-HAL/archive/refs/heads/master.zip">U8glib-HAL arduino library</a> into ~/Arduino/libraries/</p>
+
+<p>Download <a href="https://github.com/MarlinFirmware/Marlin/archive/2.0.x.zip">Marlin firmware</a> and unpack into ~/Documents/GitHub/Marlin/</p>
+
+<h4>Ubuntu</h4>
+<p> sudo apt install meld git openscad rustc cargo rabbitvcs-nautilus rabbitvcs-gedit rabbitvcs-cli kicad arduino gnome-tweak-tool obs-studio obs-plugins fritzing subversion keepassxc yosys openscad freecad gimp inkscape cura exfat-fuse python3-markdown codespell ubuntu-gnome-default-settings vanilla-gnome-default-settings vanilla-gnome-desktop ubuntu-gnome-desktop peek filelight yagv vim vokoscreen-ng libserialport0 patchelf</p>
+
+<p>NopSCADlib requires some setup:</p>
+<p> sudo sh -c &#x27;echo &quot;export OPENSCADPATH=$HOME/Documents/GitHub/replimat/lib/openscad&quot; &gt;&gt;/etc/profile&#x27;</p>
+
+<p>Ubuntu 20.10 requires a symlink in /usr/bin for the ImageMagick command line utility:</p>
+<p> sudo ln -s /usr/bin/convert /usr/bin/magick</p>
+
+<p><a href="https://bugs.launchpad.net/ubuntu/+source/arduino/+bug/1916278">Arduino doesn&#x27;t run</a> out of the box on recent Ubuntu releases.  We need to patch a library to allow it to work:</p>
+
+<p> sudo patchelf --add-needed /usr/lib/x86_64-linux-gnu/libserialport.so.0 /usr/lib/x86_64-linux-gnu/liblistSerialsj.so.1.4.0</p>
+
+<p>Download and unpack <a href="https://github.com/MarlinFirmware/U8glib-HAL/archive/refs/heads/master.zip">U8glib-HAL arduino library</a> into ~/Arduino/libraries/</p>
+
+<p>Download <a href="https://github.com/MarlinFirmware/Marlin/archive/2.0.x.zip">Marlin firmware</a> and unpack into ~/Documents/GitHub/Marlin/</p>
+
+<h3>Redox</h3>
+<p><a href="https://www.redox-os.org/">Redox OS</a> is an operating system written in the Rust programming language, and a high-value build target for Replimat.  Expanding the instructions here, for installing the software necessary for building and modifying Replimat to work on Redox OS would be an excellent way to contribute to the project.</p>
+
+<h3>Windows</h3>
+<p>&lt;youtube&gt;PdKMiFKGQuc&lt;/youtube&gt;</p>
+<ul>
+<li><a href="https://chocolatey.org/">chocolatey</a> doesn&#x27;t seem to have openscad, arduino, possibly others</li>
+<li><a href="https://www.windowsremix.com/">Windows Remix</a> seems to have openscad</li>
+</ul>
+<p>** openscad, github desktop, freecad, inkscape, gimp, arduino, cura,</p>
+
+<h3>CAD</h3>
+<h3>Cloning the git repository</h3>
+<ul>
+<li>If you haven&#x27;t already, install git.</li>
+<li><a href="https://github.com/join">Join Github</a></li>
+<li>Using the command line client:</li>
+</ul>
+<p>** git --config global user.name &quot;User Name&quot;</p>
+<p>** git --config global user.email &quot;user@email.com&quot;</p>
+<p>** mkdir ~/Documents/GitHub/replimat</p>
+<p>** cd ~/Documents/GitHub/replimat</p>
+<p>** git clone https://github.com/timschmidt/replimat.git</p>
+<ul>
+<li>Using the Github Desktop:</li>
+</ul>
+
+<h3>play.replimat.org</h3>
+<ul>
+<li><a href="https://play.gridbeam.xyz">play.gridbeam.xyz CAD</a></li>
+<li><a href="https://github.com/timschmidt/play.gridbeam.xyz">play.gridbeam.com github</a></li>
+</ul>
+<p>** apt install npm</p>
+<p>** npm install gatsby-cli</p>
+<p>** git clone https://github.com/timschmidt/play.gridbeam.xyz</p>
+<p>** npm install --force</p>
+<p>** gatsby build</p>
+<ul>
+<li>To do</li>
+</ul>
+<p>** bind delete key to delete action</p>
+<p>** correct initial frame lengths</p>
+<p>** address loss-of-focus on menu close</p>
+<p>** correct axes</p>
+<p>** begin populating part catalog</p>
+<p>** toggle for less reusable larger set</p>
+
+<h3>LeoCAD / LDraw</h3>
+<p>The term &quot;LDraw&quot; can be used to refer to the original DOS based LDraw program, the LDraw parts library, the LDraw file format or the LDraw System Of Tools.</p>
+
+<ul>
+<li><a href="https://github.com/e-Mole/m-Bitbeam_Parts_for_LDraw">Bitbeam parts for LDraw</a></li>
+<li>LDraw Parts Library: Parts library</li>
+<li>LDview: Viewer</li>
+<li>MLCad: Editor</li>
+<li><a href="https://www.leocad.org/">LeoCAD</a>: Editor</li>
+<li>LDCad: Editor</li>
+<li>LPub3D: Publishing tool</li>
+<li>LICreator: Publishing tool</li>
+<li>LSynth: Add-On</li>
+<li>LDGlite: Viewer</li>
+<li>POV-Ray: Renderer</li>
+<li>LGEO Parts Library: POV-Ray parts library</li>
+<li>MPDCenter: Utility</li>
+<li>LDFind: Utility</li>
+<li>LSulpt: Converter</li>
+<li>Offline Parts Catalog: Catalog</li>
+</ul>
+
+<h3>OpenSCAD</h3>
+<p>Replimat parts are modeled with important features oriented toward the X axis origin, and centered on the grid location closest to the origin or with a mounting hole centered at that location.</p>
+
+<p>A set of CAD functions are available as part of the <a href="https://github.com/SolidCode/MCAD">MCAD</a> library for the free and open source <a href="http://www.openscad.org/">OpenSCAD</a> <a href="https://en.wikipedia.org/wiki/Constructive_solid_geometry">constructive solid geometry</a> software, mostly within <a href="https://github.com/SolidCode/MCAD/blob/master/gridbeam.scad">gridbeam.scad</a>.  It contains functions for solid and hollow beams of configurable size and orientation, flat surfaces with and without notched corners, and easy hole-aligned translation:</p>
+
+<p> // zFrame(segments) - create a vertical frame &#x27;segments&#x27; long</p>
+<p> // xFrame(segments) - create a horizontal frame along the X axis</p>
+<p> // yFrame(segments) - create a horizontal frame along the Y axis</p>
+<p> // topPlate(width, depth, corners) - create a plate width and depth in &#x27;segments&#x27;, corners == 1 notches corners</p>
+<p> // bottomPlate(width, depth, corners) - like topPlate, but aligns plate to underside of frames</p>
+<p> // backPlate(width, height, corners) - like topPlate but aligns plate to back side of frames</p>
+<p> // frontPlate(width, height, corners) - like topPlate, but aligns plate to front side of frames</p>
+<p> // translateFrame([x, y, z]) - translate frames or plates in X, Y, or Z axes in units &#x27;segments&#x27;</p>
+
+<p>There&#x27;s also an <a href="https://github.com/ondratu/bitbeam-lib">M-Bitbeam OpenSCAD library</a> and another <a href="https://www.thingiverse.com/thing:51159">Gridbeam and Bitbeam OpenSCAD and OpenJSCAD library</a>.</p>
+
+<p>Additional information can be found in the <a href="https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Print_version">OpenSCAD User Manual</a></p>
+<ul>
+<li><a href="https://github.com/fablabnbg/inkscape-paths2openscad">Inkscape to OpenSCAD converter</a></li>
+<li><a href="https://github.com/revarbat/openscad_runner">OpenSCAD Runner</a> - A Python library to interface with and run the OpenSCAD interpreter</li>
+<li><a href="https://github.com/revarbat/openscad_docsgen">OpenSCAD Documentation Generator</a> - This package generates wiki-ready GitHub flavored markdown documentation pages from in-line source code comments. This is similar to Doxygen or JavaDoc, but designed for use with OpenSCAD code. Example images can be generated automatically from short example scripts</li>
+<li>Parts and projects in the Replimat github repository are implemented using <a href="https://github.com/nophead/NopSCADlib">NopSCADlib</a></li>
+<li><a href="https://github.com/moehriegitt/hob3l">Github: Hob3l - Replace 3D CSG by Fast 2D Polygon Clipping for slicing for 3d printing</a></li>
+</ul>
+
+<h3>FreeCAD</h3>
+<p>A <a href="https://www.freecadweb.org/">FreeCAD</a> Replimat library is currently under development.  <a href="https://www.bolts-library.org/en/index.html">BOLTS</a> and <a href="https://github.com/FreeCAD/FreeCAD-library/">FreeCAD Library</a> serve as useful starting points.</p>
+<ul>
+<li><a href="https://github.com/oddtopus/flamingo">Flamingo toolset for frames and pipes</a></li>
+<li><a href="https://wiki.opensourceecology.org/wiki/OSE_Piping_Workbench">OSE Piping workbench</a></li>
+</ul>
+
+<h3>OpenJSCAD</h3>
+<ul>
+<li><a href="https://www.openjscad.xyz/">OpenJSCAD 2.0</a></li>
+<li>https://openjscad.org/</li>
+<li><a href="https://johnwebbcole.gitlab.io/jscad-utils/">OpenJSCAD utils</a></li>
+<li><a href="openjscad_wiki_integration_test.html">OpenJSCAD Wiki Integration Test</a></li>
+<li><a href="https://danmarshall.github.io/jscad-gallery/">OpenJSCAD gallery</a></li>
+<li><a href="https://www.thingiverse.com/thing:51159">Gridbeam and Bitbeam OpenSCAD and OpenJSCAD library</a></li>
+<li><a href="https://github.com/z3dev/openscad-openjscad-translator">OpenSCAD to OpenJSCAD translator</a></li>
+</ul>
+
+<h3>Inkscape</h3>
+<ul>
+<li><a href="https://github.com/fablabnbg/inkscape-paths2openscad">Inkscape to OpenSCAD converter</a></li>
+</ul>
+
+<h3>CGAL</h3>
+<ul>
+<li><a href="https://doc.cgal.org/latest/Manual/packages.html">CGAL Manual</a></li>
+<li><a href="https://doc.cgal.org/latest/Straight_skeleton_2/index.html">2D polygon offsetting with CGAL</a>, <a href="https://www.sthu.org/blog/14-skeleton-offset-topology/index.html">paper</a></li>
+</ul>
+
+<h3>DXF2Papercraft</h3>
+<ul>
+<li><a href="http://dxf2papercraft.sourceforge.net/">DXF2Papercraft</a></li>
+</ul>
+
+<h3>Rust</h3>
+<ul>
+<li>https://arewegameyet.rs/</li>
+<li>https://crates.io/crates/scad</li>
+<li>https://github.com/I3ck/rust-3d</li>
+<li>https://docs.rs/rust-3d/0.27.0/rust_3d/</li>
+<li>https://github.com/carlmartus/rscsg</li>
+<li>https://docs.rs/implicit3d/0.13.1/implicit3d/</li>
+<li>https://crates.io/crates/implicit3d</li>
+<li>http://implicitcad.org/editor</li>
+<li><a href="https://github.com/three-rs/three">Github: Three-rs</a></li>
+<li><a href="https://github.com/ricosjp/truck">Github: Truck - Truck is a rust CAD kernel</a></li>
+<li><a href="https://github.com/cbiffle/catibo">Github: Catibo crate for working with the file formats used by low-end resin 3D printers</a></li>
+<li><a href="https://github.com/KeKsBoTer/disco">Github: Disco Rust 3D printer slicer</a></li>
+<li><a href="https://github.com/etrombly/printer_geo">Github: Printer_geo printer slicer prototype</a></li>
+</ul>
+
+<h4><a href="https://github.com/hmeyer/truescad">truescad</a></h4>
+<p>Clone git repository:</p>
+<p> mkdir ~/Documents/GitHub/truescad</p>
+<p> cd ~/Documents/GitHub/truescad/</p>
+<p> git clone https://github.com/hmeyer/truescad</p>
+
+<p>Install some dependencies (Ubuntu):</p>
+<p> sudo apt install librust-glib-sys-dev librust-cairo-rs+gobject-sys-dev librust-pango-dev librust-atk-sys-dev librust-gdk-pixbuf-dev librust-gdk-dev</p>
+
+<p>Build truescad:</p>
+<p> cargo build</p>
+
+<h3>Solvespace</h3>
+<ul>
+<li><a href="https://solvespace.com/index.pl">Solvespace parametric 2D/3D CAD</a></li>
+</ul>
+
+<h3>Finite element analysis</h3>
+<ul>
+<li><a href="http://www.warp3d.net/">Warp3D</a></li>
+</ul>
+
+<h3>Voxel</h3>
+<ul>
+<li><a href="https://ephtracy.github.io/">MagicaVoxel</a></li>
+</ul>
+
+<h3>CADQuery</h3>
+<ul>
+<li><a href="https://github.com/CadQuery/cadquery">CADQuery</a></li>
+</ul>
+
+<h3>Misc</h3>
+<ul>
+<li><a href="https://github.com/Irev-Dev/curated-code-cad">Curated code CAD</a></li>
+<li><a href="http://shapesmith.net/">Shapesmith.net</a></li>
+<li><a href="https://www.mattkeeter.com/projects/antimony/3/">Antimony</a></li>
+<li><a href="https://github.com/libfive/libfive">Libfive</a></li>
+</ul>
+
+<h3>VR</h3>
+<h4><a href="https://lovr.org/">LOVR</a></h4>
+<h4><a href="https://www.openspace3d.com/">OpenSpace3D</a></h4>
+<p><img src="../../media/openspaces_vr_plugit_assessment.png" alt="OpenSpaces VR PlugIT assessment" loading="lazy"></p>
+<ul>
+<li><a href="https://immersiveweb.dev">WebGL XR</a></li>
+<li><a href="https://modelviewer.dev/">model-viewer</a></li>
+<li><a href="https://rednuht.org/genetic_cars_2/">HTML5 Genetic Algorithm 2D Car Thingy</a></li>
+</ul>
+<h4>Unity</h4>
+<ul>
+<li><a href="https://github.com/ExtendRealityLtd/VRTK">VRTK</a></li>
+</ul>
+<h4>Garry&#x27;s mod</h4>
+<ul>
+<li><a href="https://www.reddit.com/r/gmod/comments/8i4044/getting_started_with_content_creation/">Getting started with content creation</a></li>
+</ul>
+
+<h3>Bills of material</h3>
+<ul>
+<li><a href="https://gitbuilding.io/">gitbuilding</a></li>
+</ul>
+
+<h3>3D Scanning</h3>
+<ul>
+<li><a href="https://github.com/EdwardSmith1884/Multi-View-Silhouette-and-Depth-Decomposition-for-High-Resolution-3D-Object-Representation">3D Object super-resolution</a></li>
+<li><a href="https://github.com/openMVG/awesome_3DReconstruction_list">Awesome 3D reconstruction list</a></li>
+</ul>
+
+<h3>CAM</h3>
+<ul>
+<li><a href="https://www.scorchworks.com/Fengrave/fengrave.html">F-Engrave</a></li>
+<li>https://github.com/grotius-cnc/QT_CadCam_rev0</li>
+<li>http://jscut.org/</li>
+<li>https://github.com/cncjs/cncjs</li>
+<li>https://camotics.org/</li>
+<li>https://wiki.freecadweb.org/Path_Workbench</li>
+<li><a href="https://mkrabset.github.io/krabzcam/krabzcam/index.html">KrabzCAM</a></li>
+<li><a href="https://wiki.shapeoko.com/index.php/CAM">Shapeoko Wiki: CAM</a></li>
+</ul>
+<h3>Images</h3>
+<ul>
+<li><a href="http://jasondorie.com/page_cnc.html">reactor</a></li>
+</ul>
+
+<h3>Nesting</h3>
+<ul>
+<li>https://svgnest.com/</li>
+<li>https://deepnest.io/</li>
+</ul>
+
+<h3>Electronics</h3>
+<ul>
+<li><a href="https://pcbmode.com/">PCBmodE</a></li>
+</ul>
+
+<h3>Firmware</h3>
+<ul>
+<li>https://github.com/timschmidt/buildlog-lasercutter-marlin</li>
+<li><a href="https://github.com/nerdralph/ArduinoShrink">Arduino Shrink</a></li>
+</ul>
+
+<h3>Packaging</h3>
+<h3>Ubuntu</h3>
+<ul>
+<li><a href="https://packaging.ubuntu.com/html/packaging-new-software.html">Ubuntu: Packaging new software</a></li>
+</ul>
+<h3>Windows</h3>
+<ul>
+<li><a href="https://nsis.sourceforge.io/Main_Page">nullsoft scriptable install system</a></li>
+</ul>
+
+
+<h3>References</h3>
+<ul>
+<li><a href="https://dspace.mit.edu/handle/1721.1/29225">Automatic 5-axis NC toolpath generation</a></li>
+<li><a href="https://jordanlewis.org/posts/twitch-live-coding/">How to Run a Live Coding Stream on Twitch using OBS</a></li>
+<li><a href="https://github.com/rene-dev/knuthcam">Knuthcam</a></li>
+<li><a href="https://www.wescottdesign.com/articles/pid/pidWithoutAPhd.pdf">PID without a PhD</a></li>
+<li><a href="https://www.amazon.com/Rust-Programming-Language-Steve-Klabnik/dp/1593278284?tag=replimat-20">The Rust Programming Language</a></li>
+<li><a href="https://www.dreamsongs.com/Files/PatternsOfSoftware.pdf">Patterns Of Software</a></li>
+<li><a href="https://reprap.org/wiki/Useful_Software_Packages">Useful software packages</a></li>
+<li>https://wiki.shapeoko.com/index.php/CAM</li>
+<li><a href="https://reprap.org/wiki/RepRap_Options">RepRap Options</a></li>
+<li><a href="https://upload.wikimedia.org/wikipedia/commons/5/53/Cartesian_to_polar.gif">How to convert from cartesian to polar coordinates</a></li>
+<li><a href="../../file/291498143-minobb-jylanki-2015-06-01-pdf.pdf.html">An Exact Algorithm for Finding Minimum Oriented Bounding Boxes</a></li>
+<li><a href="https://www.openvdb.org/">OpenVDB</a></li>
+<li><a href="https://doi.org/10.1371/journal.pone.0225795">Parametric CAD modeling for open source scientific hardware: Comparing OpenSCAD and FreeCAD Python scripts</a></li>
+<li><a href="https://brickit.app/">Brickit App</a></li>
+<li><a href="https://en.wikipedia.org/wiki/CORDIC">Wikipedia: CORDIC</a></li>
+</ul>
+
+<p>&lt;youtube&gt;684KSAvYbw4&lt;/youtube&gt;</p>
+
+
+<h3>Computer vision</h3>
+<ul>
+<li><a href="https://healeycodes.com/computer-vision-and-embroidery/">Computer vision and embroidery - python, scipy, opencv</a></li>
+</ul>
+
+<h3>To Be Sorted</h3>
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=27432101">Snowtrack version control for graphic designers and 3D artists</a></li>
+<li>https://librecad.org/</li>
+<li>https://github.com/Qucs</li>
+<li>http://www.geda-project.org/</li>
+<li>http://www.clifford.at/yosys/</li>
+<li>https://symbiflow.github.io/</li>
+<li>https://www.chisel-lang.org/</li>
+<li>https://theopenroadproject.org/</li>
+<li>https://github.com/verilog-to-routing/vtr-verilog-to-routing</li>
+<li>https://www.coursera.org/learn/vlsi-cad-logic</li>
+<li>https://www.coursera.org/learn/vlsi-cad-layout</li>
+<li>http://www.kicad-pcb.org/</li>
+<li>https://en.wikipedia.org/wiki/TopoR</li>
+<li>https://cnc.js.org/</li>
+<li>https://wiki.shapeoko.com/index.php/CAM</li>
+<li>https://www.allpcb.com/</li>
+<li>https://jlcpcb.com/</li>
+<li>https://www.pcbway.com/</li>
+<li>https://efabless.com/</li>
+<li>https://github.com/jbuckmccready/CavalierContours</li>
+<li>https://github.com/fdarling/inkscape-laser-cutter-extension</li>
+<li><a href="http://www.1024cores.net/">1024cores.net lockless algorithms</a></li>
+</ul>
+  </main>
+</body>
+</html>

@@ -1,0 +1,759 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>development roadmap revision 1251 - Replimat Wiki Archive</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="../../index.html">Replimat Wiki Archive</a>
+  </header>
+  <main>
+<h1>development roadmap revision 1251</h1>
+<p class="meta">20200526234117 by Tim. /* Current components: */</p>
+<nav class="page-actions"><a href="../../development_roadmap.html">Current page</a> <a href="../../history/development_roadmap.html">History</a></nav>
+<p><img src="../../media/replimatopenconstructionsystem.pdf" alt="" loading="lazy"></p>
+
+<p>12.14.2016</p>
+<p>Timothy Schmidt</p>
+
+<h4>Overview</h4>
+<p>The Replimat Open Construction System is a practical self-replicating construction system. ROCS encompases a small number of component parts reused in many different ways to construct &gt;60 everyday tools - including several of the tools necessary to fabricate more ROCS components from raw materials.</p>
+
+<p>A high degree of self-replication is achieved by carefully choosing a small number of very versatile components, and reusing those components throughout the system. Many replimat components can simply be cut to form two smaller components without</p>
+<p>creating waste. And all Replimat components are designed for disassembly, and cradle-to-cradle reusability.</p>
+<p>All component parts can not yet be replicated, though this document details a development plan to increase the number which can be. Replimat components are constructed, wherever possible, from waste plastic, unprocessed trees or reclaimed lumber, stainless steel, aluminum, or other durable, reusable, renewable, recycled and recyclable materials.</p>
+
+<p>Replimat components form a durable, repurposable, mult-use carbon sink for the waste streams of other processes.</p>
+
+<h4>Licensing</h4>
+<p>All replimat components and documentation are available under the AGPLv3+ (https://www.gnu.org/licenses/agpl-3.0.en.html ​ ) or TAPR OHL v1.0 (https://www.tapr.org/TAPR_Open_Hardware_License_v1.0.txt) licenses. These licenses require derivative works to be released to all parties under identical terms.</p>
+
+<h4>Milestones</h4>
+<ul>
+<li>First full physical implementation</li>
+<li>Automated frame factory development ongoing</li>
+<li>First full CAD implementation</li>
+<li>Incremental reduction of <a href="../../vitamins.html">vitamins</a> components</li>
+</ul>
+
+<h4>Components</h4>
+<p>Hardware (ferromagnetic stainless steel)</p>
+<h5>Rationale</h5>
+<p>(Now favoring 316 surgical steel... more research happening)</p>
+<p>Stainless steel is a temperamental alloy. Difficult to work and produce, components made from this material can cost three times as much as a similar component in hardened steel. I believe the cost to be justified, due to the critical nature of the nuts and</p>
+<p>bolts in so many other parts of the system, and stainless steel’s extreme durability under virtually all conditions.</p>
+
+<p>Offsetting the increased cost of stainless steel, the standardization on 12 total nut and bolt components across the entire system enables bulk purchasing, reduces storage and shipping requirements, simplifies inventory management, billing, and reclamation and</p>
+<p>reuse.</p>
+
+<p>Stainless steels are available in magnetic, and non-magnetic varieties. The magnetic varieties tend to be less expensive, and the magnetic properties of the nut and bolt hardware are required for the operation of several components in the system - notably the solenoid pump / motor.</p>
+
+<h5>Current components</h5>
+<p>M3xXX, M3xYY, M3xZZ bolts, M3 lock nut, M3 washer\\</p>
+<p>M8x50, M8x90, M8x130 bolts, M8 lock nut, M8 washer\\</p>
+<p>M25xXX, M25xYY, M25xZZ bolts, M25 lock nut, M25 washer\\</p>
+<p>1000mmx40mmx40mmx3mm bar stock - coroplast might be good enough\\</p>
+<p>6mm stainless steel BBs\\</p>
+<h5>Interoperability</h5>
+<h5>Development targets</h5>
+<h5>Life cycle</h5>
+<p>Long bolts can be cut to form shorter bolts and abrasive pellets for the ball mill.</p>
+<p>Stripped, bent, or abraded nuts or bolts degrade to abrasive pellets for the ball mill.</p>
+
+<h4>Printable bearings</h4>
+<h5>Rationale</h5>
+<p>Commonly used bearings:</p>
+<p>Axial bearing: pillow block,\\</p>
+<p>Thrust bearing:\\</p>
+<p>Combined axial / thrust bearing:\\</p>
+<p>Linear bearing:\\</p>
+<h5>Current components</h5>
+<p>6mm balls:</p>
+<p>https://www.amazon.com/gp/product/B00SI9UM7G/ref=oh_aui_detailpage_o02_s00?ie=UTF8&amp;psc=1</p>
+<h5>Interoperability</h5>
+<h4>Frame</h4>
+<h5>Rationale</h5>
+<p>The modular frames in this system are constructed using only one component, repeated</p>
+<p>and assembled in a variety of configurations, with the stainless steel hardware.</p>
+<p>These frames assemble quickly, intuitively, and squarely in all dimensions and on uneven</p>
+<p>surfaces, under water, or in zero gravity.</p>
+<p>Frame members are easily manufactured from renewable and widely available raw</p>
+<p>materials such as trees, square steel, aluminum, and other metal tube, even bamboo and</p>
+<p>recycled thermoplastics.</p>
+<p>Aluminum frame members retain perfect interchangeability and reusability after years of</p>
+<p>intense sun exposure, submersion in water, etc.</p>
+<p>Wood frame members retain near-perfect interchangeability and reusability across</p>
+<p>lifetimes when stored in a home, or other controlled environment.</p>
+<p>Unlike Isaacs or Jergensen frames, Replimat uses only lengths that are multiples of</p>
+<p>200mm, equivalent to approximately 8 inches or 5 holes. Plus two and three-hole</p>
+<p>members. This allows Replimat frames to be measured easily by sight in millimeters,</p>
+<p>inches, and holes simultaneously.</p>
+<h5>Current components</h5>
+<p>1000mmx40mmx40mm (39.37inx1.57inx1.57in) 25 hole frame</p>
+<p>Stainless steel hardware</p>
+<h5>Interoperability:</h5>
+<p>1000mm frame lengths can be cut to 200mm, 400mm, 600mm, and 800mm lengths</p>
+<p>without waste.Replimat Open Construction System - Project Proposal</p>
+<h5>Development targets:</h5>
+<p>Self-reproducing frame drilling machine</p>
+
+<h4>Sheet (coroplast)</h4>
+<h5>Rationale:</h5>
+<p>All-purpose sheet-stock. Waterproof, resists mold and decay even when submerged in</p>
+<p>water for prolonged durations, insulating, foldable, impact and tear resistant, cuts with a</p>
+<p>knife. Useful for making boxes, shingles, buckets, backpacks, kayaks, sinks, sluices,</p>
+<p>rulers, drill guides and templates, and even some structural elements.</p>
+<h5>Current components:</h5>
+<p>https://www.wensco.com/CatSearch/251/corrugated-plastic</p>
+
+<h5>Interoperability:</h5>
+<h5>Development targets:</h5>
+<p>Coroplast single-sheet casting machine to interoperate with the plastic shredder</p>
+<p>and plastic press components. (provides: fresnel lens, coroplast, single-side coro,</p>
+<p>flat sheet stock. Consumes: recycled plastic, fiber, mycofoam, epoxies, etc)</p>
+<p>White / Black single sheet coro for heat insulation / absorption</p>
+
+<h5>References:</h5>
+<p>https://www.youtube.com/watch?v=ahExsx-hBsE</p>
+
+<h4>Cord (550lb test nylon paracord, stainless steel cable?)</h4>
+<h5>Rationale:</h5>
+<p>Simplified selection of knots - holding, sliding,</p>
+<h5>Current components:</h5>
+<p>Commercially available 550 paracord (https://www.amazon.com/SurvivorCord-SAFETY-ORANGE-Paracord-Conductive-Patent-Pending/dp/B01DAPFYMA​ )</p>
+
+<h5>Interoperability:</h5>
+<h5>Development targets:</h5>
+<p>Printable automatic cord braiding machine</p>
+<p>https://www.youtube.com/watch?v=z9tgjUBpmLA</p>
+<h4>Box</h4>
+<p>https://goo.gl/maps/Es6hfa8Q6J82</p>
+<h5>Rationale:</h5>
+<p>Liquid containers are critical to several Replimat components including the battery and</p>
+<p>sink.</p>
+<h5>Current components:</h5>
+<h5>Interoperability:</h5>
+<h5>Development targets:</h5>
+<ul>
+<li>A better bucket would be square or triangular and sit flat on the ground. And have an optional lid and paracord / coroplast / printed handle</li>
+<li>If a 4ft square sheet is folded into a 600mm wide box, how high are the sides?</li>
+</ul>
+
+<h5>References:</h5>
+<ul>
+<li>http://www.origami-instructions.com/origami-box.html</li>
+<li>http://origami.about.com/od/Origami-Boxes/ss/Origami-Open-Box-Instructions-Easy.htm#showall</li>
+<li>http://www.notcot.com/archives/2011/08/veuve-clicquot-origami-bucket.php</li>
+<li>http://www.instructables.com/id/Electrolytic-Rust-Removal-aka-Magic/</li>
+</ul>
+
+<h4>Printable locking caster</h4>
+<h5>Rationale:</h5>
+<p>Determining the best use of space is a process, not an end result. This is especially true when space</p>
+<p>is at a premium. Furniture and equipment are easier to move when they have wheels.</p>
+<p>But after you’ve moved them, they should be as stable as possible. So the casters should</p>
+<p>be easy to lock and unlock with a foot or a hand.</p>
+
+<p>Subcomponent count and 3D printability of existing caster designs were surveyed. Eleven revisions of test caster were designed, printed, and destructively tested to arrive at a working locking mechanism and feature construction given the constraints imposed</p>
+<p>by the FDM 3D printing process. Initial designs used 608 roller skate bearings. Later designs increased the number of axes with a preloaded bearing and decreased subcomponent count and cost by integrating printed bearing races into existing printed components.</p>
+<h5>Current components:</h5>
+<p>6mm stainless steel balls</p>
+<p>Stainless M8x130 bolt, nut</p>
+<p>2x printed M8 thrust bearings</p>
+<p>Printed flexible roller (1 hour)</p>
+<p>Printed hub (1.5 hours)</p>
+<p>Printed retaining ring (0.5 hours)</p>
+<p>Printed locking lever (0.4 hours)</p>
+<h5>Interoperability:</h5>
+<h5>Development targets:</h5>
+<h4>Locking caster v12</h4>
+<h4>Printable electrical switch</h4>
+<h5>Rationale:</h5>
+<p>The printable electrical switch may be one of the only replimat components that’s more expensive than it’s commercially available counterpart. But all its subcomponents can be fully recovered and repurposed for use in other replimat components.</p>
+<h5>Current components:</h5>
+<h5>Interoperability:</h5>
+<h5>Development targets:</h5>
+<ul>
+<li>Printable electrical switch v0.1 - just nuts, bolts, and printed parts</li>
+<li>Printable foot switch v0.1 -</li>
+<li>Printable tool trigger v0.1 -</li>
+</ul>
+
+<h4>Work Table</h4>
+<h5>Rationale:</h5>
+<p>Ken Isaacs says about the work table (or 24” Module, as he called it): “the best way I know to get into Living Structures is to make a 24” cube. It’s a chance to perfect all the operations involved in larger Structures &amp; the modules are really useful when you work</p>
+<p>with wood or metal at home. The units make good tables to mark &amp; saw plywood &amp; 2x2’s on. They are fine, stable tool stands for the little electric drill press. The 24” module is a good workbench for Josh. Henry &amp; I use several as desks, typewriter tables &amp; drawing board bases. You can bolt several modules together for larger work surfaces or small painting scaffolds.”</p>
+<h5>Current components:</h5>
+<p>14x 600mm frame members</p>
+<p>24x M8x90mm bolts + nuts</p>
+<p>3x 600mm square sheet</p>
+<p>2x square box drawers</p>
+<h5>Interoperability:</h5>
+<h5>Development targets:</h5>
+<h4>Drawers</h4>
+<p>Joy Livingwell configuration (outset front vertical posts, unmodified sheet stock)</p>
+<h4>Chairs</h4>
+<h5>Rationale:</h5>
+<p>Sitting is such a universal activity, that no single chair could cover even a large portion of</p>
+<p>use cases. We try to cover most cases with just two extremely minimal and flexible</p>
+<p>designs.</p>
+<h5>Current components:</h5>
+<p>Portable chair v0.1</p>
+<p>- ?x frame members</p>
+<p>- Cord</p>
+<p>- Stainless hardware</p>
+<p>Rolling chair v0.1</p>
+<p>- ?x frame members</p>
+<p>- Cord</p>
+<p>- Stainless hardware</p>
+<p>- Locking casters</p>
+<p>Interoperability:</p>
+<p>Development targets:Replimat Open Construction System - Project Proposal</p>
+<h4>Drill Press</h4>
+<h5>Rationale:</h5>
+<h5>Current components:</h5>
+<p>Thingiverse printable chuck</p>
+<h4>1kW+ motor</h4>
+<h5>Interoperability:</h5>
+<h5>Development targets:</h5>
+<ul>
+<li>Completion of the replimat linear bearing will allow for the construction of a linear motion system for the press mechanism</li>
+<li>Completion of the printable 1kW motor will allow for the power generating portions of the drill press to be copied</li>
+<li>Lost plastic casting, or direct metal printing will allow for a metalic version of the printable chuck.</li>
+</ul>
+
+<h4>Controller</h4>
+<h5>Rationale:</h5>
+<p>Laser additions to open source Marlin 3D printer firmware for Buildlog.net, OpenSLS, and</p>
+<p>mUVe3D demonstrate adaptability of existing ultra-low-cost 3D printing control solutions</p>
+<p>to a wider range of problems.</p>
+<p>A collection of power, control, cooling, and container components are suggested, which</p>
+<p>connect the elements common to a variety of machine control problems, as well as</p>
+<p>additions to increase the range of acceptable input and output voltages. This allows the</p>
+<p>controller to consume power from a variety of solar panel and battery configurations,</p>
+<p>and to control peripherals originally designed for other applications (i.e. found, salvaged,</p>
+<p>or otherwise repurposed equipment).</p>
+<h5>Current components:</h5>
+<p>Highly compliant input power/voltage (20 - 72v input into 180W buck converter,</p>
+<p>suitable to be run directly from solar, salvaged batteries, spotty grid power, buck</p>
+<p>wired into optional LiPo charger circuit, then to MKS 1.4 power-in):</p>
+<p>https://www.amazon.com/gp/product/B018X03GYA/ref=as_li_tl?tag=proeng-20</p>
+<p>High-current adjustable voltage output (High-power heated bed FET of MKS 1.4</p>
+<p>wired to high-amp adjustable buck-boost before the connector)</p>
+<p>https://www.amazon.com/gp/product/B00N8EVQ30/ref=oh_aui_detailpage_o02_s</p>
+<p>00?ie=UTF8&amp;psc=1</p>
+<p>https://www.amazon.com/KOOKYE-printer-RepRap-Driver-Graphic/dp/B01HAU7T</p>
+<p>6K/ref=pd_sbs_504_2?_encoding=UTF8&amp;pd_rd_i=B01HAU7T6K&amp;pd_rd_r=6X2X2XQ</p>
+<p>ASBJZ0Z62HNNA&amp;pd_rd_w=OVhJH&amp;pd_rd_wg=uEOpO&amp;psc=1&amp;refRID=6X2X2XQAS</p>
+<p>BJZ0Z62HNNA</p>
+<p>https://github.com/MarlinFirmware/Marlin</p>
+<p>Laser cut coroplast box</p>
+<p>Copper acetate solution - vinegar (white) + hydrogen peroxide + copper</p>
+<h5>Interoperability:</h5>
+<h5>Development targets:</h5>
+<p>Soldering iron attachment</p>
+<p>Share inductors across HV, buck-boost, etc.</p>
+<p>Printed power connector (PETG printed sprung m3 bolt (printed-in-place spring</p>
+<p>mechanism) and buna-n or ninjaflex O ring panel mount waterproof connector,</p>
+<p>crimp-on terminal connector for m3 bolt)</p>
+<h4>Battery charger</h4>
+<p>Inductive load driver - ZVS driver (IRFP260N mosfets - 50A 200V - $3 ea Ebay:</p>
+<p>http://www.infineon.com/dgdl/irfp260n.pdf?fileId=5546d462533600a4015356289Replimat Open Construction System - Project Proposal</p>
+<p>dcf1fe2 ​ , inductors, capacitors) - inductive cooking, inductive forge, inductive</p>
+<p>plastic injection nozzle, inductive laser power supply driver - lux wire from TV CRT</p>
+<p>yokes, Electrical Discharge Machining, ​ http://www.ebay.com/itm/281814315969 ​ )</p>
+<p>H bridge driver ICs - adjust gate voltage relative to source voltage on the mosfets</p>
+<p>where source is tied to motor input</p>
+<p>https://www.digikey.com/product-detail/en/NCP5104DR2G/NCP5104DR2GOSCT-N</p>
+<p>D/1802370</p>
+<h4>Multimeter</h4>
+<p>Hardening - IRFP260N mosfets - 50A 200V mosfets, Higher wattage supplies, smaller board, silicone potted</p>
+<p>https://github.com/timschmidt/bailingwire</p>
+<p>Firmware support for Emco CNC lathe w/ 6 axis tool changer and spindle speed control</p>
+<p>Firmware support for Emco F1 CNC mill with quick-change tool post and 90 degree tiltable spindle for side-milling.</p>
+<p>Firmware support for frame auto-drilling machine</p>
+<p>http://www.akamaiuniversity.us/PJST8_1_4.pdf</p>
+<p>Cartesian robot (3d printer, laser cutter / etcher, cnc mill, EDM)</p>
+<h5>Rationale:</h5>
+<h5>Current components:</h5>
+<p>-</p>
+<p>A, X, and L configurations</p>
+<h5>Interoperability:</h5>
+<h5>Development targets:</h5>
+<h5>References:</h5>
+<p>-</p>
+<p>http://reprap.org/wiki/EiffelReplimat Open Construction System - Project Proposal</p>
+<p>Wheel (Bicycle wheel +adapter,coroplast bolted wheels, printed square-beam end cap</p>
+<p>+ V-wheel + belt pulley + caster + integrated bearing?)</p>
+<h5>Rationale:</h5>
+<h5>Current components:</h5>
+<h5>Interoperability:</h5>
+<h5>Development targets:</h5>
+<h4>Ladder</h4>
+<h5>Rationale:</h5>
+<h5>Current components:</h5>
+<h5>Interoperability:</h5>
+<h5>Development targets:</h5>
+<h4>Carts</h4>
+<h5>Rationale:</h5>
+<p>Wheelbarrows, moving dollies, and other carts make impossible jobs possible, and hard</p>
+<p>jobs easy. Two large wheels on either side aid stability with heavy loads across rough</p>
+<p>terrain.</p>
+<h5>Current components:</h5>
+<p>Salvaged tub and wheels or folded sheet stock</p>
+<p>8x 40mmx600mm sticks</p>
+<p>M8x90 nuts and bolts</p>
+
+<h5>Interoperability:</h5>
+<h5>Development targets:</h5>
+<p>-</p>
+<p>Double-thickness coroplast tub w/ folded-over edges for triple thickness and</p>
+<p>smooth edgeReplimat Open Construction System - Project Proposal</p>
+<h4>Electric fan</h4>
+<h5>Rationale:</h5>
+<p>Electric fans are incredibly prolific devices. Used to cool electronics, motors, and</p>
+<p>evaporators, as well as people, livestock, greenhouses, and more. ROCS’ fundamental</p>
+<p>component for moving air.</p>
+<h5>Current components:</h5>
+<h5>Interoperability:</h5>
+<h5>Development targets:</h5>
+<h4>Toilet</h4>
+<h5>Rationale:</h5>
+<p>Everybody poops.</p>
+<h5>Current components:</h5>
+<h5>Interoperability:</h5>
+<h5>Development targets:</h5>
+<p>Research regulation on portable toilets, composting toilets</p>
+<p>Modular composting toilet</p>
+<h4>Desk</h4>
+<h5>Rationale:</h5>
+<h5>Current components:</h5>
+<h5>Interoperability:</h5>
+<h5>Development targets:</h5>
+<h4>Bed</h4>
+<h5>Rationale:</h5>
+<h5>Current components:</h5>
+<h5>Interoperability:</h5>
+<h5>Development targets:</h5>
+<h4>Planer</h4>
+<h5>Rationale:</h5>
+<h5>Current components:</h5>
+<p>-</p>
+<p>Dewalt portable planer</p>
+<p>Interoperability:</p>
+<p>Development targets:</p>
+<p>-</p>
+<p>Replimat planer (frame, pillow block bearings, flat steel blades sharpened on</p>
+<p>grinder with replimat linear bearing attachment, motor, V wheels, sheet stock,</p>
+<p>hardware)Replimat Open Construction System - Project Proposal</p>
+<p>Solar electric cargo velomobile</p>
+<p>Rationale:</p>
+<p>Licensing vehicles is difficult, complicated, and expensive.</p>
+<p>Bicycles (and velomobiles) usually don’t require a license. This makes them accessible to</p>
+<p>the young, differently abled, and societally disadvantaged.Replimat Open Construction System - Project Proposal</p>
+<p>This velomobile carries two people plus groceries, is powered by a 1,000 Watt 48 volt</p>
+<p>wheel motor and recycled LiPo battery, and is recharged by the sun. Always ready to go,</p>
+<p>never needs to be plugged in.</p>
+<p>Current components:</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>https://www.amazon.com/gp/product/B017OMTAV6/ref=oh_aui_detailpage_o06_s</p>
+<p>01?ie=UTF8&amp;psc=1</p>
+<p>https://www.amazon.com/RENOGY-Female-Connectors-Double-Waterproof/dp/B0</p>
+<p>0H1M8ASE/ref=pd_bxgy_86_img_2?_encoding=UTF8&amp;pd_rd_i=B00H1M8ASE&amp;pd_r</p>
+<p>d_r=7R44JR0G8ZN6XM586GSH&amp;pd_rd_w=vpnhp&amp;pd_rd_wg=NIzJh&amp;psc=1&amp;refRID=</p>
+<p>7R44JR0G8ZN6XM586GSH</p>
+<p>https://www.amazon.com/gp/product/B00E8D7XYG/ref=oh_aui_detailpage_o03_s0</p>
+<p>0?ie=UTF8&amp;psc=1</p>
+<p>https://www.amazon.com/gp/product/B00YBWA5VC/ref=oh_aui_detailpage_o08_s</p>
+<p>00?ie=UTF8&amp;psc=1</p>
+<p>https://www.amazon.com/Mega-Brands-Absorber-Chinese-Scooter/dp/B015SLLQL</p>
+<p>2/ref=sr_1_3?ie=UTF8&amp;qid=1486414297&amp;sr=8-3&amp;keywords=moped+shock</p>
+<p>-</p>
+<h5>Interoperability:</h5>
+<h5>Development targets:</h5>
+<h5>References:</h5>
+<p>-</p>
+<p>-</p>
+<p>N55.dk XYZ Spaceframe Vehicles</p>
+<p>Elkinsdiy.comReplimat Open Construction System - Project Proposal</p>
+<p>Hot water tank</p>
+<p>Rationale:</p>
+<p>Current components:</p>
+<p>Interoperability:</p>
+<p>Development targets:Replimat Open Construction System - Project Proposal</p>
+<p>Ice tank</p>
+<p>Rationale:</p>
+<p>Current components:</p>
+<p>Interoperability:</p>
+<p>Development targets:Replimat Open Construction System - Project Proposal</p>
+<p>Hose clamp (printable), hose barb, and 25mm tube</p>
+<p>Rationale:</p>
+<p>Current components:</p>
+<p>Interoperability:</p>
+<p>Development targets:</p>
+<p>-</p>
+<p>nut/bolt tightened versionReplimat Open Construction System - Project Proposal</p>
+<p>Lumber mill / Bandsaw</p>
+<h5>Rationale:</h5>
+<p>Power transferred via V-belt pulley for</p>
+<p>improved safety should the blade catch and the</p>
+<p>belt slip.</p>
+<h5>Current components:</h5>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>Printable pillow block bearing</p>
+<p>Go kart axle mount or bicycle equivalent</p>
+<p>-</p>
+<p>https://www.amazon.com/gp/product/B00YBWA5VC/ref=oh_aui_detailpage_o08_s</p>
+<p>00?ie=UTF8&amp;psc=1</p>
+<p>V-belt pulleys</p>
+<p>Salvaged electric motor</p>
+<h4>V-wheels</h4>
+<h5>Interoperability:</h5>
+<h5>Development targets:</h5>
+<p>-</p>
+<p>Develop gridbeamish three-bearing blade guideReplimat Open Construction System - Project Proposal</p>
+<p>Light (LED with spectrum suitable for vision + plant growth)</p>
+<h5>Rationale:</h5>
+<h5>Current components:</h5>
+<h5>Interoperability:</h5>
+<h5>Development targets:</h5>
+<h4>Battery (Recycled 18650 lipo cells)</h4>
+<h5>Rationale:</h5>
+<p>Single battery system from tools -&gt; teslas.</p>
+<p>I&#x27;ll be bringing these tools in with me, to work with:</p>
+<p>https://www.amazon.com/Weller-WES51-Analog-Soldering-Station/dp/B000BRC2XU/ref=sr_1_2?ie=UTF8&amp;</p>
+<p>qid=1484100894&amp;sr=8-2&amp;keywords=weller+wes51</p>
+<p>https://www.amazon.com/CHEERSON-Original-Version-Discharger-Temperature/dp/B00ZGZZ40K/ref=sr_1</p>
+<p>_14?ie=UTF8&amp;qid=1484104366&amp;sr=8-14&amp;keywords=imax+b6ac+v2</p>
+<p>https://www.amazon.com/uxcell-Black-Pointed-Batteries-Holder/dp/B00FGX8NVO/ref=sr_1_7?ie=UTF8&amp;qid</p>
+<p>=1484101196&amp;sr=8-7&amp;keywords=18650+cell+holder</p>
+<p>https://www.amazon.com/Tzou-Charger-18650-Rechargeable-Battery/dp/B005DCOQ8W/ref=sr_1_3?rps=1</p>
+<p>&amp;ie=UTF8&amp;qid=1484105485&amp;sr=8-3&amp;keywords=18650+charger&amp;refinements=p_85%3A2470955011</p>
+<p>And here&#x27;s what I&#x27;ve purchased to build my battery - note they&#x27;re all</p>
+<p>available with prime shipping, except for the BMS, which probably</p>
+<p>won&#x27;t arrive in time for the first build day. The battery I&#x27;m</p>
+<p>building is 48v, or 13S (13 cells in Series). For other voltages, you</p>
+<p>might find a BMS available with faster shipping.</p>
+<p>https://www.amazon.com/Farmunion-Battery-Radiating-Plastic-Bracket/dp/B01HQB085C/ref=sr_1_10?ie=U</p>
+<p>TF8&amp;qid=1484100995&amp;sr=8-10&amp;keywords=18650+cell+holder</p>
+<p>https://www.amazon.com/orlov-Solder-14500-Rechargeable-Battery/dp/B01L89QEIS/ref=sr_1_8?ie=UTF8&amp;</p>
+<p>qid=1484101033&amp;sr=8-8&amp;keywords=18650+tab</p>
+<p>https://www.amazon.com/LHI-Female-Bullet-Connectors-Battery/dp/B00XBLLG5S/ref=sr_1_3?ie=UTF8&amp;qid</p>
+<p>=1484104565&amp;sr=8-3&amp;keywords=rc+connector</p>
+<p>https://www.amazon.com/Li-ion-Lithium-Battery-Protection-Balance/dp/B01M1M984L/ref=sr_1_2?ie=UTF8&amp;</p>
+<p>qid=1484101084&amp;sr=8-2&amp;keywords=48v+bmsReplimat Open Construction System - Project Proposal</p>
+<h5>Current components:</h5>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>https://www.amazon.com/gp/product/B00ND7J38C/ref=oh_aui_detailpage_o09_s0</p>
+<p>0?ie=UTF8&amp;psc=1</p>
+<p>https://www.amazon.com/gp/product/B00FGX8NVO/ref=oh_aui_detailpage_o00_s</p>
+<p>00?ie=UTF8&amp;psc=1</p>
+<p>https://www.amazon.com/gp/product/B00S7G4A14/ref=oh_aui_detailpage_o00_s0</p>
+<p>1?ie=UTF8&amp;psc=1</p>
+<p>Development targets:</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>Battery charging for the universal controller</p>
+<p>Brass / Steel Battery - ​ http://pubs.acs.org/doi/ipdf/10.1021/acsenergylett.6b00295</p>
+<p>- Coroplast box cell container</p>
+<p>- Frame / caster racking system</p>
+<p>- Charge controller?</p>
+<p>Printed 18650 battery container block - spring-loaded (printed springs?) contacts +</p>
+<p>locking door. Serviceable fuses and diodes</p>
+<p>References:</p>
+<p>-</p>
+<p>-</p>
+<p>http://rc-monster.com/forum/showthread.php?t=28834Replimat Open Construction System - Project Proposal</p>
+<p>Loom</p>
+<h5>Rationale:</h5>
+<p>Weave clothing, satchels and sacks, straps, cords, and even defensive devices (</p>
+<p>https://en.wikipedia.org/wiki/Linothorax#University_of_Wisconsin-Green_Bay:_Linothora</p>
+<p>x_Project ​ ).Replimat Open Construction System - Project Proposal</p>
+<p>Current components:</p>
+<p>-</p>
+<p>-</p>
+<h4>Loom v0.2</h4>
+<p>- Heddle</p>
+<p>- Shuttle</p>
+<p>- M8x130 bolts, M8 locknuts</p>
+<p>- 4x pillow block bearings</p>
+<p>- Replimat V-wheel x2</p>
+<p>- Frame members</p>
+<p>- Cord</p>
+<p>Warp board v0.1</p>
+<p>- Frame members</p>
+<p>- M8x90 bolts, locknuts</p>
+<p>Development targets:</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>https://www.amazon.com/gp/product/B01M70FQON/ref=oh_aui_detailpage_o07_s</p>
+<p>00?ie=UTF8&amp;psc=1</p>
+<p>http://reprap.org/wiki/Skeinosaur</p>
+<p>https://www.youtube.com/watch?v=z9tgjUBpmLA</p>
+<p>Electric comb roller</p>
+<p>Spinning wheel</p>
+<p>Electric spinner</p>
+<p>Sewing machineReplimat Open Construction System - Project Proposal</p>
+<p>Motor</p>
+<p>Rationale:</p>
+<p>Current components:</p>
+<p>-</p>
+<p>Salvaged AC, DC, or universal motor - permanent magnet or inductive</p>
+<p>Development targets:</p>
+<p>-</p>
+<h4>Printable 1kW motor</h4>
+<p>- Stainless steel hardware used for electromagnet cores</p>
+<p>- Solenoid motor - operates similarly in principle to a steam engine</p>
+<p>- https://www.thingiverse.com/thing:1315910</p>
+<p>- https://www.thingiverse.com/thing:159798</p>
+<p>- https://www.thingiverse.com/thing:22258</p>
+<p>- IRFP260N mosfets - 50A 200V - $3 ea Ebay - same as ControllerReplimat Open Construction System - Project Proposal</p>
+<p>Servo Motor</p>
+<p>Rationale:</p>
+<p>Current components:</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>Dual-shaft NEMA-17 Stepper motor</p>
+<p>https://www.digikey.com/product-detail/en/AMT102-V/102-1307-ND/827015</p>
+<p>mechaduino</p>
+<p>Development targets:</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>https://www.thingiverse.com/thing:20177</p>
+<p>https://www.thingiverse.com/thing:11164</p>
+<p>https://www.thingiverse.com/thing:251004Replimat Open Construction System - Project Proposal</p>
+<p>Bench grinder</p>
+<p>Rationale:</p>
+<p>Current components:</p>
+<p>Development targets:</p>
+<p>-</p>
+<p>Printable grinder form for castingReplimat Open Construction System - Project Proposal</p>
+<p>Shingles</p>
+<p>Rationale:</p>
+<p>Current components:</p>
+<p>Development targets:Replimat Open Construction System - Project Proposal</p>
+<p>Sink</p>
+<p>Rationale:</p>
+<p>Current components:</p>
+<p>Development targets:Replimat Open Construction System - Project Proposal</p>
+<p>Lathe</p>
+<p>Rationale:</p>
+<p>Current components:</p>
+<p>Development targets:</p>
+<p>-</p>
+<p>CNC metal lathe w/ tool changer and grinder attachment - allows for production of</p>
+<p>gearsReplimat Open Construction System - Project Proposal</p>
+<p>Portable Power</p>
+<h5>Rationale:</h5>
+<h5>Current components:</h5>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>Coroplast box</p>
+<p>Solar panels</p>
+<p>Recycled LiPo batteries</p>
+<p>Charge controller</p>
+<p>Bicycle tires</p>
+<p>Development targets:</p>
+<p>-</p>
+<p>-</p>
+<p>Coroplast solar panel (transparent or translucent coroplast, solar cells, salvaged</p>
+<p>wire, solder, silicone epoxy)</p>
+<p>Universal Controller battery chargerReplimat Open Construction System - Project Proposal</p>
+<p>Clothes washer / dryer</p>
+<h5>Rationale:</h5>
+<h5>Current components:</h5>
+<p>Development targets:Replimat Open Construction System - Project Proposal</p>
+<p>Refrigerator</p>
+<h5>Rationale:</h5>
+<h5>Current components:</h5>
+<h5>Development targets:</h5>
+<h4>Heater / air conditioner</h4>
+<h5>Rationale:</h5>
+<h5>Current compoponents</h5>
+<h5>Development targets:</h5>
+<h4>Cordless hand tool</h4>
+<h5>Rationale:</h5>
+<p>This is not the best cordless hand tool. But it’s the best place to start developing a</p>
+<p>printable cordless hand tool. It’s inexpensive (a positive feature when you need two or</p>
+<p>three). And critically, it features an interchangeable tool head system which affords it</p>
+<p>unusual versatility and reduces the volume of plastic required to 3D print a full</p>
+<p>complement of cordless tools. This reduces the time required to print the set, and</p>
+<p>shrinks the BOM as well. This faster print time and simpler BOM allow for quicker testing</p>
+<p>and iteration, and quicker replication. Interoperability with commercially available</p>
+<p>interchangeable parts increases sales of the commercial part. It also allows users of</p>
+<p>open tooling to use commercially available parts if needed, or to reuse existing parts</p>
+<p>already available to them.</p>
+<h5>Current Components:</h5>
+<p>-</p>
+<p>Black and Decker Matrix 20v Lithium Ion cordless drill, impact driver, circular saw,</p>
+<p>reciprocating saw, sander, air pump, router, etc.</p>
+<p>( ​ https://www.amazon.com/gp/product/B00OJ72LHU/ref=oh_aui_detailpage_o03_s</p>
+<p>00?ie=UTF8&amp;psc=1 ​ )</p>
+<p>- https://www.thingiverse.com/thing:169755</p>
+<p>-Replimat Open Construction System - Project Proposal</p>
+<p>-</p>
+<p>Porter Cable 4Ah battery (which interoperates better with Porter Cable cordless</p>
+<p>equipment, while still compatible with Black and Decker tools -</p>
+<p>https://www.amazon.com/PCC685L-20-volt-Lithium-4-0-Amp-Battery/dp/B00FQ8O</p>
+<p>HJ6/ref=sr_1_8?s=hi&amp;ie=UTF8&amp;qid=1482172359&amp;sr=1-8&amp;keywords=porter+cable+</p>
+<p>battery)</p>
+<h5>Development targets:</h5>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>A [generic Power Take Off / ] attachment would be a useful addition to the</p>
+<p>capabilities of this device, and is not commercially available. This project will</p>
+<p>require detailed measurement and modeling of features compatible with the</p>
+<p>Black and Decker, Porter Cable, and Craftsman tools and batteries. And the</p>
+<p>modeling of a new attachment, featuring a [ / ].</p>
+<p>The OpenPorterCable LiPo Battery will consist of a 3D printable battery shell,</p>
+<p>easily recycled 18650 lithium ion cells, and a common chinese balance charging</p>
+<p>circuit. This project will require detailed measuring and modeling of the Porter</p>
+<p>Cable 20v Lithium Ion battery connector, and three easily identified regions on the</p>
+<p>nearly identical Black and Decker 20v Lithium ion batteries. 2016 US retail price</p>
+<p>for 20v 4Ah Porter Cable battery is $119. Chinese generic replacement batteries</p>
+<p>are available online for $50. OpenPorterCable should be able to achieve &lt; $20.</p>
+<p>Shooting for an order of magnitude of improvement. And OpenPorterCable will</p>
+<p>allow for much larger batteries to be built than are available from any tool</p>
+<p>manufacturer. This is one area in which Open Source Hardware can take the</p>
+<p>undisputed lead.</p>
+<p>EveryBattery: this project will require detailed measurement of a variety of</p>
+<p>commercially available power tools and batteries. As well as the detailed</p>
+<p>modeling of a set of printable adapters from each battery type to each tool type.</p>
+<p>The adapters may optionally contain a buck-boost converter capable of adjusting</p>
+<p>battery voltage up OR down, to match otherwise incompatible combinations</p>
+<p>(https://www.amazon.com/gp/product/B014OOJ0B2/ref=oh_aui_detailpage_o02_s</p>
+<p>01?ie=UTF8&amp;psc=1).</p>
+<p>Printable Power Handle: Detailed measurement from [tool head development] will</p>
+<p>be used in addition to original work to create a 3D printable (+ vitamins possibly</p>
+<p>including a motor, gearbox, and throttle control) power handle, compatible with</p>
+<p>the open tool head previously developed, and the commercially available tool</p>
+<p>heads. As well as the OpenPorterCable, and Black and Decker and PorterCable</p>
+<p>batteries and chargers.</p>
+<p>- Arduino mini / high-current FET board for tool / 1kW motor / solenoid</p>
+<p>controlReplimat Open Construction System - Project Proposal</p>
+<p>Pump (pressure switched RV)</p>
+<h5>Rationale:</h5>
+<p>Manufacured for RVs, boats, and other off-grid systems, this style of pump is relatively</p>
+<p>inexpensive and widely available.</p>
+<p>Current Components:</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>https://www.amazon.com/gp/product/B00WYMC492/ref=oh_aui_detailpage_o05_s</p>
+<p>00?ie=UTF8&amp;psc=1</p>
+<p>https://www.thingiverse.com/thing:1134817</p>
+<h5>Development targets:</h5>
+<p>-</p>
+<p>Printed check valve using 6mm stainless bbReplimat Open Construction System - Project Proposal</p>
+<p>-</p>
+<p>fully printed flexible membrane solenoid pump + universal controller plugReplimat Open Construction System - Project Proposal</p>
+<p>Hot and cold shower</p>
+<h5>Rationale:</h5>
+<h5>Current components:</h5>
+<h5>Development targets:</h5>
+<p>Tractor (lifetrak lite: fork pallet loader, farm tractor)</p>
+<h5>References:</h5>
+<p>-</p>
+<p>http://opensourceecology.org/wiki/LifeTracReplimat Open Construction System - Project Proposal</p>
+<p>Printable valves</p>
+<p>-</p>
+<h5>Rationale:</h5>
+<h5>Current components:</h5>
+<p>-</p>
+<p>-</p>
+<p>6mm stainless steel ball (BB)</p>
+<p>Printed spring?</p>
+<h5>Development targets:</h5>
+<h4>Saw stand</h4>
+<h5>Rationale:</h5>
+<p>This tool is a necessary aid to anyone planing, ripping, or otherwise processing long</p>
+<p>wood, metal, or plastic raw materials.</p>
+<h5>Current components:</h5>
+<p>-</p>
+<p>https://www.amazon.com/gp/product/B000VEOPEC/ref=oh_aui_detailpage_o01_s0</p>
+<p>0?ie=UTF8&amp;psc=1</p>
+<p>Development targets:Replimat Open Construction System - Project Proposal</p>
+<p>Modular Cookware</p>
+<h5>Rationale:</h5>
+<h5>Current components:</h5>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>https://www.amazon.com/gp/product/B01AX3FI4G/ref=oh_aui_detailpage_o00_s0</p>
+<p>1?ie=UTF8&amp;psc=1</p>
+<p>https://www.amazon.com/Ball-Jar-Wide-Mouth-Bands/dp/B00B80TJLW/ref=pd_sim</p>
+<p>_79_3?_encoding=UTF8&amp;pd_rd_i=B00B80TJLW&amp;pd_rd_r=3AMCN85SQHPCZ32M2E</p>
+<p>BF&amp;pd_rd_w=c2M0T&amp;pd_rd_wg=k8FKF&amp;refRID=3AMCN85SQHPCZ32M2EBF&amp;th=1</p>
+<p>https://www.amazon.com/gp/product/B0190ZUNEI/ref=oh_aui_detailpage_o00_s0</p>
+<p>0?ie=UTF8&amp;psc=1</p>
+<h5>Development targets</h5>
+<h4>Plastics Recycling Center</h4>
+<h5>Rationale:</h5>
+<p>https://www.qualitylogoproducts.com/lib/different-types-of-plastic.htm</p>
+<h5>Current components:</h5>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>plastic shredder v0.1</p>
+<p>filament extruder v0.1</p>
+<p>injection molder v0.1</p>
+<h4>Press v0.1</h4>
+<p>https://www.thingiverse.com/thing:1468596</p>
+<p>https://www.thingiverse.com/thing:677144</p>
+<h5>Development targets:</h5>
+<p>-</p>
+<p>-</p>
+<p>-</p>
+<p>Re-frame in gridbeam</p>
+<p>Ensure that each machine is supported by the Universal Controller</p>
+<p>Large-format coro, fresnel lens, multifocal concentrating solar fresnel, etc press</p>
+<p>References:</p>
+<p>-</p>
+<p>https://preciousplastic.com/en/Replimat Open Construction System - Project Proposal</p>
+<p>Robot arm</p>
+<h5>Rationale:</h5>
+<h5>Current components:</h5>
+<ul>
+<li>https://www.thingiverse.com/thing:1652309</li>
+<li>https://www.thingiverse.com/thing:280263</li>
+</ul>
+
+<h4>References</h4>
+<p>4. Popular Mechanics Sept 1923</p>
+<p>6. Elkinsdiy.com</p>
+
+<p><a href="marketing.html">Marketing</a></p>
+  </main>
+</body>
+</html>

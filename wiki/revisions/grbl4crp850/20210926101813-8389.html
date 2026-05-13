@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>grbl4crp850 revision 8389 - Replimat Wiki Archive</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="../../index.html">Replimat Wiki Archive</a>
+  </header>
+  <main>
+<h1>grbl4crp850 revision 8389</h1>
+<p class="meta">20210926101813 by Tim. </p>
+<nav class="page-actions"><a href="../../grbl4crp850.html">Current page</a> <a href="../../history/grbl4crp850.html">History</a></nav>
+<pre>^ Parts infobox ^^</pre>
+<pre>| image | Grbl4crp850r0.3.png |</pre>
+<pre>| designers | [[user:tim|Timothy Schmidt]] |</pre>
+<pre>| date | 2020 - 2021 |</pre>
+<pre>| vitamins |  |</pre>
+<pre>| materials |  |</pre>
+<pre>| transformations | [[etching|Etching]], [[photopolymer_printing|Photopolymer printing]], [[soldering|Soldering]] |</pre>
+<pre>| lifecycles |  |</pre>
+<pre>| tools | [[soldering_irons|Soldering irons]], [[multimeters|Multimeters]] |</pre>
+<pre>| parts | [[printed_circuit_boards|Printed circuit boards]], [[solder|Solder]], [[headers|Headers]] |</pre>
+<pre>| suppliers | [[https:::www.replimat.org:product:cnc-controller-avidcnc|Replimat]] |</pre>
+<pre>| techniques |  |</pre>
+<pre>| files | [[https:::github.com:timschmidt:replimat:blob:master:src:fritzing:grbl4crp850.fzz_raw_true|grbl4crp850.fzz]] |</pre>
+<pre>| git | [[https:::github.com:timschmidt:replimat|Replimat]] |</pre>
+<pre>| standardinterfaces |  |</pre>
+
+<p><a href="../../category/parts.html">Category:Parts</a></p>
+<p><a href="../../category/electric_parts.html">Category:Electric parts</a></p>
+<p><a href="../../category/controllers.html">Category:Controllers</a></p>
+
+<h3>Introduction</h3>
+<p>A simple board to control <a href="https://www.avidcnc.com/">AvidCNC</a> equipment using Free Software.  Replimat has developed and tested this against our <a href="../../avid_cnc_60120_pro.html">Avid CNC 60120 Pro</a>.</p>
+
+<h3>Challenges</h3>
+<p>The avid controller requires more pins than <a href="https://github.com/grbl/grbl">grbl</a> provides, so <a href="https://github.com/fra589/grbl-Mega-5X">grbl-Mega-5X</a> was used instead.</p>
+
+<h3>Approaches</h3>
+<p>Verified as of revision 0.3: machine travel in the X, Y, Z, and mirrored axes, in positive and negative directions, as well as homing and endstop sensors.</p>
+
+<p>Enabling additional functions may require some minor modifications.  Unused signals have been routed to a breakout header for easy access.</p>
+<p><img src="../../media/grbl4crp850_r0.1_w-bodge_wires.jpg" alt="revision 0.1 w/bodge wires" loading="lazy"></p>
+<p><img src="../../media/grbl4crp850r0.2.jpg" alt="revision 0.2" loading="lazy"></p>
+<p><img src="../../media/grbl4crp850r0.3.png" alt="revision 0.3" loading="lazy"></p>
+
+<p>The grbl4crp850 drops directly in to <a href="https://www.avidcnc.com">AvidCNC</a> control cabinets built around the <a href="https://www.avidcnc.com/support/instructions/electronics/pnp/manual/20.1/schematics/">CRP850 breakout board</a> allowing you to replace the built in <a href="https://www.avidcnc.com/ethernet-smoothstepper-p-229.html">EthernetSmoothStepper</a> and Mach4 with an Arduino Mega running <a href="https://github.com/fra589/grbl-Mega-5X">grbl-Mega-5x</a> machine control firmware and your choice of host <a href="https://wiki.replimat.org/wiki/Software">software</a>.</p>
+
+<p>Verified as of revision 0.3: machine travel in the X, Y, Z, and mirrored axes, in positive and negative directions, as well as homing and endstop sensors.</p>
+
+<p>Enabling additional functions may require some minor modifications.  Unused signals have been routed to a breakout header for easy access.</p>
+
+<h3>Making changes</h3>
+<p>This adapter PCB has been designed using the Open Source <a href="https://fritzing.org/">Fritzing</a> software.  Traces have been hand routed.</p>
+
+<h3>References</h3>
+<ul>
+<li><a href="https://www.avidcnc.com/support/instructions/electronics/pnp/manual/">AvidCNC: Electronics technical manual</a></li>
+</ul>
+  </main>
+</body>
+</html>

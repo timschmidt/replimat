@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>plasma cutters revision 9691 - Replimat Wiki Archive</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="../../index.html">Replimat Wiki Archive</a>
+  </header>
+  <main>
+<h1>plasma cutters revision 9691</h1>
+<p class="meta">20230201053355 by Tim. </p>
+<nav class="page-actions"><a href="../../plasma_cutters.html">Current page</a> <a href="../../history/plasma_cutters.html">History</a></nav>
+<pre>^ Projects infobox ^^</pre>
+<pre>| image | Langmuir crossfire pro.jpg |</pre>
+<pre>| designers | [[user:tim|Timothy Schmidt]] |</pre>
+<pre>| date | 2023 |</pre>
+<pre>| vitamins |  |</pre>
+<pre>| materials |  |</pre>
+<pre>| transformations |  |</pre>
+<pre>| lifecycles |  |</pre>
+<pre>| tools |  |</pre>
+<pre>| parts | [[laser_cutters|Laser cutters]], [[linear_bearings|Linear bearings]], [[category:controllers|controllers]], [[motors|Motors]], [[linear_bearing_assemblies|Linear bearing assemblies]] |</pre>
+<pre>| techniques | [[tri_joints|Tri joints]] |</pre>
+<pre>| files |  |</pre>
+<pre>| suppliers |  |</pre>
+<pre>| git |  |</pre>
+
+<p><a href="../../category/projects.html">Category:Projects</a></p>
+<p><a href="../../category/manufacturing.html">Category:Manufacturing</a></p>
+
+<h3>Introduction</h3>
+<p>Plasma cutting is a process that cuts through electrically conductive materials by means of an accelerated jet of hot plasma. Typical materials cut with a plasma torch include steel, stainless steel, aluminum, brass and copper, although other conductive metals may be cut as well. Plasma cutting is often used in fabrication shops, automotive repair and restoration, industrial construction, and salvage and scrapping operations. Due to the high speed and precision cuts combined with low cost, plasma cutting sees widespread use from large-scale industrial CNC applications down to small hobbyist shops.</p>
+
+<h3>Challenges</h3>
+<p>Replimat firmware must be modified to perform a number of additional steps required for plasma cutting.  Circuits must be added to <a href="../../category/controllers.html">Controllers</a> for voltage and capacitance sensing as well as plasma firing and isolated for protection from high voltage.</p>
+<p><img src="../../media/plasma_cutter_cutting_sequence.png" alt="Plasma cutting sequence" loading="lazy"></p>
+
+<h3>Approaches</h3>
+<h3>Electronics</h3>
+<ul>
+<li>Selectable 50:1 or 100:1 voltage divider connected to ADC connected to optical isolator</li>
+<li>Capacitive sensing connected to optical isolator</li>
+<li>Relay or SSR for firing plasma</li>
+</ul>
+
+<h3>Firmware</h3>
+<p><a href="https://github.com/timschmidt/buildlog-lasercutter-marlin">Github: Buildlog Lasercutter Marlin</a></p>
+
+<h3>Software</h3>
+<p><a href="https://laserweb.yurl.ch/">Laserweb</a></p>
+
+<h3>References</h3>
+<p>&lt;youtube&gt;EZY-6ROY13w&lt;/youtube&gt;\\</p>
+<p>&lt;youtube&gt;vjCgKJYV2aI&lt;/youtube&gt;</p>
+<ul>
+<li><a href="https://gofabcnc.com">GoFabCNC</a></li>
+<li><a href="https://minihornet.com/">Hornet cutting systems</a></li>
+<li><a href="https://stvcnc.com/">STVCNC</a></li>
+<li><a href="https://torchmate.com/">Torchmate</a></li>
+<li><a href="https://www.langmuirsystems.com/crossfire">Langmuir Systems Crossfire</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Plasma_cutting">Plasma cutting</a></li>
+</ul>
+  </main>
+</body>
+</html>

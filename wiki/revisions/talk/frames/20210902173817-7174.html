@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>frames revision 7174 - Replimat Wiki Archive</title>
+  <link rel="stylesheet" href="../../../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="../../../index.html">Replimat Wiki Archive</a>
+  </header>
+  <main>
+<h1>frames revision 7174</h1>
+<p class="meta">20210902173817 by Tim. Created page with &quot;{{OpenJSCAD|title=CAD|code= // Here we define the user editable parameters: function getParameterDefinitions() {   return [     { type: &#x27;float&#x27;, name: &#x27;beam_width&#x27;, caption: &#x27;...&quot;</p>
+<nav class="page-actions"><a href="../../../talk/frames.html">Current page</a> <a href="../../../history/talk/frames.html">History</a></nav>
+<p>{{OpenJSCAD|title=CAD|code=</p>
+<p>// Here we define the user editable parameters:</p>
+<p>function getParameterDefinitions() {</p>
+<p>  return [</p>
+<p>    { type: &#x27;float&#x27;, name: &#x27;beam_width&#x27;, caption: &#x27;Beam width&#x27;, default: 40 },</p>
+<p>    { type: &#x27;float&#x27;, name: &#x27;hole_radius&#x27;, caption: &#x27;Radius of holes&#x27;, default: 6 },</p>
+<p>    { type: &#x27;choice&#x27;, name: &#x27;length&#x27;, caption: &#x27;Frame length (holes)&#x27;, values: [2,3,4,5,10,15,20,25,30,40,50], captions: [&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,&quot;5&quot;,&quot;10&quot;,&quot;15&quot;,&quot;20&quot;,&quot;25&quot;,&quot;30&quot;,&quot;40&quot;,&quot;50&quot;], default: 10 }</p>
+<p>  ];</p>
+<p>}</p>
+
+<p>// zBeam(length) - create a vertical bitbeam strut &#x27;length&#x27; long</p>
+<p>// xBeam(length) - create a horizontal bitbeam strug along the X axis</p>
+<p>// yBeam(length) - create a horizontal bitbeam strut along the Y axis</p>
+<p>// translateBeam(beam, [x, y, z]) - translate bitbeam struts in X, Y, or Z axes in units &#x27;beam_width&#x27;</p>
+
+<p>var cylresolution=16;</p>
+<p>var beam_width=38;</p>
+<p>var hole_radius=8;</p>
+
+<p>function main(params) {</p>
+
+<p>    cylresolution=(params.quality == &quot;1&quot;)? 64:16;</p>
+<p>    beam_width=params.beam_width;</p>
+<p>    hole_radius=params.hole_radius;</p>
+<p>    return zBeam(params.length);</p>
+<p>}</p>
+
+<p>function xHole(i) {</p>
+<p>    return CSG.cylinder( {</p>
+<p>        start: [-1, beam_width/2, i*beam_width + beam_width/2],</p>
+<p>        end: [beam_width+1, beam_width/2, i*beam_width + beam_width/2],</p>
+<p>        radius: hole_radius,</p>
+<p>        resolution: cylresolution</p>
+<p>    } );</p>
+<p>}</p>
+
+<p>function yHole(i) {</p>
+<p>    return CSG.cylinder( {</p>
+<p>        start: [beam_width/2, -1, i*beam_width + beam_width/2],</p>
+<p>        end: [beam_width/2, beam_width+1, i*beam_width + beam_width/2],</p>
+<p>        radius: hole_radius,</p>
+<p>        resolution: cylresolution</p>
+<p>    } );</p>
+<p>}</p>
+
+<p>function zBeam(length) {</p>
+<p>    var cube = CSG.cube({</p>
+<p>        center: [beam_width/2, beam_width/2, (length*beam_width)/2],</p>
+<p>        radius: [beam_width/2, beam_width/2, (length*beam_width)/2]</p>
+<p>        });</p>
+<p>    var holes = [];</p>
+<p>    for (var i = 0; i &lt; length; i++)</p>
+<p>    {</p>
+<p>        holes.push(xHole(i));</p>
+<p>        holes.push(yHole(i));</p>
+<p>    }</p>
+<p>    var beam = cube.subtract(holes);</p>
+<p>    beam.properties.myConnector = new CSG.Connector([10, 0, 0], [1, 0, 0], [0, 0, 1]);</p>
+<p>    return beam;</p>
+<p>}</p>
+
+<p>function yBeam(length) {</p>
+<p>    return translateBeam(zBeam(length).rotateX(-90), [0,0,1]);</p>
+<p>}</p>
+
+<p>function xBeam(length) {</p>
+<p>    return translateBeam(zBeam(length).rotateY(90), [0,0,1]);</p>
+<p>}</p>
+
+<p>function translateBeam(beam, t_vector) {</p>
+<p>    return beam.translate(t_vector.map(function(n) { return beam_width*n; }));</p>
+<p>}</p>
+
+<p>}}</p>
+  </main>
+</body>
+</html>

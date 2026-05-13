@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>buck-boost converters revision 8315 - Replimat Wiki Archive</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="../../index.html">Replimat Wiki Archive</a>
+  </header>
+  <main>
+<h1>buck-boost converters revision 8315</h1>
+<p class="meta">20210925100121 by Tim. </p>
+<nav class="page-actions"><a href="../../buck-boost_converters.html">Current page</a> <a href="../../history/buck-boost_converters.html">History</a></nav>
+<pre>^ Techniques infobox ^^</pre>
+<pre>| image |  |</pre>
+<pre>| designers |  |</pre>
+<pre>| date |  |</pre>
+<pre>| vitamins |  |</pre>
+<pre>| materials |  |</pre>
+<pre>| transformations |  |</pre>
+<pre>| lifecycles |  |</pre>
+<pre>| parts | [[resistors|Resistors]], [[capacitors|Capacitors]], [[inductors|Inductors]], [[diodes|Diodes]], [[transistors|Transistors]], [[printed_circuit_boards|Printed circuit boards]], [[solder|Solder]] |</pre>
+<pre>| techniques | [[soldering|Soldering]] |</pre>
+<pre>| tools | [[soldering_irons|Soldering irons]] |</pre>
+<pre>| git |  |</pre>
+<pre>| files |  |</pre>
+<pre>| suppliers |  |</pre>
+<pre>| reversible | true |</pre>
+
+<p><a href="../../category/techniques.html">Category:Techniques</a></p>
+<p><a href="../../category/electric_parts.html">Category:Electric parts</a></p>
+
+<h3>Introduction</h3>
+<p>The buck–boost converter is a type of DC-to-DC converter that has an output voltage magnitude that is either greater than or less than the input voltage magnitude. It is equivalent to a flyback converter using a single inductor instead of a transformer.</p>
+
+<h3>Challenges</h3>
+<h3>Approaches</h3>
+<p>Two different topologies are called buck–boost converter. Both of them can produce a range of output voltages, ranging from much larger (in absolute magnitude) than the input voltage, down to almost zero.</p>
+
+<p>The inverting topology</p>
+<p>    The output voltage is of the opposite polarity than the input. This is a switched-mode power supply with a similar circuit topology to the boost converter and the buck converter. The output voltage is adjustable based on the duty cycle of the switching transistor. One possible drawback of this converter is that the switch does not have a terminal at ground; this complicates the driving circuitry. However, this drawback is of no consequence if the power supply is isolated from the load circuit (if, for example, the supply is a battery) because the supply and diode polarity can simply be reversed. When they can be reversed, the switch can be on either the ground side or the supply side.</p>
+
+<p>A buck (step-down) converter combined with a boost (step-up) converter</p>
+<p>    The output voltage is typically of the same polarity of the input, and can be lower or higher than the input. Such a non-inverting buck-boost converter may use a single inductor which is used for both the buck inductor mode and the boost inductor mode, using switches instead of diodes, sometimes called a &quot;four-switch buck-boost converter&quot;, it may use multiple inductors but only a single switch as in the SEPIC and Ćuk topologies.</p>
+
+
+<h3>References</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Buck%E2%80%93boost_converter">Wikipedia: Buck-boost converter</a></li>
+</ul>
+  </main>
+</body>
+</html>
