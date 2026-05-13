@@ -24,7 +24,8 @@ body {
   line-height: 1.6;
 }
 
-.site-header {
+.site-header,
+.mw-header {
   min-height: 40px;
   padding: 0 24px;
   border-bottom: 1px solid var(--mw-tab-border);
@@ -33,14 +34,14 @@ body {
   align-items: center;
 }
 
-.site-header a {
+.site-header a,
+.mw-logo {
   color: var(--mw-text);
   font-weight: normal;
   text-decoration: none;
 }
 
-.site-header a::before {
-  content: "Replimat";
+.mw-logo-wordmark {
   display: block;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.55rem;
@@ -48,12 +49,7 @@ body {
   letter-spacing: 0;
 }
 
-.site-header a {
-  font-size: 0;
-}
-
-.site-header a::after {
-  content: "Wiki Archive";
+.mw-logo-tagline {
   display: block;
   margin-top: 2px;
   color: var(--mw-muted);
@@ -62,7 +58,8 @@ body {
   text-transform: uppercase;
 }
 
-main {
+main,
+.mw-body {
   max-width: 1120px;
   margin: 0 auto 48px;
   padding: 24px 32px 56px;
@@ -70,6 +67,10 @@ main {
   border-top: 0;
   background: var(--mw-page-bg);
   box-sizing: border-box;
+}
+
+.mw-body-content {
+  max-width: 100%;
 }
 
 h1,
@@ -223,11 +224,13 @@ hr {
 }
 
 @media (max-width: 700px) {
-  .site-header {
+  .site-header,
+  .mw-header {
     padding: 8px 16px;
   }
 
-  main {
+  main,
+  .mw-body {
     margin: 0;
     padding: 18px 16px 40px;
     border-right: 0;

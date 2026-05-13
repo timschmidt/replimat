@@ -6,14 +6,17 @@
   <title>modular infobox - Replimat Wiki Archive</title>
   <link rel="stylesheet" href="assets/site.css">
 </head>
-<body>
-  <header class="site-header">
-    <a href="index.html">Replimat Wiki Archive</a>
+<body class="mediawiki skin-vector">
+  <header class="site-header mw-header">
+    <a class="mw-logo" href="index.html" aria-label="Replimat Wiki Archive home">
+      <span class="mw-logo-wordmark">Replimat</span>
+      <span class="mw-logo-tagline">Wiki Archive</span>
+    </a>
   </header>
-  <main>
+  <main id="content" class="mw-body" role="main">
+    <div class="mw-body-content">
 <h1>modular infobox</h1>
 <p class="meta">Exported revision 3640, 20210327192201, by Tim</p>
-<nav class="page-actions"><a href="history/modular_infobox.html">Revision history</a></nav>
 <p>&lt;onlyinclude&gt;{{#ifeq: ^ NAMESPACE ^^| ^ ns:0 ^^ |&#x27;&#x27;&#x27;Do not use single-use infoboxes in the article namespace! See <a href="help/infoboxes.html">Help:Infoboxes</a> to learn how to create an infobox.&#x27;&#x27;&#x27; |&lt;infobox&gt;</p>
 <p>	&lt;title source=&quot;Box title&quot;&gt;&lt;default&gt;^ PAGENAME ^^&lt;/default&gt;&lt;/title&gt;</p>
 <p>	&lt;image source=&quot;image&quot;&gt;&lt;caption source=&quot;caption&quot;/&gt;&lt;/image&gt;</p>
@@ -42,6 +45,7 @@
 <p>		&lt;data source=&quot;data10&quot;&gt;&lt;label&gt;{^ label10 ^^}&lt;/label&gt;&lt;/data&gt;</p>
 <p>	&lt;/group&gt;</p>
 <p>&lt;/infobox&gt;}}&lt;/onlyinclude&gt;&lt;noinclude&gt;^ documentation ^^&lt;/noinclude&gt;</p>
+    </div>
   </main>
 </body>
 </html>

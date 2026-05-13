@@ -6,14 +6,17 @@
   <title>development roadmap - Replimat Wiki Archive</title>
   <link rel="stylesheet" href="assets/site.css">
 </head>
-<body>
-  <header class="site-header">
-    <a href="index.html">Replimat Wiki Archive</a>
+<body class="mediawiki skin-vector">
+  <header class="site-header mw-header">
+    <a class="mw-logo" href="index.html" aria-label="Replimat Wiki Archive home">
+      <span class="mw-logo-wordmark">Replimat</span>
+      <span class="mw-logo-tagline">Wiki Archive</span>
+    </a>
   </header>
-  <main>
+  <main id="content" class="mw-body" role="main">
+    <div class="mw-body-content">
 <h1>development roadmap</h1>
 <p class="meta">Exported revision 9814, 20231019040753, by Tim</p>
-<nav class="page-actions"><a href="history/development_roadmap.html">Revision history</a></nav>
 <h3>Milestones</h3>
 <ul>
 <li>First full physical implementation</li>
@@ -211,6 +214,7 @@
 <li>implement a trajectory planner that does acceleration and maybe jerk limiting. We don&#x27;t necessarily need to limit ourselves to outputting lines and arcs only, because we are in control of the hardware, not to mention you can always approximate as arcs (or lines) at the final step of post-processing</li>
 <li>write a replacement for dxflib for importing DXFs, and use that replacement library to implement a reusable DXF geometry importer (better than the current ones out there...)</li>
 </ul>
+    </div>
   </main>
 </body>
 </html>
