@@ -1,4 +1,4 @@
-# [replimat](https://timschmidt.github.io/replimat/)
+# [replimat](https://timschmidt.github.io/replimat/wiki/main_page.html)
 # self-reproducing manufactory
 # replimat.org
 # timschmidt@gmail.com
